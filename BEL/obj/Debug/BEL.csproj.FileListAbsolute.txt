@@ -1,0 +1,55 @@
+C:\Users\navegador\Desktop\DepositoInteligente\BEL\bin\Debug\BEL.dll
+C:\Users\navegador\Desktop\DepositoInteligente\BEL\bin\Debug\BEL.pdb
+C:\Users\navegador\Desktop\DepositoInteligente\BEL\bin\Debug\BEL.xml
+C:\Users\navegador\Desktop\DepositoInteligente\BEL\obj\Debug\BEL.dll
+C:\Users\navegador\Desktop\DepositoInteligente\BEL\obj\Debug\BEL.pdb
+C:\German\UAI\DepositoInteligente\BEL\bin\Debug\BEL.dll
+C:\German\UAI\DepositoInteligente\BEL\bin\Debug\BEL.pdb
+C:\German\UAI\DepositoInteligente\BEL\bin\Debug\BEL.xml
+C:\German\UAI\DepositoInteligente\BEL\obj\Debug\BEL.dll
+C:\German\UAI\DepositoInteligente\BEL\obj\Debug\BEL.pdb
+C:\German\UAI\Sistema-TD\c#\DepositoInteligente\BEL\bin\Debug\BEL.dll
+C:\German\UAI\Sistema-TD\c#\DepositoInteligente\BEL\bin\Debug\BEL.pdb
+C:\German\UAI\Sistema-TD\c#\DepositoInteligente\BEL\bin\Debug\BEL.xml
+C:\German\UAI\Sistema-TD\c#\DepositoInteligente\BEL\obj\Debug\BEL.dll
+C:\German\UAI\Sistema-TD\c#\DepositoInteligente\BEL\obj\Debug\BEL.pdb
+D:\DepositoInteligente\BEL\bin\Debug\BEL.dll
+D:\DepositoInteligente\BEL\bin\Debug\BEL.pdb
+D:\DepositoInteligente\BEL\bin\Debug\BEL.xml
+D:\DepositoInteligente\BEL\obj\Debug\BEL.csprojResolveAssemblyReference.cache
+D:\DepositoInteligente\BEL\obj\Debug\BEL.dll
+D:\DepositoInteligente\BEL\obj\Debug\BEL.pdb
+C:\Users\german\Desktop\DepositoInteligente\BEL\bin\Debug\BEL.dll
+C:\Users\german\Desktop\DepositoInteligente\BEL\bin\Debug\BEL.pdb
+C:\Users\german\Desktop\DepositoInteligente\BEL\bin\Debug\BEL.xml
+C:\Users\german\Desktop\DepositoInteligente\BEL\bin\Debug\Comun.dll
+C:\Users\german\Desktop\DepositoInteligente\BEL\bin\Debug\Comun.pdb
+C:\Users\german\Desktop\DepositoInteligente\BEL\obj\Debug\BEL.csprojAssemblyReference.cache
+C:\Users\german\Desktop\DepositoInteligente\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache
+C:\Users\german\Desktop\DepositoInteligente\BEL\obj\Debug\BEL.csproj.CopyComplete
+C:\Users\german\Desktop\DepositoInteligente\BEL\obj\Debug\BEL.dll
+C:\Users\german\Desktop\DepositoInteligente\BEL\obj\Debug\BEL.pdb
+\\vmware-host\Shared Folders\Escritorio\DepIn\BEL\bin\Debug\BEL.dll
+\\vmware-host\Shared Folders\Escritorio\DepIn\BEL\bin\Debug\BEL.pdb
+\\vmware-host\Shared Folders\Escritorio\DepIn\BEL\bin\Debug\BEL.xml
+\\vmware-host\Shared Folders\Escritorio\DepIn\BEL\bin\Debug\Comun.dll
+\\vmware-host\Shared Folders\Escritorio\DepIn\BEL\bin\Debug\Interfaces.dll
+\\vmware-host\Shared Folders\Escritorio\DepIn\BEL\bin\Debug\Comun.pdb
+\\vmware-host\Shared Folders\Escritorio\DepIn\BEL\bin\Debug\Interfaces.pdb
+\\vmware-host\Shared Folders\Escritorio\DepIn\BEL\obj\Debug\BEL.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Escritorio\DepIn\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Escritorio\DepIn\BEL\obj\Debug\BEL.csproj.CopyComplete
+\\vmware-host\Shared Folders\Escritorio\DepIn\BEL\obj\Debug\BEL.dll
+\\vmware-host\Shared Folders\Escritorio\DepIn\BEL\obj\Debug\BEL.pdb
+C:\uai\DepIn\BEL\bin\Debug\BEL.dll
+C:\uai\DepIn\BEL\bin\Debug\BEL.pdb
+C:\uai\DepIn\BEL\bin\Debug\BEL.xml
+C:\uai\DepIn\BEL\bin\Debug\Comun.dll
+C:\uai\DepIn\BEL\bin\Debug\Interfaces.dll
+C:\uai\DepIn\BEL\bin\Debug\Comun.pdb
+C:\uai\DepIn\BEL\bin\Debug\Interfaces.pdb
+C:\uai\DepIn\BEL\obj\Debug\BEL.csprojAssemblyReference.cache
+C:\uai\DepIn\BEL\obj\Debug\BEL.csproj.CopyComplete
+C:\uai\DepIn\BEL\obj\Debug\BEL.dll
+C:\uai\DepIn\BEL\obj\Debug\BEL.pdb
+C:\uai\DepIn\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache

@@ -1,0 +1,54 @@
+C:\Users\german\Desktop\DepositoInteligente\Servicios\bin\Debug\Servicios.dll
+C:\Users\german\Desktop\DepositoInteligente\Servicios\bin\Debug\Servicios.pdb
+C:\Users\german\Desktop\DepositoInteligente\Servicios\bin\Debug\Servicios.xml
+C:\Users\german\Desktop\DepositoInteligente\Servicios\bin\Debug\BEL.dll
+C:\Users\german\Desktop\DepositoInteligente\Servicios\bin\Debug\Comun.dll
+C:\Users\german\Desktop\DepositoInteligente\Servicios\bin\Debug\DAL.dll
+C:\Users\german\Desktop\DepositoInteligente\Servicios\bin\Debug\Interfaces.dll
+C:\Users\german\Desktop\DepositoInteligente\Servicios\bin\Debug\BEL.pdb
+C:\Users\german\Desktop\DepositoInteligente\Servicios\bin\Debug\BEL.xml
+C:\Users\german\Desktop\DepositoInteligente\Servicios\bin\Debug\Comun.pdb
+C:\Users\german\Desktop\DepositoInteligente\Servicios\bin\Debug\DAL.pdb
+C:\Users\german\Desktop\DepositoInteligente\Servicios\bin\Debug\DAL.xml
+C:\Users\german\Desktop\DepositoInteligente\Servicios\bin\Debug\Interfaces.pdb
+C:\Users\german\Desktop\DepositoInteligente\Servicios\obj\Debug\Servicios.csprojAssemblyReference.cache
+C:\Users\german\Desktop\DepositoInteligente\Servicios\obj\Debug\Servicios.csproj.CoreCompileInputs.cache
+C:\Users\german\Desktop\DepositoInteligente\Servicios\obj\Debug\Servicios.csproj.CopyComplete
+C:\Users\german\Desktop\DepositoInteligente\Servicios\obj\Debug\Servicios.dll
+C:\Users\german\Desktop\DepositoInteligente\Servicios\obj\Debug\Servicios.pdb
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\bin\Debug\Servicios.dll
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\bin\Debug\Servicios.pdb
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\bin\Debug\Servicios.xml
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\bin\Debug\BEL.dll
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\bin\Debug\Comun.dll
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\bin\Debug\DAL.dll
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\bin\Debug\Interfaces.dll
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\bin\Debug\BEL.pdb
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\bin\Debug\BEL.xml
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\bin\Debug\Comun.pdb
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\bin\Debug\DAL.pdb
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\bin\Debug\DAL.xml
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\bin\Debug\Interfaces.pdb
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\obj\Debug\Servicios.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\obj\Debug\Servicios.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\obj\Debug\Servicios.csproj.CopyComplete
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\obj\Debug\Servicios.dll
+\\vmware-host\Shared Folders\Escritorio\DepIn\Servicios\obj\Debug\Servicios.pdb
+C:\uai\DepIn\Servicios\bin\Debug\Servicios.dll
+C:\uai\DepIn\Servicios\bin\Debug\Servicios.pdb
+C:\uai\DepIn\Servicios\bin\Debug\Servicios.xml
+C:\uai\DepIn\Servicios\bin\Debug\BEL.dll
+C:\uai\DepIn\Servicios\bin\Debug\Comun.dll
+C:\uai\DepIn\Servicios\bin\Debug\DAL.dll
+C:\uai\DepIn\Servicios\bin\Debug\Interfaces.dll
+C:\uai\DepIn\Servicios\bin\Debug\BEL.pdb
+C:\uai\DepIn\Servicios\bin\Debug\BEL.xml
+C:\uai\DepIn\Servicios\bin\Debug\Comun.pdb
+C:\uai\DepIn\Servicios\bin\Debug\DAL.pdb
+C:\uai\DepIn\Servicios\bin\Debug\DAL.xml
+C:\uai\DepIn\Servicios\bin\Debug\Interfaces.pdb
+C:\uai\DepIn\Servicios\obj\Debug\Servicios.csprojAssemblyReference.cache
+C:\uai\DepIn\Servicios\obj\Debug\Servicios.csproj.CopyComplete
+C:\uai\DepIn\Servicios\obj\Debug\Servicios.dll
+C:\uai\DepIn\Servicios\obj\Debug\Servicios.pdb
+C:\uai\DepIn\Servicios\obj\Debug\Servicios.csproj.CoreCompileInputs.cache

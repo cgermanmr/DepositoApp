@@ -1,0 +1,2992 @@
+﻿Title: Error
+Message: Usuario Invalido
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 10/06/2015 03:03:12 p.m.
+===========================================================================================
+Title: Information
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 10/06/2015 03:03:41 p.m.
+===========================================================================================
+Title: Error
+Message: Usuario Invalidoasdfsdfasd
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 10/06/2015 03:16:29 p.m.
+===========================================================================================
+Title: Error
+Message: Usuario Invalido: dfadsfasdf
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 10/06/2015 03:17:13 p.m.
+===========================================================================================
+Title: Information
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 10/06/2015 03:19:57 p.m.
+===========================================================================================
+Title: Error
+Message: Usuario Inválido: dfgdg
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 10/06/2015 03:30:25 p.m.
+===========================================================================================
+Title: Information
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 10/06/2015 05:57:13 p.m.
+===========================================================================================
+Title: Error
+Message: Usuario Inválido: sdsdadsfdsf
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 10/06/2015 06:01:25 p.m.
+===========================================================================================
+Title: Information
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 11/06/2015 12:12:43 p.m.
+===========================================================================================
+Title: Error
+Message: Usuario Inválido: sdfsdf
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 11/06/2015 12:12:54 p.m.
+===========================================================================================
+Title: Information
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 11/06/2015 12:14:41 p.m.
+===========================================================================================
+Title: Error
+Message: Usuario Inválido: sfsdfds
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 11/06/2015 12:14:53 p.m.
+===========================================================================================
+Title: Information
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 11/06/2015 12:19:57 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario Inválido: german
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 19/06/2015 01:30:00 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario Inválido: german
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 19/06/2015 01:32:05 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario bloqueado: german
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 32
+Date/Time: 19/06/2015 01:33:08 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/06/2015 01:38:19 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/06/2015 01:38:35 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/06/2015 01:39:55 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario Inválido: german
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 19/06/2015 01:40:15 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/06/2015 03:49:29 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/06/2015 03:50:21 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por Admin
+StackTrace: Evento Auditado
+Date/Time: 19/06/2015 03:53:04 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/06/2015 03:56:48 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 01/07/2015 03:50:32 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario Inválido: german007
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 02/07/2015 04:01:09 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 02/07/2015 04:01:14 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Error en Agregar Usuario
+StackTrace:    at ServiciosBLL.GestorUsuario.Agregar(Usuario usuario) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\ServiciosBLL\Seguridad\GestorUsuario.vb:line 28
+   at WinDeposito.frmAdminUsuarios.btnAgregar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\Administracion\frmAdminUsuarios.vb:line 52
+Date/Time: 02/07/2015 04:01:40 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Error en Agregar Usuario
+StackTrace:    at ServiciosBLL.GestorUsuario.Agregar(Usuario usuario) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\ServiciosBLL\Seguridad\GestorUsuario.vb:line 28
+   at WinDeposito.frmAdminUsuarios.btnAgregar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\Administracion\frmAdminUsuarios.vb:line 52
+Date/Time: 02/07/2015 04:01:52 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 02/07/2015 05:22:24 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Error en Agregar Usuario
+StackTrace:    at ServiciosBLL.GestorUsuario.Agregar(Usuario usuario) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\ServiciosBLL\Seguridad\GestorUsuario.vb:line 28
+   at WinDeposito.frmAdminUsuarios.btnAgregar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\Administracion\frmAdminUsuarios.vb:line 52
+Date/Time: 02/07/2015 05:22:32 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Error en Agregar Usuario
+StackTrace:    at ServiciosBLL.GestorUsuario.Agregar(Usuario usuario) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\ServiciosBLL\Seguridad\GestorUsuario.vb:line 28
+   at WinDeposito.frmAdminUsuarios.btnAgregar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\Administracion\frmAdminUsuarios.vb:line 52
+Date/Time: 02/07/2015 05:22:40 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 02/07/2015 05:26:32 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Error en Agregar Usuario
+StackTrace:    at ServiciosBLL.GestorUsuario.Agregar(Usuario usuario) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\ServiciosBLL\Seguridad\GestorUsuario.vb:line 28
+   at WinDeposito.frmAdminUsuarios.btnAgregar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\Administracion\frmAdminUsuarios.vb:line 52
+Date/Time: 02/07/2015 05:26:35 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 21/07/2015 11:26:28 a.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario Inválido: german
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 29/04/2016 08:49:41 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario Inválido: german1234
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 30/04/2016 06:30:13 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 30/04/2016 06:30:19 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 08/05/2016 05:35:33 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: The type initializer for 'WinDeposito.SesionActualWindows' threw an exception.
+StackTrace:    at WinDeposito.SesionActualWindows.SesionActual()
+   at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\UAI\TC1\TC1 2016\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 20
+Date/Time: 10/05/2016 12:23:28 a.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: The type initializer for 'WinDeposito.SesionActualWindows' threw an exception.
+StackTrace:    at WinDeposito.SesionActualWindows.SesionActual()
+   at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\UAI\TC1\TC1 2016\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 20
+Date/Time: 10/05/2016 12:23:31 a.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario Inválido: gmedina
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\UAI\TC1\TC1 2016\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 11/05/2016 03:24:28 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 11/05/2016 03:24:38 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 12/05/2016 10:01:00 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 17/05/2016 12:45:15 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario Inválido: gmedina
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\UAI\TC1\TC1 2016\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 17/05/2016 12:46:15 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 17/05/2016 12:46:41 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 28/05/2016 08:10:24 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario Inválido: german123
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\UAI\TC1\TC1 2016\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 05/06/2016 02:52:46 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario Inválido: german1234
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\UAI\TC1\TC1 2016\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 05/06/2016 02:52:51 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/06/2016 02:52:55 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 07/06/2016 02:02:36 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 07/06/2016 04:57:21 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 01:57:23 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 02:12:20 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 02:15:05 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 06:47:18 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 06:48:34 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario Inválido: german007
+StackTrace:    at WinDeposito.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\Dropbox\UAI\TC1\TC1 2016\Proyectos Visual Studio\WinDeposito\WinDeposito\frmLogin.vb:line 29
+Date/Time: 04/07/2016 06:50:46 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 06:50:50 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 10:56:44 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 11:06:03 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 11:34:39 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 11:35:59 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 11:39:50 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 11:48:32 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 11:50:13 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 11:52:48 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 11:54:14 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 11:54:46 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/07/2016 11:55:09 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/07/2016 12:16:12 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/07/2016 12:17:30 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/07/2016 12:19:58 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/07/2016 12:25:11 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/07/2016 12:28:41 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/07/2016 12:32:02 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 02/09/2016 06:42:56 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/09/2016 12:11:11 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/09/2016 12:25:04 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: The type initializer for 'AppDepositoInteligente.SesionActualWindows' threw an exception.
+StackTrace:    at AppDepositoInteligente.SesionActualWindows.SesionActual()
+   at AppDepositoInteligente.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\German\OneDrive\UAI\TC1\TC1 2016\Visual Studio\Deposito Inteligente\WinDeposito\frmLogin.vb:line 20
+Date/Time: 04/09/2016 07:05:52 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: The type initializer for 'AppDepositoInteligente.SesionActualWindows' threw an exception.
+StackTrace:    at AppDepositoInteligente.SesionActualWindows.SesionActual()
+   at AppDepositoInteligente.frmLogin.btnAceptar_Click(Object sender, EventArgs e) in Z:\German\OneDrive\UAI\TC1\TC1 2016\Visual Studio\Deposito Inteligente\WinDeposito\frmLogin.vb:line 20
+Date/Time: 04/09/2016 07:06:05 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/09/2016 07:59:50 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/09/2016 08:30:31 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/09/2016 10:47:09 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/09/2016 11:03:37 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/09/2016 11:16:16 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/09/2016 11:22:19 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/09/2016 11:29:17 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 04/09/2016 11:35:01 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 12:05:39 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 12:11:16 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 12:32:22 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 12:33:14 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 12:38:21 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 12:40:26 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 12:42:17 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 12:42:40 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 12:44:32 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 12:48:23 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 12:50:47 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 01:15:41 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 01:21:44 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 01:22:00 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 01:29:19 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 01:37:35 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 01:38:44 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 01:45:19 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 01:58:05 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 02:08:15 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 02:09:16 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 02:13:19 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 02:14:10 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 02:16:46 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 02:17:15 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 02:21:20 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 02:25:12 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 02:27:34 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:06:05 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:07:20 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:09:56 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:13:17 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:14:43 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:18:06 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:20:20 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:21:51 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:32:29 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:36:15 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:38:21 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:39:51 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:41:28 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:43:10 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:47:35 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:49:13 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:53:10 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:55:35 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:56:33 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 03:58:23 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 04:40:52 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 04:43:58 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 04:49:47 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 04:58:02 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 05:04:34 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 05:10:12 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 05/09/2016 05:22:21 p.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario Inválido: german
+StackTrace:    at AppDepositoInteligente.frmLogin.Login() in Z:\German\OneDrive\UAI\TC1\TC1 2016\Visual Studio\Deposito Inteligente\WinDeposito\frmLogin.vb:line 33
+Date/Time: 06/09/2016 12:40:02 a.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario Inválido: german
+StackTrace:    at AppDepositoInteligente.frmLogin.Login() in Z:\German\OneDrive\UAI\TC1\TC1 2016\Visual Studio\Deposito Inteligente\WinDeposito\frmLogin.vb:line 33
+Date/Time: 06/09/2016 12:41:43 a.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Usuario Inválido: german
+StackTrace:    at AppDepositoInteligente.frmLogin.Login() in Z:\German\OneDrive\UAI\TC1\TC1 2016\Visual Studio\Deposito Inteligente\WinDeposito\frmLogin.vb:line 33
+Date/Time: 06/09/2016 12:41:49 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 06/09/2016 12:53:31 a.m.
+===========================================================================================
+Title: Error
+Id: 0
+Message: Error en Agregar Usuario
+StackTrace:    at Infraestructura.Servicios.GestorUsuario.Agregar(Usuario usuario) in Z:\German\OneDrive\UAI\TC1\TC1 2016\Visual Studio\Deposito Inteligente\ServiciosBLL\Seguridad\GestorUsuario.vb:line 33
+   at AppDepositoInteligente.frmAdminUsuarios.btnAgregar_Click(Object sender, EventArgs e) in Z:\German\OneDrive\UAI\TC1\TC1 2016\Visual Studio\Deposito Inteligente\WinDeposito\Administracion\frmAdminUsuarios.vb:line 52
+Date/Time: 06/09/2016 12:55:01 a.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 07/09/2016 11:58:51 p.m.
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/12/2016 8:44:36 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 8:45:54 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 8:47:42 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 9:18:09 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 9:24:48 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 9:38:06 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 9:45:35 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 9:50:41 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 9:53:13 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 9:54:59 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 9:56:08 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 9:57:45 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 10:04:23 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 10:06:43 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 10:08:34 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 10:12:12 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 10:14:37 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 10:19:07 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 10:33:56 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 11:54:20 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 11:55:43 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 11:58:23 AM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 12:07:19 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 12:18:30 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 12:23:08 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 12:26:20 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 12:32:18 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 12:34:11 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 12:35:50 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 12:37:28 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 12:49:53 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 12:51:36 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 12:56:33 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 1:11:48 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 1:17:32 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/15/2016 1:29:16 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/16/2016 5:39:28 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/16/2016 5:45:45 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/16/2016 6:00:07 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/16/2016 6:01:01 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/16/2016 6:01:34 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/16/2016 6:02:17 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/16/2016 6:03:45 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/16/2016 6:06:29 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/16/2016 6:10:11 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/16/2016 6:22:29 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/16/2016 6:24:32 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/16/2016 6:28:11 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/16/2016 6:35:10 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/19/2016 4:57:23 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/19/2016 5:11:16 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/19/2016 5:30:40 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/19/2016 5:32:43 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/19/2016 5:36:20 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/19/2016 6:01:33 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 9/19/2016 6:09:11 PM
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 22:34:41
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 22:38:56
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 22:41:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 22:42:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 22:46:23
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 22:47:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 22:48:52
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 22:49:51
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 23:00:20
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 23:02:03
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 23:26:04
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 23:41:58
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 23:53:23
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 23:56:14
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 19/09/2016 23:58:56
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 20/09/2016 0:03:37
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 20/09/2016 0:56:47
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede convertir un objeto de tipo 'VB$AnonymousDelegate_0`2[Infraestructura.Servicios.PermisoSimple,System.Boolean]' al tipo 'Infraestructura.Servicios.PermisoBase'.
+StackTrace:    en Infraestructura.Servicios.PermisoCompuesto.AgregarHijo(Object permiso) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\Seguridad\PermisoCompuesto.vb:línea 25
+   en AppDepositoInteligente.frmLogin.Login() en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\frmLogin.vb:línea 23
+Date/Time: 20/09/2016 17:59:20
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por admin
+StackTrace: Evento Auditado
+Date/Time: 20/09/2016 18:12:01
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por admin
+StackTrace: Evento Auditado
+Date/Time: 20/09/2016 18:13:34
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por admin
+StackTrace: Evento Auditado
+Date/Time: 20/09/2016 18:16:32
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por admin
+StackTrace: Evento Auditado
+Date/Time: 20/09/2016 18:24:05
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por admin
+StackTrace: Evento Auditado
+Date/Time: 20/09/2016 18:26:40
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 20/09/2016 18:28:39
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 20/09/2016 21:41:06
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 20/09/2016 21:49:48
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 20/09/2016 22:29:21
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 25/09/2016 8:23:05
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 25/09/2016 8:24:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 25/09/2016 8:45:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 25/09/2016 8:49:33
+===========================================================================================
+Title: Information
+Id: 0
+Message: Sesión inicida por german
+StackTrace: Evento Auditado
+Date/Time: 25/09/2016 8:53:13
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 16:45:55
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 16:45:58
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 17:49:32
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 17:49:34
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 17:54:08
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 17:54:09
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 17:55:15
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 17:55:17
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 19:53:54
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 19:54:00
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 19:55:54
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 19:55:56
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 19:58:02
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 19:58:04
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 19:59:18
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 19:59:21
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 20:22:26
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 20:23:15
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 20:23:53
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 20:23:55
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 20:25:31
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 20:25:34
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 20:27:07
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 20:27:09
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 20:28:14
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/11/2016 20:28:23
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/11/2016 1:30:27
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/11/2016 1:30:29
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/11/2016 1:32:15
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/11/2016 1:33:18
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/11/2016 1:29:32
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/11/2016 1:30:35
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/11/2016 2:09:06
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 11/11/2016 0:55:06
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 11/11/2016 0:57:16
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 11/11/2016 0:58:17
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 11/11/2016 1:01:27
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 11/11/2016 1:06:57
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 11/11/2016 1:11:02
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 11/11/2016 1:13:05
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 0:58:32
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 1:07:55
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 1:11:37
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 1:17:33
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 1:18:18
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 1:57:47
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:05:51
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:13:34
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:14:56
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:27:45
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:32:15
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:34:31
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:35:24
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:36:24
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:38:00
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:39:29
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:41:18
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:42:18
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:43:19
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:44:09
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:45:42
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:48:48
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:55:14
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 14:58:28
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 15:00:35
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 15:05:38
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 15:13:10
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 15:19:26
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 17:39:41
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 17:40:59
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 17:43:29
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 17:45:41
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 17:47:30
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 17:48:45
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 17:51:08
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 17:53:05
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 21:05:22
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 21:08:05
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 21:09:28
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 21:31:36
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 21:35:09
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 21:36:04
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 21:37:02
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/11/2016 21:39:57
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 15/11/2016 17:54:52
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 15/11/2016 17:57:05
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 15/11/2016 17:59:29
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 15/11/2016 18:08:08
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 15/11/2016 18:09:57
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 15/11/2016 18:10:58
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 15/11/2016 18:12:13
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 15/11/2016 18:13:38
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 15/11/2016 18:15:17
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 15/11/2016 18:16:48
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 15/11/2016 18:19:07
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 16/11/2016 16:57:27
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 16/11/2016 17:00:17
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 16/11/2016 17:34:49
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 16/11/2016 17:57:56
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 07/12/2016 0:24:23
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 07/12/2016 0:29:53
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 07/12/2016 0:57:56
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 1:28:57
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 1:31:37
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 1:35:08
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 1:37:01
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 1:41:03
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 14:59:58
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 15:01:26
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 15:03:58
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 15:05:38
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 15:08:36
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 15:12:28
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 15:57:26
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 16:10:16
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 16:12:59
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 16:26:23
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 08/12/2016 16:58:18
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 12:45:03
+===========================================================================================
+Title: Error
+Id: 0
+Message: Error en Agregar Usuario
+StackTrace:    en Servicios.Usuario.Agregar(UsuarioBEL usuario) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\Infraestructura\Seguridad\Usuario.vb:línea 26
+   en AppDepositoInteligente.frmNuevoUsuario.OKButton_Click(Object sender, EventArgs e) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmNuevoUsuario.vb:línea 20
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   en System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   en System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   en System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   en System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   en System.Windows.Forms.Application.RunDialog(Form form)
+   en System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   en System.Windows.Forms.Form.ShowDialog()
+   en AppDepositoInteligente.frmAdminUsuarios.btnAgregar_Click(Object sender, EventArgs e) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminUsuarios.vb:línea 41
+Date/Time: 09/12/2016 18:21:39
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 18:21:57
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 18:23:59
+===========================================================================================
+Title: Error
+Id: 0
+Message: Provoca que dos enlaces en la colección se enlacen a la misma propiedad.
+Nombre del parámetro: binding
+StackTrace:    en System.Windows.Forms.ControlBindingsCollection.CheckDuplicates(Binding binding)
+   en System.Windows.Forms.Binding.CheckBinding()
+   en System.Windows.Forms.Binding.SetBindableComponent(IBindableComponent value)
+   en System.Windows.Forms.ControlBindingsCollection.AddCore(Binding dataBinding)
+   en System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   en System.Windows.Forms.ControlBindingsCollection.Add(String propertyName, Object dataSource, String dataMember, Boolean formattingEnabled, DataSourceUpdateMode updateMode, Object nullValue, String formatString, IFormatProvider formatInfo)
+   en System.Windows.Forms.ControlBindingsCollection.Add(String propertyName, Object dataSource, String dataMember)
+   en AppDepositoInteligente.frmAdminUsuarios.EnlazarControles() en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminUsuarios.vb:línea 138
+   en AppDepositoInteligente.frmAdminUsuarios.btnAgregar_Click(Object sender, EventArgs e) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminUsuarios.vb:línea 42
+Date/Time: 09/12/2016 18:24:11
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 18:25:18
+===========================================================================================
+Title: Error
+Id: 0
+Message: Error en Eliminar Usuario
+StackTrace:    en Servicios.Usuario.Eliminar(UsuarioBEL usuario) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\Infraestructura\Seguridad\Usuario.vb:línea 47
+   en AppDepositoInteligente.frmAdminUsuarios.btnEliminar_Click(Object sender, EventArgs e) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminUsuarios.vb:línea 99
+Date/Time: 09/12/2016 18:25:32
+===========================================================================================
+Title: Error
+Id: 0
+Message: Provoca que dos enlaces en la colección se enlacen a la misma propiedad.
+Nombre del parámetro: binding
+StackTrace:    en System.Windows.Forms.ControlBindingsCollection.CheckDuplicates(Binding binding)
+   en System.Windows.Forms.Binding.CheckBinding()
+   en System.Windows.Forms.Binding.SetBindableComponent(IBindableComponent value)
+   en System.Windows.Forms.ControlBindingsCollection.AddCore(Binding dataBinding)
+   en System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   en System.Windows.Forms.ControlBindingsCollection.Add(String propertyName, Object dataSource, String dataMember, Boolean formattingEnabled, DataSourceUpdateMode updateMode, Object nullValue, String formatString, IFormatProvider formatInfo)
+   en System.Windows.Forms.ControlBindingsCollection.Add(String propertyName, Object dataSource, String dataMember)
+   en AppDepositoInteligente.frmAdminUsuarios.EnlazarControles()
+   en AppDepositoInteligente.frmAdminUsuarios.btnAgregar_Click(Object sender, EventArgs e)
+Date/Time: 09/12/2016 18:31:26
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 18:35:30
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 18:37:57
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 18:40:23
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 18:42:53
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 18:45:10
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 19:51:32
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 20:00:23
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 20:03:01
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 20:05:56
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 20:05:58
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 20:10:40
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 20:10:43
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 23:23:29
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 23:23:32
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 23:28:38
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 23:32:45
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 23:38:46
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 23:50:07
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 09/12/2016 23:58:13
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:04:28
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:08:23
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:08:25
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:11:33
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:11:35
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:30:10
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:30:12
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:32:52
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:32:55
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:41:20
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:41:22
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:44:24
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:44:26
+===========================================================================================
+Title: Error
+Id: 0
+Message: Error en Eliminar Usuario
+StackTrace:    en Servicios.Usuario.Eliminar(UsuarioBEL usuario) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\Infraestructura\Seguridad\Usuario.vb:línea 44
+   en AppDepositoInteligente.frmAdminUsuarios.btnEliminar_Click(Object sender, EventArgs e) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminUsuarios.vb:línea 77
+Date/Time: 10/12/2016 0:46:55
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:50:07
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:50:09
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 2
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:57:56
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:57:58
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:59:24
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 0:59:25
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 1:09:08
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 1:09:09
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 11:34:12
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 11:34:14
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 11:37:55
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 11:37:57
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 11:39:02
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 11:39:03
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 11:40:09
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 11:40:11
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 11:42:06
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 11:42:07
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 18:49:16
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 18:49:18
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 18:51:25
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 18:51:27
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:06:41
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:06:43
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:07:10
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:07:12
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:08:58
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:09:00
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:09:33
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:09:35
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:10:01
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:10:02
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:18:55
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:18:57
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:21:43
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:21:44
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:42:05
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:42:07
+===========================================================================================
+Title: Error
+Id: 0
+Message: Se produjo una excepción de tipo 'Servicios.SeguridadException'.
+StackTrace:    en Servicios.Permiso.Agregar(PermisoBase permiso) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\Infraestructura\Seguridad\Permiso.vb:línea 24
+   en AppDepositoInteligente.frmNuevoPermiso.AceptarButton_Click(Object sender, EventArgs e) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmNuevoPermiso.vb:línea 15
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   en System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   en System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   en System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   en System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   en System.Windows.Forms.Application.RunDialog(Form form)
+   en System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   en System.Windows.Forms.Form.ShowDialog()
+   en AppDepositoInteligente.frmAdminPermisos.btnAgregar_Click(Object sender, EventArgs e) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminPermisos.vb:línea 50
+Date/Time: 10/12/2016 19:42:33
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:56:07
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 19:57:12
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:04:51
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:05:47
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:11:08
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:11:11
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:14:15
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:14:17
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:15:18
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:15:55
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:26:32
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:26:34
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:29:44
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:29:45
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: USUARIOIndice del registro corrupto: 3
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:30:10
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:30:12
+===========================================================================================
+Title: Error
+Id: 0
+Message: Se produjo una excepción de tipo 'Servicios.SeguridadException'.
+StackTrace:    en Servicios.Permiso.Eliminar(PermisoBase permiso) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\Infraestructura\Seguridad\Permiso.vb:línea 34
+   en AppDepositoInteligente.frmAdminPermisos.btnEliminar_Click(Object sender, EventArgs e) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminPermisos.vb:línea 72
+Date/Time: 10/12/2016 20:31:59
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:34:24
+===========================================================================================
+Title: Error
+Id: 0
+Message: Se produjo una excepción de tipo 'Servicios.SeguridadException'.
+StackTrace:    en Servicios.Permiso.Eliminar(PermisoBase permiso) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\Infraestructura\Seguridad\Permiso.vb:línea 34
+   en AppDepositoInteligente.frmAdminPermisos.btnEliminar_Click(Object sender, EventArgs e) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminPermisos.vb:línea 72
+Date/Time: 10/12/2016 20:35:12
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:37:38
+===========================================================================================
+Title: Error
+Id: 0
+Message: Se produjo una excepción de tipo 'Servicios.SeguridadException'.
+StackTrace:    en Servicios.Permiso.Eliminar(PermisoBase permiso) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\Infraestructura\Seguridad\Permiso.vb:línea 34
+   en AppDepositoInteligente.frmAdminPermisos.btnEliminar_Click(Object sender, EventArgs e) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminPermisos.vb:línea 72
+Date/Time: 10/12/2016 20:39:23
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:40:40
+===========================================================================================
+Title: Error
+Id: 0
+Message: Se produjo una excepción de tipo 'Servicios.SeguridadException'.
+StackTrace:    en Servicios.Permiso.Eliminar(PermisoBase permiso) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\Infraestructura\Seguridad\Permiso.vb:línea 34
+   en AppDepositoInteligente.frmAdminPermisos.btnEliminar_Click(Object sender, EventArgs e) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminPermisos.vb:línea 72
+Date/Time: 10/12/2016 20:41:10
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:51:08
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 20:54:56
+===========================================================================================
+Title: Error
+Id: 0
+Message: Se produjo una excepción de tipo 'Servicios.SeguridadException'.
+StackTrace:    en Servicios.Permiso.Eliminar(PermisoBase permiso) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\Infraestructura\Seguridad\Permiso.vb:línea 34
+   en AppDepositoInteligente.frmAdminPermisos.btnEliminar_Click(Object sender, EventArgs e) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminPermisos.vb:línea 72
+Date/Time: 10/12/2016 20:57:03
+===========================================================================================
+Title: Error
+Id: 0
+Message: Se produjo una excepción de tipo 'Servicios.SeguridadException'.
+StackTrace:    en Servicios.Permiso.Eliminar(PermisoBase permiso) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\Infraestructura\Seguridad\Permiso.vb:línea 34
+   en AppDepositoInteligente.frmAdminPermisos.btnEliminar_Click(Object sender, EventArgs e) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminPermisos.vb:línea 72
+Date/Time: 10/12/2016 20:58:18
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 10/12/2016 21:06:09
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 11/12/2016 20:57:56
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 11/12/2016 20:59:15
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 11/12/2016 21:01:06
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 11/12/2016 21:04:41
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 11/12/2016 21:05:08
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 11/12/2016 21:08:56
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 12/12/2016 1:18:48
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 12/12/2016 16:32:51
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/12/2016 16:26:36
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/12/2016 16:28:41
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 14/12/2016 16:46:54
+===========================================================================================
+Title: Error
+Id: 0
+Message: Falla de integridad en tabla: ACTIVOIndice del registro corrupto: 0
+StackTrace:    en Servicios.VerificadorIntegridad.ValidarEntidad(DataTable entidad) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\ServiciosBLL\VerificadorIntegridad.vb:línea 11
+Date/Time: 15/12/2016 0:10:27
+===========================================================================================
+Title: Error
+Id: 0
+Message: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en AppDepositoInteligente.frmAdminUsuarios.Traducir() en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminUsuarios.vb:línea 103
+   en AppDepositoInteligente.frmAdminUsuarios.frmAdminClientes_Load(Object sender, EventArgs e) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminUsuarios.vb:línea 18
+Date/Time: 23/07/2018 2:11:56
+===========================================================================================
+Title: Error
+Id: 0
+Message: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en AppDepositoInteligente.frmAdminUsuarios.Traducir() en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminUsuarios.vb:línea 103
+   en AppDepositoInteligente.frmAdminUsuarios.frmAdminClientes_Load(Object sender, EventArgs e) en Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\WinDeposito\Administracion\frmAdminUsuarios.vb:línea 18
+Date/Time: 28/07/2018 15:16:13
+===========================================================================================
+Title: Error
+Id: 0
+Message: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en AppDepositoInteligente.frmAdminUsuarios.Traducir() en C:\Users\german\Desktop\DepositoInteligente\WinDeposito\Administracion\Permisos\frmAdminUsuarios.vb:línea 103
+   en AppDepositoInteligente.frmAdminUsuarios.frmAdminClientes_Load(Object sender, EventArgs e) en C:\Users\german\Desktop\DepositoInteligente\WinDeposito\Administracion\Permisos\frmAdminUsuarios.vb:línea 18
+Date/Time: 22/04/2019 0:38:46
+===========================================================================================
+Title: Error
+Id: 0
+Message: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en AppDepositoInteligente.frmAdminUsuarios.Traducir() en C:\Users\german\Desktop\DepositoInteligente\WinDeposito\Administracion\Permisos\frmAdminUsuarios.vb:línea 104
+   en AppDepositoInteligente.frmAdminUsuarios.frmAdminClientes_Load(Object sender, EventArgs e) en C:\Users\german\Desktop\DepositoInteligente\WinDeposito\Administracion\Permisos\frmAdminUsuarios.vb:línea 19
+Date/Time: 13/05/2019 1:11:10
+===========================================================================================
+Title: Error
+Id: 0
+Message: Referencia a objeto no establecida como instancia de un objeto.
+StackTrace:    en AppDepositoInteligente.frmAdminUsuarios.Traducir() en D:\DepositoInteligente\WinDeposito\Administracion\Permisos\frmAdminUsuarios.vb:línea 104
+   en AppDepositoInteligente.frmAdminUsuarios.frmAdminClientes_Load(Object sender, EventArgs e) en D:\DepositoInteligente\WinDeposito\Administracion\Permisos\frmAdminUsuarios.vb:línea 19
+Date/Time: 14/05/2019 19:14:41
+===========================================================================================
+Title: Error
+Id: 0
+Message: Exception Occured Agregar
+StackTrace:    en DAL.ObjectDAL.Agregar(Object valor) en C:\Users\german\Desktop\DepositoInteligente\DAL\ObjectDAL.cs:línea 33
+   en Servicios.Bitacora.RegistrarEnBitacora(String pDescripcion) en C:\Users\german\Desktop\DepositoInteligente\Servicios\Bitacora.cs:línea 23
+   en Servicios.Sesion.Iniciar(UsuarioBEL usuario) en C:\Users\german\Desktop\DepositoInteligente\Servicios\Infraestructura\Seguridad\Sesion.cs:línea 73
+   en AppDepositoInteligente.frmLogin.Login() en C:\Users\german\Desktop\DepositoInteligente\WinDeposito\frmLogin.vb:línea 27
+Date/Time: 21/05/2019 18:38:42
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede convertir un objeto de tipo 'BEL.PermisoCompuesto' al tipo 'System.Collections.Generic.List`1[BEL.PermisoBase]'.
+StackTrace:    en AppDepositoInteligente.frmNuevoUsuario.OKButton_Click(Object sender, EventArgs e) en C:\Users\german\Desktop\DepositoInteligente\WinDeposito\Administracion\Permisos\frmNuevoUsuario.vb:línea 18
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   en System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   en System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   en System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   en System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   en System.Windows.Forms.Application.RunDialog(Form form)
+   en System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   en System.Windows.Forms.Form.ShowDialog()
+   en AppDepositoInteligente.frmAdminUsuarios.btnAgregar_Click(Object sender, EventArgs e) en C:\Users\german\Desktop\DepositoInteligente\WinDeposito\Administracion\Permisos\frmAdminUsuarios.vb:línea 32
+Date/Time: 21/05/2019 20:27:13
+===========================================================================================

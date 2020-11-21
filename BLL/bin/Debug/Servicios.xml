@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Servicios</name>
+    </assembly>
+    <members>
+        <member name="M:Servicios.Sesion.EstablecerUsuarioActual(BEL.UsuarioBEL)">
+            <summary>
+            Se establece el usuario de la sesión
+            </summary>
+            <param name="usuario"></param>
+        </member>
+        <member name="P:Servicios.Sesion.ObtenerUsuarioActual">
+            <summary>
+            Devuelve el usuario de la sesión
+            </summary>
+            <returns>Usuario</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A831CA8-91E7-41F2-AFF4-638DCCE62DDA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppDeposito</RootNamespace>
+    <AssemblyName>AppDeposito</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AppDeposito.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivoDatosCompraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivoDatosCompraForm.Designer.cs">
+      <DependentUpon>ActivoDatosCompraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarClienteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarClienteForm.Designer.cs">
+      <DependentUpon>BuscarClienteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarActivoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarActivoForm.Designer.cs">
+      <DependentUpon>BuscarActivoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteAdminForm.Designer.cs">
+      <DependentUpon>ClienteAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteEditForm.Designer.cs">
+      <DependentUpon>ClienteEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstadoAdminForm.Designer.cs">
+      <DependentUpon>EstadoAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovimientosActivoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovimientosActivoForm.Designer.cs">
+      <DependentUpon>MovimientosActivoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizacionEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizacionEditForm.Designer.cs">
+      <DependentUpon>OrganizacionEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizacionAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizacionAdminForm.Designer.cs">
+      <DependentUpon>OrganizacionAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarcaAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarcaAdminForm.Designer.cs">
+      <DependentUpon>MarcaAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarcaEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarcaEditForm.Designer.cs">
+      <DependentUpon>MarcaEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresupuestoAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresupuestoAdminForm.Designer.cs">
+      <DependentUpon>PresupuestoAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoActivoAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoActivoAdminForm.Designer.cs">
+      <DependentUpon>TipoActivoAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoActivoEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoActivoEditForm.Designer.cs">
+      <DependentUpon>TipoActivoEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbicacionEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbicacionEditForm.Designer.cs">
+      <DependentUpon>UbicacionEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbicacionAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbicacionAdminForm.Designer.cs">
+      <DependentUpon>UbicacionAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SectorEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorEditForm.Designer.cs">
+      <DependentUpon>SectorEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SectorAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdminForm.Designer.cs">
+      <DependentUpon>SectorAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Backup\BackupRestoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Backup\BackupRestoreForm.Designer.cs">
+      <DependentUpon>BackupRestoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Idioma\EdicionIdiomaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Idioma\EdicionIdiomaForm.Designer.cs">
+      <DependentUpon>EdicionIdiomaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Idioma\MultiIdiomaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Idioma\MultiIdiomaForm.Designer.cs">
+      <DependentUpon>MultiIdiomaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Integridad\IntegridadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Integridad\IntegridadForm.Designer.cs">
+      <DependentUpon>IntegridadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Logs\UsuarioControlCambiosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Logs\UsuarioControlCambiosForm.Designer.cs">
+      <DependentUpon>UsuarioControlCambiosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Logs\BitacoraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Logs\BitacoraForm.Designer.cs">
+      <DependentUpon>BitacoraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Permisos\AdminPermisosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Permisos\AdminPermisosForm.Designer.cs">
+      <DependentUpon>AdminPermisosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Permisos\AdminUsuariosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Permisos\AdminUsuariosForm.Designer.cs">
+      <DependentUpon>AdminUsuariosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Permisos\CambioClaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Permisos\CambioClaveForm.Designer.cs">
+      <DependentUpon>CambioClaveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Permisos\EdicionPermisoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Permisos\EdicionPermisoForm.Designer.cs">
+      <DependentUpon>EdicionPermisoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Permisos\EdicionUsuarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Permisos\EdicionUsuarioForm.Designer.cs">
+      <DependentUpon>EdicionUsuarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Permisos\EdicionPermisosUsuarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Permisos\EdicionPermisosUsuarioForm.Designer.cs">
+      <DependentUpon>EdicionPermisosUsuarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivoAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivoAdminForm.Designer.cs">
+      <DependentUpon>ActivoAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivoEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivoEditForm.Designer.cs">
+      <DependentUpon>ActivoEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepositoAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepositoAdminForm.Designer.cs">
+      <DependentUpon>DepositoAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepositoEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepositoEditForm.Designer.cs">
+      <DependentUpon>DepositoEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonacionAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonacionAdminForm.Designer.cs">
+      <DependentUpon>DonacionAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonacionEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonacionEditForm.Designer.cs">
+      <DependentUpon>DonacionEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig.cs" />
+    <Compile Include="ReparacionEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReparacionEditForm.Designer.cs">
+      <DependentUpon>ReparacionEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresupuestoEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresupuestoEditForm.Designer.cs">
+      <DependentUpon>PresupuestoEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReparacionAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReparacionAdminForm.Designer.cs">
+      <DependentUpon>ReparacionAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mensajes.cs" />
+    <Compile Include="PrincipalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalForm.Designer.cs">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ActivoDatosCompraForm.resx">
+      <DependentUpon>ActivoDatosCompraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarClienteForm.resx">
+      <DependentUpon>BuscarClienteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarActivoForm.resx">
+      <DependentUpon>BuscarActivoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteAdminForm.resx">
+      <DependentUpon>ClienteAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteEditForm.resx">
+      <DependentUpon>ClienteEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepositoEditForm.resx">
+      <DependentUpon>DepositoEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonacionEditForm.resx">
+      <DependentUpon>DonacionEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstadoAdminForm.resx">
+      <DependentUpon>EstadoAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovimientosActivoForm.resx">
+      <DependentUpon>MovimientosActivoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizacionEditForm.resx">
+      <DependentUpon>OrganizacionEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizacionAdminForm.resx">
+      <DependentUpon>OrganizacionAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Backup\BackupRestoreForm.resx">
+      <DependentUpon>BackupRestoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Idioma\EdicionIdiomaForm.resx">
+      <DependentUpon>EdicionIdiomaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Idioma\MultiIdiomaForm.resx">
+      <DependentUpon>MultiIdiomaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Integridad\IntegridadForm.resx">
+      <DependentUpon>IntegridadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Logs\UsuarioControlCambiosForm.resx">
+      <DependentUpon>UsuarioControlCambiosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Logs\BitacoraForm.resx">
+      <DependentUpon>BitacoraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Permisos\AdminPermisosForm.resx">
+      <DependentUpon>AdminPermisosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Permisos\AdminUsuariosForm.resx">
+      <DependentUpon>AdminUsuariosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Permisos\CambioClaveForm.resx">
+      <DependentUpon>CambioClaveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Permisos\EdicionPermisoForm.resx">
+      <DependentUpon>EdicionPermisoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Permisos\EdicionPermisosUsuarioForm.resx">
+      <DependentUpon>EdicionPermisosUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Permisos\EdicionUsuarioForm.resx">
+      <DependentUpon>EdicionUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivoAdminForm.resx">
+      <DependentUpon>ActivoAdminForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivoEditForm.resx">
+      <DependentUpon>ActivoEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarcaAdminForm.resx">
+      <DependentUpon>MarcaAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarcaEditForm.resx">
+      <DependentUpon>MarcaEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresupuestoAdminForm.resx">
+      <DependentUpon>PresupuestoAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoActivoAdminForm.resx">
+      <DependentUpon>TipoActivoAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoActivoEditForm.resx">
+      <DependentUpon>TipoActivoEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbicacionEditForm.resx">
+      <DependentUpon>UbicacionEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbicacionAdminForm.resx">
+      <DependentUpon>UbicacionAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorAdminForm.resx">
+      <DependentUpon>SectorAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorEditForm.resx">
+      <DependentUpon>SectorEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepositoAdminForm.resx">
+      <DependentUpon>DepositoAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonacionAdminForm.resx">
+      <DependentUpon>DonacionAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresupuestoEditForm.resx">
+      <DependentUpon>PresupuestoEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReparacionEditForm.resx">
+      <DependentUpon>ReparacionEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReparacionAdminForm.resx">
+      <DependentUpon>ReparacionAdminForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalForm.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\BEL.ActivoBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.BitacoraBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.DepositoBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.DonacionBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.EmpresaBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.EntidadBase.datasource" />
+    <None Include="Properties\DataSources\BEL.EstadoBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.IdiomaBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.LeyendaBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.MarcaBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.MonedaBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.PermisoBase.datasource" />
+    <None Include="Properties\DataSources\BEL.PermisoCompuesto.datasource" />
+    <None Include="Properties\DataSources\BEL.PermisoSimple.datasource" />
+    <None Include="Properties\DataSources\BEL.PresupuestoBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.ReparacionBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.SectorBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.TipoActivoBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.UbicacionBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.UsuarioBEL.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BEL\BEL.csproj">
+      <Project>{b3a60dca-8662-0b65-33a8-23bdd1f2d73d}</Project>
+      <Name>BEL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{5132809e-c015-037c-2e7b-24881e6bb7cb}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{55c97a8e-1e33-4ba6-bf3c-dd9aaf0e11ac}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servicios\Servicios.csproj">
+      <Project>{8690aa23-a582-0217-1151-5c942821f4d6}</Project>
+      <Name>Servicios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

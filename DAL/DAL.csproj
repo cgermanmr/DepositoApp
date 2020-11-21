@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF2C616E-638D-02AB-02F0-C445F994FB01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.vb</DefaultItemExcludes>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DAL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DAL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft SQL Server\110\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft SQL Server\110\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft SQL Server\110\SDK\Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft SQL Server\110\SDK\Assemblies\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccesoDatos\Datos.cs" />
+    <Compile Include="ActivoDAL.cs" />
+    <Compile Include="CacheDatos.cs" />
+    <Compile Include="DepositoDAL.cs" />
+    <Compile Include="DonacionDAL.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="Infraestructura\BackupRestoreDAL.cs" />
+    <Compile Include="Infraestructura\BitacoraDAL.cs" />
+    <Compile Include="Infraestructura\IntegridadDAL.cs" />
+    <Compile Include="Infraestructura\IdiomaDAL.cs" />
+    <Compile Include="MonedaDAL.cs" />
+    <Compile Include="EmpresaDAL.cs" />
+    <Compile Include="PropiedadActivo\EstadoDAL.cs" />
+    <Compile Include="PropiedadActivo\MarcaDAL.cs" />
+    <Compile Include="Infraestructura\PermisoDAL.cs" />
+    <Compile Include="PropiedadActivo\SectorDAL.cs" />
+    <Compile Include="PropiedadActivo\TipoActivoDAL.cs" />
+    <Compile Include="PropiedadActivo\UbicacionDAL.cs" />
+    <Compile Include="Reparaciones\PresupuestoDAL.cs" />
+    <Compile Include="Reparaciones\ReparacionDAL.cs" />
+    <Compile Include="Infraestructura\UsuarioDAL.cs" />
+    <Compile Include="ClienteDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BEL\BEL.csproj">
+      <Project>{B3A60DCA-8662-0B65-33A8-23BDD1F2D73D}</Project>
+      <Name>BEL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comun\Comun.csproj">
+      <Project>{07e9b656-91aa-4343-a1c5-6f403717f8a0}</Project>
+      <Name>Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{55c97a8e-1e33-4ba6-bf3c-dd9aaf0e11ac}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\BEL.ActivoBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.BitacoraBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.DepositoBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.EntidadBase.datasource" />
+    <None Include="Properties\DataSources\BEL.EstadoBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.IdiomaBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.LeyendaBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.MarcaBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.PermisoBase.datasource" />
+    <None Include="Properties\DataSources\BEL.PermisoCompuesto.datasource" />
+    <None Include="Properties\DataSources\BEL.PermisoSimple.datasource" />
+    <None Include="Properties\DataSources\BEL.PresupuestoBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.ReparacionBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.SectorBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.TipoActivoBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.UbicacionBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.UsuarioBEL.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

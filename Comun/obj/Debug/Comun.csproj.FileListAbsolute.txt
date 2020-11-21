@@ -1,0 +1,17 @@
+C:\Users\german\Desktop\DepositoInteligente\Comun\bin\Debug\Comun.dll
+C:\Users\german\Desktop\DepositoInteligente\Comun\bin\Debug\Comun.pdb
+C:\Users\german\Desktop\DepositoInteligente\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+C:\Users\german\Desktop\DepositoInteligente\Comun\obj\Debug\Comun.dll
+C:\Users\german\Desktop\DepositoInteligente\Comun\obj\Debug\Comun.pdb
+\\vmware-host\Shared Folders\Escritorio\DepIn\Comun\bin\Debug\Comun.dll
+\\vmware-host\Shared Folders\Escritorio\DepIn\Comun\bin\Debug\Comun.pdb
+\\vmware-host\Shared Folders\Escritorio\DepIn\Comun\obj\Debug\Comun.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Escritorio\DepIn\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Escritorio\DepIn\Comun\obj\Debug\Comun.dll
+\\vmware-host\Shared Folders\Escritorio\DepIn\Comun\obj\Debug\Comun.pdb
+C:\uai\DepIn\Comun\bin\Debug\Comun.dll
+C:\uai\DepIn\Comun\bin\Debug\Comun.pdb
+C:\uai\DepIn\Comun\obj\Debug\Comun.csprojAssemblyReference.cache
+C:\uai\DepIn\Comun\obj\Debug\Comun.dll
+C:\uai\DepIn\Comun\obj\Debug\Comun.pdb
+C:\uai\DepIn\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+    </configSections>
+    <startup>
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+    </startup>
+<connectionStrings>
+    <add name="DepositoDB"
+         connectionString="Data Source=.;Initial Catalog=Deposito;Integrated Security=True"
+         providerName="SqlClient" /> 
+    <add name="DepositoMantenimientoDB"
+         connectionString="Data Source=.;Initial Catalog=DepositoMantenimiento;Integrated Security=True"
+         providerName="SqlClient" /> 
+  </connectionStrings>
+  <appSettings>
+    <add key="UltimoIdioma" value="Italiano" />
+  </appSettings>
+</configuration>

@@ -1,0 +1,6 @@
+Usuarios:
+=========
+
+usuario: german, clave: 1234
+usuario: anonimo1, clave: 1234
+usuario: anonimo2, clave: 1234

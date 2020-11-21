@@ -1,0 +1,36 @@
+Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\BEL\bin\Debug\BEL.dll
+Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\BEL\bin\Debug\BEL.pdb
+Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\BEL\bin\Debug\BEL.xml
+Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\BEL\obj\Debug\BEL.Resources.resources
+Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\BEL\obj\Debug\BEL.vbproj.GenerateResource.Cache
+Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\BEL\obj\Debug\BEL.dll
+Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\BEL\obj\Debug\BEL.xml
+Z:\german\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\BEL\obj\Debug\BEL.pdb
+Z:\Archivos Host\Downloads\Deposito Inteligente\BEL\bin\Debug\BEL.dll
+Z:\Archivos Host\Downloads\Deposito Inteligente\BEL\bin\Debug\BEL.pdb
+Z:\Archivos Host\Downloads\Deposito Inteligente\BEL\bin\Debug\BEL.xml
+Z:\Archivos Host\Downloads\Deposito Inteligente\BEL\obj\Debug\BEL.Resources.resources
+Z:\Archivos Host\Downloads\Deposito Inteligente\BEL\obj\Debug\BEL.vbproj.GenerateResource.Cache
+Z:\Archivos Host\Downloads\Deposito Inteligente\BEL\obj\Debug\BEL.dll
+Z:\Archivos Host\Downloads\Deposito Inteligente\BEL\obj\Debug\BEL.xml
+Z:\Archivos Host\Downloads\Deposito Inteligente\BEL\obj\Debug\BEL.pdb
+Z:\German\Google Drive\UAI\TC1\Proyecto TC1\Software\Deposito Inteligente\BEL\obj\Debug\BEL.vbprojResolveAssemblyReference.cache
+Z:\Archivos Host\DI\Deposito Inteligente\BEL\bin\Debug\BEL.dll
+Z:\Archivos Host\DI\Deposito Inteligente\BEL\bin\Debug\BEL.pdb
+Z:\Archivos Host\DI\Deposito Inteligente\BEL\bin\Debug\BEL.xml
+Z:\Archivos Host\DI\Deposito Inteligente\BEL\obj\Debug\BEL.vbprojResolveAssemblyReference.cache
+Z:\Archivos Host\DI\Deposito Inteligente\BEL\obj\Debug\BEL.Resources.resources
+Z:\Archivos Host\DI\Deposito Inteligente\BEL\obj\Debug\BEL.vbproj.GenerateResource.Cache
+Z:\Archivos Host\DI\Deposito Inteligente\BEL\obj\Debug\BEL.dll
+Z:\Archivos Host\DI\Deposito Inteligente\BEL\obj\Debug\BEL.xml
+Z:\Archivos Host\DI\Deposito Inteligente\BEL\obj\Debug\BEL.pdb
+C:\Users\german\Desktop\DepositoInteligente\BEL\bin\Debug\BEL.dll
+C:\Users\german\Desktop\DepositoInteligente\BEL\bin\Debug\BEL.pdb
+C:\Users\german\Desktop\DepositoInteligente\BEL\bin\Debug\BEL.xml
+C:\Users\german\Desktop\DepositoInteligente\BEL\obj\Debug\BEL.Resources.resources
+C:\Users\german\Desktop\DepositoInteligente\BEL\obj\Debug\BEL.vbproj.GenerateResource.cache
+C:\Users\german\Desktop\DepositoInteligente\BEL\obj\Debug\BEL.vbproj.CoreCompileInputs.cache
+C:\Users\german\Desktop\DepositoInteligente\BEL\obj\Debug\BEL.dll
+C:\Users\german\Desktop\DepositoInteligente\BEL\obj\Debug\BEL.xml
+C:\Users\german\Desktop\DepositoInteligente\BEL\obj\Debug\BEL.pdb
+C:\Users\german\Desktop\DepositoInteligente\BEL\obj\Debug\BEL.vbprojAssemblyReference.cache
