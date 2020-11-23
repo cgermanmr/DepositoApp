@@ -9,7 +9,7 @@ namespace BLL
 {
     public class ActivoBLL : Negocio
     {
-        public override Repository Repositorio() => new ActivoDAL();
+        public override Repositorio Repositorio() => new ActivoDAL();
 
         public override bool Agregar(EntidadBase valor)
         {

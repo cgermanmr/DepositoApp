@@ -16,6 +16,7 @@ namespace BEL
         public MarcaBEL Marca { get; set; } = new MarcaBEL();
         public MonedaBEL Moneda { get; set; } = new MonedaBEL() { Id=1};
         public double ValorCompra { get; set; }
+        public double ValorSoporte { get; set; }
         public int MesesGarantia { get; set; }
         public string Observaciones { get; set; } = "";
         public int Volumen { get; set; }

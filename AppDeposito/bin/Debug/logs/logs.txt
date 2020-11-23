@@ -3044,3 +3044,542 @@ StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException excep
    en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 54
 Date/Time: 20/11/2020 18:20:36
 ===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 21/11/2020 11:17:15
+===========================================================================================
+Title: Error
+Id: 7890
+Message: No se encontró el procedimiento almacenado 'SP_ACTIVO'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\uai\DepIn\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repository.Listar() en C:\uai\DepIn\DAL\Repository.cs:línea 87
+   en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 56
+Date/Time: 21/11/2020 11:17:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 21/11/2020 11:18:05
+===========================================================================================
+Title: Error
+Id: 7890
+Message: El procedimiento o la función 'SP_ACTIVO' esperaba el parámetro '@opcion', que no se ha especificado.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\uai\DepIn\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repository.Listar() en C:\uai\DepIn\DAL\Repository.cs:línea 87
+   en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 56
+Date/Time: 21/11/2020 11:30:27
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 21/11/2020 11:31:29
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 21/11/2020 16:38:09
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 21/11/2020 17:14:28
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 21/11/2020 17:20:26
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 21/11/2020 17:23:23
+===========================================================================================
+Title: Error
+Id: 7890
+Message: @meses_garantia no es un parámetro del procedimiento SP_ACTIVO.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos)
+   en DAL.Repositorio.Listar()
+   en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 56
+Date/Time: 21/11/2020 17:24:12
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 21/11/2020 18:20:56
+===========================================================================================
+Title: Error
+Id: 7890
+Message: No se encontró el procedimiento almacenado 'SP_SECTOR'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos)
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor)
+   en DAL.Activo.ObtenerLista(DataSet ds)
+   en DAL.Repositorio.Listar()
+   en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 56
+Date/Time: 21/11/2020 18:24:59
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 21/11/2020 18:34:53
+===========================================================================================
+Title: Error
+Id: 7890
+Message: No se encontró el procedimiento almacenado 'SP_REPARACION'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\uai\DepIn\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.Listar() en C:\uai\DepIn\DAL\Repositorio.cs:línea 83
+   en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 56
+Date/Time: 21/11/2020 18:35:27
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 21/11/2020 19:37:16
+===========================================================================================
+Title: Error
+Id: 7890
+Message: No se encontró el procedimiento almacenado 'SP_SECTOR'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\uai\DepIn\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\uai\DepIn\DAL\Repositorio.cs:línea 102
+   en DAL.Activo.ObtenerLista(DataSet ds) en C:\uai\DepIn\DAL\Activo.cs:línea 32
+   en DAL.Repositorio.Listar() en C:\uai\DepIn\DAL\Repositorio.cs:línea 85
+   en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 56
+Date/Time: 21/11/2020 19:37:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 21/11/2020 19:39:47
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 21/11/2020 19:40:31
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La función o el procedimiento SP_SECTOR tiene demasiados argumentos.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\uai\DepIn\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\uai\DepIn\DAL\Repositorio.cs:línea 102
+   en DAL.Activo.ObtenerLista(DataSet ds) en C:\uai\DepIn\DAL\Activo.cs:línea 32
+   en DAL.Repositorio.Listar() en C:\uai\DepIn\DAL\Repositorio.cs:línea 85
+   en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 56
+Date/Time: 21/11/2020 19:40:52
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 21/11/2020 19:45:29
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La función o el procedimiento SP_SECTOR tiene demasiados argumentos.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\uai\DepIn\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\uai\DepIn\DAL\Repositorio.cs:línea 102
+   en DAL.Activo.ObtenerLista(DataSet ds) en C:\uai\DepIn\DAL\Activo.cs:línea 32
+   en DAL.Repositorio.Listar() en C:\uai\DepIn\DAL\Repositorio.cs:línea 85
+   en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 56
+Date/Time: 21/11/2020 23:26:21
+===========================================================================================
+Title: Error
+Id: 7890
+Message: El nombre de columna 'COD_SECTOR' no es válido.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\uai\DepIn\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\uai\DepIn\DAL\Repositorio.cs:línea 104
+   en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\uai\DepIn\DAL\ActivoDAL.cs:línea 33
+   en DAL.Repositorio.Listar() en C:\uai\DepIn\DAL\Repositorio.cs:línea 85
+   en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 56
+Date/Time: 22/11/2020 8:25:23
+===========================================================================================
+Title: Error
+Id: 7890
+Message: El nombre de columna 'COD_SECTOR' no es válido.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\uai\DepIn\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\uai\DepIn\DAL\Repositorio.cs:línea 104
+   en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\uai\DepIn\DAL\ActivoDAL.cs:línea 33
+   en DAL.Repositorio.Listar() en C:\uai\DepIn\DAL\Repositorio.cs:línea 85
+   en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 56
+Date/Time: 22/11/2020 8:32:05
+===========================================================================================
+Title: Error
+Id: 7890
+Message: El nombre de columna 'COD_SECTOR' no es válido.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\uai\DepIn\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\uai\DepIn\DAL\Repositorio.cs:línea 104
+   en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\uai\DepIn\DAL\ActivoDAL.cs:línea 33
+   en DAL.Repositorio.Listar() en C:\uai\DepIn\DAL\Repositorio.cs:línea 85
+   en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 56
+Date/Time: 22/11/2020 8:34:08
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La columna 'OBSERVACIONES' no pertenece a la tabla Table.
+StackTrace:    en System.Data.DataRow.GetDataColumn(String columnName)
+   en System.Data.DataRow.get_Item(String columnName)
+   en DAL.EmpresaDAL.ObtenerLista(DataSet ds) en C:\uai\DepIn\DAL\EmpresaDAL.cs:línea 33
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\uai\DepIn\DAL\Repositorio.cs:línea 106
+   en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\uai\DepIn\DAL\ActivoDAL.cs:línea 37
+   en DAL.Repositorio.Listar() en C:\uai\DepIn\DAL\Repositorio.cs:línea 85
+   en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 56
+Date/Time: 22/11/2020 9:04:45
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La columna 'OBSERVACIONES' no pertenece a la tabla Table.
+StackTrace:    en System.Data.DataRow.GetDataColumn(String columnName)
+   en System.Data.DataRow.get_Item(String columnName)
+   en DAL.EmpresaDAL.ObtenerLista(DataSet ds) en C:\uai\DepIn\DAL\EmpresaDAL.cs:línea 33
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\uai\DepIn\DAL\Repositorio.cs:línea 106
+   en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\uai\DepIn\DAL\ActivoDAL.cs:línea 37
+   en DAL.Repositorio.Listar() en C:\uai\DepIn\DAL\Repositorio.cs:línea 85
+   en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 56
+Date/Time: 22/11/2020 9:05:22
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.ActivoDAL.ObtenerLista(DataSet ds)
+   en DAL.Repositorio.Listar()
+   en BLL.Negocio.Listar() en C:\uai\DepIn\BLL\Negocio.cs:línea 56
+Date/Time: 22/11/2020 9:13:49
+===========================================================================================
+Title: Error
+Id: 7890
+Message: @id no es un parámetro del procedimiento SP_ACTIVO.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos)
+   en DAL.Repositorio.Eliminar(EntidadBase valor)
+   en BLL.Negocio.Eliminar(EntidadBase valor) en C:\uai\DepIn\BLL\Negocio.cs:línea 42
+Date/Time: 22/11/2020 13:27:35
+===========================================================================================
+Title: Error
+Id: 0
+Message: @id no es un parámetro del procedimiento SP_ACTIVO.
+StackTrace:    en BLL.Negocio.Eliminar(EntidadBase valor) en C:\uai\DepIn\BLL\Negocio.cs:línea 48
+   en AppDeposito.ActivoAdminForm.EliminarButton_Click(Object sender, EventArgs e) en C:\uai\DepIn\AppDeposito\Activos\ActivoAdminForm.cs:línea 120
+Date/Time: 22/11/2020 13:27:35
+===========================================================================================
+Title: Error
+Id: 7890
+Message: @codigo no es un parámetro del procedimiento SP_ACTIVO.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos)
+   en DAL.Repositorio.Agregar(EntidadBase valor)
+   en BLL.Negocio.Agregar(EntidadBase valor) en C:\uai\DepIn\BLL\Negocio.cs:línea 27
+Date/Time: 22/11/2020 13:31:24
+===========================================================================================
+Title: Error
+Id: 0
+Message: @codigo no es un parámetro del procedimiento SP_ACTIVO.
+StackTrace:    en BLL.Negocio.Agregar(EntidadBase valor) en C:\uai\DepIn\BLL\Negocio.cs:línea 33
+   en BLL.ActivoBLL.Agregar(EntidadBase valor) en C:\uai\DepIn\BLL\ActivoBLL.cs:línea 21
+   en AppDeposito.ActivoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\uai\DepIn\AppDeposito\Activos\ActivoEditForm.cs:línea 84
+Date/Time: 22/11/2020 13:31:24
+===========================================================================================
+Title: Error
+Id: 7890
+Message: @meses_garantia no es un parámetro del procedimiento SP_ACTIVO.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos)
+   en DAL.Repositorio.Agregar(EntidadBase valor)
+   en BLL.Negocio.Agregar(EntidadBase valor) en C:\uai\DepIn\BLL\Negocio.cs:línea 27
+Date/Time: 22/11/2020 13:33:23
+===========================================================================================
+Title: Error
+Id: 0
+Message: @meses_garantia no es un parámetro del procedimiento SP_ACTIVO.
+StackTrace:    en BLL.Negocio.Agregar(EntidadBase valor) en C:\uai\DepIn\BLL\Negocio.cs:línea 33
+   en BLL.ActivoBLL.Agregar(EntidadBase valor) en C:\uai\DepIn\BLL\ActivoBLL.cs:línea 21
+   en AppDeposito.ActivoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\uai\DepIn\AppDeposito\Activos\ActivoEditForm.cs:línea 84
+Date/Time: 22/11/2020 13:33:23
+===========================================================================================
+Title: Error
+Id: 7890
+Message: El procedimiento o la función 'SP_ACTIVO' esperaba el parámetro '@operacion', que no se ha especificado.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\uai\DepIn\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.ActivoDAL.Listar(String filtro) en C:\uai\DepIn\DAL\ActivoDAL.cs:línea 81
+   en BLL.Negocio.Listar(String filtro) en C:\uai\DepIn\BLL\Negocio.cs:línea 70
+Date/Time: 22/11/2020 23:15:40
+===========================================================================================
+Title: Error
+Id: 0
+Message: El procedimiento o la función 'SP_ACTIVO' esperaba el parámetro '@operacion', que no se ha especificado.
+StackTrace:    en BLL.Negocio.Listar(String filtro) en C:\uai\DepIn\BLL\Negocio.cs:línea 76
+   en AppDeposito.ActivoAdminForm.ObtenerDatos(String filtro) en C:\uai\DepIn\AppDeposito\Activos\ActivoAdminForm.cs:línea 22
+   en AppDeposito.ActivoAdminForm.FiltroTextBox_TextChanged(Object sender, EventArgs e) en C:\uai\DepIn\AppDeposito\Activos\ActivoAdminForm.cs:línea 97
+Date/Time: 22/11/2020 23:15:40
+===========================================================================================
+Title: Error
+Id: 7890
+Message: El procedimiento o la función 'SP_ACTIVO' esperaba el parámetro '@operacion', que no se ha especificado.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\uai\DepIn\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.ActivoDAL.Listar(String filtro) en C:\uai\DepIn\DAL\ActivoDAL.cs:línea 81
+   en BLL.Negocio.Listar(String filtro) en C:\uai\DepIn\BLL\Negocio.cs:línea 70
+Date/Time: 22/11/2020 23:19:18
+===========================================================================================
+Title: Error
+Id: 0
+Message: El procedimiento o la función 'SP_ACTIVO' esperaba el parámetro '@operacion', que no se ha especificado.
+StackTrace:    en BLL.Negocio.Listar(String filtro) en C:\uai\DepIn\BLL\Negocio.cs:línea 76
+   en AppDeposito.ActivoAdminForm.ObtenerDatos(String filtro) en C:\uai\DepIn\AppDeposito\Activos\ActivoAdminForm.cs:línea 22
+   en AppDeposito.ActivoAdminForm.FiltroTextBox_TextChanged(Object sender, EventArgs e) en C:\uai\DepIn\AppDeposito\Activos\ActivoAdminForm.cs:línea 97
+Date/Time: 22/11/2020 23:19:18
+===========================================================================================
+Title: Error
+Id: 7890
+Message: No se encontró el procedimiento almacenado 'GetAtivoFiltro'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos)
+   en DAL.ActivoDAL.Listar(String filtro)
+   en BLL.Negocio.Listar(String filtro) en C:\uai\DepIn\BLL\Negocio.cs:línea 71
+Date/Time: 22/11/2020 23:22:53
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se encontró el procedimiento almacenado 'GetAtivoFiltro'.
+StackTrace:    en BLL.Negocio.Listar(String filtro) en C:\uai\DepIn\BLL\Negocio.cs:línea 77
+   en AppDeposito.ActivoAdminForm.ObtenerDatos(String filtro) en C:\uai\DepIn\AppDeposito\Activos\ActivoAdminForm.cs:línea 22
+   en AppDeposito.ActivoAdminForm.FiltroTextBox_TextChanged(Object sender, EventArgs e) en C:\uai\DepIn\AppDeposito\Activos\ActivoAdminForm.cs:línea 97
+Date/Time: 22/11/2020 23:22:53
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\uai\DepIn\AppDeposito\FormConfig.cs:línea 72
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\uai\DepIn\AppDeposito\FormConfig.cs:línea 92
+   en AppDeposito.ActivoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\uai\DepIn\AppDeposito\Activos\ActivoEditForm.cs:línea 78
+Date/Time: 22/11/2020 23:47:41
+===========================================================================================

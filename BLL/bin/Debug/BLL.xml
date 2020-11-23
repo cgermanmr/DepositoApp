@@ -4,16 +4,16 @@
         <name>BLL</name>
     </assembly>
     <members>
-        <member name="M:BLL.Negocio.Validar(BEL.EntidadBase)">
-            <summary>
-            validar reglas de negocio
-            </summary>
-        </member>
         <member name="M:BLL.Negocio.Repositorio">
             <summary>
             Indicar el mapeador de la clase
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:BLL.Negocio.EsValido(BEL.EntidadBase)">
+            <summary>
+            validar reglas de negocio
+            </summary>
         </member>
     </members>
 </doc>

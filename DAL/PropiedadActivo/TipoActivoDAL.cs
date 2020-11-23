@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace DAL
 {
-    public class TipoActivoDAL : Repository
+    public class TipoActivoDAL : Repositorio
     {
         protected override string ProcedimientoAlmacenado => "SP_ACTIVO_TIPO";
 

@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace DAL
 {
-    public class ReparacionDAL:Repository
+    public class ReparacionDAL:Repositorio
     {
         protected override string ProcedimientoAlmacenado => "SP_REPARACION";
 

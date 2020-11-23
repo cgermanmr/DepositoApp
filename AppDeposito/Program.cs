@@ -16,7 +16,7 @@ namespace AppDeposito
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PrincipalForm());
+            //Application.Run(new PrincipalForm());
             //Application.Run(new DonacionesForm());
 
 
@@ -27,7 +27,7 @@ namespace AppDeposito
             //Application.Run(new Administracion.Backup.BackupRestoreForm());
             //Application.Run(new Administracion.Logs.UsuarioControlCambiosForm());
             //Application.Run(new Administracion.Integridad.IntegridadForm());
-            //Application.Run(new ActivoAdminForm());
+            Application.Run(new ActivoAdminForm());
             //Application.Run(new ReparacionAdminForm());
             //Application.Run(new ClienteAdminForm());
             //Application.Run(new DepositoAdminForm());

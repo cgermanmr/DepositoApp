@@ -186,7 +186,12 @@ namespace DAL
 
         public List<PermisoBase> Listar(PermisoBase filtro)
         {
-            throw new NotImplementedException();
+            return Listar();
+        }
+
+        public List<PermisoBase> Listar(string filtro)
+        {
+            return Listar();
         }
     }
 }

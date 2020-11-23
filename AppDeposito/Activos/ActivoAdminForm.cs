@@ -18,19 +18,13 @@ namespace AppDeposito
         {
             filtro = filtro.ToUpper();
 
-            if (filtro == "")
-            {
-                _listaActivos = new ActivoBLL().Listar().ConvertAll(x => (ActivoBEL)x);
+            if (filtro.Length > 3)
+                _listaActivos = new ActivoBLL().Listar(filtro).ConvertAll(x => (ActivoBEL)x);
+            
+            if (filtro.Length == 0)
+                _listaActivos = new ActivoBLL().Listar().ConvertAll(x=>(ActivoBEL)x);
+                      
                 bsActivos.DataSource = _listaActivos;
-            }                
-            else
-                bsActivos.DataSource = _listaActivos.FindAll(x=>
-                    x.Descripcion.ToUpper().Contains(filtro) |
-                    x.TipoActivo.Descripcion.ToUpper().Contains(filtro) |
-                    x.Marca.Descripcion.ToUpper().Contains(filtro) |
-                    x.Inventario.ToUpper().Contains(filtro) |
-                    x.Serie.ToUpper().Contains(filtro));
-
         }
 
         private void EnlazarControles()
@@ -67,7 +61,8 @@ namespace AppDeposito
             {
                 var _edit = new ActivoEditForm() { Editado = (ActivoBEL)bsActivos.Current };
                 _edit.ShowDialog();
-                ObtenerDatos();
+                ObtenerDatos(FiltroTextBox.Text);
+
             }
             catch (Exception ex)
             {
@@ -82,7 +77,8 @@ namespace AppDeposito
             {
                 var _edit = new ActivoEditForm() { Editado = new ActivoBEL() };
                 _edit.ShowDialog();
-                ObtenerDatos();
+                ObtenerDatos(FiltroTextBox.Text);
+
             }
             catch (Exception ex)
             {

@@ -8,6 +8,6 @@ namespace BLL
 {
     public class ReparacionBLL : Negocio
     {
-        public override Repository Repositorio() => new ReparacionDAL();
+        public override Repositorio Repositorio() => new ReparacionDAL();
     }
 }

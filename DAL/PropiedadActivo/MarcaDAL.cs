@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace DAL
 {
-    public class MarcaDAL : Repository
+    public class MarcaDAL : Repositorio
     {
         protected override string ProcedimientoAlmacenado => "SP_ACTIVO_MARCA";
 

@@ -8,7 +8,7 @@ using System.Transactions;
 
 namespace DAL
 {
-    public class ClienteDAL : Repository
+    public class ClienteDAL : Repositorio
     {
         protected override string ProcedimientoAlmacenado => "SP_CLIENTE";
 

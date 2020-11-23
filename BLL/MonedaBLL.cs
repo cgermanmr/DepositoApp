@@ -9,7 +9,7 @@ namespace BLL
 {
     public class MonedaBLL : Negocio
     {
-        public override Repository Repositorio() => new MonedaDAL();
+        public override Repositorio Repositorio() => new MonedaDAL();
 
     }
 }

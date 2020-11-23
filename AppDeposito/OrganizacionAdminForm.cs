@@ -18,9 +18,9 @@ namespace AppDeposito
             filtro = filtro.ToUpper();
 
             if(string.IsNullOrEmpty(filtro))
-                bsOrganizaciones.DataSource = new EmpresaBLL().Listar().FindAll(_=>!_.EsCliente);
+                bsOrganizaciones.DataSource = new EmpresaBLL().Listar().ConvertAll(_ => (EmpresaBEL)_).FindAll(_=>!_.EsCliente);
             else
-                bsOrganizaciones.DataSource = new EmpresaBLL().Listar()
+                bsOrganizaciones.DataSource = new EmpresaBLL().Listar().ConvertAll(_=>(EmpresaBEL)_)
                     .FindAll(_=>
                     _.RazonSocial.ToUpper().Contains(filtro) |
                     _.Telefono.ToUpper().Contains(filtro) |

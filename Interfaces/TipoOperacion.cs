@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    public enum TipoModificacion : int
+    public enum TipoOperacion : int
     {
         Alta = 1,
-        Baja = 2,
-        Modificación = 3
+        Baja,
+        Modificación,
+        Consulta,
+        ConsultaExtendida
     }
 }

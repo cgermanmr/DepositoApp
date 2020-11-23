@@ -88,7 +88,7 @@
     <Compile Include="CacheDatos.cs" />
     <Compile Include="DepositoDAL.cs" />
     <Compile Include="DonacionDAL.cs" />
-    <Compile Include="Repository.cs" />
+    <Compile Include="Repositorio.cs" />
     <Compile Include="Infraestructura\BackupRestoreDAL.cs" />
     <Compile Include="Infraestructura\BitacoraDAL.cs" />
     <Compile Include="Infraestructura\IntegridadDAL.cs" />

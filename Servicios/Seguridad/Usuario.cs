@@ -132,5 +132,10 @@ namespace Servicios
         {
             throw new NotImplementedException();
         }
+
+        public List<UsuarioBEL> Listar(string filtro)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

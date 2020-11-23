@@ -17,7 +17,7 @@ namespace AppDeposito
         private void ObtenerDatos()
         {
             bsPresupuestos.DataSource = null;
-            Reparacion.Presupuestos = new PresupuestoBLL().Listar().FindAll(x=>((PresupuestoBEL)x).Reparacion.Id==Reparacion.Id).ConvertAll(x=>(PresupuestoBEL)x);
+            Reparacion.Presupuestos = new Presupuesto().Listar().FindAll(x=>((PresupuestoBEL)x).Reparacion.Id==Reparacion.Id).ConvertAll(x=>(PresupuestoBEL)x);
             bsPresupuestos.DataSource = Reparacion.Presupuestos;
             grilla.DataSource = bsPresupuestos;
         }
@@ -58,7 +58,7 @@ namespace AppDeposito
             try
             {
                 if (MessageBox.Show($"Desea eliminar el presupuesto de {bsPresupuestos.Current.ToString()}", "Confirmar", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-                    Mensajes.MensajeResultado(new PresupuestoBLL().Eliminar((PresupuestoBEL)bsPresupuestos.Current), this);
+                    Mensajes.MensajeResultado(new Presupuesto().Eliminar((PresupuestoBEL)bsPresupuestos.Current), this);
                 ObtenerDatos();
             }
             catch (Exception ex)

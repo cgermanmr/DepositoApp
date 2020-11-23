@@ -6,10 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using BEL;
 using System.Collections;
+using Interfaces;
 
 namespace DAL
 {
-    public class ActivoDAL : Repository
+    public class ActivoDAL : Repositorio
     {
         public ActivoBEL GetById(int id)
         {
@@ -37,10 +38,11 @@ namespace DAL
                 x.Organizacion = (EmpresaBEL)new EmpresaDAL().ObtenerUno(new EmpresaBEL() { Id = (int)dr[10] });
                 x.Moneda = (MonedaBEL)new MonedaDAL().ObtenerUno(new MonedaBEL() { Id = (int)dr[11] });
                 x.ValorCompra = Convert.IsDBNull(dr[12]) ? 0.0 : (double)dr[12];
-                x.FechaCompra = Convert.IsDBNull(dr[13]) ? "" : ((DateTime)dr[13]).ToString("dd/MM/yyyy");
-                x.MesesGarantia = Convert.IsDBNull(dr[14]) ? 0 : Convert.ToInt32(dr[14]);
-                x.Volumen = Convert.IsDBNull(dr[15]) ? 0 : (int)dr[15];
-                x.Observaciones = Convert.IsDBNull(dr[16]) ? string.Empty : (string)dr[16];
+                x.ValorSoporte = Convert.IsDBNull(dr[13]) ? 0.0 : (double)dr[13];
+                x.FechaCompra = Convert.IsDBNull(dr[14]) ? "" : ((DateTime)dr[14]).ToString("dd/MM/yyyy");
+                x.MesesGarantia = Convert.IsDBNull(dr[15]) ? 0 : Convert.ToInt32(dr[15]);
+                x.Volumen = Convert.IsDBNull(dr[16]) ? 0 : (int)dr[16];
+                x.Observaciones = Convert.IsDBNull(dr[17]) ? string.Empty : (string)dr[17];
                 _lista.Add(x);            
             }
             return _lista;
@@ -50,7 +52,7 @@ namespace DAL
             var hdatos = new Hashtable();
             ActivoBEL _dato = valor == null ? (ActivoBEL)GetNew : (ActivoBEL)valor;
 
-            hdatos.Add("@codigo", _dato.Id);
+            hdatos.Add("@id", _dato.Id);
             hdatos.Add("@fecha_alta", _dato.FechaAlta);
             hdatos.Add("@nro_inventario", _dato.Inventario);
             hdatos.Add("@nro_serie", _dato.Serie);
@@ -70,6 +72,16 @@ namespace DAL
 
             return hdatos;
         }
-               
+
+        public override List<EntidadBase> Listar(string filtro)
+        {
+            Hashtable parametros = new Hashtable();
+            parametros.Add("@TextoFiltro", filtro);
+
+            DataSet ds = _datos.Leer("GetActivoFiltro", parametros);
+
+            return ObtenerLista(ds);
+        }
+
     }
 }

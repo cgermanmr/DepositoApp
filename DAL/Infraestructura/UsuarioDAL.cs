@@ -46,7 +46,7 @@ namespace DAL
             bool estado = (bool)dr["ESTADO"];
             string usuarioModificador = dr["USUARIO_MODIFICADOR"].ToString();
             DateTime fecha = (DateTime)dr["FECHA"];
-            TipoModificacion tipoModificacion = (TipoModificacion)dr["TIPO_MODIFICACION"];
+            TipoOperacion tipoModificacion = (TipoOperacion)dr["TIPO_MODIFICACION"];
 
             return new UsuarioBEL()
             {
@@ -215,6 +215,11 @@ namespace DAL
         }
 
         public List<UsuarioBEL> Listar(UsuarioBEL filtro)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<UsuarioBEL> Listar(string filtro)
         {
             throw new NotImplementedException();
         }

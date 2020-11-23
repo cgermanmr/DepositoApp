@@ -8,6 +8,7 @@ namespace Interfaces
         bool Modificar(T valor);
         bool Eliminar(T valor);
         List<T> Listar();
+        List<T> Listar(string filtro);
         List<T> Listar(T filtro);
         T ObtenerUno(T filtro);
     }

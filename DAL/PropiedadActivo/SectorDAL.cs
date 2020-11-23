@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace DAL
 {
-    public class SectorDAL : Repository
+    public class SectorDAL : Repositorio
     {
         protected override string ProcedimientoAlmacenado => "SP_SECTOR";
 

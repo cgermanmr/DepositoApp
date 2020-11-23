@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace DAL
 {
-    public class UbicacionDAL : Repository
+    public class UbicacionDAL : Repositorio
     {
         protected override string ProcedimientoAlmacenado => "SP_ACTIVO_UBICACION";
 

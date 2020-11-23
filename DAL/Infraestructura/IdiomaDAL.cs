@@ -125,5 +125,10 @@ namespace DAL
         {
             throw new NotImplementedException();
         }
+
+        public List<IdiomaBEL> Listar(string filtro)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

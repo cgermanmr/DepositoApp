@@ -84,5 +84,10 @@ namespace DAL
         {
             throw new NotImplementedException();
         }
+
+        public List<BitacoraBEL> Listar(string filtro)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

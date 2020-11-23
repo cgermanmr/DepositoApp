@@ -7,7 +7,7 @@ using BEL;
 
 namespace DAL
 {
-    public class MonedaDAL : Repository
+    public class MonedaDAL : Repositorio
     {
         protected override string ProcedimientoAlmacenado => "SP_MONEDA";
 

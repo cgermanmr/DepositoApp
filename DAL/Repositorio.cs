@@ -10,9 +10,10 @@ using Interfaces;
 
 namespace DAL
 {
-    public abstract class Repository: ICRUD<EntidadBase>
+    public abstract class Repositorio: ICRUD<EntidadBase>
     {
         /***************** Modificar nombre procedimiento y tipos *******************************************/
+        protected readonly Datos _datos = new Datos();
         protected abstract string ProcedimientoAlmacenado { get; }
         public abstract EntidadBase GetNew { get; }
         protected virtual Hashtable ObtenerParametros(EntidadBase valor)
@@ -42,77 +43,65 @@ namespace DAL
         /***********************************************************************/
         public virtual bool Agregar(EntidadBase valor)
         {
-            var datos = new Datos();
             bool resultado;
 
             Hashtable parametros = ObtenerParametros(valor);
-            parametros.Add("@operacion", 1);
+            parametros.Add("@operacion", (int)TipoOperacion.Alta);
 
-            resultado = datos.Escribir(ProcedimientoAlmacenado, parametros);
+            resultado = _datos.Escribir(ProcedimientoAlmacenado, parametros);
 
             return resultado;
         }
         public virtual bool Eliminar(EntidadBase valor)
         {
-            var datos = new Datos();
             bool resultado;
 
-            Hashtable parametros = ObtenerParametros(valor);
-            parametros.Add("@operacion", 2);
+            Hashtable parametros = new Hashtable();
+            parametros.Add("@operacion", (int)TipoOperacion.Baja);
+            parametros.Add("@id", valor.Id);
 
-            resultado = datos.Escribir(ProcedimientoAlmacenado, parametros);
+            resultado = _datos.Escribir(ProcedimientoAlmacenado, parametros);
 
             return resultado;
         }
       
         public virtual bool Modificar(EntidadBase valor)
         {
-            var datos = new Datos();
             bool resultado;
 
             Hashtable parametros = ObtenerParametros(valor);
-            parametros.Add("@operacion", 3);
+            parametros.Add("@operacion", TipoOperacion.Modificación);
 
-            resultado = datos.Escribir(ProcedimientoAlmacenado, parametros);
+            resultado = _datos.Escribir(ProcedimientoAlmacenado, parametros);
 
             return resultado;
         }
         public virtual List<EntidadBase> Listar()
         {
-            var datos = new Datos();
+            Hashtable parametros = new Hashtable();//ObtenerParametros(null);
+            parametros.Add("@operacion", (int)TipoOperacion.Consulta);
 
-            Hashtable parametros = ObtenerParametros(null);
-            parametros.Add("@operacion", 4);
-
-            DataSet ds = datos.Leer(ProcedimientoAlmacenado, parametros);
+            DataSet ds = _datos.Leer(ProcedimientoAlmacenado, parametros);
 
             return ObtenerLista(ds);
         }
 
-        public virtual List<EntidadBase> Listar(EntidadBase filtro)
-        {
-            var datos = new Datos();
+        public virtual List<EntidadBase> Listar(string filtro) => Listar();
+        public virtual List<EntidadBase> Listar(EntidadBase filtro) => Listar();
 
-            Hashtable parametros = ObtenerParametros(filtro);
-            parametros.Add("@operacion", 4);
-
-            DataSet ds = datos.Leer(ProcedimientoAlmacenado, parametros);
-
-            return ObtenerLista(ds);
-        }
         public virtual EntidadBase ObtenerUno(EntidadBase valor)
         {
-            var datos = new Datos();
+            Hashtable parametros = new Hashtable();
+            parametros.Add("@operacion", (int)TipoOperacion.Consulta);
+            parametros.Add("@id", valor.Id);
 
-            Hashtable parametros = ObtenerParametros(valor);
-            parametros.Add("@operacion", 5);
-
-            DataSet ds = datos.Leer(ProcedimientoAlmacenado, parametros);
+            DataSet ds = _datos.Leer(ProcedimientoAlmacenado, parametros);
 
             var _lista = ObtenerLista(ds);
 
-            if (_lista.Count > 0) return _lista.First();
-            else return null;
+            if (_lista.Count > 0) return _lista.FirstOrDefault();
+            
+            return null;
         }
 
     }

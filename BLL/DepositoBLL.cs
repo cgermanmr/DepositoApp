@@ -11,7 +11,7 @@ namespace BLL
     public class DepositoBLL : Negocio
     {
       
-        public override Repository Repositorio() => new DepositoDAL();
+        public override Repositorio Repositorio() => new DepositoDAL();
 
         public override bool Eliminar(EntidadBase valor)
         {

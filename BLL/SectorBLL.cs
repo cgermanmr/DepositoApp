@@ -7,36 +7,8 @@ using Interfaces;
 
 namespace BLL
 {
-    public class SectorBLL : ICRUD<SectorBEL>
+    public class SectorBLL : Negocio
     {
-        public bool Agregar(SectorBEL valor)
-        {
-            return new SectorDAL().Agregar(valor);
-        }
-
-        public bool Eliminar(SectorBEL valor)
-        {
-            return new SectorDAL().Eliminar(valor);
-        }
-
-        public List<SectorBEL> Listar()
-        {
-            return new SectorDAL().Listar().ConvertAll(_=>(SectorBEL)_);
-        }
-
-        public bool Modificar(SectorBEL valor)
-        {
-            return new SectorDAL().Modificar(valor);
-        }
-
-        public SectorBEL ObtenerUno(SectorBEL filtro)
-        {
-            return (SectorBEL)new SectorDAL().ObtenerUno(filtro);
-        }
-
-        public List<SectorBEL> Listar(SectorBEL filtro)
-        {
-            return new SectorDAL().Listar(filtro).ConvertAll(_=>(SectorBEL)_);
-        }
+        public override Repositorio Repositorio() => new SectorDAL();
     }
 }

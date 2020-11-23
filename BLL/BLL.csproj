@@ -75,7 +75,7 @@
     <Compile Include="EmpresaBLL.cs" />
     <Compile Include="MonedaBLL.cs" />
     <Compile Include="Negocio.cs" />
-    <Compile Include="PresupuestoBLL.cs" />
+    <Compile Include="Presupuesto.cs" />
     <Compile Include="SectorBLL.cs" />
     <Compile Include="TipoActivoBLL.cs" />
     <Compile Include="UbicacionBLL.cs" />

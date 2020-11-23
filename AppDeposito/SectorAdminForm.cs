@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BEL;
 using Servicios;
 
 namespace AppDeposito
@@ -24,7 +25,7 @@ namespace AppDeposito
                 bsSectores.DataSource = new BLL.SectorBLL().Listar();
             else
                 bsSectores.DataSource = new BLL.SectorBLL()
-                    .Listar()
+                    .Listar().ConvertAll(_=>(SectorBEL)_)
                     .FindAll(_ => _.CentroCosto.ToUpper().Contains(txt) |
                                   _.Descripcion.ToUpper().Contains(txt));
 

@@ -41,9 +41,9 @@ namespace AppDeposito
 
                 bool result;
                 if (((BEL.PresupuestoBEL)bsPresupuesto.Current).Id == 0)
-                   result = new BLL.PresupuestoBLL().Agregar((BEL.EntidadBase)bsPresupuesto.Current);
+                   result = new BLL.Presupuesto().Agregar((BEL.EntidadBase)bsPresupuesto.Current);
                 else
-                    result = new BLL.PresupuestoBLL().Modificar((BEL.EntidadBase)bsPresupuesto.Current);
+                    result = new BLL.Presupuesto().Modificar((BEL.EntidadBase)bsPresupuesto.Current);
                                 
                 Mensajes.MensajeResultado(result, this);
 

@@ -10,6 +10,6 @@ namespace BLL
 {
     public class DonacionBLL : Negocio
     {
-        public override Repository Repositorio() => new DonacionDAL();
+        public override Repositorio Repositorio() => new DonacionDAL();
     }
 }

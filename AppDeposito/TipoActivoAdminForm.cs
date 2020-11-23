@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BEL;
+using BLL;
 using Servicios;
 
 namespace AppDeposito
@@ -21,10 +23,10 @@ namespace AppDeposito
         {
             txt = txt.ToUpper();
             if(txt=="")
-                bsTipos.DataSource = new BLL.TipoActivoBLL().Listar();
+                bsTipos.DataSource = new TipoActivoBLL().Listar();
             else
             {
-                bsTipos.DataSource = new BLL.TipoActivoBLL().Listar().FindAll(_ =>
+                bsTipos.DataSource = new TipoActivoBLL().Listar().ConvertAll(_=>(TipoActivoBEL)_).FindAll(_ =>
                 _.Volumen.ToString().Contains(txt) |
                 _.Descripcion.ToUpper().Contains(txt));
             }

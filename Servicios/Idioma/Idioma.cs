@@ -99,5 +99,10 @@ namespace Servicios
         {
             throw new NotImplementedException();
         }
+
+        public List<IdiomaBEL> Listar(string filtro)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

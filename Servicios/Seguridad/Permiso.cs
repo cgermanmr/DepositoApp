@@ -69,6 +69,11 @@ namespace Servicios
             throw new NotImplementedException();
         }
 
+        public List<PermisoBase> Listar(string filtro)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool Modificar(PermisoBase permiso)
         {
             try

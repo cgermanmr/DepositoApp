@@ -3,26 +3,28 @@ using System.Collections.Generic;
 using BEL;
 using DAL;
 using Interfaces;
+using Servicios;
 
 namespace BLL
 
 {
     public abstract class Negocio : ICRUD<EntidadBase>
     {
-        /// <summary>
-        /// validar reglas de negocio
-        /// </summary>
-        public virtual void Validar(EntidadBase valor) { }
+       
         /// <summary>
         /// Indicar el mapeador de la clase
         /// </summary>
         /// <returns></returns>
-        public abstract Repository Repositorio();
+        public abstract Repositorio Repositorio();
+        /// <summary>
+        /// validar reglas de negocio
+        /// </summary>
+        public virtual bool EsValido(EntidadBase valor) => true;
         public virtual bool Agregar(EntidadBase valor)
         {
             try
             {
-                Validar(valor);
+                EsValido(valor);
                 return Repositorio().Agregar(valor);
             }
             catch (Exception ex)
@@ -37,7 +39,7 @@ namespace BLL
         {
             try
             {
-                Validar(valor);
+                EsValido(valor);
                 return Repositorio().Eliminar(valor);
             }
             catch (Exception ex)
@@ -62,7 +64,7 @@ namespace BLL
             }
         }
 
-        public virtual List<EntidadBase> Listar(EntidadBase filtro)
+        public virtual List<EntidadBase> Listar(string filtro)
         {
             try
             {
@@ -70,7 +72,7 @@ namespace BLL
             }
             catch (Exception ex)
             {
-                Servicios.Logger.WriteLogExeption(ex, 7890);
+                Logger.WriteLogExeption(ex, 7890);
 
                 throw ex;
             }
@@ -80,7 +82,7 @@ namespace BLL
         {
             try
             {
-                Validar(valor);
+                EsValido(valor);
                 return Repositorio().Modificar(valor);
             }
             catch (Exception ex)
@@ -118,6 +120,20 @@ namespace BLL
             catch (Exception ex)
             {
                 Servicios.Logger.WriteLogExeption(ex, 7890);
+                throw ex;
+            }
+        }
+
+        public List<EntidadBase> Listar(EntidadBase filtro)
+        {
+            try
+            {
+                return Repositorio().Listar(filtro);
+            }
+            catch (Exception ex)
+            {
+                Servicios.Logger.WriteLogExeption(ex, 7890);
+
                 throw ex;
             }
         }

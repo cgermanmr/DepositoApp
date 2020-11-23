@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace DAL
 {
-    public class EmpresaDAL:Repository
+    public class EmpresaDAL:Repositorio
     {
         protected override string ProcedimientoAlmacenado => "SP_EMPRESA";
 
@@ -30,9 +30,9 @@ namespace DAL
                 x.Telefono = Convert.IsDBNull(dr[6]) ? string.Empty : dr[6].ToString();
                 x.Email = Convert.IsDBNull(dr[7]) ? string.Empty : dr[7].ToString();
                 x.Contacto = Convert.IsDBNull(dr[8]) ? string.Empty : dr[8].ToString();
-                x.Observaciones = dr["OBSERVACIONES"].ToString();
-                x.Estado = Convert.ToBoolean(dr["ESTADO"]);
-                x.EsCliente = Convert.ToBoolean(dr["ESCLIENTE"]);
+                //x.Observaciones = dr["OBSERVACIONES"].ToString();
+                //x.Estado = Convert.ToBoolean(dr["ESTADO"]);
+                //x.EsCliente = Convert.ToBoolean(dr["ESCLIENTE"]);
 
                 _lista.Add(x);
             }

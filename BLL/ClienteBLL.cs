@@ -11,7 +11,7 @@ namespace BLL
     public class ClienteBLL : Negocio
     {
       
-        public override Repository Repositorio() => new ClienteDAL();
+        public override Repositorio Repositorio() => new ClienteDAL();
 
         public override bool Eliminar(EntidadBase valor)
         {

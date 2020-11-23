@@ -10,7 +10,7 @@ using BEL;
 
 namespace DAL
 {
-    public class DonacionDAL : Repository
+    public class DonacionDAL : Repositorio
     {
         public override EntidadBase GetNew => new DonacionBEL();
 

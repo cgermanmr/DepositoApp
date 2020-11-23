@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace DAL
 {
-    public class EstadoDAL : Repository
+    public class EstadoDAL : Repositorio
     {
         protected override string ProcedimientoAlmacenado => "SP_ACTIVO_ESTADO";
 

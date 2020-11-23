@@ -22,7 +22,7 @@ namespace BEL
         public IdiomaBEL Idioma { get; set; }
         public string UsuarioModificador { get; set; }
         public DateTime FechaModificacion { get; set; }
-        public TipoModificacion TipoModificacion { get; set; }
+        public TipoOperacion TipoModificacion { get; set; }
     
         TipoEvento IAuditable.TipoEvento { get; set; }
 

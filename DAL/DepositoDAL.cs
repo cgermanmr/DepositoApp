@@ -10,7 +10,7 @@ using System.Collections;
 
 namespace DAL
 {
-    public class DepositoDAL :Repository
+    public class DepositoDAL :Repositorio
     {
         protected override string ProcedimientoAlmacenado => "SP_DEPOSITO";
 

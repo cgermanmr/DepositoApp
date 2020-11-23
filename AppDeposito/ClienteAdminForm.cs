@@ -115,7 +115,7 @@ namespace AppDeposito
 
                 if (new ClienteBLL().Modificar((ClienteBEL)bsClientes.Current))
                 {
-                    _seleccionado.EstadoActivo = new EstadoBLL().Listar().Find(x=>x.Id==(int)Estados.EnUso);
+                    _seleccionado.EstadoActivo = (EstadoBEL)new EstadoBLL().Listar().Find(x=>x.Id==(int)Estados.EnUso);
                     new ActivoBLL().Modificar(_seleccionado);
                 }
                                 
@@ -137,7 +137,7 @@ namespace AppDeposito
                 if (new ClienteBLL().Modificar((ClienteBEL)bsClientes.Current))
                 {
                     var _nuevoEstado = new EstadoBLL().Listar().Find(x => x.Id == (int)Estados.Disponible);
-                    ((ActivoBEL)bsActivosAsignados.Current).EstadoActivo = _nuevoEstado;
+                    ((ActivoBEL)bsActivosAsignados.Current).EstadoActivo = (EstadoBEL)_nuevoEstado;
                     new ActivoBLL().Modificar((ActivoBEL)bsActivosAsignados.Current);
                     bsActivosAsignados.Remove(bsActivosAsignados.Current);
                     bsActivosAsignados.ResetBindings(false);

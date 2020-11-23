@@ -50,10 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActivoDatosCompraForm.cs">
+    <Compile Include="Activos\ActivoDatosCompraForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ActivoDatosCompraForm.Designer.cs">
+    <Compile Include="Activos\ActivoDatosCompraForm.Designer.cs">
       <DependentUpon>ActivoDatosCompraForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BuscarClienteForm.cs">
@@ -230,16 +230,16 @@
     <Compile Include="Administracion\Permisos\EdicionPermisosUsuarioForm.Designer.cs">
       <DependentUpon>EdicionPermisosUsuarioForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ActivoAdminForm.cs">
+    <Compile Include="Activos\ActivoAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ActivoAdminForm.Designer.cs">
+    <Compile Include="Activos\ActivoAdminForm.Designer.cs">
       <DependentUpon>ActivoAdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ActivoEditForm.cs">
+    <Compile Include="Activos\ActivoEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ActivoEditForm.Designer.cs">
+    <Compile Include="Activos\ActivoEditForm.Designer.cs">
       <DependentUpon>ActivoEditForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DepositoAdminForm.cs">
@@ -300,7 +300,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ActivoDatosCompraForm.resx">
+    <EmbeddedResource Include="Activos\ActivoDatosCompraForm.resx">
       <DependentUpon>ActivoDatosCompraForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarClienteForm.resx">
@@ -369,11 +369,11 @@
     <EmbeddedResource Include="Administracion\Permisos\EdicionUsuarioForm.resx">
       <DependentUpon>EdicionUsuarioForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ActivoAdminForm.resx">
+    <EmbeddedResource Include="Activos\ActivoAdminForm.resx">
       <DependentUpon>ActivoAdminForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="ActivoEditForm.resx">
+    <EmbeddedResource Include="Activos\ActivoEditForm.resx">
       <DependentUpon>ActivoEditForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>

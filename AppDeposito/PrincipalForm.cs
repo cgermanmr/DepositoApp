@@ -78,7 +78,7 @@ namespace AppDeposito
 
             LoginForm login = new LoginForm();
 
-            if (login.ShowDialog() == DialogResult.OK)
+            if (login.ShowDialog(this) == DialogResult.OK)
             {
                 ArmarMenu(); 
                 CerrarSesionToolStripMenuItem.Enabled = true;

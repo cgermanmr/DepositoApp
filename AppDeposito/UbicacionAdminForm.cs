@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BEL;
+using BLL;
 using Servicios;
 
 namespace AppDeposito
@@ -20,10 +22,10 @@ namespace AppDeposito
         private void ObtenerDatos(string txt="")
         {
             if(txt=="")
-                bsUbicaciones.DataSource = new BLL.UbicacionBLL().Listar();
+                bsUbicaciones.DataSource = new UbicacionBLL().Listar();
             else
             {
-                bsUbicaciones.DataSource = new BLL.UbicacionBLL().Listar().FindAll(_ =>
+                bsUbicaciones.DataSource = new UbicacionBLL().Listar().ConvertAll(_=>(UbicacionBEL)_).FindAll(_ =>
                 _.Direccion.ToUpper().Contains(txt) |
                 _.Descripcion.ToUpper().Contains(txt));
             }
