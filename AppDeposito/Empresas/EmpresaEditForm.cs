@@ -13,9 +13,9 @@ using Servicios;
 
 namespace AppDeposito
 {
-    public partial class OrganizacionEditForm : Form, IObserverTraducible
+    public partial class EmpresaEditForm : Form, IObserverTraducible
     {
-        public OrganizacionEditForm()
+        public EmpresaEditForm()
         {
             InitializeComponent();
         }

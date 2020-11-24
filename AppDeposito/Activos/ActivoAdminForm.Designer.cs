@@ -59,7 +59,6 @@
             this.EliminarButton = new System.Windows.Forms.Button();
             this.DatosDeCompraButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.FiltroTextBox = new System.Windows.Forms.TextBox();
             this.UbicacionTextBox = new System.Windows.Forms.TextBox();
             this.TipoTextBox = new System.Windows.Forms.TextBox();
             this.SectorTextBox = new System.Windows.Forms.TextBox();
@@ -71,6 +70,7 @@
             this.AgregarButton = new System.Windows.Forms.Button();
             this.DescripcionTextBox = new System.Windows.Forms.TextBox();
             this.VolumenTextBox = new System.Windows.Forms.TextBox();
+            this.FiltroTextBox = new System.Windows.Forms.TextBox();
             Label1 = new System.Windows.Forms.Label();
             UbicacionDescripcionLabel1 = new System.Windows.Forms.Label();
             TipoDescripcionLabel1 = new System.Windows.Forms.Label();
@@ -441,15 +441,6 @@
             this.label2.TabIndex = 201;
             this.label2.Text = "Filtrar:";
             // 
-            // FiltroTextBox
-            // 
-            this.FiltroTextBox.Location = new System.Drawing.Point(138, 508);
-            this.FiltroTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.FiltroTextBox.Name = "FiltroTextBox";
-            this.FiltroTextBox.Size = new System.Drawing.Size(240, 26);
-            this.FiltroTextBox.TabIndex = 200;
-            this.FiltroTextBox.TextChanged += new System.EventHandler(this.FiltroTextBox_TextChanged);
-            // 
             // UbicacionTextBox
             // 
             this.UbicacionTextBox.Location = new System.Drawing.Point(138, 334);
@@ -545,6 +536,15 @@
             this.VolumenTextBox.Size = new System.Drawing.Size(146, 26);
             this.VolumenTextBox.TabIndex = 182;
             // 
+            // FiltroTextBox
+            // 
+            this.FiltroTextBox.Location = new System.Drawing.Point(138, 508);
+            this.FiltroTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FiltroTextBox.Name = "FiltroTextBox";
+            this.FiltroTextBox.Size = new System.Drawing.Size(240, 26);
+            this.FiltroTextBox.TabIndex = 200;
+            this.FiltroTextBox.TextChanged += new System.EventHandler(this.FiltroTextBox_TextChanged);
+            // 
             // ActivoAdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -571,7 +571,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox FiltroTextBox;
         private System.Windows.Forms.TextBox UbicacionTextBox;
         private System.Windows.Forms.TextBox TipoTextBox;
         private System.Windows.Forms.TextBox SectorTextBox;
@@ -599,5 +598,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn marcaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Organizacion;
         private System.Windows.Forms.DataGridViewCheckBoxColumn enGarantiaDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.TextBox FiltroTextBox;
     }
 }

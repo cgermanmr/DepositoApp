@@ -30,7 +30,7 @@ namespace DAL
                 x.Telefono = Convert.IsDBNull(dr[6]) ? string.Empty : dr[6].ToString();
                 x.Email = Convert.IsDBNull(dr[7]) ? string.Empty : dr[7].ToString();
                 x.Contacto = Convert.IsDBNull(dr[8]) ? string.Empty : dr[8].ToString();
-                //x.Observaciones = dr["OBSERVACIONES"].ToString();
+                x.Observaciones = dr["OBS"].ToString();
                 //x.Estado = Convert.ToBoolean(dr["ESTADO"]);
                 //x.EsCliente = Convert.ToBoolean(dr["ESCLIENTE"]);
 
@@ -46,7 +46,7 @@ namespace DAL
             EmpresaBEL x = (EmpresaBEL)valor;
 
             if (x == null) x = new EmpresaBEL();
-            hdatos.Add("@codigo", x.Id);
+            hdatos.Add("@id", x.Id);
             hdatos.Add("@razonsocial", x.RazonSocial);
             hdatos.Add("@cuit", x.CUIT);
             hdatos.Add("@direccion", x.Direccion);
@@ -56,11 +56,21 @@ namespace DAL
             hdatos.Add("@email", x.Email);
             hdatos.Add("@contacto", x.Contacto);
             hdatos.Add("@obs", x.Observaciones);
-            hdatos.Add("@estado", x.Estado);
-            hdatos.Add("@escliente", x.EsCliente);
+            //hdatos.Add("@estado", x.Estado);
+            //hdatos.Add("@escliente", x.EsCliente);
 
             return hdatos;
-        }     
+        }
+
+        public override List<EntidadBase> Listar(string filtro)
+        {
+            Hashtable parametros = new Hashtable();
+            parametros.Add("@TextoFiltro", filtro);
+
+            DataSet ds = _datos.Leer("GetEmpresaFiltro", parametros);
+
+            return ObtenerLista(ds);
+        }
 
     }
 }

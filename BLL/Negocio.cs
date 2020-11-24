@@ -29,7 +29,7 @@ namespace BLL
             }
             catch (Exception ex)
             {
-                Servicios.Logger.WriteLogExeption(ex, 7890);
+               Logger.WriteLogExeption(ex, 7890);
 
                 throw ex;
             }

@@ -299,7 +299,7 @@ namespace AppDeposito
 
         private void OrganizacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var empresaAdmin = new OrganizacionAdminForm
+            var empresaAdmin = new EmpresaAdminForm
             {
                 MdiParent = this,
             };
@@ -339,7 +339,7 @@ namespace AppDeposito
 
         private void GestionarProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var empresaAdmin = new OrganizacionAdminForm()
+            var empresaAdmin = new EmpresaAdminForm()
             {
                 MdiParent = this,
             };

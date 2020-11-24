@@ -155,8 +155,6 @@ C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.EdicionDepositoForm.resources
 C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.EdicionDonacionForm.resources
 C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.EstadoAdminForm.resources
 C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.MovimientosActivoForm.resources
-C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.OrganizacionEditForm.resources
-C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.OrganizacionAdminForm.resources
 C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.Administracion.Backup.BackupRestoreForm.resources
 C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.Administracion.Idioma.EdicionIdiomaForm.resources
 C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.Administracion.Idioma.MultiIdiomaForm.resources
@@ -193,3 +191,5 @@ C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.csproj.CopyComplete
 C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.exe
 C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.pdb
 C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.csproj.CoreCompileInputs.cache
+C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.EmpresaEditForm.resources
+C:\uai\DepIn\AppDeposito\obj\Debug\AppDeposito.EmpresaAdminForm.resources

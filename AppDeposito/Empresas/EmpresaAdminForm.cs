@@ -6,9 +6,10 @@ using Servicios;
 
 namespace AppDeposito
 {
-    public partial class OrganizacionAdminForm : Form, IObserverTraducible
+    public partial class EmpresaAdminForm : Form, IObserverTraducible
     {
-        public OrganizacionAdminForm()
+        private EmpresaBLL _emp = new EmpresaBLL();
+        public EmpresaAdminForm()
         {
             InitializeComponent();
         }
@@ -17,21 +18,11 @@ namespace AppDeposito
         {
             filtro = filtro.ToUpper();
 
-            if(string.IsNullOrEmpty(filtro))
-                bsOrganizaciones.DataSource = new EmpresaBLL().Listar().ConvertAll(_ => (EmpresaBEL)_).FindAll(_=>!_.EsCliente);
+            if (filtro.Length > 3)
+                bsOrganizaciones.DataSource = _emp.Listar(filtro).ConvertAll(_ => (EmpresaBEL)_);
             else
-                bsOrganizaciones.DataSource = new EmpresaBLL().Listar().ConvertAll(_=>(EmpresaBEL)_)
-                    .FindAll(_=>
-                    _.RazonSocial.ToUpper().Contains(filtro) |
-                    _.Telefono.ToUpper().Contains(filtro) |
-                    _.Email.ToUpper().Contains(filtro) |
-                    _.Direccion.ToUpper().Contains(filtro) |
-                    _.CUIT.ToString().Contains(filtro) |
-                    _.Direccion.ToUpper().Contains(filtro) |
-                    _.CodigoPostal.ToUpper().Contains(filtro) |
-                    _.Ciudad.ToUpper().Contains(filtro) |
-                    _.Observaciones.ToUpper().Contains(filtro)).FindAll(_=>!_.EsCliente);
-
+                bsOrganizaciones.DataSource = _emp.Listar().ConvertAll(_ => (EmpresaBEL)_);
+                    
         }
         private void OrganizacionesForm_Load(object sender, EventArgs e)
         {
@@ -64,7 +55,7 @@ namespace AppDeposito
 
             try
             {
-                new OrganizacionEditForm() { Editado = new EmpresaBEL() }.ShowDialog();
+                new EmpresaEditForm() { Editado = new EmpresaBEL() }.ShowDialog();
                 ObtenerDatos(txtFiltro.Text);
             }
             catch (Exception ex)
@@ -77,7 +68,7 @@ namespace AppDeposito
         {
             try
             {
-                new OrganizacionEditForm() { Editado = (EmpresaBEL)bsOrganizaciones.Current }.ShowDialog();
+                new EmpresaEditForm() { Editado = (EmpresaBEL)bsOrganizaciones.Current }.ShowDialog();
                 ObtenerDatos(txtFiltro.Text);
             }
             catch (Exception ex)
@@ -95,9 +86,9 @@ namespace AppDeposito
         {
             try
             {
-                if (MessageBox.Show($"Se eliminará {bsOrganizaciones.Current.ToString()}", "", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show($"Se eliminará {bsOrganizaciones.Current}", "", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
-                    Mensajes.MensajeResultado(new EmpresaBLL().Modificar((EmpresaBEL)bsOrganizaciones.Current), this);
+                    Mensajes.MensajeResultado(_emp.Eliminar((EmpresaBEL)bsOrganizaciones.Current), this);
                     ObtenerDatos(txtFiltro.Text);
                 }
             }

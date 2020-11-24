@@ -1,6 +1,6 @@
 ﻿namespace AppDeposito
 {
-    partial class OrganizacionAdminForm
+    partial class EmpresaAdminForm
     {
         /// <summary>
         /// Required designer variable.

@@ -27,13 +27,13 @@ namespace AppDeposito
             //Application.Run(new Administracion.Backup.BackupRestoreForm());
             //Application.Run(new Administracion.Logs.UsuarioControlCambiosForm());
             //Application.Run(new Administracion.Integridad.IntegridadForm());
-            Application.Run(new ActivoAdminForm());
+            //Application.Run(new ActivoAdminForm());
             //Application.Run(new ReparacionAdminForm());
             //Application.Run(new ClienteAdminForm());
             //Application.Run(new DepositoAdminForm());
 
-            //Application.Run(new Activos.ProveedoresForm());
-            //Application.Run(new OrganizacionAdminForm());
+            //Application.Run(new ProveedoresForm());
+            Application.Run(new EmpresaAdminForm());
             //Application.Run(new SectorAdminForm());
             //Application.Run(new UbicacionAdminForm());
             //Application.Run(new MarcaAdminForm());

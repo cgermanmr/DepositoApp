@@ -56,106 +56,106 @@
     <Compile Include="Activos\ActivoDatosCompraForm.Designer.cs">
       <DependentUpon>ActivoDatosCompraForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuscarClienteForm.cs">
+    <Compile Include="Clientes\BuscarClienteForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarClienteForm.Designer.cs">
+    <Compile Include="Clientes\BuscarClienteForm.Designer.cs">
       <DependentUpon>BuscarClienteForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuscarActivoForm.cs">
+    <Compile Include="Activos\ActivoBuscarForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarActivoForm.Designer.cs">
-      <DependentUpon>BuscarActivoForm.cs</DependentUpon>
+    <Compile Include="Activos\ActivoBuscarForm.Designer.cs">
+      <DependentUpon>ActivoBuscarForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClienteAdminForm.cs">
+    <Compile Include="Clientes\ClienteAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClienteAdminForm.Designer.cs">
+    <Compile Include="Clientes\ClienteAdminForm.Designer.cs">
       <DependentUpon>ClienteAdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClienteEditForm.cs">
+    <Compile Include="Clientes\ClienteEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClienteEditForm.Designer.cs">
+    <Compile Include="Clientes\ClienteEditForm.Designer.cs">
       <DependentUpon>ClienteEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="EstadoAdminForm.cs">
+    <Compile Include="Activos\EstadoAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EstadoAdminForm.Designer.cs">
+    <Compile Include="Activos\EstadoAdminForm.Designer.cs">
       <DependentUpon>EstadoAdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MovimientosActivoForm.cs">
+    <Compile Include="Activos\ActivoMovimientosForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MovimientosActivoForm.Designer.cs">
-      <DependentUpon>MovimientosActivoForm.cs</DependentUpon>
+    <Compile Include="Activos\ActivoMovimientosForm.Designer.cs">
+      <DependentUpon>ActivoMovimientosForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrganizacionEditForm.cs">
+    <Compile Include="Empresas\EmpresaEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OrganizacionEditForm.Designer.cs">
-      <DependentUpon>OrganizacionEditForm.cs</DependentUpon>
+    <Compile Include="Empresas\EmpresaEditForm.Designer.cs">
+      <DependentUpon>EmpresaEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrganizacionAdminForm.cs">
+    <Compile Include="Empresas\EmpresaAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OrganizacionAdminForm.Designer.cs">
-      <DependentUpon>OrganizacionAdminForm.cs</DependentUpon>
+    <Compile Include="Empresas\EmpresaAdminForm.Designer.cs">
+      <DependentUpon>EmpresaAdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MarcaAdminForm.cs">
+    <Compile Include="Marcas\MarcaAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MarcaAdminForm.Designer.cs">
+    <Compile Include="Marcas\MarcaAdminForm.Designer.cs">
       <DependentUpon>MarcaAdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MarcaEditForm.cs">
+    <Compile Include="Marcas\MarcaEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MarcaEditForm.Designer.cs">
+    <Compile Include="Marcas\MarcaEditForm.Designer.cs">
       <DependentUpon>MarcaEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresupuestoAdminForm.cs">
+    <Compile Include="Presupuestos\PresupuestoAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresupuestoAdminForm.Designer.cs">
+    <Compile Include="Presupuestos\PresupuestoAdminForm.Designer.cs">
       <DependentUpon>PresupuestoAdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TipoActivoAdminForm.cs">
+    <Compile Include="Activos\TipoActivo\TipoActivoAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TipoActivoAdminForm.Designer.cs">
+    <Compile Include="Activos\TipoActivo\TipoActivoAdminForm.Designer.cs">
       <DependentUpon>TipoActivoAdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TipoActivoEditForm.cs">
+    <Compile Include="Activos\TipoActivo\TipoActivoEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TipoActivoEditForm.Designer.cs">
+    <Compile Include="Activos\TipoActivo\TipoActivoEditForm.Designer.cs">
       <DependentUpon>TipoActivoEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UbicacionEditForm.cs">
+    <Compile Include="Ubicaciones\UbicacionEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UbicacionEditForm.Designer.cs">
+    <Compile Include="Ubicaciones\UbicacionEditForm.Designer.cs">
       <DependentUpon>UbicacionEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UbicacionAdminForm.cs">
+    <Compile Include="Ubicaciones\UbicacionAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UbicacionAdminForm.Designer.cs">
+    <Compile Include="Ubicaciones\UbicacionAdminForm.Designer.cs">
       <DependentUpon>UbicacionAdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SectorEditForm.cs">
+    <Compile Include="Sectores\SectorEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SectorEditForm.Designer.cs">
+    <Compile Include="Sectores\SectorEditForm.Designer.cs">
       <DependentUpon>SectorEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SectorAdminForm.cs">
+    <Compile Include="Sectores\SectorAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SectorAdminForm.Designer.cs">
+    <Compile Include="Sectores\SectorAdminForm.Designer.cs">
       <DependentUpon>SectorAdminForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Administracion\Backup\BackupRestoreForm.cs">
@@ -242,47 +242,47 @@
     <Compile Include="Activos\ActivoEditForm.Designer.cs">
       <DependentUpon>ActivoEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DepositoAdminForm.cs">
+    <Compile Include="Depositos\DepositoAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DepositoAdminForm.Designer.cs">
+    <Compile Include="Depositos\DepositoAdminForm.Designer.cs">
       <DependentUpon>DepositoAdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DepositoEditForm.cs">
+    <Compile Include="Depositos\DepositoEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DepositoEditForm.Designer.cs">
+    <Compile Include="Depositos\DepositoEditForm.Designer.cs">
       <DependentUpon>DepositoEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonacionAdminForm.cs">
+    <Compile Include="Donaciones\DonacionAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonacionAdminForm.Designer.cs">
+    <Compile Include="Donaciones\DonacionAdminForm.Designer.cs">
       <DependentUpon>DonacionAdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonacionEditForm.cs">
+    <Compile Include="Donaciones\DonacionEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonacionEditForm.Designer.cs">
+    <Compile Include="Donaciones\DonacionEditForm.Designer.cs">
       <DependentUpon>DonacionEditForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FormConfig.cs" />
-    <Compile Include="ReparacionEditForm.cs">
+    <Compile Include="Reparaciones\ReparacionEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReparacionEditForm.Designer.cs">
+    <Compile Include="Reparaciones\ReparacionEditForm.Designer.cs">
       <DependentUpon>ReparacionEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PresupuestoEditForm.cs">
+    <Compile Include="Presupuestos\PresupuestoEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PresupuestoEditForm.Designer.cs">
+    <Compile Include="Presupuestos\PresupuestoEditForm.Designer.cs">
       <DependentUpon>PresupuestoEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReparacionAdminForm.cs">
+    <Compile Include="Reparaciones\ReparacionAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReparacionAdminForm.Designer.cs">
+    <Compile Include="Reparaciones\ReparacionAdminForm.Designer.cs">
       <DependentUpon>ReparacionAdminForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
@@ -303,35 +303,35 @@
     <EmbeddedResource Include="Activos\ActivoDatosCompraForm.resx">
       <DependentUpon>ActivoDatosCompraForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarClienteForm.resx">
+    <EmbeddedResource Include="Clientes\BuscarClienteForm.resx">
       <DependentUpon>BuscarClienteForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarActivoForm.resx">
-      <DependentUpon>BuscarActivoForm.cs</DependentUpon>
+    <EmbeddedResource Include="Activos\ActivoBuscarForm.resx">
+      <DependentUpon>ActivoBuscarForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClienteAdminForm.resx">
+    <EmbeddedResource Include="Clientes\ClienteAdminForm.resx">
       <DependentUpon>ClienteAdminForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClienteEditForm.resx">
+    <EmbeddedResource Include="Clientes\ClienteEditForm.resx">
       <DependentUpon>ClienteEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DepositoEditForm.resx">
+    <EmbeddedResource Include="Depositos\DepositoEditForm.resx">
       <DependentUpon>DepositoEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonacionEditForm.resx">
+    <EmbeddedResource Include="Donaciones\DonacionEditForm.resx">
       <DependentUpon>DonacionEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EstadoAdminForm.resx">
+    <EmbeddedResource Include="Activos\EstadoAdminForm.resx">
       <DependentUpon>EstadoAdminForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MovimientosActivoForm.resx">
-      <DependentUpon>MovimientosActivoForm.cs</DependentUpon>
+    <EmbeddedResource Include="Activos\ActivoMovimientosForm.resx">
+      <DependentUpon>ActivoMovimientosForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OrganizacionEditForm.resx">
-      <DependentUpon>OrganizacionEditForm.cs</DependentUpon>
+    <EmbeddedResource Include="Empresas\EmpresaEditForm.resx">
+      <DependentUpon>EmpresaEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OrganizacionAdminForm.resx">
-      <DependentUpon>OrganizacionAdminForm.cs</DependentUpon>
+    <EmbeddedResource Include="Empresas\EmpresaAdminForm.resx">
+      <DependentUpon>EmpresaAdminForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administracion\Backup\BackupRestoreForm.resx">
       <DependentUpon>BackupRestoreForm.cs</DependentUpon>
@@ -377,46 +377,46 @@
       <DependentUpon>ActivoEditForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="MarcaAdminForm.resx">
+    <EmbeddedResource Include="Marcas\MarcaAdminForm.resx">
       <DependentUpon>MarcaAdminForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MarcaEditForm.resx">
+    <EmbeddedResource Include="Marcas\MarcaEditForm.resx">
       <DependentUpon>MarcaEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresupuestoAdminForm.resx">
+    <EmbeddedResource Include="Presupuestos\PresupuestoAdminForm.resx">
       <DependentUpon>PresupuestoAdminForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TipoActivoAdminForm.resx">
+    <EmbeddedResource Include="Activos\TipoActivo\TipoActivoAdminForm.resx">
       <DependentUpon>TipoActivoAdminForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TipoActivoEditForm.resx">
+    <EmbeddedResource Include="Activos\TipoActivo\TipoActivoEditForm.resx">
       <DependentUpon>TipoActivoEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UbicacionEditForm.resx">
+    <EmbeddedResource Include="Ubicaciones\UbicacionEditForm.resx">
       <DependentUpon>UbicacionEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UbicacionAdminForm.resx">
+    <EmbeddedResource Include="Ubicaciones\UbicacionAdminForm.resx">
       <DependentUpon>UbicacionAdminForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SectorAdminForm.resx">
+    <EmbeddedResource Include="Sectores\SectorAdminForm.resx">
       <DependentUpon>SectorAdminForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SectorEditForm.resx">
+    <EmbeddedResource Include="Sectores\SectorEditForm.resx">
       <DependentUpon>SectorEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DepositoAdminForm.resx">
+    <EmbeddedResource Include="Depositos\DepositoAdminForm.resx">
       <DependentUpon>DepositoAdminForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonacionAdminForm.resx">
+    <EmbeddedResource Include="Donaciones\DonacionAdminForm.resx">
       <DependentUpon>DonacionAdminForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PresupuestoEditForm.resx">
+    <EmbeddedResource Include="Presupuestos\PresupuestoEditForm.resx">
       <DependentUpon>PresupuestoEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReparacionEditForm.resx">
+    <EmbeddedResource Include="Reparaciones\ReparacionEditForm.resx">
       <DependentUpon>ReparacionEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReparacionAdminForm.resx">
+    <EmbeddedResource Include="Reparaciones\ReparacionAdminForm.resx">
       <DependentUpon>ReparacionAdminForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
