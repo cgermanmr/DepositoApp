@@ -85,7 +85,6 @@
   <ItemGroup>
     <Compile Include="AccesoDatos\Datos.cs" />
     <Compile Include="ActivoDAL.cs" />
-    <Compile Include="CacheDatos.cs" />
     <Compile Include="DepositoDAL.cs" />
     <Compile Include="DonacionDAL.cs" />
     <Compile Include="Repositorio.cs" />

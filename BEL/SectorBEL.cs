@@ -1,6 +1,6 @@
 ﻿namespace BEL
 {
-    public class SectorBEL : EntidadBase
+    public class SectorBEL : Entidad
     {
 
         public string CentroCosto { get; set; } = "";

@@ -7,7 +7,7 @@ using Interfaces;
 namespace BEL
 {
 
-    public class UsuarioBEL : EntidadBase, Interfaces.IAuditable
+    public class UsuarioBEL : Entidad, Interfaces.IAuditable
     {
         public string Nombre { get; set; }
         public string Clave { get; set; }

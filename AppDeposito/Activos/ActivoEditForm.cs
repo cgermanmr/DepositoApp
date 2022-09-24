@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 using BEL;
 using BLL;
@@ -8,7 +9,7 @@ namespace AppDeposito
 {
     public partial class ActivoEditForm : Form, IObserverTraducible
     {
-        public ActivoBEL Editado { get; set; }
+        public ActivoBEL Editado { get => bsEditado.Current as ActivoBEL; set => bsEditado.DataSource = value; }
 
         public ActivoEditForm()
         {
@@ -54,7 +55,7 @@ namespace AppDeposito
         {
             EstadoComboBox.DataSource = new EstadoBLL().Listar();
             MarcaComboBox.DataSource = new MarcaBLL().Listar();
-            OrganizacionComboBox.DataSource = new EmpresaBLL().Listar();
+            OrganizacionComboBox.DataSource = new EmpresaBLL();
             SectorComboBox.DataSource = new SectorBLL().Listar();
             TipoComboBox.DataSource = new TipoActivoBLL().Listar();
             UbicacionComboBox.DataSource = new UbicacionBLL().Listar();
@@ -75,7 +76,6 @@ namespace AppDeposito
         {
             try
             {
-                FormConfig.ValidarCamposCompletos(this, errorProvider);
 
                 Editado.FechaAlta = fechaAltaDateTimePicker.Value.ToShortDateString();
                 Editado.FechaCompra = fechaCompraDateTimePicker.Value.ToShortDateString();

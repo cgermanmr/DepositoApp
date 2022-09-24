@@ -12,7 +12,7 @@ namespace DAL
     {
         protected override string ProcedimientoAlmacenado => "SP_ACTIVO_MARCA";
 
-        public override EntidadBase GetNew => new MarcaBEL();
+        public override Entidad GetNew => new MarcaBEL();
 
     }
 }

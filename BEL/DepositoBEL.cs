@@ -2,7 +2,7 @@
 
 namespace BEL
 {
-    public class DepositoBEL : EntidadBase
+    public class DepositoBEL : Entidad
     {
         public int Capacidad { get; set; }
 

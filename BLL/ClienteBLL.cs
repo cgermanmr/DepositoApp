@@ -13,7 +13,7 @@ namespace BLL
       
         public override Repositorio Repositorio() => new ClienteDAL();
 
-        public override bool Eliminar(EntidadBase valor)
+        public override bool Eliminar(Entidad valor)
         {
             if (((ClienteBEL)valor).ActivosAsignados.Count > 0)
                 throw new InvalidOperationException("El cliente tiene activos asignados");

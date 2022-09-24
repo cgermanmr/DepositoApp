@@ -116,6 +116,24 @@
     <Compile Include="Marcas\MarcaEditForm.Designer.cs">
       <DependentUpon>MarcaEditForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pagos\IngresoFacturasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos\IngresoFacturasForm.Designer.cs">
+      <DependentUpon>IngresoFacturasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos\OrdenPagoAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos\OrdenPagoAdminForm.Designer.cs">
+      <DependentUpon>OrdenPagoAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos\OrdenPagoEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos\OrdenPagoEditForm.Designer.cs">
+      <DependentUpon>OrdenPagoEditForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presupuestos\PresupuestoAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -266,7 +284,7 @@
     <Compile Include="Donaciones\DonacionEditForm.Designer.cs">
       <DependentUpon>DonacionEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormConfig.cs" />
+    <Compile Include="Utils\FormConfig.cs" />
     <Compile Include="Reparaciones\ReparacionEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -479,6 +497,10 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{5132809e-c015-037c-2e7b-24881e6bb7cb}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comun\Comun.csproj">
+      <Project>{07E9B656-91AA-4343-A1C5-6F403717F8A0}</Project>
+      <Name>Comun</Name>
     </ProjectReference>
     <ProjectReference Include="..\Interfaces\Interfaces.csproj">
       <Project>{55c97a8e-1e33-4ba6-bf3c-dd9aaf0e11ac}</Project>

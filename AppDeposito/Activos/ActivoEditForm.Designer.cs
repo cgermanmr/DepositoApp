@@ -223,6 +223,24 @@
             monedaLabel1.TabIndex = 120;
             monedaLabel1.Text = "Moneda:";
             // 
+            // fechaAltaLabel1
+            // 
+            fechaAltaLabel1.AutoSize = true;
+            fechaAltaLabel1.Location = new System.Drawing.Point(52, 118);
+            fechaAltaLabel1.Name = "fechaAltaLabel1";
+            fechaAltaLabel1.Size = new System.Drawing.Size(61, 13);
+            fechaAltaLabel1.TabIndex = 121;
+            fechaAltaLabel1.Text = "Fecha Alta:";
+            // 
+            // fechaCompraLabel
+            // 
+            fechaCompraLabel.AutoSize = true;
+            fechaCompraLabel.Location = new System.Drawing.Point(33, 143);
+            fechaCompraLabel.Name = "fechaCompraLabel";
+            fechaCompraLabel.Size = new System.Drawing.Size(79, 13);
+            fechaCompraLabel.TabIndex = 122;
+            fechaCompraLabel.Text = "Fecha Compra:";
+            // 
             // DireccionTextBox
             // 
             this.DireccionTextBox.Location = new System.Drawing.Point(120, 331);
@@ -374,15 +392,6 @@
             // 
             this.errorProvider.ContainerControl = this;
             // 
-            // fechaAltaLabel1
-            // 
-            fechaAltaLabel1.AutoSize = true;
-            fechaAltaLabel1.Location = new System.Drawing.Point(52, 118);
-            fechaAltaLabel1.Name = "fechaAltaLabel1";
-            fechaAltaLabel1.Size = new System.Drawing.Size(61, 13);
-            fechaAltaLabel1.TabIndex = 121;
-            fechaAltaLabel1.Text = "Fecha Alta:";
-            // 
             // fechaAltaDateTimePicker
             // 
             this.fechaAltaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsEditado, "FechaAlta", true));
@@ -392,15 +401,6 @@
             this.fechaAltaDateTimePicker.Name = "fechaAltaDateTimePicker";
             this.fechaAltaDateTimePicker.Size = new System.Drawing.Size(96, 20);
             this.fechaAltaDateTimePicker.TabIndex = 122;
-            // 
-            // fechaCompraLabel
-            // 
-            fechaCompraLabel.AutoSize = true;
-            fechaCompraLabel.Location = new System.Drawing.Point(33, 143);
-            fechaCompraLabel.Name = "fechaCompraLabel";
-            fechaCompraLabel.Size = new System.Drawing.Size(79, 13);
-            fechaCompraLabel.TabIndex = 122;
-            fechaCompraLabel.Text = "Fecha Compra:";
             // 
             // fechaCompraDateTimePicker
             // 

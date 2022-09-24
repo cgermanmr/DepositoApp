@@ -11,9 +11,9 @@ namespace DAL
     {
         protected override string ProcedimientoAlmacenado => "SP_ACTIVO_UBICACION";
 
-        public override EntidadBase GetNew => new UbicacionBEL();
+        public override Entidad GetNew => new UbicacionBEL();
 
-        protected override List<EntidadBase> ObtenerLista(DataSet ds)
+        protected override List<Entidad> ObtenerLista(DataSet ds)
         {
             List<UbicacionBEL> _lista = new List<UbicacionBEL>();
             UbicacionBEL x;
@@ -25,10 +25,10 @@ namespace DAL
                 x.Direccion = dr[2].ToString().Trim();
                 _lista.Add(x);
             }
-            return _lista.ConvertAll(_ => (EntidadBase)_);
+            return _lista.ConvertAll(_ => (Entidad)_);
         }
 
-        protected override Hashtable ObtenerParametros(EntidadBase valor)
+        protected override Hashtable ObtenerParametros(Entidad valor)
         {
             var hdatos = new Hashtable();
 

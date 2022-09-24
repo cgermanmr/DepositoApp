@@ -5,6 +5,8 @@ using BEL;
 using Interfaces;
 using System.Collections;
 using System.Transactions;
+using System.Linq;
+using Comun;
 
 namespace DAL
 {
@@ -12,15 +14,15 @@ namespace DAL
     {
         protected override string ProcedimientoAlmacenado => "SP_CLIENTE";
 
-        public override EntidadBase GetNew => new ClienteBEL();
+        public override Entidad GetNew => new ClienteBEL();
 
-        protected override Hashtable ObtenerParametros(EntidadBase valor)
+        protected override Hashtable ObtenerParametros(Entidad valor)
         {
             var hdatos = new Hashtable();
             ClienteBEL _valor = (ClienteBEL)valor;
 
             if (_valor == null) _valor = new ClienteBEL();
-            hdatos.Add("@cod", _valor.Id);
+            hdatos.Add("@id", _valor.Id);
             hdatos.Add("@apellido", _valor.Apellido);
             hdatos.Add("@nombre", _valor.Nombre);
             hdatos.Add("@telefono", _valor.Telefono);
@@ -29,21 +31,19 @@ namespace DAL
 
             return hdatos;
         }
-        protected override List<EntidadBase> ObtenerLista(DataSet ds)
+        protected override List<Entidad> ObtenerLista(DataSet ds)
         {
-            List<EntidadBase> _lista = new List<EntidadBase>();
+            List<Entidad> _lista = new List<Entidad>();
             ClienteBEL x;
             foreach (DataRow dr in ds.Tables[0].Rows)
             {
                 x = new ClienteBEL();
-                x.Id = Convert.ToInt32(dr[0]);
+                x.Id = dr[0].SafeToLong();
                 x.Apellido = dr[1].ToString();
                 x.Nombre = dr[2].ToString();
                 x.Telefono = dr[3].ToString();
                 x.Email = dr[4].ToString();
-                bool idValido = int.TryParse(dr[5].ToString(), out int codEmpresa);
-                if (idValido)
-                    x.Empresa = (EmpresaBEL)new EmpresaDAL().ObtenerUno(new EmpresaBEL() { Id = Convert.ToInt32(codEmpresa) });
+                x.Empresa = (EmpresaBEL)new EmpresaDAL().GetById(dr[5]);
                 x.ActivosAsignados = ObtenerListaDeActivos(x);
                 _lista.Add(x);
             }
@@ -53,55 +53,61 @@ namespace DAL
         private List<ActivoBEL> ObtenerListaDeActivos(ClienteBEL cliente)
         {
             var datos = new Datos();
-            bool resultado;
 
-            Hashtable parametros = ObtenerParametros(cliente);
+            Hashtable parametros = new Hashtable();
             parametros.Add("@operacion", 6);
+            parametros.Add("@id", cliente.Id);
 
             DataSet ds= datos.Leer(ProcedimientoAlmacenado, parametros);
 
             List<ActivoBEL> _lista = new List<ActivoBEL>();
-            ActivoBEL x;
             ActivoDAL activoDAL = new ActivoDAL();
             foreach (DataRow dr in ds.Tables[0].Rows)
             {
-                x = activoDAL.GetById(Convert.ToInt32(dr[1]));
+                ActivoBEL x = activoDAL.GetById(dr[1]) as ActivoBEL;
                 _lista.Add(x);
             }
             return _lista;
         }
 
-        private bool EliminarActivosAsignados(EntidadBase cliente)
+        private bool EliminarActivosAsignados(Entidad cliente)
         {
+            var c = cliente as ClienteBEL;
             var datos = new Datos();
             bool resultado;
+
+            var eliminado = ObtenerListaDeActivos(c).Except(c.ActivosAsignados).FirstOrDefault();
+
+            if (eliminado == null) return true;
+
             Hashtable parametros = new Hashtable();
-            parametros.Add("@codCli", cliente.Id);
-            parametros.Add("@codAct", 0);
+            parametros.Add("@cliente", c.Id);
+            parametros.Add("@activo", eliminado.Id);
             parametros.Add("@operacion", 2);
             resultado = datos.Escribir("SP_ASIGNACION_ACTIVO", parametros);
 
             return resultado;
         }
 
-        private bool AgregarActivosAsignados(EntidadBase cliente)
+        private bool AgregarActivosAsignados(Entidad cliente)
         {
-            var _cliente = (ClienteBEL)cliente;
+            var c = cliente as ClienteBEL;
             var datos = new Datos();
-            bool resultado=true;
+
+            var agregado = c.ActivosAsignados.Except(ObtenerListaDeActivos(c)).FirstOrDefault();
+
+            if(agregado == null) return true;
+
             Hashtable parametros = new Hashtable();
-                        
-            foreach (var item in _cliente.ActivosAsignados)
-            {
-                parametros.Clear();
-                parametros.Add("@codCli", cliente.Id);
-                parametros.Add("@codAct", item.Id);
-                parametros.Add("@operacion", 1);
-                resultado = resultado && datos.Escribir("SP_ASIGNACION_ACTIVO", parametros);
-            }
+           
+            parametros.Add("@cliente", cliente.Id);
+            parametros.Add("@activo", agregado.Id);
+            parametros.Add("@operacion", 1);
+            var resultado = datos.Escribir("SP_ASIGNACION_ACTIVO", parametros);
+
             return resultado;
         }
-        public override bool Modificar(EntidadBase valor)
+        public override bool Modificar(Entidad valor)
         {
             bool result = false;
             using (TransactionScope scope = new TransactionScope())

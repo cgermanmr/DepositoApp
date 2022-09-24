@@ -73,6 +73,7 @@
     <Compile Include="EntidadBase.cs" />
     <Compile Include="MonedaBEL.cs" />
     <Compile Include="MarcaBEL.cs" />
+    <Compile Include="MonedaEnum.cs" />
     <Compile Include="PresupuestoBEL.cs" />
     <Compile Include="Seguridad\BitacoraBEL.cs" />
     <Compile Include="Idioma\IdiomaBEL.cs" />

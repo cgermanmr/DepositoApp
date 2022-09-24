@@ -8,7 +8,7 @@ using Servicios;
 namespace BLL
 
 {
-    public abstract class Negocio : ICRUD<EntidadBase>
+    public abstract class Negocio : ICRUD<Entidad>
     {
        
         /// <summary>
@@ -19,8 +19,8 @@ namespace BLL
         /// <summary>
         /// validar reglas de negocio
         /// </summary>
-        public virtual bool EsValido(EntidadBase valor) => true;
-        public virtual bool Agregar(EntidadBase valor)
+        public virtual bool EsValido(Entidad valor) => true;
+        public virtual bool Agregar(Entidad valor)
         {
             try
             {
@@ -35,7 +35,7 @@ namespace BLL
             }
         }
 
-        public virtual bool Eliminar(EntidadBase valor)
+        public virtual bool Eliminar(Entidad valor)
         {
             try
             {
@@ -44,13 +44,13 @@ namespace BLL
             }
             catch (Exception ex)
             {
-                Servicios.Logger.WriteLogExeption(ex, 7890);
+                Logger.WriteLogExeption(ex, 7890);
 
                 throw ex;
             }
         }
 
-        public virtual List<EntidadBase> Listar()
+        public virtual List<Entidad> Listar()
         {
             try
             {
@@ -58,13 +58,13 @@ namespace BLL
             }
             catch (Exception ex)
             {
-                Servicios.Logger.WriteLogExeption(ex, 7890);
+                Logger.WriteLogExeption(ex, 7890);
 
                 throw ex;
             }
         }
 
-        public virtual List<EntidadBase> Listar(string filtro)
+        public virtual List<Entidad> Listar(string filtro)
         {
             try
             {
@@ -78,7 +78,7 @@ namespace BLL
             }
         }
 
-        public virtual bool Modificar(EntidadBase valor)
+        public virtual bool Modificar(Entidad valor)
         {
             try
             {
@@ -93,7 +93,7 @@ namespace BLL
             }
         }
 
-        public virtual EntidadBase ObtenerUno(EntidadBase filtro)
+        public virtual Entidad ObtenerUno(Entidad filtro)
         {
             try
             {
@@ -107,7 +107,7 @@ namespace BLL
             };
         }
 
-        public virtual EntidadBase GetById(int id)
+        public virtual Entidad GetById(int id)
         {
             try
             {
@@ -124,7 +124,7 @@ namespace BLL
             }
         }
 
-        public List<EntidadBase> Listar(EntidadBase filtro)
+        public List<Entidad> Listar(Entidad filtro)
         {
             try
             {

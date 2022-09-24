@@ -7,48 +7,52 @@ using System.Threading.Tasks;
 using BEL;
 using Interfaces;
 using System.Collections;
+using Comun;
 
 namespace DAL
 {
-    public class PresupuestoDAL :Repositorio
+    public class PresupuestoDAL:Repositorio
     {
         protected override string ProcedimientoAlmacenado => "SP_Presupuesto";
 
-        public override EntidadBase GetNew => new PresupuestoBEL();
+        public override Entidad GetNew => new PresupuestoBEL();
 
-        protected override Hashtable ObtenerParametros(EntidadBase valor)
+        protected override Hashtable ObtenerParametros(Entidad valor)
         {
             var hdatos = new Hashtable();
             var _valor = (PresupuestoBEL)valor;
             if (_valor == null) _valor = new PresupuestoBEL();
-            hdatos.Add("@codigoPresupuesto", _valor.Id);
+            hdatos.Add("@id", _valor.Id);
             hdatos.Add("@codigoReparacion", _valor.Reparacion.Id);
             hdatos.Add("@codigoProveedor", _valor.Proveedor.Id);
-            hdatos.Add("@fecha",Convert.ToDateTime(_valor.Fecha).ToShortDateString());
-            hdatos.Add("@fechaValidez", Convert.ToDateTime(_valor.FechaValidez).ToShortDateString());
+            hdatos.Add("@fecha",_valor.Fecha);
+            hdatos.Add("@fechaValidez", _valor.FechaValidez);
             hdatos.Add("@tiempoReparacion", _valor.TiempoEstimado);
             hdatos.Add("@cotizacion", _valor.Cotizacion);
-            hdatos.Add("@estado", _valor.Estado);
-            hdatos.Add("@moneda", _valor.Moneda.Id);
+            hdatos.Add("@autorizado", _valor.Autorizado);
+            hdatos.Add("@moneda", _valor.Moneda);
+            hdatos.Add("@descripcion", _valor.Descripcion);
 
             return hdatos;
         }
-        protected override List<EntidadBase> ObtenerLista(DataSet ds)
+        protected override List<Entidad> ObtenerLista(DataSet ds)
         {
-            List<EntidadBase> _lista = new List<EntidadBase>();
+            List<Entidad> _lista = new List<Entidad>();
             PresupuestoBEL x;
             foreach (DataRow dr in ds.Tables[0].Rows)
             {
                 x = new PresupuestoBEL();
-                x.Id = (int)dr[0];
-                x.Proveedor= (EmpresaBEL)new EmpresaDAL().ObtenerUno(new EmpresaBEL() { Id = Convert.ToInt32(dr[1]) });
-                x.Fecha = Convert.ToDateTime(dr[2]).ToShortDateString();
-                x.FechaValidez = Convert.ToDateTime(dr[3]).ToShortDateString();
-                x.TiempoEstimado = Convert.ToInt32(dr[4]);
-                x.Cotizacion = Convert.ToDouble(dr[5]);
-                x.Moneda = (MonedaBEL)new MonedaDAL().ObtenerUno(new MonedaBEL() { Id=Convert.ToInt32(dr[6])});
-                x.Estado = Convert.ToBoolean(dr[7]);
-                x.Reparacion = new ReparacionBEL() { Id = Convert.ToInt32(dr[8])};
+                x.Id = dr[0].SafeToLong();
+                x.Proveedor= (EmpresaBEL)new EmpresaDAL().GetById(dr[1]);
+                x.Fecha = dr[2].SafeToDateTime();
+                x.FechaValidez = dr[3].SafeToDateTime();
+                x.TiempoEstimado = dr[4].SafeToInt();
+                x.Cotizacion = dr[5].SafeToDouble();
+                x.Estado = (bool)dr[6];
+                x.ReparacionId = dr[7].SafeToLong();
+                x.Descripcion = dr[8].ToString();
+                x.Autorizado = (bool)dr[9];
+                x.Moneda = (TipoMoneda)dr[10].SafeToInt();
                 _lista.Add(x);
             }
 

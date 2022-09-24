@@ -3,7 +3,7 @@ using Interfaces;
 
 namespace BEL
 {
-    public class BitacoraBEL : EntidadBase
+    public class BitacoraBEL : Entidad
     {
         public DateTime Fecha { get; set; }
         public TipoEvento Evento { get; set; } = TipoEvento.Informacion;

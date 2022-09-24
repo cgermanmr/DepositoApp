@@ -8,7 +8,7 @@ namespace BLL
     {
         public override Repositorio Repositorio() => new PresupuestoDAL();
 
-        public override bool EsValido(EntidadBase valor)
+        public override bool EsValido(Entidad valor)
         {
             if (valor.Estado)
                 if (Listar(valor).FindAll(_ => _.Id != valor.Id & _.Estado).Count > 0)

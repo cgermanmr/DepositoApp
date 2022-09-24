@@ -1,6 +1,6 @@
 ﻿namespace BEL
 {
-    public class TipoActivoBEL : EntidadBase
+    public class TipoActivoBEL : Entidad
     {
         public string Descripcion { get; set; }
 

@@ -12,9 +12,9 @@ namespace DAL
     {
         protected override string ProcedimientoAlmacenado => "SP_ACTIVO_TIPO";
 
-        public override EntidadBase GetNew => new TipoActivoBEL();
+        public override Entidad GetNew => new TipoActivoBEL();
 
-        protected override List<EntidadBase> ObtenerLista(DataSet ds)
+        protected override List<Entidad> ObtenerLista(DataSet ds)
         {
             List<TipoActivoBEL> _lista = new List<TipoActivoBEL>();
             TipoActivoBEL x;
@@ -26,10 +26,10 @@ namespace DAL
                 x.Volumen = Convert.IsDBNull(dr[2])? 0 : Convert.ToInt32(dr[2]); 
                 _lista.Add(x);
             }
-            return _lista.ConvertAll(_ => (EntidadBase)_);
+            return _lista.ConvertAll(_ => (Entidad)_);
         }
 
-        protected override Hashtable ObtenerParametros(EntidadBase valor)
+        protected override Hashtable ObtenerParametros(Entidad valor)
         {
             var hdatos = new Hashtable();
 

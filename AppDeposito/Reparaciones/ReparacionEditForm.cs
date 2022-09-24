@@ -8,42 +8,42 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BEL;
+using BLL;
+using Comun;
 using Servicios;
 
 namespace AppDeposito
 {
     public partial class ReparacionEditForm : Form, IObserverTraducible
     {
+        public ReparacionBEL Reparacion { get => bsReparacion.DataSource as ReparacionBEL; set => bsReparacion.DataSource = value; }
         public ReparacionEditForm()
         {
             InitializeComponent();
+            Reparacion = new ReparacionBEL();
         }
 
         private void EdicionReparacionForm_Load(object sender, EventArgs e)
         {
             FormConfig.Config(this);
-            bsReparacion.DataSource = Tag;
-            FinalizarReparacion(((ReparacionBEL)Tag).Realizada);
+            FinalizarReparacion(Reparacion.Realizada);
         }
 
         private void AceptarButton_Click(object sender, EventArgs e)
         {
             try
             {
-                FinalizarReparacion(realizadaCheckBox.Checked);
 
-                FormConfig.ValidarCamposCompletos(this, errorProvider);
-                
-                if (((EntidadBase)Tag).Id==0)
-                    Mensajes.MensajeResultado(new BLL.ReparacionBLL().Agregar((EntidadBase)Tag),this);
+                if ( Reparacion.Id == 0 )
+                    Mensajes.MensajeResultado(new ReparacionBLL().Agregar(Reparacion),this);
                 else
-                    Mensajes.MensajeResultado(new BLL.ReparacionBLL().Modificar((EntidadBase)Tag), this);
+                    Mensajes.MensajeResultado(new ReparacionBLL().Modificar(Reparacion), this);
 
                 Close();
             }
             catch (Exception ex)
             {
-                Servicios.Logger.WriteLogExeption(ex, 5544);
+                Logger.WriteLogExeption(ex, 5544);
                 Mensajes.MensajeExcepcion(ex, this);
             }
         }
@@ -57,19 +57,23 @@ namespace AppDeposito
         {
             if (realizada)
             {
-                fechaFinalizacionDateTimePicker.Format = DateTimePickerFormat.Short;
+                Reparacion.FechaFinalizacion = DateTime.Now;
+                fechaFinalizacionDateTimePicker.Format = DateTimePickerFormat.Custom;
                 fechaFinalizacionDateTimePicker.CustomFormat = "dd/MM/yyyy";
-                string _fecha = ((ReparacionBEL)Tag).FechaFinalizacion;
-                if (_fecha == "") ((ReparacionBEL)Tag).FechaFinalizacion = DateTime.Now.ToString("dd/MM/yyyy");
-                else fechaFinalizacionDateTimePicker.Value = DateTime.Parse(_fecha);
             }
             else
             {
+                Reparacion.FechaFinalizacion = null;
                 fechaFinalizacionDateTimePicker.Format = DateTimePickerFormat.Custom;
                 fechaFinalizacionDateTimePicker.CustomFormat = " ";
-                ((ReparacionBEL)Tag).FechaFinalizacion = "";
             }
+
+            fechaFinalizacionDateTimePicker.Enabled = realizada;
         }
+
+            
+
+           
         private void realizadaCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             FinalizarReparacion(realizadaCheckBox.Checked);
@@ -79,7 +83,7 @@ namespace AppDeposito
         {
             var _busqueda = new BuscarActivoForm();
             _busqueda.ShowDialog();
-            ((ReparacionBEL)Tag).Activo = (ActivoBEL)_busqueda.Seleccionado;
+            Reparacion.Activo = (ActivoBEL)_busqueda.Seleccionado;
             bsReparacion.ResetCurrentItem();
 
             _busqueda.Close();
@@ -87,9 +91,9 @@ namespace AppDeposito
 
         private void ClienteBuscarButton_Click(object sender, EventArgs e)
         {
-            var _busqueda = new BuscarClienteForm() { Tag = new BLL.ClienteBLL() };
+            var _busqueda = new BuscarClienteForm();
             _busqueda.ShowDialog();
-            ((ReparacionBEL)Tag).Solicitante = (ClienteBEL)_busqueda.Seleccionado;
+            Reparacion.Solicitante = _busqueda.Solicitante;
             bsReparacion.ResetCurrentItem();
             _busqueda.Close();
         }

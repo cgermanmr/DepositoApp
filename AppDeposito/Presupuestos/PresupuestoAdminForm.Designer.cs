@@ -33,22 +33,23 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.grilla = new System.Windows.Forms.DataGridView();
+            this.bsPresupuestos = new System.Windows.Forms.BindingSource(this.components);
             this.proveedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cotizacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaValidezDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.tiempoEstimadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsPresupuestos = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsPresupuestos)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(22, 12);
+            this.btnAgregar.Location = new System.Drawing.Point(33, 18);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(112, 35);
             this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -56,9 +57,10 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(103, 12);
+            this.btnEliminar.Location = new System.Drawing.Point(154, 18);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(112, 35);
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -66,9 +68,10 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(184, 12);
+            this.btnModificar.Location = new System.Drawing.Point(276, 18);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.Size = new System.Drawing.Size(112, 35);
             this.btnModificar.TabIndex = 6;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -88,19 +91,26 @@
             this.estadoDataGridViewCheckBoxColumn,
             this.tiempoEstimadoDataGridViewTextBoxColumn});
             this.grilla.DataSource = this.bsPresupuestos;
-            this.grilla.Location = new System.Drawing.Point(22, 41);
+            this.grilla.Location = new System.Drawing.Point(33, 63);
+            this.grilla.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grilla.Name = "grilla";
             this.grilla.ReadOnly = true;
             this.grilla.RowHeadersVisible = false;
+            this.grilla.RowHeadersWidth = 62;
             this.grilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grilla.Size = new System.Drawing.Size(613, 168);
+            this.grilla.Size = new System.Drawing.Size(920, 258);
             this.grilla.TabIndex = 7;
+            // 
+            // bsPresupuestos
+            // 
+            this.bsPresupuestos.DataSource = typeof(BEL.PresupuestoBEL);
             // 
             // proveedorDataGridViewTextBoxColumn
             // 
             this.proveedorDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.proveedorDataGridViewTextBoxColumn.DataPropertyName = "Proveedor";
             this.proveedorDataGridViewTextBoxColumn.HeaderText = "Proveedor";
+            this.proveedorDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.proveedorDataGridViewTextBoxColumn.Name = "proveedorDataGridViewTextBoxColumn";
             this.proveedorDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -109,59 +119,61 @@
             this.fechaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.fechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha";
             this.fechaDataGridViewTextBoxColumn.HeaderText = "Fecha";
+            this.fechaDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
             this.fechaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fechaDataGridViewTextBoxColumn.Width = 62;
+            this.fechaDataGridViewTextBoxColumn.Width = 90;
             // 
             // cotizacionDataGridViewTextBoxColumn
             // 
             this.cotizacionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.cotizacionDataGridViewTextBoxColumn.DataPropertyName = "Cotizacion";
             this.cotizacionDataGridViewTextBoxColumn.HeaderText = "Cotizacion";
+            this.cotizacionDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.cotizacionDataGridViewTextBoxColumn.Name = "cotizacionDataGridViewTextBoxColumn";
             this.cotizacionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cotizacionDataGridViewTextBoxColumn.Width = 81;
+            this.cotizacionDataGridViewTextBoxColumn.Width = 119;
             // 
             // fechaValidezDataGridViewTextBoxColumn
             // 
             this.fechaValidezDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.fechaValidezDataGridViewTextBoxColumn.DataPropertyName = "FechaValidez";
             this.fechaValidezDataGridViewTextBoxColumn.HeaderText = "Validez";
+            this.fechaValidezDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.fechaValidezDataGridViewTextBoxColumn.Name = "fechaValidezDataGridViewTextBoxColumn";
             this.fechaValidezDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fechaValidezDataGridViewTextBoxColumn.Width = 66;
+            this.fechaValidezDataGridViewTextBoxColumn.Width = 97;
             // 
             // estadoDataGridViewCheckBoxColumn
             // 
             this.estadoDataGridViewCheckBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.estadoDataGridViewCheckBoxColumn.DataPropertyName = "Estado";
+            this.estadoDataGridViewCheckBoxColumn.DataPropertyName = "Autorizado";
             this.estadoDataGridViewCheckBoxColumn.HeaderText = "Autorizado";
+            this.estadoDataGridViewCheckBoxColumn.MinimumWidth = 8;
             this.estadoDataGridViewCheckBoxColumn.Name = "estadoDataGridViewCheckBoxColumn";
             this.estadoDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.estadoDataGridViewCheckBoxColumn.Width = 63;
+            this.estadoDataGridViewCheckBoxColumn.Width = 92;
             // 
             // tiempoEstimadoDataGridViewTextBoxColumn
             // 
             this.tiempoEstimadoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.tiempoEstimadoDataGridViewTextBoxColumn.DataPropertyName = "TiempoEstimado";
             this.tiempoEstimadoDataGridViewTextBoxColumn.HeaderText = "Demora";
+            this.tiempoEstimadoDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.tiempoEstimadoDataGridViewTextBoxColumn.Name = "tiempoEstimadoDataGridViewTextBoxColumn";
             this.tiempoEstimadoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tiempoEstimadoDataGridViewTextBoxColumn.Width = 69;
-            // 
-            // bsPresupuestos
-            // 
-            this.bsPresupuestos.DataSource = typeof(BEL.PresupuestoBEL);
+            this.tiempoEstimadoDataGridViewTextBoxColumn.Width = 102;
             // 
             // PresupuestoAdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 221);
+            this.ClientSize = new System.Drawing.Size(992, 340);
             this.Controls.Add(this.grilla);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "PresupuestoAdminForm";
             this.Text = "Presupuestos";
             this.Load += new System.EventHandler(this.PresupuestoAdminForm_Load);

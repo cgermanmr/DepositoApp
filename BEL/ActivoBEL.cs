@@ -2,7 +2,7 @@
 
 namespace BEL
 {
-    public class ActivoBEL : EntidadBase
+    public class ActivoBEL : Entidad
     {
         public string FechaAlta { get; set; } = "";
         public string FechaCompra { get; set; } = "";

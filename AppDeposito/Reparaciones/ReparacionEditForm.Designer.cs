@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label descripcionLabel;
-            System.Windows.Forms.Label observacionesLabel;
             System.Windows.Forms.Label ticketSoporteLabel;
             System.Windows.Forms.Label nombreLabel;
             System.Windows.Forms.Label numeroInventarioLabel;
@@ -40,8 +39,6 @@
             System.Windows.Forms.Label descripcionLabel2;
             this.descripcionTextBox = new System.Windows.Forms.TextBox();
             this.bsReparacion = new System.Windows.Forms.BindingSource(this.components);
-            this.estadoCheckBox = new System.Windows.Forms.CheckBox();
-            this.observacionesTextBox = new System.Windows.Forms.TextBox();
             this.ticketSoporteTextBox = new System.Windows.Forms.TextBox();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.numeroInventarioTextBox = new System.Windows.Forms.TextBox();
@@ -58,7 +55,6 @@
             this.descripcionTextBox2 = new System.Windows.Forms.TextBox();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             descripcionLabel = new System.Windows.Forms.Label();
-            observacionesLabel = new System.Windows.Forms.Label();
             ticketSoporteLabel = new System.Windows.Forms.Label();
             nombreLabel = new System.Windows.Forms.Label();
             numeroInventarioLabel = new System.Windows.Forms.Label();
@@ -79,19 +75,10 @@
             descripcionLabel.TabIndex = 0;
             descripcionLabel.Text = "Falla:";
             // 
-            // observacionesLabel
-            // 
-            observacionesLabel.AutoSize = true;
-            observacionesLabel.Location = new System.Drawing.Point(33, 290);
-            observacionesLabel.Name = "observacionesLabel";
-            observacionesLabel.Size = new System.Drawing.Size(81, 13);
-            observacionesLabel.TabIndex = 12;
-            observacionesLabel.Text = "Observaciones:";
-            // 
             // ticketSoporteLabel
             // 
             ticketSoporteLabel.AutoSize = true;
-            ticketSoporteLabel.Location = new System.Drawing.Point(33, 341);
+            ticketSoporteLabel.Location = new System.Drawing.Point(33, 306);
             ticketSoporteLabel.Name = "ticketSoporteLabel";
             ticketSoporteLabel.Size = new System.Drawing.Size(80, 13);
             ticketSoporteLabel.TabIndex = 14;
@@ -164,29 +151,10 @@
             // 
             this.bsReparacion.DataSource = typeof(BEL.ReparacionBEL);
             // 
-            // estadoCheckBox
-            // 
-            this.estadoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.bsReparacion, "Estado", true));
-            this.estadoCheckBox.Location = new System.Drawing.Point(207, 21);
-            this.estadoCheckBox.Name = "estadoCheckBox";
-            this.estadoCheckBox.Size = new System.Drawing.Size(92, 24);
-            this.estadoCheckBox.TabIndex = 3;
-            this.estadoCheckBox.Text = "Autorizado";
-            this.estadoCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // observacionesTextBox
-            // 
-            this.observacionesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsReparacion, "Observaciones", true));
-            this.observacionesTextBox.Location = new System.Drawing.Point(119, 289);
-            this.observacionesTextBox.Multiline = true;
-            this.observacionesTextBox.Name = "observacionesTextBox";
-            this.observacionesTextBox.Size = new System.Drawing.Size(344, 46);
-            this.observacionesTextBox.TabIndex = 13;
-            // 
             // ticketSoporteTextBox
             // 
             this.ticketSoporteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsReparacion, "TicketSoporte", true));
-            this.ticketSoporteTextBox.Location = new System.Drawing.Point(119, 341);
+            this.ticketSoporteTextBox.Location = new System.Drawing.Point(119, 302);
             this.ticketSoporteTextBox.Name = "ticketSoporteTextBox";
             this.ticketSoporteTextBox.Size = new System.Drawing.Size(100, 20);
             this.ticketSoporteTextBox.TabIndex = 15;
@@ -242,14 +210,14 @@
             // 
             this.fechaFinalizacionDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsReparacion, "FechaFinalizacion", true));
             this.fechaFinalizacionDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.fechaFinalizacionDateTimePicker.Location = new System.Drawing.Point(304, 341);
+            this.fechaFinalizacionDateTimePicker.Location = new System.Drawing.Point(239, 302);
             this.fechaFinalizacionDateTimePicker.Name = "fechaFinalizacionDateTimePicker";
-            this.fechaFinalizacionDateTimePicker.Size = new System.Drawing.Size(81, 20);
+            this.fechaFinalizacionDateTimePicker.Size = new System.Drawing.Size(96, 20);
             this.fechaFinalizacionDateTimePicker.TabIndex = 23;
             // 
             // fechaSolicitudDateTimePicker
             // 
-            this.fechaSolicitudDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsReparacion, "FechaSolicitud", true));
+            this.fechaSolicitudDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsReparacion, "FechaSolicitud", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.fechaSolicitudDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.fechaSolicitudDateTimePicker.Location = new System.Drawing.Point(119, 21);
             this.fechaSolicitudDateTimePicker.Name = "fechaSolicitudDateTimePicker";
@@ -278,7 +246,7 @@
             // 
             // AceptarButton
             // 
-            this.AceptarButton.Location = new System.Drawing.Point(307, 380);
+            this.AceptarButton.Location = new System.Drawing.Point(304, 348);
             this.AceptarButton.Name = "AceptarButton";
             this.AceptarButton.Size = new System.Drawing.Size(75, 23);
             this.AceptarButton.TabIndex = 27;
@@ -288,7 +256,7 @@
             // 
             // CancelarButton
             // 
-            this.CancelarButton.Location = new System.Drawing.Point(388, 380);
+            this.CancelarButton.Location = new System.Drawing.Point(385, 348);
             this.CancelarButton.Name = "CancelarButton";
             this.CancelarButton.Size = new System.Drawing.Size(75, 23);
             this.CancelarButton.TabIndex = 28;
@@ -300,9 +268,9 @@
             // 
             this.realizadaCheckBox.AutoSize = true;
             this.realizadaCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.bsReparacion, "Realizada", true));
-            this.realizadaCheckBox.Location = new System.Drawing.Point(225, 344);
+            this.realizadaCheckBox.Location = new System.Drawing.Point(341, 302);
             this.realizadaCheckBox.Name = "realizadaCheckBox";
-            this.realizadaCheckBox.Size = new System.Drawing.Size(73, 17);
+            this.realizadaCheckBox.Size = new System.Drawing.Size(80, 21);
             this.realizadaCheckBox.TabIndex = 30;
             this.realizadaCheckBox.Text = "Realizada";
             this.realizadaCheckBox.UseVisualStyleBackColor = true;
@@ -326,7 +294,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(480, 415);
+            this.ClientSize = new System.Drawing.Size(488, 421);
             this.Controls.Add(descripcionLabel2);
             this.Controls.Add(this.descripcionTextBox2);
             this.Controls.Add(this.realizadaCheckBox);
@@ -348,9 +316,6 @@
             this.Controls.Add(this.nombreTextBox);
             this.Controls.Add(descripcionLabel);
             this.Controls.Add(this.descripcionTextBox);
-            this.Controls.Add(this.estadoCheckBox);
-            this.Controls.Add(observacionesLabel);
-            this.Controls.Add(this.observacionesTextBox);
             this.Controls.Add(ticketSoporteLabel);
             this.Controls.Add(this.ticketSoporteTextBox);
             this.Name = "ReparacionEditForm";
@@ -367,8 +332,6 @@
 
         private System.Windows.Forms.BindingSource bsReparacion;
         private System.Windows.Forms.TextBox descripcionTextBox;
-        private System.Windows.Forms.CheckBox estadoCheckBox;
-        private System.Windows.Forms.TextBox observacionesTextBox;
         private System.Windows.Forms.TextBox ticketSoporteTextBox;
         private System.Windows.Forms.TextBox nombreTextBox;
         private System.Windows.Forms.TextBox numeroInventarioTextBox;

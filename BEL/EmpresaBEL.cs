@@ -1,6 +1,6 @@
 ﻿namespace BEL
 {
-    public class EmpresaBEL : EntidadBase
+    public class EmpresaBEL : Entidad
     {
         public string RazonSocial { get; set; } = "";
         public long CUIT { get; set; }

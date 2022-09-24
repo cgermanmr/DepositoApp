@@ -1,6 +1,6 @@
 ﻿namespace BEL
 {
-    public class MarcaBEL : EntidadBase
+    public class MarcaBEL : Entidad
     {
         public override string ToString()
         {

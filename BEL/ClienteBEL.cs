@@ -2,7 +2,7 @@
 
 namespace BEL
 {
-    public class ClienteBEL : EntidadBase
+    public class ClienteBEL : Entidad
     {
         public string Nombre { get; set; } = "";
         public string Apellido { get; set; } = "";

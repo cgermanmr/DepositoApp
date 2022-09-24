@@ -1,36 +1,40 @@
 ﻿using System;
 using System.Windows.Forms;
+using BEL;
 using Servicios;
 
 namespace AppDeposito
 {
     public partial class PresupuestoEditForm : Form, IObserverTraducible
     {
-        public PresupuestoEditForm()
+        private bool _isLoading;
+        private PresupuestoBEL Presupuesto { get => bsPresupuesto.DataSource as PresupuestoBEL; set => bsPresupuesto.DataSource = value; }
+        public PresupuestoEditForm(PresupuestoBEL presupuesto)
         {
             InitializeComponent();
+            Presupuesto = presupuesto;
         }
-
-       
+               
         private void EdicionPresupuestoForm_Load(object sender, EventArgs e)
         {
+            _isLoading = true;
             FormConfig.Config(this);
-            FormConfig.ValidarCamposCompletos(this, errorProvider);
-            bsPresupuesto.DataSource = Tag;
             bsProveedores.DataSource = new BLL.EmpresaBLL().Listar();
-            bsMoneda.DataSource = new BLL.MonedaBLL().Listar();
+            cmbMoneda.BindEnumToComboBox(TipoMoneda.Pesos);
+            cotizacionTextBox.SoloNumerosConDecimales();
+            tiempoEstimadoTextBox.SoloNumeros();
 
-            if (((BEL.PresupuestoBEL)bsPresupuesto.Current).Id == 0)
+            if (Presupuesto.Id == 0)
             {
-                razonSocialComboBox.SelectedIndex = -1;
-                cmbMoneda.SelectedIndex=-1;
+                proveedorComboBox.SelectedIndex = -1;
             }
             else
             {
-                razonSocialComboBox.SelectedIndex = razonSocialComboBox.FindStringExact(((BEL.PresupuestoBEL)bsPresupuesto.Current).Proveedor.RazonSocial);
-                cmbMoneda.SelectedIndex = cmbMoneda.FindString(((BEL.PresupuestoBEL)bsPresupuesto.Current).Moneda.Descripcion);
+                proveedorComboBox.SelectedIndex = proveedorComboBox.FindStringExact(Presupuesto.Proveedor.RazonSocial);
+                cmbMoneda.SelectedValue = (TipoMoneda)Presupuesto.Moneda;
             }
 
+            _isLoading = false;
         }
 
         private void AceptarButton_Click(object sender, EventArgs e)
@@ -39,11 +43,13 @@ namespace AppDeposito
             {
                 FormConfig.ValidarCamposCompletos(this, errorProvider);
 
+                //Presupuesto.Moneda = cmbMoneda.SelectedValue.ToString().ToEnum<TipoMoneda>();
+
                 bool result;
-                if (((BEL.PresupuestoBEL)bsPresupuesto.Current).Id == 0)
-                   result = new BLL.Presupuesto().Agregar((BEL.EntidadBase)bsPresupuesto.Current);
+                if (Presupuesto.Id == 0)
+                   result = new BLL.Presupuesto().Agregar(Presupuesto);
                 else
-                    result = new BLL.Presupuesto().Modificar((BEL.EntidadBase)bsPresupuesto.Current);
+                    result = new BLL.Presupuesto().Modificar(Presupuesto);
                                 
                 Mensajes.MensajeResultado(result, this);
 
@@ -64,6 +70,18 @@ namespace AppDeposito
         public void Traducir()
         {
             throw new NotImplementedException();
+        }
+
+        private void razonSocialComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Presupuesto.Proveedor = proveedorComboBox.SelectedValue as EmpresaBEL;
+        }
+
+        private void cmbMoneda_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (_isLoading) return;
+
+            Presupuesto.Moneda = cmbMoneda.SelectedValue.ToString().ToEnum<TipoMoneda>();
         }
     }
 }

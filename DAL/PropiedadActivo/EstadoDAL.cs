@@ -11,6 +11,6 @@ namespace DAL
     {
         protected override string ProcedimientoAlmacenado => "SP_ACTIVO_ESTADO";
 
-        public override EntidadBase GetNew => new EstadoBEL();
+        public override Entidad GetNew => new EstadoBEL();
     }
 }

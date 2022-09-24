@@ -273,7 +273,7 @@
             this.btnModificarPermisos.TabIndex = 36;
             this.btnModificarPermisos.Text = "Modificar permisos";
             this.btnModificarPermisos.UseVisualStyleBackColor = true;
-            this.btnModificarPermisos.Click += new System.EventHandler(this.btnModificarPermisos_Click);
+            this.btnModificarPermisos.Click += new System.EventHandler(this.BtnModificarPermisos_Click);
             // 
             // txtIdioma
             // 

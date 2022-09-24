@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,7 +19,13 @@ namespace AppDeposito
         public ClienteAdminForm()
         {
             InitializeComponent();
+            
         }
+
+        public ClienteBEL ClienteSeleccionado { get => bsClientes.Current as ClienteBEL; }
+        public ActivoBEL ActivoSeleccionado { get => bsActivosAsignados.Current as ActivoBEL; }
+
+        private readonly ClienteBLL _clienteBll = new ClienteBLL();
 
         List<ClienteBEL> _listaClientes;
         private void ClienteAdminForm_Load(object sender, EventArgs e)
@@ -28,7 +35,7 @@ namespace AppDeposito
                 FormConfig.Config(this);
                 FormConfig.TextBoxToReadOnly(this);
                 txtFiltro.ReadOnly = false;
-                _listaClientes = new BLL.ClienteBLL().Listar().ConvertAll(x => (BEL.ClienteBEL)x);
+                _listaClientes = _clienteBll.Listar().ConvertAll(x => (ClienteBEL)x);
                 bsClientes.DataSource = _listaClientes;
             }
             catch (Exception ex)
@@ -41,15 +48,14 @@ namespace AppDeposito
         private void button2_Click(object sender, EventArgs e)
         {
             var _edit = new ClienteEditForm();
-            _edit.Tag = bsClientes.Current;
+            _edit.Cliente = ClienteSeleccionado;
             _edit.ShowDialog();
-            bsClientes.ResetCurrentItem();
+            RefrescarDatos();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             var _edit = new ClienteEditForm();
-            _edit.Tag = new BEL.ClienteBEL();
             _edit.ShowDialog();
             bsClientes.ResetCurrentItem();
         }
@@ -59,8 +65,8 @@ namespace AppDeposito
             try
             {
                 bool result=false;
-                if (MessageBox.Show($"Eliminar {bsClientes.Current.ToString()}", "Eliminar", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-                    result = new BLL.ClienteBLL().Eliminar((BEL.EntidadBase)bsClientes.Current);
+                if (MessageBox.Show($"Eliminar {bsClientes.Current}", "Eliminar", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                    result = _clienteBll.Eliminar((Entidad)bsClientes.Current);
 
                 if (result)
                 {
@@ -70,7 +76,7 @@ namespace AppDeposito
             }
             catch (Exception ex)
             {
-                Servicios.Logger.WriteLogExeption(ex, 4455);
+                Logger.WriteLogExeption(ex, 4455);
                 Mensajes.MensajeExcepcion(ex, this);
                 
             }
@@ -92,7 +98,7 @@ namespace AppDeposito
             }
             catch (Exception ex)
             {
-                Servicios.Logger.WriteLogExeption(ex, 3344);
+                Logger.WriteLogExeption(ex, 3344);
                 Mensajes.MensajeExcepcion(ex, this);
             }
         }
@@ -105,21 +111,12 @@ namespace AppDeposito
                 _buscar.ShowDialog();
 
                 if (_buscar.Seleccionado == null) return;
-                ActivoBEL _seleccionado = (ActivoBEL)_buscar.Seleccionado;
+                ClienteSeleccionado.ActivosAsignados.Add(_buscar.Seleccionado);
                 _buscar.Close();
 
-                if (_seleccionado.EstadoActivo.Id != (int)Estados.Disponible)
-                    throw new InvalidOperationException("Activo no disponible");
+                _clienteBll.Modificar(ClienteSeleccionado);
 
-                ((ClienteBEL)bsClientes.Current).ActivosAsignados.Add(_seleccionado);
-
-                if (new ClienteBLL().Modificar((ClienteBEL)bsClientes.Current))
-                {
-                    _seleccionado.EstadoActivo = (EstadoBEL)new EstadoBLL().Listar().Find(x=>x.Id==(int)Estados.EnUso);
-                    new ActivoBLL().Modificar(_seleccionado);
-                }
-                                
-                bsActivosAsignados.ResetBindings(false);
+                RefrescarDatos();
             }
             catch (Exception ex)
             {
@@ -132,16 +129,16 @@ namespace AppDeposito
         {
             try
             {
-                if (bsActivosAsignados.Current == null) return;
+                if (ActivoSeleccionado == null) return;
 
-                if (new ClienteBLL().Modificar((ClienteBEL)bsClientes.Current))
-                {
-                    var _nuevoEstado = new EstadoBLL().Listar().Find(x => x.Id == (int)Estados.Disponible);
-                    ((ActivoBEL)bsActivosAsignados.Current).EstadoActivo = (EstadoBEL)_nuevoEstado;
-                    new ActivoBLL().Modificar((ActivoBEL)bsActivosAsignados.Current);
-                    bsActivosAsignados.Remove(bsActivosAsignados.Current);
-                    bsActivosAsignados.ResetBindings(false);
-                }
+                if (ClienteSeleccionado == null) return;
+
+                ClienteSeleccionado.ActivosAsignados.Remove(ActivoSeleccionado);
+
+                _clienteBll.Modificar(ClienteSeleccionado);
+
+                RefrescarDatos();
+
             }
             catch (Exception ex)
             {
@@ -150,6 +147,11 @@ namespace AppDeposito
             }
         }
 
+        private void RefrescarDatos()
+        {
+            bsActivosAsignados.ResetBindings(true);
+            bsClientes.ResetBindings(true);
+        }
         public void Traducir()
         {
             Traductor.Traducir(this);

@@ -11,7 +11,7 @@ namespace DAL
     {
         protected override string ProcedimientoAlmacenado => "SP_MONEDA";
 
-        public override EntidadBase GetNew => new MonedaBEL();
+        public override Entidad GetNew => new MonedaBEL();
 
     }
 }

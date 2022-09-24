@@ -102,7 +102,7 @@
             this.valorCompraTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsActivo, "ValorCompra", true));
             this.valorCompraTextBox.Location = new System.Drawing.Point(111, 99);
             this.valorCompraTextBox.Name = "valorCompraTextBox";
-            this.valorCompraTextBox.Size = new System.Drawing.Size(100, 20);
+            this.valorCompraTextBox.Size = new System.Drawing.Size(143, 20);
             this.valorCompraTextBox.TabIndex = 2;
             // 
             // monedaTextBox
@@ -110,7 +110,7 @@
             this.monedaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsActivo, "Moneda", true));
             this.monedaTextBox.Location = new System.Drawing.Point(111, 73);
             this.monedaTextBox.Name = "monedaTextBox";
-            this.monedaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.monedaTextBox.Size = new System.Drawing.Size(143, 20);
             this.monedaTextBox.TabIndex = 5;
             // 
             // fechaCompraTextBox
@@ -118,7 +118,7 @@
             this.fechaCompraTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsActivo, "FechaCompra", true));
             this.fechaCompraTextBox.Location = new System.Drawing.Point(111, 21);
             this.fechaCompraTextBox.Name = "fechaCompraTextBox";
-            this.fechaCompraTextBox.Size = new System.Drawing.Size(100, 20);
+            this.fechaCompraTextBox.Size = new System.Drawing.Size(143, 20);
             this.fechaCompraTextBox.TabIndex = 7;
             // 
             // fechaAltaTextBox
@@ -126,7 +126,7 @@
             this.fechaAltaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsActivo, "FechaAlta", true));
             this.fechaAltaTextBox.Location = new System.Drawing.Point(111, 47);
             this.fechaAltaTextBox.Name = "fechaAltaTextBox";
-            this.fechaAltaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.fechaAltaTextBox.Size = new System.Drawing.Size(143, 20);
             this.fechaAltaTextBox.TabIndex = 11;
             // 
             // mesesGarantiaTextBox
@@ -134,14 +134,14 @@
             this.mesesGarantiaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsActivo, "MesesGarantia", true));
             this.mesesGarantiaTextBox.Location = new System.Drawing.Point(111, 125);
             this.mesesGarantiaTextBox.Name = "mesesGarantiaTextBox";
-            this.mesesGarantiaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.mesesGarantiaTextBox.Size = new System.Drawing.Size(143, 20);
             this.mesesGarantiaTextBox.TabIndex = 12;
             // 
             // ActivoDatosCompraForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(242, 164);
+            this.ClientSize = new System.Drawing.Size(328, 164);
             this.Controls.Add(this.mesesGarantiaTextBox);
             this.Controls.Add(fechaAltaLabel);
             this.Controls.Add(this.fechaAltaTextBox);

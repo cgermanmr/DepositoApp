@@ -59,6 +59,7 @@
             this.EliminarButton = new System.Windows.Forms.Button();
             this.DatosDeCompraButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.FiltroTextBox = new System.Windows.Forms.TextBox();
             this.UbicacionTextBox = new System.Windows.Forms.TextBox();
             this.TipoTextBox = new System.Windows.Forms.TextBox();
             this.SectorTextBox = new System.Windows.Forms.TextBox();
@@ -70,7 +71,6 @@
             this.AgregarButton = new System.Windows.Forms.Button();
             this.DescripcionTextBox = new System.Windows.Forms.TextBox();
             this.VolumenTextBox = new System.Windows.Forms.TextBox();
-            this.FiltroTextBox = new System.Windows.Forms.TextBox();
             Label1 = new System.Windows.Forms.Label();
             UbicacionDescripcionLabel1 = new System.Windows.Forms.Label();
             TipoDescripcionLabel1 = new System.Windows.Forms.Label();
@@ -94,120 +94,108 @@
             // Label1
             // 
             Label1.AutoSize = true;
-            Label1.Location = new System.Drawing.Point(46, 378);
-            Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Label1.Location = new System.Drawing.Point(31, 246);
             Label1.Name = "Label1";
-            Label1.Size = new System.Drawing.Size(79, 20);
+            Label1.Size = new System.Drawing.Size(55, 13);
             Label1.TabIndex = 192;
             Label1.Text = "Dirección:";
             // 
             // UbicacionDescripcionLabel1
             // 
             UbicacionDescripcionLabel1.AutoSize = true;
-            UbicacionDescripcionLabel1.Location = new System.Drawing.Point(44, 338);
-            UbicacionDescripcionLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            UbicacionDescripcionLabel1.Location = new System.Drawing.Point(29, 220);
             UbicacionDescripcionLabel1.Name = "UbicacionDescripcionLabel1";
-            UbicacionDescripcionLabel1.Size = new System.Drawing.Size(83, 20);
+            UbicacionDescripcionLabel1.Size = new System.Drawing.Size(58, 13);
             UbicacionDescripcionLabel1.TabIndex = 188;
             UbicacionDescripcionLabel1.Text = "Ubicación:";
             // 
             // TipoDescripcionLabel1
             // 
             TipoDescripcionLabel1.AutoSize = true;
-            TipoDescripcionLabel1.Location = new System.Drawing.Point(82, 183);
-            TipoDescripcionLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            TipoDescripcionLabel1.Location = new System.Drawing.Point(55, 119);
             TipoDescripcionLabel1.Name = "TipoDescripcionLabel1";
-            TipoDescripcionLabel1.Size = new System.Drawing.Size(43, 20);
+            TipoDescripcionLabel1.Size = new System.Drawing.Size(31, 13);
             TipoDescripcionLabel1.TabIndex = 187;
             TipoDescripcionLabel1.Text = "Tipo:";
             // 
             // SectorNombreLabel
             // 
             SectorNombreLabel.AutoSize = true;
-            SectorNombreLabel.Location = new System.Drawing.Point(68, 298);
-            SectorNombreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            SectorNombreLabel.Location = new System.Drawing.Point(45, 194);
             SectorNombreLabel.Name = "SectorNombreLabel";
-            SectorNombreLabel.Size = new System.Drawing.Size(60, 20);
+            SectorNombreLabel.Size = new System.Drawing.Size(41, 13);
             SectorNombreLabel.TabIndex = 186;
             SectorNombreLabel.Text = "Sector:";
             // 
             // RazonSocialLabel
             // 
             RazonSocialLabel.AutoSize = true;
-            RazonSocialLabel.Location = new System.Drawing.Point(22, 260);
-            RazonSocialLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            RazonSocialLabel.Location = new System.Drawing.Point(15, 169);
             RazonSocialLabel.Name = "RazonSocialLabel";
-            RazonSocialLabel.Size = new System.Drawing.Size(106, 20);
+            RazonSocialLabel.Size = new System.Drawing.Size(72, 13);
             RazonSocialLabel.TabIndex = 185;
             RazonSocialLabel.Text = "Organización:";
             // 
             // MarcaNombreLabel
             // 
             MarcaNombreLabel.AutoSize = true;
-            MarcaNombreLabel.Location = new System.Drawing.Point(69, 140);
-            MarcaNombreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            MarcaNombreLabel.Location = new System.Drawing.Point(46, 91);
             MarcaNombreLabel.Name = "MarcaNombreLabel";
-            MarcaNombreLabel.Size = new System.Drawing.Size(57, 20);
+            MarcaNombreLabel.Size = new System.Drawing.Size(40, 13);
             MarcaNombreLabel.TabIndex = 184;
             MarcaNombreLabel.Text = "Marca:";
             // 
             // EstadoDescripcionLabel
             // 
             EstadoDescripcionLabel.AutoSize = true;
-            EstadoDescripcionLabel.Location = new System.Drawing.Point(64, 220);
-            EstadoDescripcionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            EstadoDescripcionLabel.Location = new System.Drawing.Point(43, 143);
             EstadoDescripcionLabel.Name = "EstadoDescripcionLabel";
-            EstadoDescripcionLabel.Size = new System.Drawing.Size(64, 20);
+            EstadoDescripcionLabel.Size = new System.Drawing.Size(43, 13);
             EstadoDescripcionLabel.TabIndex = 183;
             EstadoDescripcionLabel.Text = "Estado:";
             // 
             // DescripcionLabel
             // 
             DescripcionLabel.AutoSize = true;
-            DescripcionLabel.Location = new System.Drawing.Point(30, 100);
-            DescripcionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            DescripcionLabel.Location = new System.Drawing.Point(20, 65);
             DescripcionLabel.Name = "DescripcionLabel";
-            DescripcionLabel.Size = new System.Drawing.Size(96, 20);
+            DescripcionLabel.Size = new System.Drawing.Size(66, 13);
             DescripcionLabel.TabIndex = 173;
             DescripcionLabel.Text = "Descripcion:";
             // 
             // NumeroSerieLabel
             // 
             NumeroSerieLabel.AutoSize = true;
-            NumeroSerieLabel.Location = new System.Drawing.Point(346, 60);
-            NumeroSerieLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            NumeroSerieLabel.Location = new System.Drawing.Point(231, 39);
             NumeroSerieLabel.Name = "NumeroSerieLabel";
-            NumeroSerieLabel.Size = new System.Drawing.Size(50, 20);
+            NumeroSerieLabel.Size = new System.Drawing.Size(34, 13);
             NumeroSerieLabel.TabIndex = 177;
             NumeroSerieLabel.Text = "Serie:";
             // 
             // ObservacionesLabel
             // 
             ObservacionesLabel.AutoSize = true;
-            ObservacionesLabel.Location = new System.Drawing.Point(10, 420);
-            ObservacionesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            ObservacionesLabel.Location = new System.Drawing.Point(7, 273);
             ObservacionesLabel.Name = "ObservacionesLabel";
-            ObservacionesLabel.Size = new System.Drawing.Size(118, 20);
+            ObservacionesLabel.Size = new System.Drawing.Size(81, 13);
             ObservacionesLabel.TabIndex = 179;
             ObservacionesLabel.Text = "Observaciones:";
             // 
             // VolumenLabel
             // 
             VolumenLabel.AutoSize = true;
-            VolumenLabel.Location = new System.Drawing.Point(532, 183);
-            VolumenLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            VolumenLabel.Location = new System.Drawing.Point(355, 119);
             VolumenLabel.Name = "VolumenLabel";
-            VolumenLabel.Size = new System.Drawing.Size(76, 20);
+            VolumenLabel.Size = new System.Drawing.Size(51, 13);
             VolumenLabel.TabIndex = 181;
             VolumenLabel.Text = "Volumen:";
             // 
             // numeroInventarioLabel1
             // 
             numeroInventarioLabel1.AutoSize = true;
-            numeroInventarioLabel1.Location = new System.Drawing.Point(46, 54);
-            numeroInventarioLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            numeroInventarioLabel1.Location = new System.Drawing.Point(31, 35);
             numeroInventarioLabel1.Name = "numeroInventarioLabel1";
-            numeroInventarioLabel1.Size = new System.Drawing.Size(83, 20);
+            numeroInventarioLabel1.Size = new System.Drawing.Size(57, 13);
             numeroInventarioLabel1.TabIndex = 205;
             numeroInventarioLabel1.Text = "Inventario:";
             // 
@@ -230,13 +218,12 @@
             this.GrillaActivos.DataSource = this.bsActivos;
             this.GrillaActivos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GrillaActivos.Location = new System.Drawing.Point(0, 0);
-            this.GrillaActivos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GrillaActivos.Name = "GrillaActivos";
             this.GrillaActivos.ReadOnly = true;
             this.GrillaActivos.RowHeadersVisible = false;
             this.GrillaActivos.RowHeadersWidth = 62;
             this.GrillaActivos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GrillaActivos.Size = new System.Drawing.Size(820, 279);
+            this.GrillaActivos.Size = new System.Drawing.Size(591, 231);
             this.GrillaActivos.TabIndex = 1;
             // 
             // inventarioDataGridViewTextBoxColumn
@@ -265,7 +252,7 @@
             this.Descripcion.MinimumWidth = 8;
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.ReadOnly = true;
-            this.Descripcion.Width = 128;
+            this.Descripcion.Width = 99;
             // 
             // tipoActivoDataGridViewTextBoxColumn
             // 
@@ -320,7 +307,6 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -358,34 +344,30 @@
             this.splitContainer1.Panel1.Controls.Add(ObservacionesLabel);
             this.splitContainer1.Panel1.Controls.Add(VolumenLabel);
             this.splitContainer1.Panel1.Controls.Add(this.VolumenTextBox);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.GrillaActivos);
-            this.splitContainer1.Size = new System.Drawing.Size(820, 858);
-            this.splitContainer1.SplitterDistance = 573;
-            this.splitContainer1.SplitterWidth = 6;
+            this.splitContainer1.Size = new System.Drawing.Size(591, 604);
+            this.splitContainer1.SplitterDistance = 369;
             this.splitContainer1.TabIndex = 173;
             // 
             // observacionesTextBox
             // 
             this.observacionesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsActivos, "Observaciones", true));
-            this.observacionesTextBox.Location = new System.Drawing.Point(138, 414);
-            this.observacionesTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.observacionesTextBox.Location = new System.Drawing.Point(92, 269);
             this.observacionesTextBox.Multiline = true;
             this.observacionesTextBox.Name = "observacionesTextBox";
-            this.observacionesTextBox.Size = new System.Drawing.Size(626, 82);
+            this.observacionesTextBox.Size = new System.Drawing.Size(419, 55);
             this.observacionesTextBox.TabIndex = 209;
             // 
             // enGarantiaCheckBox
             // 
             this.enGarantiaCheckBox.AutoSize = true;
             this.enGarantiaCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.bsActivos, "EnGarantia", true));
-            this.enGarantiaCheckBox.Location = new System.Drawing.Point(618, 134);
-            this.enGarantiaCheckBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.enGarantiaCheckBox.Location = new System.Drawing.Point(412, 87);
             this.enGarantiaCheckBox.Name = "enGarantiaCheckBox";
-            this.enGarantiaCheckBox.Size = new System.Drawing.Size(121, 24);
+            this.enGarantiaCheckBox.Size = new System.Drawing.Size(91, 21);
             this.enGarantiaCheckBox.TabIndex = 208;
             this.enGarantiaCheckBox.Text = "En Garantía";
             this.enGarantiaCheckBox.UseVisualStyleBackColor = true;
@@ -394,27 +376,24 @@
             // serieTextBox
             // 
             this.serieTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsActivos, "Serie", true));
-            this.serieTextBox.Location = new System.Drawing.Point(406, 54);
-            this.serieTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.serieTextBox.Location = new System.Drawing.Point(271, 35);
             this.serieTextBox.Name = "serieTextBox";
-            this.serieTextBox.Size = new System.Drawing.Size(148, 26);
+            this.serieTextBox.Size = new System.Drawing.Size(100, 20);
             this.serieTextBox.TabIndex = 207;
             // 
             // inventarioTextBox
             // 
             this.inventarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsActivos, "Inventario", true));
-            this.inventarioTextBox.Location = new System.Drawing.Point(138, 54);
-            this.inventarioTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.inventarioTextBox.Location = new System.Drawing.Point(92, 35);
             this.inventarioTextBox.Name = "inventarioTextBox";
-            this.inventarioTextBox.Size = new System.Drawing.Size(148, 26);
+            this.inventarioTextBox.Size = new System.Drawing.Size(100, 20);
             this.inventarioTextBox.TabIndex = 206;
             // 
             // EliminarButton
             // 
-            this.EliminarButton.Location = new System.Drawing.Point(658, 508);
-            this.EliminarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.EliminarButton.Location = new System.Drawing.Point(439, 330);
             this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(112, 35);
+            this.EliminarButton.Size = new System.Drawing.Size(75, 23);
             this.EliminarButton.TabIndex = 174;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.UseVisualStyleBackColor = true;
@@ -422,10 +401,9 @@
             // 
             // DatosDeCompraButton
             // 
-            this.DatosDeCompraButton.Location = new System.Drawing.Point(598, 51);
-            this.DatosDeCompraButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DatosDeCompraButton.Location = new System.Drawing.Point(399, 33);
             this.DatosDeCompraButton.Name = "DatosDeCompraButton";
-            this.DatosDeCompraButton.Size = new System.Drawing.Size(168, 35);
+            this.DatosDeCompraButton.Size = new System.Drawing.Size(112, 23);
             this.DatosDeCompraButton.TabIndex = 205;
             this.DatosDeCompraButton.Text = "Info Compra";
             this.DatosDeCompraButton.UseVisualStyleBackColor = true;
@@ -434,67 +412,67 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(76, 508);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(51, 330);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 20);
+            this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 201;
             this.label2.Text = "Filtrar:";
             // 
+            // FiltroTextBox
+            // 
+            this.FiltroTextBox.Location = new System.Drawing.Point(92, 330);
+            this.FiltroTextBox.Name = "FiltroTextBox";
+            this.FiltroTextBox.Size = new System.Drawing.Size(161, 20);
+            this.FiltroTextBox.TabIndex = 200;
+            this.FiltroTextBox.TextChanged += new System.EventHandler(this.FiltroTextBox_TextChanged);
+            // 
             // UbicacionTextBox
             // 
-            this.UbicacionTextBox.Location = new System.Drawing.Point(138, 334);
-            this.UbicacionTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.UbicacionTextBox.Location = new System.Drawing.Point(92, 217);
             this.UbicacionTextBox.Name = "UbicacionTextBox";
-            this.UbicacionTextBox.Size = new System.Drawing.Size(626, 26);
+            this.UbicacionTextBox.Size = new System.Drawing.Size(419, 20);
             this.UbicacionTextBox.TabIndex = 199;
             // 
             // TipoTextBox
             // 
-            this.TipoTextBox.Location = new System.Drawing.Point(138, 174);
-            this.TipoTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TipoTextBox.Location = new System.Drawing.Point(92, 113);
             this.TipoTextBox.Name = "TipoTextBox";
-            this.TipoTextBox.Size = new System.Drawing.Size(373, 26);
+            this.TipoTextBox.Size = new System.Drawing.Size(250, 20);
             this.TipoTextBox.TabIndex = 198;
             // 
             // SectorTextBox
             // 
-            this.SectorTextBox.Location = new System.Drawing.Point(138, 294);
-            this.SectorTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.SectorTextBox.Location = new System.Drawing.Point(92, 191);
             this.SectorTextBox.Name = "SectorTextBox";
-            this.SectorTextBox.Size = new System.Drawing.Size(626, 26);
+            this.SectorTextBox.Size = new System.Drawing.Size(419, 20);
             this.SectorTextBox.TabIndex = 197;
             // 
             // OrganizacionTextBox
             // 
-            this.OrganizacionTextBox.Location = new System.Drawing.Point(138, 254);
-            this.OrganizacionTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.OrganizacionTextBox.Location = new System.Drawing.Point(92, 165);
             this.OrganizacionTextBox.Name = "OrganizacionTextBox";
-            this.OrganizacionTextBox.Size = new System.Drawing.Size(626, 26);
+            this.OrganizacionTextBox.Size = new System.Drawing.Size(419, 20);
             this.OrganizacionTextBox.TabIndex = 196;
             // 
             // MarcaTextBox
             // 
-            this.MarcaTextBox.Location = new System.Drawing.Point(138, 134);
-            this.MarcaTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MarcaTextBox.Location = new System.Drawing.Point(92, 87);
             this.MarcaTextBox.Name = "MarcaTextBox";
-            this.MarcaTextBox.Size = new System.Drawing.Size(373, 26);
+            this.MarcaTextBox.Size = new System.Drawing.Size(250, 20);
             this.MarcaTextBox.TabIndex = 195;
             // 
             // EstadoTextBox
             // 
-            this.EstadoTextBox.Location = new System.Drawing.Point(138, 214);
-            this.EstadoTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.EstadoTextBox.Location = new System.Drawing.Point(92, 139);
             this.EstadoTextBox.Name = "EstadoTextBox";
-            this.EstadoTextBox.Size = new System.Drawing.Size(626, 26);
+            this.EstadoTextBox.Size = new System.Drawing.Size(419, 20);
             this.EstadoTextBox.TabIndex = 194;
             // 
             // ModificarButton
             // 
-            this.ModificarButton.Location = new System.Drawing.Point(537, 508);
-            this.ModificarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ModificarButton.Location = new System.Drawing.Point(358, 330);
             this.ModificarButton.Name = "ModificarButton";
-            this.ModificarButton.Size = new System.Drawing.Size(112, 35);
+            this.ModificarButton.Size = new System.Drawing.Size(75, 23);
             this.ModificarButton.TabIndex = 193;
             this.ModificarButton.Text = "Modificar";
             this.ModificarButton.UseVisualStyleBackColor = true;
@@ -502,19 +480,17 @@
             // 
             // DireccionTextBox
             // 
-            this.DireccionTextBox.Location = new System.Drawing.Point(138, 374);
-            this.DireccionTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DireccionTextBox.Location = new System.Drawing.Point(92, 243);
             this.DireccionTextBox.Name = "DireccionTextBox";
             this.DireccionTextBox.ReadOnly = true;
-            this.DireccionTextBox.Size = new System.Drawing.Size(626, 26);
+            this.DireccionTextBox.Size = new System.Drawing.Size(419, 20);
             this.DireccionTextBox.TabIndex = 191;
             // 
             // AgregarButton
             // 
-            this.AgregarButton.Location = new System.Drawing.Point(416, 508);
-            this.AgregarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AgregarButton.Location = new System.Drawing.Point(277, 330);
             this.AgregarButton.Name = "AgregarButton";
-            this.AgregarButton.Size = new System.Drawing.Size(112, 35);
+            this.AgregarButton.Size = new System.Drawing.Size(75, 23);
             this.AgregarButton.TabIndex = 189;
             this.AgregarButton.Text = "Agregar";
             this.AgregarButton.UseVisualStyleBackColor = true;
@@ -522,36 +498,24 @@
             // 
             // DescripcionTextBox
             // 
-            this.DescripcionTextBox.Location = new System.Drawing.Point(138, 94);
-            this.DescripcionTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DescripcionTextBox.Location = new System.Drawing.Point(92, 61);
             this.DescripcionTextBox.Name = "DescripcionTextBox";
-            this.DescripcionTextBox.Size = new System.Drawing.Size(626, 26);
+            this.DescripcionTextBox.Size = new System.Drawing.Size(419, 20);
             this.DescripcionTextBox.TabIndex = 174;
             // 
             // VolumenTextBox
             // 
-            this.VolumenTextBox.Location = new System.Drawing.Point(618, 174);
-            this.VolumenTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.VolumenTextBox.Location = new System.Drawing.Point(412, 113);
             this.VolumenTextBox.Name = "VolumenTextBox";
-            this.VolumenTextBox.Size = new System.Drawing.Size(146, 26);
+            this.VolumenTextBox.Size = new System.Drawing.Size(99, 20);
             this.VolumenTextBox.TabIndex = 182;
-            // 
-            // FiltroTextBox
-            // 
-            this.FiltroTextBox.Location = new System.Drawing.Point(138, 508);
-            this.FiltroTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.FiltroTextBox.Name = "FiltroTextBox";
-            this.FiltroTextBox.Size = new System.Drawing.Size(240, 26);
-            this.FiltroTextBox.TabIndex = 200;
-            this.FiltroTextBox.TextChanged += new System.EventHandler(this.FiltroTextBox_TextChanged);
             // 
             // ActivoAdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(820, 858);
+            this.ClientSize = new System.Drawing.Size(591, 604);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ActivoAdminForm";
             this.Text = "Activos";
             this.Load += new System.EventHandler(this.ActivosForm_Load);

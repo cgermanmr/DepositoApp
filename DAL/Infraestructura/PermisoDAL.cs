@@ -70,8 +70,6 @@ namespace DAL
 
         public List<PermisoBase> Listar()
         {
-            if (CacheDatos.Permisos != null) return CacheDatos.Permisos;
-
             var datos = new Datos();
             var hdatos = new Hashtable();
             DataSet ds = datos.Leer("SP_PERMISO_LISTAR", null);
@@ -87,8 +85,6 @@ namespace DAL
                     p.ObtenerHijos().AddRange(ListarHijos(p));
                 permisos.Add(p);
             }
-
-            CacheDatos.Permisos = permisos;
 
             return permisos;                   
         }

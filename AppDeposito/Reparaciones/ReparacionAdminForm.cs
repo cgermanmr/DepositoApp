@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using BEL;
 using BLL;
 using Servicios;
 
@@ -12,33 +13,27 @@ namespace AppDeposito
             InitializeComponent();
         }
 
-        private void EnlazarControles()
-        {
-            GrillaReparaciones.DataSource = bsReparaciones;
-        }
-        
+        public ReparacionBEL ReparacionSeleccionada { get => bsReparaciones.Current as ReparacionBEL; }
         private void ObtenerDatos()
         {
-            bsReparaciones.DataSource = new ReparacionBLL().Listar().ConvertAll(x=>(BEL.ReparacionBEL)x);
+            bsReparaciones.DataSource = new ReparacionBLL().Listar().ConvertAll( x => (ReparacionBEL)x );
         }
 
 
         private void ReparacionesForm_Load(object sender, EventArgs e)
         {
             FormConfig.Config(this);
-            GrillaReparaciones.AutoGenerateColumns = false;
             FormConfig.TextBoxToReadOnly(this);
             ObtenerDatos();
-            EnlazarControles();
         }
 
         private void btnPresupuestos_Click(object sender, EventArgs e)
         {
             try
             {
-                if (bsReparaciones.Current == null) return;
+                if (ReparacionSeleccionada == null) return;
 
-                new PresupuestoAdminForm() { Reparacion = (BEL.ReparacionBEL)bsReparaciones.Current }.ShowDialog();
+                new PresupuestoAdminForm(ReparacionSeleccionada).ShowDialog();
                 bsReparaciones.ResetBindings(false);
             }
             catch (Exception ex)
@@ -49,28 +44,23 @@ namespace AppDeposito
 
         private void AgregarButton_Click(object sender, EventArgs e)
         {
-            new ReparacionEditForm() { Tag=new BEL.ReparacionBEL()}.ShowDialog();
+            new ReparacionEditForm().ShowDialog();
             ObtenerDatos();
         }
 
         private void ModificarButton_Click(object sender, EventArgs e)
         {
-            new ReparacionEditForm() { Tag = bsReparaciones.Current }.ShowDialog();
+            new ReparacionEditForm() { Reparacion = ReparacionSeleccionada }.ShowDialog();
             bsReparaciones.ResetCurrentItem();
-            //ObtenerDatos();
         }
 
         private void EliminarButton_Click(object sender, EventArgs e)
         {
             try
             {
-                if (MessageBox.Show(
-                    $"Confirmar eliminar reparación: {Environment.NewLine}{bsReparaciones.Current.ToString()}",
-                    "Eliminar reparación", 
-                    MessageBoxButtons.OKCancel,
-                    MessageBoxIcon.Question) == DialogResult.OK)
+                if (Mensajes.ShowDecision($"Confirmar eliminar reparación: \n{ReparacionSeleccionada}"))
                 {
-                    Mensajes.MensajeResultado(new ReparacionBLL().Eliminar((BEL.ReparacionBEL)bsReparaciones.Current), this);
+                    Mensajes.MensajeResultado(new ReparacionBLL().Eliminar(ReparacionSeleccionada), this);
                     bsReparaciones.RemoveCurrent();
                 }
 
@@ -89,7 +79,8 @@ namespace AppDeposito
                 estadoCheckBox.Checked = false;
                 return;
             }
-            estadoCheckBox.Checked = ((BEL.ReparacionBEL)bsReparaciones.Current).Estado;
+
+            estadoCheckBox.Checked = ReparacionSeleccionada.Estado;
         }
 
         private void enGarantiaCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -99,7 +90,7 @@ namespace AppDeposito
                 enGarantiaCheckBox.Checked = false;
                 return;
             }
-            enGarantiaCheckBox.Checked = ((BEL.ReparacionBEL)bsReparaciones.Current).Activo.EnGarantia;
+            enGarantiaCheckBox.Checked = ReparacionSeleccionada.Activo.EnGarantia;
 
         }
 

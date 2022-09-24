@@ -12,9 +12,9 @@ namespace DAL
     {
         protected override string ProcedimientoAlmacenado => "SP_EMPRESA";
 
-        public override EntidadBase GetNew => new EmpresaBEL();
+        public override Entidad GetNew => new EmpresaBEL();
 
-        protected override List<EntidadBase> ObtenerLista(DataSet ds)
+        protected override List<Entidad> ObtenerLista(DataSet ds)
         {
             List<EmpresaBEL> _lista = new List<EmpresaBEL>();
             EmpresaBEL x;
@@ -37,10 +37,10 @@ namespace DAL
                 _lista.Add(x);
             }
 
-            return _lista.ConvertAll(_=>(EntidadBase)_);
+            return _lista.ConvertAll(_=>(Entidad)_);
         }
 
-        protected override Hashtable ObtenerParametros(EntidadBase valor)
+        protected override Hashtable ObtenerParametros(Entidad valor)
         {
             var hdatos = new Hashtable();
             EmpresaBEL x = (EmpresaBEL)valor;
@@ -62,7 +62,7 @@ namespace DAL
             return hdatos;
         }
 
-        public override List<EntidadBase> Listar(string filtro)
+        public override List<Entidad> Listar(string filtro)
         {
             Hashtable parametros = new Hashtable();
             parametros.Add("@TextoFiltro", filtro);

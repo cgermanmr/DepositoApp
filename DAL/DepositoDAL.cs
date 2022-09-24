@@ -14,9 +14,9 @@ namespace DAL
     {
         protected override string ProcedimientoAlmacenado => "SP_DEPOSITO";
 
-        public override EntidadBase GetNew => new DepositoBEL();
+        public override Entidad GetNew => new DepositoBEL();
 
-        protected override Hashtable ObtenerParametros(EntidadBase valor)
+        protected override Hashtable ObtenerParametros(Entidad valor)
         {
             var hdatos = new Hashtable();
             DepositoBEL _valor = (DepositoBEL)valor;
@@ -27,9 +27,9 @@ namespace DAL
             hdatos.Add("@capacidad",_valor.Capacidad);
             return hdatos;
         }
-        protected override List<EntidadBase> ObtenerLista(DataSet ds)
+        protected override List<Entidad> ObtenerLista(DataSet ds)
         {
-            List<EntidadBase> _lista = new List<EntidadBase>();
+            List<Entidad> _lista = new List<Entidad>();
             DepositoBEL x;
             foreach (DataRow dr in ds.Tables[0].Rows)
             {

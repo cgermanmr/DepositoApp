@@ -12,13 +12,13 @@ namespace DAL
 {
     public class DonacionDAL : Repositorio
     {
-        public override EntidadBase GetNew => new DonacionBEL();
+        public override Entidad GetNew => new DonacionBEL();
 
         protected override string ProcedimientoAlmacenado => "SP_DONACION";
 
-        protected override List<EntidadBase> ObtenerLista(DataSet ds)
+        protected override List<Entidad> ObtenerLista(DataSet ds)
         {
-            List<EntidadBase> _lista = new List<EntidadBase>();
+            List<Entidad> _lista = new List<Entidad>();
             DonacionBEL x;
             foreach (DataRow dr in ds.Tables[0].Rows)
             {
@@ -86,7 +86,7 @@ namespace DAL
 
 
 
-        protected override Hashtable ObtenerParametros(EntidadBase valor)
+        protected override Hashtable ObtenerParametros(Entidad valor)
         {
             var hdatos = new Hashtable();
             DonacionBEL _valor=(DonacionBEL)valor;
@@ -102,7 +102,7 @@ namespace DAL
             return hdatos;
         }
 
-        public override bool Agregar(EntidadBase valor)
+        public override bool Agregar(Entidad valor)
         {
             bool result=false;
 
@@ -116,7 +116,7 @@ namespace DAL
             return result;            
         }
 
-        public override bool Modificar(EntidadBase valor)
+        public override bool Modificar(Entidad valor)
         {
             bool result = false;
 
@@ -133,7 +133,7 @@ namespace DAL
             return result;
         }
 
-        public override bool Eliminar(EntidadBase valor)
+        public override bool Eliminar(Entidad valor)
         {
             bool result = false;
 

@@ -9,6 +9,9 @@ using System.Transactions;
 
 namespace DAL
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class UsuarioDAL:ICRUD<UsuarioBEL>
     {
         private UsuarioBEL DataRowToEntidad(DataRow dr)

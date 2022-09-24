@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BEL
 {
-    public class MonedaBEL:EntidadBase
+    public class MonedaBEL:Entidad
     {       
 
         public override string ToString()

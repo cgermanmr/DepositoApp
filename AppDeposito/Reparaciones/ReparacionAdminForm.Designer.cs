@@ -205,13 +205,13 @@
             // SplitContainer1.Panel2
             // 
             this.SplitContainer1.Panel2.Controls.Add(this.GrillaReparaciones);
-            this.SplitContainer1.Size = new System.Drawing.Size(711, 500);
-            this.SplitContainer1.SplitterDistance = 235;
+            this.SplitContainer1.Size = new System.Drawing.Size(869, 561);
+            this.SplitContainer1.SplitterDistance = 270;
             this.SplitContainer1.TabIndex = 2;
             // 
             // EliminarButton
             // 
-            this.EliminarButton.Location = new System.Drawing.Point(599, 195);
+            this.EliminarButton.Location = new System.Drawing.Point(780, 233);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(75, 23);
             this.EliminarButton.TabIndex = 39;
@@ -221,7 +221,7 @@
             // 
             // ModificarButton
             // 
-            this.ModificarButton.Location = new System.Drawing.Point(518, 195);
+            this.ModificarButton.Location = new System.Drawing.Point(699, 233);
             this.ModificarButton.Name = "ModificarButton";
             this.ModificarButton.Size = new System.Drawing.Size(75, 23);
             this.ModificarButton.TabIndex = 38;
@@ -231,7 +231,7 @@
             // 
             // AgregarButton
             // 
-            this.AgregarButton.Location = new System.Drawing.Point(437, 195);
+            this.AgregarButton.Location = new System.Drawing.Point(618, 233);
             this.AgregarButton.Name = "AgregarButton";
             this.AgregarButton.Size = new System.Drawing.Size(75, 23);
             this.AgregarButton.TabIndex = 37;
@@ -241,8 +241,9 @@
             // 
             // estadoCheckBox
             // 
+            this.estadoCheckBox.AutoCheck = false;
             this.estadoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.bsReparaciones, "Estado", true));
-            this.estadoCheckBox.Location = new System.Drawing.Point(130, 195);
+            this.estadoCheckBox.Location = new System.Drawing.Point(226, 195);
             this.estadoCheckBox.Name = "estadoCheckBox";
             this.estadoCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.estadoCheckBox.Size = new System.Drawing.Size(144, 24);
@@ -261,6 +262,7 @@
             this.fechaFinalizacionTextBox.Location = new System.Drawing.Point(454, 120);
             this.fechaFinalizacionTextBox.MaxLength = 10;
             this.fechaFinalizacionTextBox.Name = "fechaFinalizacionTextBox";
+            this.fechaFinalizacionTextBox.ReadOnly = true;
             this.fechaFinalizacionTextBox.Size = new System.Drawing.Size(70, 20);
             this.fechaFinalizacionTextBox.TabIndex = 36;
             // 
@@ -270,6 +272,7 @@
             this.fechaSolicitudTextBox.Location = new System.Drawing.Point(298, 120);
             this.fechaSolicitudTextBox.MaxLength = 10;
             this.fechaSolicitudTextBox.Name = "fechaSolicitudTextBox";
+            this.fechaSolicitudTextBox.ReadOnly = true;
             this.fechaSolicitudTextBox.Size = new System.Drawing.Size(70, 20);
             this.fechaSolicitudTextBox.TabIndex = 35;
             // 
@@ -278,6 +281,7 @@
             this.numeroInventarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsReparaciones, "Activo.Inventario", true));
             this.numeroInventarioTextBox.Location = new System.Drawing.Point(129, 19);
             this.numeroInventarioTextBox.Name = "numeroInventarioTextBox";
+            this.numeroInventarioTextBox.ReadOnly = true;
             this.numeroInventarioTextBox.Size = new System.Drawing.Size(100, 20);
             this.numeroInventarioTextBox.TabIndex = 34;
             // 
@@ -286,12 +290,13 @@
             this.txtDescripcionActivo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsReparaciones, "Activo.Descripcion", true));
             this.txtDescripcionActivo.Location = new System.Drawing.Point(307, 19);
             this.txtDescripcionActivo.Name = "txtDescripcionActivo";
+            this.txtDescripcionActivo.ReadOnly = true;
             this.txtDescripcionActivo.Size = new System.Drawing.Size(283, 20);
             this.txtDescripcionActivo.TabIndex = 33;
             // 
             // btnPresupuestos
             // 
-            this.btnPresupuestos.Location = new System.Drawing.Point(280, 195);
+            this.btnPresupuestos.Location = new System.Drawing.Point(376, 196);
             this.btnPresupuestos.Name = "btnPresupuestos";
             this.btnPresupuestos.Size = new System.Drawing.Size(111, 23);
             this.btnPresupuestos.TabIndex = 32;
@@ -304,15 +309,17 @@
             this.ticketSoporteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsReparaciones, "TicketSoporte", true));
             this.ticketSoporteTextBox.Location = new System.Drawing.Point(130, 120);
             this.ticketSoporteTextBox.Name = "ticketSoporteTextBox";
+            this.ticketSoporteTextBox.ReadOnly = true;
             this.ticketSoporteTextBox.Size = new System.Drawing.Size(99, 20);
             this.ticketSoporteTextBox.TabIndex = 29;
             // 
             // enGarantiaCheckBox
             // 
+            this.enGarantiaCheckBox.AutoCheck = false;
             this.enGarantiaCheckBox.AutoSize = true;
-            this.enGarantiaCheckBox.Location = new System.Drawing.Point(596, 22);
+            this.enGarantiaCheckBox.Location = new System.Drawing.Point(129, 197);
             this.enGarantiaCheckBox.Name = "enGarantiaCheckBox";
-            this.enGarantiaCheckBox.Size = new System.Drawing.Size(84, 17);
+            this.enGarantiaCheckBox.Size = new System.Drawing.Size(91, 21);
             this.enGarantiaCheckBox.TabIndex = 28;
             this.enGarantiaCheckBox.Text = "En Garantía";
             this.enGarantiaCheckBox.UseVisualStyleBackColor = true;
@@ -323,6 +330,7 @@
             this.telefonoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsReparaciones, "Solicitante.Telefono", true));
             this.telefonoTextBox.Location = new System.Drawing.Point(483, 45);
             this.telefonoTextBox.Name = "telefonoTextBox";
+            this.telefonoTextBox.ReadOnly = true;
             this.telefonoTextBox.Size = new System.Drawing.Size(191, 20);
             this.telefonoTextBox.TabIndex = 24;
             // 
@@ -331,15 +339,17 @@
             this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsReparaciones, "Solicitante", true));
             this.nombreTextBox.Location = new System.Drawing.Point(129, 45);
             this.nombreTextBox.Name = "nombreTextBox";
+            this.nombreTextBox.ReadOnly = true;
             this.nombreTextBox.Size = new System.Drawing.Size(291, 20);
             this.nombreTextBox.TabIndex = 22;
             // 
             // observacionesTextBox
             // 
-            this.observacionesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsReparaciones, "Observaciones", true));
+            this.observacionesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsReparaciones, "Descripcion", true));
             this.observacionesTextBox.Location = new System.Drawing.Point(129, 146);
             this.observacionesTextBox.Multiline = true;
             this.observacionesTextBox.Name = "observacionesTextBox";
+            this.observacionesTextBox.ReadOnly = true;
             this.observacionesTextBox.Size = new System.Drawing.Size(545, 43);
             this.observacionesTextBox.TabIndex = 20;
             // 
@@ -349,6 +359,7 @@
             this.descripcionTextBox.Location = new System.Drawing.Point(129, 71);
             this.descripcionTextBox.Multiline = true;
             this.descripcionTextBox.Name = "descripcionTextBox";
+            this.descripcionTextBox.ReadOnly = true;
             this.descripcionTextBox.Size = new System.Drawing.Size(545, 43);
             this.descripcionTextBox.TabIndex = 5;
             // 
@@ -368,31 +379,36 @@
             this.GrillaReparaciones.Name = "GrillaReparaciones";
             this.GrillaReparaciones.ReadOnly = true;
             this.GrillaReparaciones.RowHeadersVisible = false;
+            this.GrillaReparaciones.RowHeadersWidth = 62;
             this.GrillaReparaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GrillaReparaciones.Size = new System.Drawing.Size(711, 261);
+            this.GrillaReparaciones.Size = new System.Drawing.Size(869, 287);
             this.GrillaReparaciones.TabIndex = 0;
             // 
             // solicitanteDataGridViewTextBoxColumn
             // 
             this.solicitanteDataGridViewTextBoxColumn.DataPropertyName = "Solicitante";
             this.solicitanteDataGridViewTextBoxColumn.HeaderText = "Solicitante";
+            this.solicitanteDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.solicitanteDataGridViewTextBoxColumn.Name = "solicitanteDataGridViewTextBoxColumn";
             this.solicitanteDataGridViewTextBoxColumn.ReadOnly = true;
+            this.solicitanteDataGridViewTextBoxColumn.Width = 150;
             // 
             // activoDataGridViewTextBoxColumn
             // 
             this.activoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.activoDataGridViewTextBoxColumn.DataPropertyName = "Activo";
             this.activoDataGridViewTextBoxColumn.HeaderText = "Activo";
+            this.activoDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.activoDataGridViewTextBoxColumn.Name = "activoDataGridViewTextBoxColumn";
             this.activoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.activoDataGridViewTextBoxColumn.Width = 62;
+            this.activoDataGridViewTextBoxColumn.Width = 73;
             // 
             // descripcionDataGridViewTextBoxColumn
             // 
             this.descripcionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion";
             this.descripcionDataGridViewTextBoxColumn.HeaderText = "Falla";
+            this.descripcionDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
             this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -405,7 +421,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 500);
+            this.ClientSize = new System.Drawing.Size(869, 561);
             this.Controls.Add(this.SplitContainer1);
             this.Controls.Add(this.Button2);
             this.Name = "ReparacionAdminForm";

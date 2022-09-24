@@ -15,3 +15,9 @@ C:\uai\DepIn\Comun\obj\Debug\Comun.csprojAssemblyReference.cache
 C:\uai\DepIn\Comun\obj\Debug\Comun.dll
 C:\uai\DepIn\Comun\obj\Debug\Comun.pdb
 C:\uai\DepIn\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+C:\UAI\DepositoApp\Comun\bin\Debug\Comun.dll
+C:\UAI\DepositoApp\Comun\bin\Debug\Comun.pdb
+C:\UAI\DepositoApp\Comun\obj\Debug\Comun.csproj.AssemblyReference.cache
+C:\UAI\DepositoApp\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+C:\UAI\DepositoApp\Comun\obj\Debug\Comun.dll
+C:\UAI\DepositoApp\Comun\obj\Debug\Comun.pdb

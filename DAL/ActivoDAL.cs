@@ -12,15 +12,15 @@ namespace DAL
 {
     public class ActivoDAL : Repositorio
     {
-        public ActivoBEL GetById(int id)
+        public ActivoBEL GetById(long id)
         {
-            return (ActivoBEL)ObtenerUno(new ActivoBEL() { Id = id });
+            return base.GetById(id) as ActivoBEL;
         }
         protected override string ProcedimientoAlmacenado => "SP_ACTIVO";
-        public override EntidadBase GetNew => new ActivoBEL();
-        protected override List<EntidadBase> ObtenerLista(DataSet ds)
+        public override Entidad GetNew => new ActivoBEL();
+        protected override List<Entidad> ObtenerLista(DataSet ds)
         {
-            List<EntidadBase> _lista = new List<EntidadBase>();
+            List<Entidad> _lista = new List<Entidad>();
             ActivoBEL x;
             foreach (DataRow dr in ds.Tables[0].Rows)
             {
@@ -30,13 +30,13 @@ namespace DAL
                 x.Inventario = Convert.IsDBNull(dr[2]) ? string.Empty : dr[2].ToString();
                 x.Serie = Convert.IsDBNull(dr[3]) ? string.Empty : dr[3].ToString();
                 x.Descripcion = Convert.IsDBNull(dr[4]) ? string.Empty : dr[4].ToString();
-                x.Sector = (SectorBEL)new SectorDAL().ObtenerUno(new SectorBEL() { Id = (int)dr[5] });
-                x.Ubicacion = (UbicacionBEL)new UbicacionDAL().ObtenerUno(new UbicacionBEL() { Id = (int)dr[6] });
-                x.EstadoActivo = (EstadoBEL)new EstadoDAL().ObtenerUno(new EstadoBEL() { Id = (int)dr[7] });
-                x.TipoActivo = (TipoActivoBEL)new TipoActivoDAL().ObtenerUno(new TipoActivoBEL() { Id = (int)dr[8] });
-                x.Marca = (MarcaBEL)new MarcaDAL().ObtenerUno(new MarcaBEL() { Id = (int)dr[9] });
-                x.Organizacion = (EmpresaBEL)new EmpresaDAL().ObtenerUno(new EmpresaBEL() { Id = (int)dr[10] });
-                x.Moneda = (MonedaBEL)new MonedaDAL().ObtenerUno(new MonedaBEL() { Id = (int)dr[11] });
+                x.Sector = (SectorBEL)new SectorDAL().GetById(dr[5]);
+                x.Ubicacion = (UbicacionBEL)new UbicacionDAL().GetById(dr[6]);
+                x.EstadoActivo = (EstadoBEL)new EstadoDAL().GetById(dr[7]);
+                x.TipoActivo = new TipoActivoDAL().GetById(dr[8]) as TipoActivoBEL;
+                x.Marca = (MarcaBEL)new MarcaDAL().GetById(dr[9]);
+                x.Organizacion = new EmpresaDAL().GetById(dr[10]) as EmpresaBEL;
+                x.Moneda = (MonedaBEL)new MonedaDAL().GetById(dr[11]);
                 x.ValorCompra = Convert.IsDBNull(dr[12]) ? 0.0 : (double)dr[12];
                 x.ValorSoporte = Convert.IsDBNull(dr[13]) ? 0.0 : (double)dr[13];
                 x.FechaCompra = Convert.IsDBNull(dr[14]) ? "" : ((DateTime)dr[14]).ToString("dd/MM/yyyy");
@@ -47,7 +47,7 @@ namespace DAL
             }
             return _lista;
         }
-        protected override Hashtable ObtenerParametros(EntidadBase valor)
+        protected override Hashtable ObtenerParametros(Entidad valor)
         {
             var hdatos = new Hashtable();
             ActivoBEL _dato = valor == null ? (ActivoBEL)GetNew : (ActivoBEL)valor;
@@ -73,7 +73,7 @@ namespace DAL
             return hdatos;
         }
 
-        public override List<EntidadBase> Listar(string filtro)
+        public override List<Entidad> Listar(string filtro)
         {
             Hashtable parametros = new Hashtable();
             parametros.Add("@TextoFiltro", filtro);

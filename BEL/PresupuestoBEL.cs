@@ -6,20 +6,23 @@ using System.Threading.Tasks;
 
 namespace BEL
 {
-    public class PresupuestoBEL:EntidadBase
+    public class PresupuestoBEL:Entidad
     {
+        public bool Autorizado { get; set; }
         public ReparacionBEL Reparacion { get; set; } = new ReparacionBEL();
+        public long ReparacionId { get; set; }
         public EmpresaBEL Proveedor { get; set; } = new EmpresaBEL();
-        public string Fecha { get; set; } = DateTime.Now.ToShortDateString();
-        public string FechaValidez { get; set; } = DateTime.Now.ToShortDateString();
+        public DateTime Fecha { get; set; } = DateTime.Now;
+        public DateTime FechaValidez { get; set; } = DateTime.Now.AddDays(15);
         public int TiempoEstimado { get; set; }
         public double Cotizacion { get; set; } 
-        public MonedaBEL Moneda { get; set; } = new MonedaBEL() { Id=1};
-
+        public TipoMoneda Moneda { get; set; } //= TipoMoneda.Pesos;
+        public string Descripcion { get; set; }
         public override string ToString()
         {
-            return $"Cotizacón de {Proveedor.Descripcion} por {Cotizacion.ToString()}";
+            return $"Cotizacón de {Proveedor.RazonSocial} por {Cotizacion}";
         }
+
 
     }
 }

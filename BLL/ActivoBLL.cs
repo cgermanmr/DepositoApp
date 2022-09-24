@@ -11,7 +11,7 @@ namespace BLL
     {
         public override Repositorio Repositorio() => new ActivoDAL();
 
-        public override bool Agregar(EntidadBase valor)
+        public override bool Agregar(Entidad valor)
         {
             ActivoBEL _activo = (ActivoBEL)valor;
             var _lista = new ActivoDAL().Listar().ConvertAll(x=>(ActivoBEL)x);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BEL
 {
-    public class DonacionBEL:EntidadBase
+    public class DonacionBEL:Entidad
     {
         public List<ActivoBEL> Activos { get; set; } = new List<ActivoBEL>();
         public ClienteBEL Autorizador { get; set; } = new ClienteBEL();

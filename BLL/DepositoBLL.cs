@@ -13,7 +13,7 @@ namespace BLL
       
         public override Repositorio Repositorio() => new DepositoDAL();
 
-        public override bool Eliminar(EntidadBase valor)
+        public override bool Eliminar(Entidad valor)
         {
             if (((DepositoBEL)valor).Activos.Count > 0)
                 throw new InvalidOperationException("El deposito tiene activos asignados");

@@ -16,40 +16,35 @@ namespace AppDeposito
 {
     public partial class BuscarActivoForm : Form, IObserverTraducible
     {
+        private readonly ActivoBLL _activoBll = new ActivoBLL();
         public BuscarActivoForm()
         {
             InitializeComponent();
         }
-        List<ActivoBEL> _listaActivos;        
         private void BusquedaForm_Load(object sender, EventArgs e)
         {
             FormConfig.Config(this);
-            _listaActivos = new ActivoBLL().Listar().ConvertAll(x=>(ActivoBEL)x);
-            bsActivos.DataSource = _listaActivos;
+            bsActivos.DataSource = _activoBll.Listar().ConvertAll(x => (ActivoBEL)x);
             Grilla.AutoGenerateColumns = false;
             Grilla.DataSource = bsActivos;
         }
 
         private void AceptarButton_Click(object sender, EventArgs e)
         {
-
-            Seleccionado = bsActivos.Current;
+            Seleccionado = bsActivos.Current as ActivoBEL;
             Visible = false;
         }
 
-        public object Seleccionado { get; set; }
+        public ActivoBEL Seleccionado { get; set; }
 
         private void txtFiltro_TextChanged(object sender, EventArgs e)
         {
             try
             {
+                if (txtFiltro.Text.Length < 4) return;
+
                 string txt = txtFiltro.Text.ToUpper();
-                bsActivos.DataSource = _listaActivos.FindAll(x =>
-                  x.Descripcion.ToUpper().Contains(txt) |
-                  x.Inventario.ToUpper().Contains(txt) |
-                  x.Serie.ToUpper().Contains(txt) |
-                  x.TipoActivo.Descripcion.ToUpper().Contains(txt) |
-                  x.Marca.Descripcion.ToUpper().Contains(txt));
+                bsActivos.DataSource = _activoBll.Listar(txt).ConvertAll(x => (ActivoBEL)x);
             }
             catch (Exception ex)
             {

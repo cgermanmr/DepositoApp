@@ -10,13 +10,13 @@ using Interfaces;
 
 namespace DAL
 {
-    public abstract class Repositorio: ICRUD<EntidadBase>
+    public abstract class Repositorio: ICRUD<Entidad>
     {
         /***************** Modificar nombre procedimiento y tipos *******************************************/
         protected readonly Datos _datos = new Datos();
         protected abstract string ProcedimientoAlmacenado { get; }
-        public abstract EntidadBase GetNew { get; }
-        protected virtual Hashtable ObtenerParametros(EntidadBase valor)
+        public abstract Entidad GetNew { get; }
+        protected virtual Hashtable ObtenerParametros(Entidad valor)
         {
             var hdatos = new Hashtable();
 
@@ -26,10 +26,10 @@ namespace DAL
             
             return hdatos;
         }
-        protected virtual List<EntidadBase> ObtenerLista(DataSet ds)
+        protected virtual List<Entidad> ObtenerLista(DataSet ds)
         {
-            List<EntidadBase> _lista = new List<EntidadBase>();
-            EntidadBase x;
+            List<Entidad> _lista = new List<Entidad>();
+            Entidad x;
             foreach (DataRow dr in ds.Tables[0].Rows)
             {
                 x = GetNew;
@@ -41,7 +41,7 @@ namespace DAL
             return _lista;
         }
         /***********************************************************************/
-        public virtual bool Agregar(EntidadBase valor)
+        public virtual bool Agregar(Entidad valor)
         {
             bool resultado;
 
@@ -52,7 +52,7 @@ namespace DAL
 
             return resultado;
         }
-        public virtual bool Eliminar(EntidadBase valor)
+        public virtual bool Eliminar(Entidad valor)
         {
             bool resultado;
 
@@ -65,7 +65,7 @@ namespace DAL
             return resultado;
         }
       
-        public virtual bool Modificar(EntidadBase valor)
+        public virtual bool Modificar(Entidad valor)
         {
             bool resultado;
 
@@ -76,9 +76,9 @@ namespace DAL
 
             return resultado;
         }
-        public virtual List<EntidadBase> Listar()
+        public virtual List<Entidad> Listar()
         {
-            Hashtable parametros = new Hashtable();//ObtenerParametros(null);
+            Hashtable parametros = new Hashtable();
             parametros.Add("@operacion", (int)TipoOperacion.Consulta);
 
             DataSet ds = _datos.Leer(ProcedimientoAlmacenado, parametros);
@@ -86,10 +86,9 @@ namespace DAL
             return ObtenerLista(ds);
         }
 
-        public virtual List<EntidadBase> Listar(string filtro) => Listar();
-        public virtual List<EntidadBase> Listar(EntidadBase filtro) => Listar();
-
-        public virtual EntidadBase ObtenerUno(EntidadBase valor)
+        public virtual List<Entidad> Listar(string filtro) => Listar();
+        public virtual List<Entidad> Listar(Entidad filtro) => Listar();
+        public virtual Entidad ObtenerUno(Entidad valor)
         {
             Hashtable parametros = new Hashtable();
             parametros.Add("@operacion", (int)TipoOperacion.Consulta);
@@ -99,9 +98,23 @@ namespace DAL
 
             var _lista = ObtenerLista(ds);
 
-            if (_lista.Count > 0) return _lista.FirstOrDefault();
+            if (_lista.Count > 0) 
+                return _lista.FirstOrDefault();
             
             return null;
+        }
+
+        public Entidad GetById(object id)
+        {
+
+            var obj = GetNew;
+
+            if (!long.TryParse(id.ToString(), out long _id))
+                return null;
+
+            obj.Id = _id;
+
+            return ObtenerUno(obj);
         }
 
     }

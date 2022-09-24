@@ -100,8 +100,9 @@ namespace AppDeposito.Administracion.Permisos
         private void EliminarButton_Click(object sender, EventArgs e)
         {
             var p = new Permiso();
-            if (MessageBox.Show("Eliminar " + ((PermisoCompuesto)bsPermisos.Current).Nombre,"Atención",MessageBoxButtons.OKCancel,MessageBoxIcon.Exclamation) ==DialogResult.OK)
-            p.Eliminar((PermisoCompuesto)bsPermisos.Current);
+            if (MessageBox.Show("Eliminar " + ((PermisoCompuesto)bsPermisos.Current).Nombre,"Atención",MessageBoxButtons.OKCancel,MessageBoxIcon.Exclamation) == DialogResult.OK)
+                p.Eliminar((PermisoCompuesto)bsPermisos.Current);
+            
             ObtenerDatos();
         }
     }

@@ -16,12 +16,12 @@ namespace AppDeposito
 {
     public partial class BuscarClienteForm : Form, IObserverTraducible
     {
+        public ClienteBEL Solicitante { get => bsClientes.Current as ClienteBEL; }
         public BuscarClienteForm()
         {
             InitializeComponent();
         }
 
-        //BindingSource bsLista = new BindingSource();
         List<ClienteBEL> _listaClientes;
         private void BusquedaForm_Load(object sender, EventArgs e)
         {
@@ -34,11 +34,9 @@ namespace AppDeposito
 
         private void AceptarButton_Click(object sender, EventArgs e)
         {
-            Seleccionado = bsClientes.Current;
             Visible = false;
         }
 
-        public object Seleccionado { get; set; }
 
         private void txtFiltro_TextChanged(object sender, EventArgs e)
         {
@@ -47,11 +45,11 @@ namespace AppDeposito
                 string txt = txtFiltro.Text.ToUpper();
                 bsClientes.DataSource = _listaClientes
                     .FindAll(x =>
-                            x.Nombre.ToUpper().Contains(txt) |
-                            x.Apellido.ToUpper().Contains(txt) |
-                            x.Telefono.ToUpper().Contains(txt) |
-                            x.Email.ToUpper().Contains(txt) |
-                            x.Empresa.RazonSocial.ToUpper().Contains(txt));
+                            (bool)x.Nombre?.ToUpper().Contains(txt) |
+                            (bool)x.Apellido?.ToUpper().Contains(txt) |
+                            (bool)x.Telefono?.ToUpper().Contains(txt) |
+                            (bool)x.Email?.ToUpper().Contains(txt) |
+                            (bool)x.Empresa?.RazonSocial.ToUpper().Contains(txt));
             }
             catch (Exception ex)
             {

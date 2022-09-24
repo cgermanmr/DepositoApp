@@ -53,3 +53,15 @@ C:\uai\DepIn\BEL\obj\Debug\BEL.csproj.CopyComplete
 C:\uai\DepIn\BEL\obj\Debug\BEL.dll
 C:\uai\DepIn\BEL\obj\Debug\BEL.pdb
 C:\uai\DepIn\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache
+C:\UAI\DepositoApp\BEL\bin\Debug\BEL.dll
+C:\UAI\DepositoApp\BEL\bin\Debug\BEL.pdb
+C:\UAI\DepositoApp\BEL\bin\Debug\BEL.xml
+C:\UAI\DepositoApp\BEL\bin\Debug\Comun.dll
+C:\UAI\DepositoApp\BEL\bin\Debug\Interfaces.dll
+C:\UAI\DepositoApp\BEL\bin\Debug\Comun.pdb
+C:\UAI\DepositoApp\BEL\bin\Debug\Interfaces.pdb
+C:\UAI\DepositoApp\BEL\obj\Debug\BEL.csproj.AssemblyReference.cache
+C:\UAI\DepositoApp\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache
+C:\UAI\DepositoApp\BEL\obj\Debug\BEL.csproj.CopyComplete
+C:\UAI\DepositoApp\BEL\obj\Debug\BEL.dll
+C:\UAI\DepositoApp\BEL\obj\Debug\BEL.pdb

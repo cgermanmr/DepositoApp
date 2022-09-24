@@ -1,6 +1,6 @@
 ﻿namespace BEL
 {
-    public class UbicacionBEL : EntidadBase
+    public class UbicacionBEL : Entidad
     {
         public string Direccion { get; set; } = "";
 

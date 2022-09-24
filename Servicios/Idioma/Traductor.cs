@@ -100,19 +100,20 @@ namespace Servicios
                         {
                             if (!string.IsNullOrEmpty(column.HeaderText))
                             {
-                                column.HeaderText=idioma.Leyendas.Find(x=>x.Codigo == column.Tag.ToString()).Valor;
+                                column.HeaderText = idioma.Leyendas.Find(x => x.Codigo == column.Tag.ToString()).Valor;
                             }
                         }
                     }
                     else
                     {
-                        if (!string.IsNullOrEmpty(item.Text) && item.Tag!=null)
-                        {   
+                        if (!string.IsNullOrEmpty(item.Text) && item.Tag != null)
+                        {
                             item.Text = idioma.Leyendas.Find(x => x.Codigo == item.Tag.ToString()).Valor;
                         }
                     }
                 }
             }
+
         }
     }
 }

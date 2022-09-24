@@ -4,5 +4,10 @@
         <name>DAL</name>
     </assembly>
     <members>
+        <member name="T:DAL.UsuarioDAL">
+            <summary>
+            
+            </summary>
+        </member>
     </members>
 </doc>

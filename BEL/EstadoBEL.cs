@@ -1,6 +1,6 @@
 ﻿namespace BEL
 {
-    public class EstadoBEL : EntidadBase
+    public class EstadoBEL : Entidad
     {
         public override string ToString()
         {

@@ -2,7 +2,7 @@
 
 namespace BEL
 {
-    public abstract class PermisoBase : EntidadBase
+    public abstract class PermisoBase : Entidad
     {
         public string Nombre { get; set; }
 

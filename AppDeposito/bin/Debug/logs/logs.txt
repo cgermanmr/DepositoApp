@@ -3764,3 +3764,1239 @@ StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl)
    en AppDeposito.EmpresaEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\uai\DepIn\AppDeposito\Empresas\EmpresaEditForm.cs:línea 42
 Date/Time: 24/11/2020 0:23:23
 ===========================================================================================
+Title: Error
+Id: 0
+Message: Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: SQL Network Interfaces, error: 26 - Error al buscar el servidor o instancia especificado)
+StackTrace:    en System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   en System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   en System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   en System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   en System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   en System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   en System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 45
+   en DAL.IdiomaDAL.RegistrarLeyenda(LeyendaBEL valor) en C:\UAI\DepositoApp\DAL\Infraestructura\IdiomaDAL.cs:línea 21
+   en Servicios.Idioma.RegistrarLeyenda(LeyendaBEL valor) en C:\UAI\DepositoApp\Servicios\Idioma\Idioma.cs:línea 17
+Date/Time: 27/8/2022 13:27:32
+===========================================================================================
+Title: Error
+Id: 0
+Message: Could not find stored procedure 'SP_LEYENDA_REGISTRAR'.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 76
+   en DAL.IdiomaDAL.RegistrarLeyenda(LeyendaBEL valor) en C:\UAI\DepositoApp\DAL\Infraestructura\IdiomaDAL.cs:línea 21
+   en Servicios.Idioma.RegistrarLeyenda(LeyendaBEL valor) en C:\UAI\DepositoApp\Servicios\Idioma\Idioma.cs:línea 17
+Date/Time: 27/8/2022 13:32:48
+===========================================================================================
+Title: Error
+Id: 0
+Message: Could not find stored procedure 'SP_LEYENDA_REGISTRAR'.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 76
+   en DAL.IdiomaDAL.RegistrarLeyenda(LeyendaBEL valor) en C:\UAI\DepositoApp\DAL\Infraestructura\IdiomaDAL.cs:línea 21
+   en Servicios.Idioma.RegistrarLeyenda(LeyendaBEL valor) en C:\UAI\DepositoApp\Servicios\Idioma\Idioma.cs:línea 17
+Date/Time: 27/8/2022 16:15:45
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Could not find stored procedure 'SP_EMPRESA'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 84
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 27/8/2022 16:32:34
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Could not find stored procedure 'SP_EMPRESA'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 84
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 27/8/2022 17:09:03
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 27/8/2022 17:21:58
+===========================================================================================
+Title: Information
+Id: 0
+Message: No existe el usuario: admin
+StackTrace: Evento Auditado
+Date/Time: 27/8/2022 17:22:02
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 27/8/2022 17:22:08
+===========================================================================================
+Title: Information
+Id: 0
+Message: No existe el usuario: admin
+StackTrace: Evento Auditado
+Date/Time: 27/8/2022 17:22:15
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 27/8/2022 17:22:28
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 27/8/2022 17:29:18
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Could not find stored procedure 'SP_ACTIVO'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 84
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 27/8/2022 17:29:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 29/8/2022 08:53:46
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 29/8/2022 08:55:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 29/8/2022 08:58:15
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 29/8/2022 09:00:54
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 29/8/2022 09:03:45
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 29/8/2022 09:04:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 29/8/2022 09:06:12
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 29/8/2022 18:59:18
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 29/8/2022 19:02:41
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 29/8/2022 19:05:29
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 29/8/2022 19:52:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 29/8/2022 19:53:05
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 29/8/2022 20:11:56
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Could not find stored procedure 'SP_DEPOSITO'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 84
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 29/8/2022 20:33:41
+===========================================================================================
+Title: Error
+Id: 0
+Message: Could not find stored procedure 'SP_DEPOSITO'.
+StackTrace:    en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 63
+   en AppDeposito.DepositoAdminForm.ObtenerDatos() en C:\UAI\DepositoApp\AppDeposito\Depositos\DepositoAdminForm.cs:línea 17
+   en AppDeposito.DepositoAdminForm.DepositosForm_Load(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Depositos\DepositoAdminForm.cs:línea 25
+Date/Time: 29/8/2022 20:33:41
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Could not find stored procedure 'SP_DONACION'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 84
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 29/8/2022 20:33:57
+===========================================================================================
+Title: Error
+Id: 0
+Message: Could not find stored procedure 'SP_DONACION'.
+StackTrace:    en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 63
+   en AppDeposito.DonacionesForm.DonacionesForm_Load(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Donaciones\DonacionAdminForm.cs:línea 28
+Date/Time: 29/8/2022 20:33:57
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 5/9/2022 19:44:28
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 5/9/2022 19:45:56
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 5/9/2022 19:46:03
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 11/9/2022 22:48:20
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Could not find stored procedure 'SP_REPARACION'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 84
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 11/9/2022 22:48:35
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 11/9/2022 23:03:46
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\ActivoDAL.cs:línea 38
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 11/9/2022 23:03:57
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 11/9/2022 23:04:11
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\ActivoDAL.cs:línea 38
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 100
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 43
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 11/9/2022 23:04:20
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 11/9/2022 23:04:49
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 11/9/2022 23:06:41
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\ActivoDAL.cs:línea 38
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 100
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 43
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 11/9/2022 23:07:00
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\ActivoDAL.cs:línea 38
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 100
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 43
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 11/9/2022 23:08:39
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\ActivoDAL.cs:línea 38
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 100
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 43
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 11/9/2022 23:13:54
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\ActivoDAL.cs:línea 38
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 100
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 43
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 11/9/2022 23:14:28
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\ActivoDAL.cs:línea 38
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 100
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 43
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 11/9/2022 23:14:44
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\ActivoDAL.cs:línea 38
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 11/9/2022 23:26:48
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.Repositorio.GetById(Object id) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 111
+   en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\ActivoDAL.cs:línea 33
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 11/9/2022 23:36:49
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.Repositorio.GetById(Object id) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 111
+   en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\ActivoDAL.cs:línea 33
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 11/9/2022 23:38:21
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.Repositorio.GetById(Object id) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 111
+   en DAL.ActivoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\ActivoDAL.cs:línea 33
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 11/9/2022 23:39:57
+===========================================================================================
+Title: Error
+Id: 7890
+Message: No se puede convertir un objeto DBNull en otros tipos.
+StackTrace:    en System.DBNull.System.IConvertible.ToDateTime(IFormatProvider provider)
+   en System.Convert.ToDateTime(Object value)
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 47
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 11/9/2022 23:43:41
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Could not find stored procedure 'SP_Presupuesto'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 84
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 52
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 12/9/2022 00:10:37
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La cadena de entrada no tiene el formato correcto.
+StackTrace:    en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   en System.Int64.Parse(String s)
+   en DAL.Repositorio.GetById(Object id) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 111
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 51
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 12/9/2022 00:34:19
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La cadena de entrada no tiene el formato correcto.
+StackTrace:    en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   en System.Int64.Parse(String s)
+   en DAL.Repositorio.GetById(Object id) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 111
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 51
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 12/9/2022 00:34:35
+===========================================================================================
+Title: Error
+Id: 5544
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl)
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep)
+   en AppDeposito.ReparacionEditForm.AceptarButton_Click(Object sender, EventArgs e)
+Date/Time: 12/9/2022 00:46:50
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl)
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep)
+   en AppDeposito.ReparacionEditForm.AceptarButton_Click(Object sender, EventArgs e)
+Date/Time: 12/9/2022 00:46:50
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Could not find stored procedure 'SP_CLIENTE'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 84
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 12/9/2022 00:46:55
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Procedure or function SP_CLIENTE has too many arguments specified.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.ClienteDAL.ObtenerListaDeActivos(ClienteBEL cliente) en C:\UAI\DepositoApp\DAL\ClienteDAL.cs:línea 61
+   en DAL.ClienteDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\ClienteDAL.cs:línea 47
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 12/9/2022 00:48:16
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Procedure or function SP_CLIENTE has too many arguments specified.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.ClienteDAL.ObtenerListaDeActivos(ClienteBEL cliente) en C:\UAI\DepositoApp\DAL\ClienteDAL.cs:línea 61
+   en DAL.ClienteDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\ClienteDAL.cs:línea 47
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 12/9/2022 00:54:01
+===========================================================================================
+Title: Error
+Id: 0
+Message: El objeto que acepta valores Null debe tener un valor.
+StackTrace:    en System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   en System.Nullable`1.get_Value()
+   en AppDeposito.BuscarClienteForm.<>c__DisplayClass6_0.<txtFiltro_TextChanged>b__0(ClienteBEL x) en C:\UAI\DepositoApp\AppDeposito\Clientes\BuscarClienteForm.cs:línea 48
+   en System.Collections.Generic.List`1.FindAll(Predicate`1 match)
+   en AppDeposito.BuscarClienteForm.txtFiltro_TextChanged(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\BuscarClienteForm.cs:línea 46
+Date/Time: 12/9/2022 01:19:11
+===========================================================================================
+Title: Error
+Id: 0
+Message: El objeto que acepta valores Null debe tener un valor.
+StackTrace:    en System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   en System.Nullable`1.get_Value()
+   en AppDeposito.BuscarClienteForm.<>c__DisplayClass6_0.<txtFiltro_TextChanged>b__0(ClienteBEL x) en C:\UAI\DepositoApp\AppDeposito\Clientes\BuscarClienteForm.cs:línea 48
+   en System.Collections.Generic.List`1.FindAll(Predicate`1 match)
+   en AppDeposito.BuscarClienteForm.txtFiltro_TextChanged(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\BuscarClienteForm.cs:línea 46
+Date/Time: 12/9/2022 01:19:16
+===========================================================================================
+Title: Error
+Id: 0
+Message: El objeto que acepta valores Null debe tener un valor.
+StackTrace:    en System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   en System.Nullable`1.get_Value()
+   en AppDeposito.BuscarClienteForm.<>c__DisplayClass6_0.<txtFiltro_TextChanged>b__0(ClienteBEL x) en C:\UAI\DepositoApp\AppDeposito\Clientes\BuscarClienteForm.cs:línea 48
+   en System.Collections.Generic.List`1.FindAll(Predicate`1 match)
+   en AppDeposito.BuscarClienteForm.txtFiltro_TextChanged(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\BuscarClienteForm.cs:línea 46
+Date/Time: 12/9/2022 01:19:19
+===========================================================================================
+Title: Error
+Id: 0
+Message: El objeto que acepta valores Null debe tener un valor.
+StackTrace:    en System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   en System.Nullable`1.get_Value()
+   en AppDeposito.BuscarClienteForm.<>c__DisplayClass6_0.<txtFiltro_TextChanged>b__0(ClienteBEL x) en C:\UAI\DepositoApp\AppDeposito\Clientes\BuscarClienteForm.cs:línea 48
+   en System.Collections.Generic.List`1.FindAll(Predicate`1 match)
+   en AppDeposito.BuscarClienteForm.txtFiltro_TextChanged(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\BuscarClienteForm.cs:línea 46
+Date/Time: 12/9/2022 01:19:21
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 12/9/2022 19:38:48
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 12/9/2022 19:40:19
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 12/9/2022 19:45:22
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Procedure or function SP_PRESUPUESTO has too many arguments specified.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 76
+   en DAL.Repositorio.Agregar(EntidadBase valor) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 51
+   en BLL.Negocio.Agregar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 28
+Date/Time: 12/9/2022 19:59:26
+===========================================================================================
+Title: Error
+Id: 0
+Message: Procedure or function SP_PRESUPUESTO has too many arguments specified.
+StackTrace:    en BLL.Negocio.Agregar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 34
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 45
+Date/Time: 12/9/2022 19:59:26
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 42
+Date/Time: 13/9/2022 00:41:24
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.PresupuestoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\PresupuestoDAL.cs:línea 44
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 13/9/2022 00:42:58
+===========================================================================================
+Title: Error
+Id: 0
+Message: La conversión especificada no es válida.
+StackTrace:    en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 63
+   en AppDeposito.PresupuestoAdminForm.ObtenerDatos() en C:\UAI\DepositoApp\AppDeposito\Presupuestos\PresupuestoAdminForm.cs:línea 20
+   en AppDeposito.PresupuestoAdminForm.btnAgregar_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Presupuestos\PresupuestoAdminForm.cs:línea 49
+Date/Time: 13/9/2022 00:42:58
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.PresupuestoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\PresupuestoDAL.cs:línea 45
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 52
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 13/9/2022 00:46:28
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.PresupuestoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\PresupuestoDAL.cs:línea 45
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 52
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 13/9/2022 00:46:45
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Error converting data type nvarchar to int.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 76
+   en DAL.Repositorio.Agregar(EntidadBase valor) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 51
+   en BLL.Negocio.Agregar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 28
+Date/Time: 13/9/2022 00:52:10
+===========================================================================================
+Title: Error
+Id: 0
+Message: Error converting data type nvarchar to int.
+StackTrace:    en BLL.Negocio.Agregar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 34
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 46
+Date/Time: 13/9/2022 00:52:10
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Error converting data type nvarchar to int.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 76
+   en DAL.Repositorio.Agregar(EntidadBase valor) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 51
+   en BLL.Negocio.Agregar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 28
+Date/Time: 13/9/2022 00:57:37
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 42
+Date/Time: 13/9/2022 00:59:26
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.PresupuestoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\PresupuestoDAL.cs:línea 45
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 13/9/2022 01:00:24
+===========================================================================================
+Title: Error
+Id: 0
+Message: La conversión especificada no es válida.
+StackTrace:    en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 63
+   en AppDeposito.PresupuestoAdminForm.ObtenerDatos() en C:\UAI\DepositoApp\AppDeposito\Presupuestos\PresupuestoAdminForm.cs:línea 20
+   en AppDeposito.PresupuestoAdminForm.btnAgregar_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Presupuestos\PresupuestoAdminForm.cs:línea 49
+Date/Time: 13/9/2022 01:00:24
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.PresupuestoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\PresupuestoDAL.cs:línea 45
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 13/9/2022 01:00:41
+===========================================================================================
+Title: Error
+Id: 0
+Message: La conversión especificada no es válida.
+StackTrace:    en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 63
+   en AppDeposito.PresupuestoAdminForm.ObtenerDatos() en C:\UAI\DepositoApp\AppDeposito\Presupuestos\PresupuestoAdminForm.cs:línea 20
+   en AppDeposito.PresupuestoAdminForm.PresupuestoAdminForm_Load(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Presupuestos\PresupuestoAdminForm.cs:línea 32
+Date/Time: 13/9/2022 01:00:41
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.PresupuestoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\PresupuestoDAL.cs:línea 45
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 13/9/2022 01:01:20
+===========================================================================================
+Title: Error
+Id: 0
+Message: La conversión especificada no es válida.
+StackTrace:    en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 63
+   en AppDeposito.PresupuestoAdminForm.ObtenerDatos() en C:\UAI\DepositoApp\AppDeposito\Presupuestos\PresupuestoAdminForm.cs:línea 20
+   en AppDeposito.PresupuestoAdminForm.PresupuestoAdminForm_Load(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Presupuestos\PresupuestoAdminForm.cs:línea 32
+Date/Time: 13/9/2022 01:01:20
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.PresupuestoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\PresupuestoDAL.cs:línea 45
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 52
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 13/9/2022 01:01:59
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.PresupuestoDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\PresupuestoDAL.cs:línea 45
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 52
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 13/9/2022 01:02:09
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.PresupuestoDAL.ObtenerLista(DataSet ds)
+   en DAL.Repositorio.Listar()
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds)
+   en DAL.Repositorio.Listar()
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 13/9/2022 01:06:40
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 42
+Date/Time: 14/9/2022 00:20:19
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 42
+Date/Time: 14/9/2022 00:20:25
+===========================================================================================
+Title: Error
+Id: 5544
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ReparacionEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Reparaciones\ReparacionEditForm.cs:línea 36
+Date/Time: 15/9/2022 00:13:03
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ReparacionEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Reparaciones\ReparacionEditForm.cs:línea 36
+Date/Time: 15/9/2022 00:13:03
+===========================================================================================
+Title: Error
+Id: 5544
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ReparacionEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Reparaciones\ReparacionEditForm.cs:línea 36
+Date/Time: 16/9/2022 00:11:29
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ReparacionEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Reparaciones\ReparacionEditForm.cs:línea 36
+Date/Time: 16/9/2022 00:11:29
+===========================================================================================
+Title: Error
+Id: 2233
+Message: No se puede convertir un objeto de tipo 'System.String' al tipo 'BEL.ClienteBEL'.
+StackTrace:    en AppDeposito.ClienteEditForm.ClienteEditForm_Load(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 56
+Date/Time: 16/9/2022 00:13:42
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede convertir un objeto de tipo 'System.String' al tipo 'BEL.ClienteBEL'.
+StackTrace:    en AppDeposito.ClienteEditForm.ClienteEditForm_Load(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 56
+Date/Time: 16/9/2022 00:13:42
+===========================================================================================
+Title: Error
+Id: 4455
+Message: El cliente tiene activos asignados
+StackTrace:    en BLL.ClienteBLL.Eliminar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\ClienteBLL.cs:línea 19
+   en AppDeposito.ClienteAdminForm.button3_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteAdminForm.cs:línea 63
+Date/Time: 18/9/2022 15:37:11
+===========================================================================================
+Title: Error
+Id: 0
+Message: El cliente tiene activos asignados
+StackTrace:    en BLL.ClienteBLL.Eliminar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\ClienteBLL.cs:línea 19
+   en AppDeposito.ClienteAdminForm.button3_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteAdminForm.cs:línea 63
+Date/Time: 18/9/2022 15:37:11
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Could not find stored procedure 'SP_ASIGNACION_ACTIVO'.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 76
+   en DAL.ClienteDAL.EliminarActivosAsignados(EntidadBase cliente) en C:\UAI\DepositoApp\DAL\ClienteDAL.cs:línea 82
+   en DAL.ClienteDAL.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\DAL\ClienteDAL.cs:línea 109
+   en BLL.Negocio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 86
+Date/Time: 18/9/2022 15:37:17
+===========================================================================================
+Title: Error
+Id: 0
+Message: Could not find stored procedure 'SP_ASIGNACION_ACTIVO'.
+StackTrace:    en BLL.Negocio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 92
+   en AppDeposito.ClienteAdminForm.QuitarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteAdminForm.cs:línea 137
+Date/Time: 18/9/2022 15:37:17
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Could not find stored procedure 'SP_ASIGNACION_ACTIVO'.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 76
+   en DAL.ClienteDAL.EliminarActivosAsignados(EntidadBase cliente) en C:\UAI\DepositoApp\DAL\ClienteDAL.cs:línea 82
+   en DAL.ClienteDAL.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\DAL\ClienteDAL.cs:línea 109
+   en BLL.Negocio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 86
+Date/Time: 18/9/2022 15:41:50
+===========================================================================================
+Title: Error
+Id: 0
+Message: Could not find stored procedure 'SP_ASIGNACION_ACTIVO'.
+StackTrace:    en BLL.Negocio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 92
+   en AppDeposito.ClienteAdminForm.QuitarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteAdminForm.cs:línea 137
+Date/Time: 18/9/2022 15:41:50
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Could not find stored procedure 'SP_ASIGNACION_ACTIVO'.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 76
+   en DAL.ClienteDAL.EliminarActivosAsignados(EntidadBase cliente) en C:\UAI\DepositoApp\DAL\ClienteDAL.cs:línea 82
+   en DAL.ClienteDAL.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\DAL\ClienteDAL.cs:línea 109
+   en BLL.Negocio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 86
+Date/Time: 18/9/2022 15:44:24
+===========================================================================================
+Title: Error
+Id: 0
+Message: Could not find stored procedure 'SP_ASIGNACION_ACTIVO'.
+StackTrace:    en BLL.Negocio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 92
+   en AppDeposito.ClienteAdminForm.QuitarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteAdminForm.cs:línea 137
+Date/Time: 18/9/2022 15:44:24
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Could not find stored procedure 'SP_ASIGNACION_ACTIVO'.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 76
+   en DAL.ClienteDAL.EliminarActivosAsignados(EntidadBase cliente) en C:\UAI\DepositoApp\DAL\ClienteDAL.cs:línea 82
+   en DAL.ClienteDAL.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\DAL\ClienteDAL.cs:línea 109
+   en BLL.Negocio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 86
+Date/Time: 18/9/2022 15:44:29
+===========================================================================================
+Title: Error
+Id: 0
+Message: Could not find stored procedure 'SP_ASIGNACION_ACTIVO'.
+StackTrace:    en BLL.Negocio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 92
+   en AppDeposito.ClienteAdminForm.QuitarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteAdminForm.cs:línea 137
+Date/Time: 18/9/2022 15:44:29
+===========================================================================================
+Title: Error
+Id: 2233
+Message: No se puede convertir un objeto de tipo 'System.String' al tipo 'BEL.ClienteBEL'.
+StackTrace:    en AppDeposito.ClienteEditForm.ClienteEditForm_Load(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 56
+Date/Time: 18/9/2022 17:02:18
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede convertir un objeto de tipo 'System.String' al tipo 'BEL.ClienteBEL'.
+StackTrace:    en AppDeposito.ClienteEditForm.ClienteEditForm_Load(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 56
+Date/Time: 18/9/2022 17:02:18
+===========================================================================================
+Title: Error
+Id: 0
+Message: Activo no disponible
+StackTrace:    en AppDeposito.ClienteAdminForm.AsignarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteAdminForm.cs:línea 118
+Date/Time: 18/9/2022 17:02:30
+===========================================================================================
+Title: Error
+Id: 2233
+Message: No se puede convertir un objeto de tipo 'System.String' al tipo 'BEL.ClienteBEL'.
+StackTrace:    en AppDeposito.ClienteEditForm.ClienteEditForm_Load(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 56
+Date/Time: 18/9/2022 17:02:38
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede convertir un objeto de tipo 'System.String' al tipo 'BEL.ClienteBEL'.
+StackTrace:    en AppDeposito.ClienteEditForm.ClienteEditForm_Load(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 56
+Date/Time: 18/9/2022 17:02:38
+===========================================================================================
+Title: Error
+Id: 0
+Message: Activo no disponible
+StackTrace:    en AppDeposito.ClienteAdminForm.AsignarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteAdminForm.cs:línea 118
+Date/Time: 18/9/2022 17:02:52
+===========================================================================================
+Title: Error
+Id: 2233
+Message: No se puede convertir un objeto de tipo 'System.String' al tipo 'BEL.ClienteBEL'.
+StackTrace:    en AppDeposito.ClienteEditForm.ClienteEditForm_Load(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 56
+Date/Time: 19/9/2022 18:37:04
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede convertir un objeto de tipo 'System.String' al tipo 'BEL.ClienteBEL'.
+StackTrace:    en AppDeposito.ClienteEditForm.ClienteEditForm_Load(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 56
+Date/Time: 19/9/2022 18:37:04
+===========================================================================================
+Title: Error
+Id: 1199
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ClienteEditForm.button1_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 37
+Date/Time: 19/9/2022 18:56:58
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ClienteEditForm.button1_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 37
+Date/Time: 19/9/2022 18:56:58
+===========================================================================================
+Title: Error
+Id: 4455
+Message: El cliente tiene activos asignados
+StackTrace:    en BLL.ClienteBLL.Eliminar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\ClienteBLL.cs:línea 19
+   en AppDeposito.ClienteAdminForm.button3_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteAdminForm.cs:línea 69
+Date/Time: 19/9/2022 19:08:32
+===========================================================================================
+Title: Error
+Id: 0
+Message: El cliente tiene activos asignados
+StackTrace:    en BLL.ClienteBLL.Eliminar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\ClienteBLL.cs:línea 19
+   en AppDeposito.ClienteAdminForm.button3_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteAdminForm.cs:línea 69
+Date/Time: 19/9/2022 19:08:32
+===========================================================================================
+Title: Error
+Id: 1199
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ClienteEditForm.button1_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 38
+Date/Time: 19/9/2022 19:18:51
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ClienteEditForm.button1_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 38
+Date/Time: 19/9/2022 19:18:51
+===========================================================================================
+Title: Error
+Id: 1199
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ClienteEditForm.button1_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 38
+Date/Time: 19/9/2022 19:19:42
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ClienteEditForm.button1_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 38
+Date/Time: 19/9/2022 19:19:42
+===========================================================================================
+Title: Error
+Id: 1199
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ClienteEditForm.button1_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 38
+Date/Time: 19/9/2022 19:19:51
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ClienteEditForm.button1_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 38
+Date/Time: 19/9/2022 19:19:51
+===========================================================================================
+Title: Error
+Id: 1199
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ClienteEditForm.button1_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 38
+Date/Time: 19/9/2022 19:20:08
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ClienteEditForm.button1_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 38
+Date/Time: 19/9/2022 19:20:08
+===========================================================================================
+Title: Error
+Id: 1199
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ClienteEditForm.button1_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 38
+Date/Time: 19/9/2022 19:20:23
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 75
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 95
+   en AppDeposito.ClienteEditForm.button1_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Clientes\ClienteEditForm.cs:línea 38
+Date/Time: 19/9/2022 19:20:23
+===========================================================================================
+Title: Error
+Id: 7890
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 47
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 19/9/2022 21:02:01
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Desbordamiento de SqlDateTime. Debe estar entre 1/1/1753 12:00:00 AM y 12/31/9999 11:59:59 PM.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 76
+   en DAL.Repositorio.Agregar(EntidadBase valor) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 51
+   en BLL.Negocio.Agregar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 28
+Date/Time: 19/9/2022 21:39:36
+===========================================================================================
+Title: Error
+Id: 5544
+Message: Desbordamiento de SqlDateTime. Debe estar entre 1/1/1753 12:00:00 AM y 12/31/9999 11:59:59 PM.
+StackTrace:    en BLL.Negocio.Agregar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 34
+   en AppDeposito.ReparacionEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Reparaciones\ReparacionEditForm.cs:línea 38
+Date/Time: 19/9/2022 21:39:36
+===========================================================================================
+Title: Error
+Id: 0
+Message: Desbordamiento de SqlDateTime. Debe estar entre 1/1/1753 12:00:00 AM y 12/31/9999 11:59:59 PM.
+StackTrace:    en BLL.Negocio.Agregar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 34
+   en AppDeposito.ReparacionEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Reparaciones\ReparacionEditForm.cs:línea 38
+Date/Time: 19/9/2022 21:39:36
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Desbordamiento de SqlDateTime. Debe estar entre 1/1/1753 12:00:00 AM y 12/31/9999 11:59:59 PM.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 76
+   en DAL.Repositorio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 75
+   en BLL.Negocio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 86
+Date/Time: 21/9/2022 00:25:44
+===========================================================================================
+Title: Error
+Id: 5544
+Message: Desbordamiento de SqlDateTime. Debe estar entre 1/1/1753 12:00:00 AM y 12/31/9999 11:59:59 PM.
+StackTrace:    en BLL.Negocio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 92
+   en AppDeposito.ReparacionEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Reparaciones\ReparacionEditForm.cs:línea 40
+Date/Time: 21/9/2022 00:25:44
+===========================================================================================
+Title: Error
+Id: 0
+Message: Desbordamiento de SqlDateTime. Debe estar entre 1/1/1753 12:00:00 AM y 12/31/9999 11:59:59 PM.
+StackTrace:    en BLL.Negocio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 92
+   en AppDeposito.ReparacionEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Reparaciones\ReparacionEditForm.cs:línea 40
+Date/Time: 21/9/2022 00:25:44
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Desbordamiento de SqlDateTime. Debe estar entre 1/1/1753 12:00:00 AM y 12/31/9999 11:59:59 PM.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 76
+   en DAL.Repositorio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 75
+   en BLL.Negocio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 86
+Date/Time: 21/9/2022 00:25:58
+===========================================================================================
+Title: Error
+Id: 5544
+Message: Desbordamiento de SqlDateTime. Debe estar entre 1/1/1753 12:00:00 AM y 12/31/9999 11:59:59 PM.
+StackTrace:    en BLL.Negocio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 92
+   en AppDeposito.ReparacionEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Reparaciones\ReparacionEditForm.cs:línea 40
+Date/Time: 21/9/2022 00:25:58
+===========================================================================================
+Title: Error
+Id: 0
+Message: Desbordamiento de SqlDateTime. Debe estar entre 1/1/1753 12:00:00 AM y 12/31/9999 11:59:59 PM.
+StackTrace:    en BLL.Negocio.Modificar(EntidadBase valor) en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 92
+   en AppDeposito.ReparacionEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\DepositoApp\AppDeposito\Reparaciones\ReparacionEditForm.cs:línea 40
+Date/Time: 21/9/2022 00:25:58
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Incorrect syntax near '='.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\UAI\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.ObtenerUno(EntidadBase valor) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 97
+   en DAL.Repositorio.GetById(Object id) en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 117
+   en DAL.ReparacionDAL.ObtenerLista(DataSet ds) en C:\UAI\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 49
+   en DAL.Repositorio.Listar() en C:\UAI\DepositoApp\DAL\Repositorio.cs:línea 86
+   en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 21/9/2022 00:38:33
+===========================================================================================

@@ -13,18 +13,18 @@ namespace AppDeposito
         {
             InitializeComponent();
         }
-        List<ActivoBEL> _listaActivos;
+
+        public List<ActivoBEL> Grilla { get => bsActivos.DataSource as List<ActivoBEL>; set => bsActivos.DataSource = value; }
         public void ObtenerDatos(string filtro="")
         {
             filtro = filtro.ToUpper();
 
             if (filtro.Length > 3)
-                _listaActivos = new ActivoBLL().Listar(filtro).ConvertAll(x => (ActivoBEL)x);
+                Grilla = new ActivoBLL().Listar(filtro).ConvertAll(x => (ActivoBEL)x);
             
             if (filtro.Length == 0)
-                _listaActivos = new ActivoBLL().Listar().ConvertAll(x=>(ActivoBEL)x);
+                Grilla = new ActivoBLL().Listar().ConvertAll(x=>(ActivoBEL)x);
                       
-                bsActivos.DataSource = _listaActivos;
         }
 
         private void EnlazarControles()
@@ -124,10 +124,7 @@ namespace AppDeposito
             }
         }
 
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void enGarantiaCheckBox_CheckedChanged(object sender, EventArgs e)
         {
@@ -139,10 +136,6 @@ namespace AppDeposito
             enGarantiaCheckBox.Checked = ((ActivoBEL)bsActivos.Current).EnGarantia;
         }
 
-        private void CancelarButton_Click(object sender, EventArgs e)
-        {
-
-        }
 
         public void Traducir()
         {

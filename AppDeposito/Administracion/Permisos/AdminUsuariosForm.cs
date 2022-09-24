@@ -113,7 +113,7 @@ namespace AppDeposito.Administracion.Permisos
             }
         }
 
-        private void btnModificarPermisos_Click(object sender, EventArgs e)
+        private void BtnModificarPermisos_Click(object sender, EventArgs e)
         {
             new EdicionPermisosUsuarioForm() { Editado=(UsuarioBEL)bsUsuarios.Current }.ShowDialog();
             ActualizarArbol();

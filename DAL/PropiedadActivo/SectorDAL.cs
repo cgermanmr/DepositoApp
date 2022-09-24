@@ -11,9 +11,9 @@ namespace DAL
     {
         protected override string ProcedimientoAlmacenado => "SP_SECTOR";
 
-        public override EntidadBase GetNew => new SectorBEL();
+        public override Entidad GetNew => new SectorBEL();
 
-        protected override List<EntidadBase> ObtenerLista(DataSet ds)
+        protected override List<Entidad> ObtenerLista(DataSet ds)
         {
             List<SectorBEL> _lista = new List<SectorBEL>();
             SectorBEL x;
@@ -25,10 +25,10 @@ namespace DAL
                 x.CentroCosto= dr[2].ToString().Trim();
                 _lista.Add(x);
             }
-            return _lista.ConvertAll(_ => (EntidadBase)_);
+            return _lista.ConvertAll(_ => (Entidad)_);
         }
 
-        protected override Hashtable ObtenerParametros(EntidadBase valor)
+        protected override Hashtable ObtenerParametros(Entidad valor)
         {
             var hdatos = new Hashtable();
 
