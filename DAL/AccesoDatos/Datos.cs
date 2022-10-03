@@ -73,6 +73,7 @@ namespace DAL
             {
                 trx.Rollback();
                 //return false;
+                
                 throw ex;
             }
             finally

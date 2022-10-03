@@ -92,17 +92,17 @@
     <Compile Include="Activos\ActivoMovimientosForm.Designer.cs">
       <DependentUpon>ActivoMovimientosForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empresas\EmpresaEditForm.cs">
+    <Compile Include="Empresas\ProveedorEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empresas\EmpresaEditForm.Designer.cs">
-      <DependentUpon>EmpresaEditForm.cs</DependentUpon>
+    <Compile Include="Empresas\ProveedorEditForm.Designer.cs">
+      <DependentUpon>ProveedorEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empresas\EmpresaAdminForm.cs">
+    <Compile Include="Empresas\ProveedorAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empresas\EmpresaAdminForm.Designer.cs">
-      <DependentUpon>EmpresaAdminForm.cs</DependentUpon>
+    <Compile Include="Empresas\ProveedorAdminForm.Designer.cs">
+      <DependentUpon>ProveedorAdminForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Marcas\MarcaAdminForm.cs">
       <SubType>Form</SubType>
@@ -116,6 +116,7 @@
     <Compile Include="Marcas\MarcaEditForm.Designer.cs">
       <DependentUpon>MarcaEditForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pagos\IngresoFacturaPresenter.cs" />
     <Compile Include="Pagos\IngresoFacturasForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -345,11 +346,11 @@
     <EmbeddedResource Include="Activos\ActivoMovimientosForm.resx">
       <DependentUpon>ActivoMovimientosForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empresas\EmpresaEditForm.resx">
-      <DependentUpon>EmpresaEditForm.cs</DependentUpon>
+    <EmbeddedResource Include="Empresas\ProveedorEditForm.resx">
+      <DependentUpon>ProveedorEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empresas\EmpresaAdminForm.resx">
-      <DependentUpon>EmpresaAdminForm.cs</DependentUpon>
+    <EmbeddedResource Include="Empresas\ProveedorAdminForm.resx">
+      <DependentUpon>ProveedorAdminForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administracion\Backup\BackupRestoreForm.resx">
       <DependentUpon>BackupRestoreForm.cs</DependentUpon>
@@ -400,6 +401,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Marcas\MarcaEditForm.resx">
       <DependentUpon>MarcaEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\IngresoFacturasForm.resx">
+      <DependentUpon>IngresoFacturasForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presupuestos\PresupuestoAdminForm.resx">
       <DependentUpon>PresupuestoAdminForm.cs</DependentUpon>
@@ -461,6 +465,7 @@
     <None Include="Properties\DataSources\BEL.EmpresaBEL.datasource" />
     <None Include="Properties\DataSources\BEL.EntidadBase.datasource" />
     <None Include="Properties\DataSources\BEL.EstadoBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.FacturaReparacionBEL.datasource" />
     <None Include="Properties\DataSources\BEL.IdiomaBEL.datasource" />
     <None Include="Properties\DataSources\BEL.LeyendaBEL.datasource" />
     <None Include="Properties\DataSources\BEL.MarcaBEL.datasource" />
@@ -469,6 +474,7 @@
     <None Include="Properties\DataSources\BEL.PermisoCompuesto.datasource" />
     <None Include="Properties\DataSources\BEL.PermisoSimple.datasource" />
     <None Include="Properties\DataSources\BEL.PresupuestoBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.ProveedorBEL.datasource" />
     <None Include="Properties\DataSources\BEL.ReparacionBEL.datasource" />
     <None Include="Properties\DataSources\BEL.SectorBEL.datasource" />
     <None Include="Properties\DataSources\BEL.TipoActivoBEL.datasource" />

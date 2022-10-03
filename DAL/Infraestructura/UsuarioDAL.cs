@@ -163,7 +163,8 @@ namespace DAL
             hdatos.Add("@idioma", valor.Idioma.Nombre);
             hdatos.Add("@estado", valor.Estado);
             hdatos.Add("@usuarioModificador", valor.UsuarioModificador);
-            
+            hdatos.Add("@dvh", valor.GetDVH());
+
             using (TransactionScope scope = new TransactionScope())
             {
                 resultado = datos.Escribir("SP_USUARIO_MODIFICAR", hdatos);

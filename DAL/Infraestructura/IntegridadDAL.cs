@@ -22,7 +22,7 @@ namespace DAL
         {
             bool modificacion=false;
             foreach (DataTable dt in ds.Tables)
-                modificacion = modificacion | Datos.Actualizar("select * from " + dt.TableName, dt)>0;
+                modificacion |= Datos.Actualizar("select * from " + dt.TableName, dt)>0;
             return modificacion;
         }
     }

@@ -88,7 +88,7 @@ namespace AppDeposito.Administracion.Backup
         }    
         private void BackupRestoreForm_Load(object sender, EventArgs e)
         {
-            Sesion.SesionActual().Suscribir(this);  
+
         }   
         public void Traducir()
         {

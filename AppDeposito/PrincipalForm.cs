@@ -3,6 +3,10 @@ using System.Windows.Forms;
 using Interfaces;
 using Servicios;
 using BEL;
+using AppDeposito.Pagos;
+using AppDeposito.Administracion.Backup;
+using AppDeposito.Administracion.Permisos;
+using AppDeposito.Administracion.Logs;
 
 namespace AppDeposito
 {
@@ -20,12 +24,14 @@ namespace AppDeposito
 
         private void ArmarMenu()
         {
-            UsuariosToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Usuario_Consultar.ToString());
-            PermisosToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Permiso_Consultar.ToString());
-            BitacoraToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Logs_Consultar.ToString());
-            BackupToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Backup_Consultar.ToString());
-            IdiomaToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Idioma_Consultar.ToString());
-            IntegridadToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Integridad_Consultar.ToString());
+            var _sesion = Sesion.SesionActual();
+
+            UsuariosToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Usuario_Consultar);
+            PermisosToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Permiso_Consultar);
+            BitacoraToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Logs_Consultar);
+            BackupToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Backup_Consultar);
+            IdiomaToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Idioma_Consultar);
+            IntegridadToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Integridad_Consultar);
 
             foreach (ToolStripMenuItem item in AdministrarToolStripMenuItem.DropDownItems)
             {
@@ -33,13 +39,10 @@ namespace AppDeposito
                 if (AdministrarToolStripMenuItem.Available) break;
             }
 
-            GestionarActivosToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Gestionar_Activos.ToString());
-            GestionarToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Propiedades_Activos.ToString());
-            GestionarPCsToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Gestionar_PCs.ToString());
-            GestionarUbicacionesToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Gestionar_Ubicaciones.ToString());
-            categoriasPCsToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Categorias_PCs.ToString());
-            PropuestaDeReemplazoPCsToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Propuesta_Reemplazo.ToString());
-            UsuarioDelActivoToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Usuario_de_Activos.ToString());
+            GestionarActivosToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Gestionar_Activos);
+            GestionarToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Propiedades_Activos);
+            GestionarUbicacionesToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Gestionar_Ubicaciones);
+            UsuarioDelActivoToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Usuario_de_Activos);
 
             foreach (ToolStripMenuItem item in ActivosToolStripMenuItem.DropDownItems)
             {
@@ -47,25 +50,41 @@ namespace AppDeposito
                 if (ActivosToolStripMenuItem.Available) break;
             }
 
-            administrarDepositosToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Gestionar_Depositos.ToString());
-            AdministrarDonacionesToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Gestionar_Donacion.ToString());
-            PropuestaDeDonaciónToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Propuesta_Donacion.ToString());
-
-            foreach (ToolStripMenuItem item in DepositosToolStripMenuItem.DropDownItems)
-            {
-                DepositosToolStripMenuItem.Available = false | item.Available;
-                if (DepositosToolStripMenuItem.Available) break;
-            }
-
-            GestionarReparacionesToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Gestionar_Reparacion.ToString());
-            GestionarProveedoresToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Gestionar_Proveedores.ToString());
-            ReparacionesRecurrentesToolStripMenuItem.Available = Sesion.SesionActual().TienePermisoPara(Permisos.Gestionar_Recurrentes.ToString());
+            GestionarReparacionesToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Gestionar_Reparacion);
+            GestionarProveedoresToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Gestionar_Proveedores);
+            ingresoFacturasToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Reparacion_Ingreso_Facturas);
 
             foreach (ToolStripMenuItem item in ReparacionesToolStripMenuItem.DropDownItems)
             {
                 ReparacionesToolStripMenuItem.Available = false | item.Available;
                 if (ReparacionesToolStripMenuItem.Available) break;
             }
+        }
+
+        private void ShowLogin()
+        {
+            Visible = false;
+
+            LoginForm login = new LoginForm();
+
+            if (!Sesion.SesionActual().Integridad)
+            {
+                MessageBox.Show("Se ha producido un error al verificar la integridad de los datos, informar al administrador", "Falla Integridad de datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                login.ModoRecuperacion = true;
+            }
+
+            if (login.ShowDialog(this) == DialogResult.OK)
+            {
+                ArmarMenu();
+                CerrarSesionToolStripMenuItem.Enabled = true;
+                IniciarSesionToolStripMenuItem.Enabled = false;
+                Visible = true;
+            }
+            else
+                Close();
+
+            Sesion.SesionActual().Suscribir(this);
+
         }
         private void IniciarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -77,6 +96,8 @@ namespace AppDeposito
             }
 
             LoginForm login = new LoginForm();
+
+            Sesion.SesionActual().Suscribir(login);
 
             if (login.ShowDialog(this) == DialogResult.OK)
             {
@@ -91,7 +112,10 @@ namespace AppDeposito
         private void PrincipalForm_Load(object sender, EventArgs e)
         {
             FormConfig.Config(this);
+            Sesion.SesionActual().Suscribir(this);
             Sesion.SesionActual().CierreSesionEvent += PrincipalForm_CierreSesionEvent;
+
+            ShowLogin();
         }
 
         private void PrincipalForm_CierreSesionEvent(object sender, EventArgs e)
@@ -108,11 +132,13 @@ namespace AppDeposito
         
         private void UsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {                      
-            var adminUsuarios = new Administracion.Permisos.AdminUsuariosForm
+            var adminUsuarios = new AdminUsuariosForm
             {
                 MdiParent = this,
             };
-            
+
+            Sesion.SesionActual().Suscribir(adminUsuarios);
+
             adminUsuarios.Show();             
         }
 
@@ -142,11 +168,13 @@ namespace AppDeposito
 
         private void PermisosToolStripMenuItem_Click(object sender, EventArgs e)
         {             
-            var adminPermisos = new Administracion.Permisos.AdminPermisosForm
+            var adminPermisos = new AdminPermisosForm
             {
                 MdiParent = this,
             };
-          
+
+            Sesion.SesionActual().Suscribir(adminPermisos);
+
             adminPermisos.Show();
         }
 
@@ -154,11 +182,14 @@ namespace AppDeposito
         private void BackupToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
-            var adminBackup = new Administracion.Backup.BackupRestoreForm
+            var adminBackup = new BackupRestoreForm
             {
                 MdiParent = this,
             };
-            
+
+            Sesion.SesionActual().Suscribir(adminBackup);
+
+
             adminBackup.Show();            
         }
 
@@ -168,7 +199,10 @@ namespace AppDeposito
             {
                 MdiParent = this,
             };
-            
+
+            Sesion.SesionActual().Suscribir(adminIdioma);
+
+
             adminIdioma.Show();
         }
 
@@ -179,7 +213,9 @@ namespace AppDeposito
             {
                 MdiParent = this,
             };
-            
+
+            Sesion.SesionActual().Suscribir(adminIntegridad);
+
             adminIntegridad.Show();
         }
 
@@ -188,10 +224,7 @@ namespace AppDeposito
 
         }
 
-        private void PropuestaDeReemplazoPCsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void ActivosToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -236,22 +269,20 @@ namespace AppDeposito
             {
                 MdiParent = this,
             };
+            Sesion.SesionActual().Suscribir(gestionarClientes);
 
             gestionarClientes.Show();
         }
 
-        private void CategoriasPCsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void GestionarUbicacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var ubicacionAdmin = new UbicacionAdminForm()
             {
                 MdiParent = this,
-                WindowState = FormWindowState.Maximized
             };
+            Sesion.SesionActual().Suscribir(ubicacionAdmin);
 
             ubicacionAdmin.Show();
         }
@@ -262,7 +293,7 @@ namespace AppDeposito
             {
                 MdiParent = this,
             };
-
+            Sesion.SesionActual().Suscribir(estadoAdmin);
             estadoAdmin.Show();
         }
 
@@ -273,6 +304,8 @@ namespace AppDeposito
                 MdiParent = this,
             };
 
+            Sesion.SesionActual().Suscribir(tipoAdmin);
+
             tipoAdmin.Show();
         }
 
@@ -282,7 +315,7 @@ namespace AppDeposito
             {
                 MdiParent = this,
             };
-
+            Sesion.SesionActual().Suscribir(marcaAdmin);
             marcaAdmin.Show();
 
         }
@@ -293,39 +326,20 @@ namespace AppDeposito
             {
                 MdiParent = this,
             };
-
+            Sesion.SesionActual().Suscribir(sectoresAdmin);
             sectoresAdmin.Show();
         }
 
         private void OrganizacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var empresaAdmin = new EmpresaAdminForm
+            var empresaAdmin = new ProveedorAdminForm
             {
                 MdiParent = this,
             };
 
             empresaAdmin.Show();
         }
-
-        private void administrarDepositosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var depositoAdmin = new DepositoAdminForm()
-            {
-                MdiParent = this,
-            };
-
-            depositoAdmin.Show();
-        }
-
-        private void AdministrarDonacionesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var donacionAdmin = new DonacionesForm()
-            {
-                MdiParent = this,
-            };
-
-            donacionAdmin.Show();
-        }
+                
 
         private void GestionarReparacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -334,21 +348,47 @@ namespace AppDeposito
                 MdiParent = this,
             };
 
+            Sesion.SesionActual().Suscribir(reparacionAdmin);
+
             reparacionAdmin.Show();
         }
 
         private void GestionarProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var empresaAdmin = new EmpresaAdminForm()
+            var proveedorAdm = new ProveedorAdminForm()
             {
                 MdiParent = this,
             };
 
-            empresaAdmin.Show();
+            Sesion.SesionActual().Suscribir(proveedorAdm);
+
+            proveedorAdm.Show();
         }
 
-        private void ReparacionesRecurrentesToolStripMenuItem_Click(object sender, EventArgs e)
+       
+
+        private void ingresoFacturasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            var ingresoFacturas = new IngresoFacturasForm()
+            {
+                MdiParent = this,
+            };
+
+            Sesion.SesionActual().Suscribir(ingresoFacturas);
+
+            ingresoFacturas.Show();
+        }
+
+        private void BitacoraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var bitacoraForm = new BitacoraForm()
+            {
+                MdiParent = this,
+            };
+
+            Sesion.SesionActual().Suscribir(bitacoraForm);
+
+            bitacoraForm.Show();
 
         }
     }

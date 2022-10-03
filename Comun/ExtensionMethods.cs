@@ -36,7 +36,7 @@ namespace Comun
         public static long SafeToLong(this object value)
         {
             
-            long.TryParse(value.ToString(), out var v);
+            long.TryParse(value?.ToString(), out long v);
             //
             return v;
         }

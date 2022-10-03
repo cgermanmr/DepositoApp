@@ -6,10 +6,10 @@ using Servicios;
 
 namespace AppDeposito
 {
-    public partial class EmpresaAdminForm : Form, IObserverTraducible
+    public partial class ProveedorAdminForm : Form, IObserverTraducible
     {
-        private EmpresaBLL _emp = new EmpresaBLL();
-        public EmpresaAdminForm()
+        private ProveedorBLL _prov = new ProveedorBLL();
+        public ProveedorAdminForm()
         {
             InitializeComponent();
         }
@@ -19,9 +19,9 @@ namespace AppDeposito
             filtro = filtro.ToUpper();
 
             if (filtro.Length > 3)
-                bsOrganizaciones.DataSource = _emp.Listar(filtro).ConvertAll(_ => (EmpresaBEL)_);
+                bsOrganizaciones.DataSource = _prov.Listar(filtro).ConvertAll(_ => (ProveedorBEL)_);
             else
-                bsOrganizaciones.DataSource = _emp.Listar().ConvertAll(_ => (EmpresaBEL)_);
+                bsOrganizaciones.DataSource = _prov.Listar().ConvertAll(_ => (ProveedorBEL)_);
                     
         }
         private void OrganizacionesForm_Load(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace AppDeposito
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
                
             }
         }
@@ -55,12 +55,12 @@ namespace AppDeposito
 
             try
             {
-                new EmpresaEditForm() { Editado = new EmpresaBEL() }.ShowDialog();
+                new ProveedorEditForm() { Editado = new ProveedorBEL() }.ShowDialog();
                 ObtenerDatos(txtFiltro.Text);
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
             }
         }
 
@@ -68,12 +68,12 @@ namespace AppDeposito
         {
             try
             {
-                new EmpresaEditForm() { Editado = (EmpresaBEL)bsOrganizaciones.Current }.ShowDialog();
+                new ProveedorEditForm() { Editado = (ProveedorBEL)bsOrganizaciones.Current }.ShowDialog();
                 ObtenerDatos(txtFiltro.Text);
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex,this);
+                Mensajes.ShowError(ex,this);
             }
         }
 
@@ -88,13 +88,13 @@ namespace AppDeposito
             {
                 if (MessageBox.Show($"Se eliminará {bsOrganizaciones.Current}", "", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
-                    Mensajes.MensajeResultado(_emp.Eliminar((EmpresaBEL)bsOrganizaciones.Current), this);
+                    Mensajes.MensajeResultado(_prov.Eliminar((ProveedorBEL)bsOrganizaciones.Current), this);
                     ObtenerDatos(txtFiltro.Text);
                 }
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
 
             }
         }

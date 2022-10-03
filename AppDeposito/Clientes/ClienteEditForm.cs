@@ -49,7 +49,7 @@ namespace AppDeposito
             catch (Exception ex)
             {
                 Logger.WriteLogExeption(ex, 1199);
-                Mensajes.MensajeExcepcion(ex, this);             
+                Mensajes.ShowError(ex, this);             
          
             }
 
@@ -76,7 +76,7 @@ namespace AppDeposito
             catch (Exception ex)
             {
                 Logger.WriteLogExeption(ex, 2233);
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
             }
             
         }

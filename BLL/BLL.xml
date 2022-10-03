@@ -10,7 +10,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BLL.Negocio.EsValido(BEL.EntidadBase)">
+        <member name="M:BLL.Negocio.EsValido(BEL.Entidad)">
             <summary>
             validar reglas de negocio
             </summary>

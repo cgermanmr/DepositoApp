@@ -15,7 +15,8 @@ namespace BEL
         public DateTime FechaSolicitud { get; set; } = DateTime.Now;
         public DateTime? FechaFinalizacion { get; set; } = null;
         public bool Realizada => FechaFinalizacion > DateTime.MinValue;             
-        public long TicketSoporte { get; set; }     
+        public long TicketSoporte { get; set; }
+
         public override bool Equals(object obj)
         {
             if (obj == null) return false;

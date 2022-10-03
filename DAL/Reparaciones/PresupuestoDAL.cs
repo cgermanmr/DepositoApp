@@ -32,6 +32,7 @@ namespace DAL
             hdatos.Add("@autorizado", _valor.Autorizado);
             hdatos.Add("@moneda", _valor.Moneda);
             hdatos.Add("@descripcion", _valor.Descripcion);
+            hdatos.Add("@ot", _valor.OtProveedor);
 
             return hdatos;
         }
@@ -43,7 +44,7 @@ namespace DAL
             {
                 x = new PresupuestoBEL();
                 x.Id = dr[0].SafeToLong();
-                x.Proveedor= (EmpresaBEL)new EmpresaDAL().GetById(dr[1]);
+                x.Proveedor= new ProveedorDAL().GetById(dr[1]) as ProveedorBEL;
                 x.Fecha = dr[2].SafeToDateTime();
                 x.FechaValidez = dr[3].SafeToDateTime();
                 x.TiempoEstimado = dr[4].SafeToInt();
@@ -53,12 +54,36 @@ namespace DAL
                 x.Descripcion = dr[8].ToString();
                 x.Autorizado = (bool)dr[9];
                 x.Moneda = (TipoMoneda)dr[10].SafeToInt();
+                x.OtProveedor = dr[11].ToString();
                 _lista.Add(x);
             }
 
             return _lista;
-        }    
+        }
 
-       
+        internal List<PresupuestoBEL> GetByReparacion(long idReparacion)
+        {
+            var hdatos = new Hashtable();
+
+            hdatos.Add("@codigoReparacion", idReparacion);
+            hdatos.Add("@operacion", 5);
+
+            var ds = _datos.Leer(ProcedimientoAlmacenado, hdatos);
+
+            return ObtenerLista(ds).Select( x => (PresupuestoBEL)x).ToList();
+        }
+
+        public PresupuestoBEL GetByOtProveedor(string ot,long cuit)
+        {
+            var hdatos = new Hashtable();
+
+            hdatos.Add("@ot", ot);
+            hdatos.Add("@cuitProveedor", cuit);
+            hdatos.Add("@operacion", 6);
+
+            var ds = _datos.Leer(ProcedimientoAlmacenado, hdatos);
+
+            return ObtenerLista(ds).Select(x => (PresupuestoBEL)x).FirstOrDefault();
+        }
     }
 }

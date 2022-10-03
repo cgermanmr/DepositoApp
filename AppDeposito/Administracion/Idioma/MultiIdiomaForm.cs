@@ -24,7 +24,7 @@ namespace AppDeposito.Administracion.Idioma
         {
             var nuevoIdioma = new IdiomaBEL();
             nuevoIdioma.Leyendas = new Servicios.Idioma().Listar().Find(x => x.Nombre == "Predeterminado").Leyendas;
-            new EdicionIdiomaForm() { Editado = nuevoIdioma }.ShowDialog();
+            new EdicionIdiomaForm(nuevoIdioma).ShowDialog();
             ObtenerDatos();
         }
 
@@ -55,7 +55,12 @@ namespace AppDeposito.Administracion.Idioma
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            new EdicionIdiomaForm() { Editado = (IdiomaBEL)cmbIdioma.SelectedItem }.ShowDialog();
+            var seleccionado = (IdiomaBEL)bsIdiomas.Current;
+
+            if (seleccionado.Nombre == "Predeterminado")
+                throw new InvalidOperationException("No es posible editar el Idioma predeterminado");
+
+            new EdicionIdiomaForm(seleccionado).ShowDialog();
             ObtenerDatos();
         }
 
@@ -66,7 +71,11 @@ namespace AppDeposito.Administracion.Idioma
 
         private void btnAplicar_Click(object sender, EventArgs e)
         {
-            Sesion.SesionActual().IdiomaActual = (IdiomaBEL)bsIdiomas.Current;
+            var seleccionado = (IdiomaBEL)bsIdiomas.Current;
+            if (!seleccionado.Habilitado)
+                throw new InvalidOperationException("Idioma NO habilidato");
+                        
+            Sesion.SesionActual().IdiomaActual = seleccionado;
         }
 
         private void MensajeResultado(bool resultado)
@@ -78,8 +87,13 @@ namespace AppDeposito.Administracion.Idioma
         }
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Eliminar idioma " + ((IdiomaBEL)bsIdiomas.Current).Nombre,"Eliminar idioma",MessageBoxButtons.OKCancel,MessageBoxIcon.Warning)==DialogResult.OK)
-               MensajeResultado(new Servicios.Idioma().Eliminar((IdiomaBEL)bsIdiomas.Current));
+            var seleccionado = (IdiomaBEL)bsIdiomas.Current;
+
+            if(seleccionado.Nombre == "Predeterminado")
+                throw new InvalidOperationException("No es posible eliminar el Idioma predeterminado");
+
+            if (MessageBox.Show("Eliminar idioma " + seleccionado.Nombre,"Eliminar idioma",MessageBoxButtons.OKCancel,MessageBoxIcon.Warning)==DialogResult.OK)
+               MensajeResultado(new Servicios.Idioma().Eliminar(seleccionado));
 
             ObtenerDatos();
         }

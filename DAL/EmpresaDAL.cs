@@ -31,8 +31,6 @@ namespace DAL
                 x.Email = Convert.IsDBNull(dr[7]) ? string.Empty : dr[7].ToString();
                 x.Contacto = Convert.IsDBNull(dr[8]) ? string.Empty : dr[8].ToString();
                 x.Observaciones = dr["OBS"].ToString();
-                //x.Estado = Convert.ToBoolean(dr["ESTADO"]);
-                //x.EsCliente = Convert.ToBoolean(dr["ESCLIENTE"]);
 
                 _lista.Add(x);
             }
@@ -56,8 +54,6 @@ namespace DAL
             hdatos.Add("@email", x.Email);
             hdatos.Add("@contacto", x.Contacto);
             hdatos.Add("@obs", x.Observaciones);
-            //hdatos.Add("@estado", x.Estado);
-            //hdatos.Add("@escliente", x.EsCliente);
 
             return hdatos;
         }

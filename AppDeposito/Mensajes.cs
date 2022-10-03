@@ -17,7 +17,7 @@ namespace AppDeposito
                 MessageBox.Show("No se ha podido realizar la operación", contexto.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        public static void MensajeExcepcion(Exception ex, Form contexto)
+        public static void ShowError(Exception ex, Form contexto)
         {
             Servicios.Logger.WriteLogExeption(ex);
 
@@ -29,7 +29,7 @@ namespace AppDeposito
 
         public static void ShowAdvertencia(string msg)
         {
-            MessageBox.Show($"{msg ?? "Tarea finalizada exitosamente"}", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(msg, "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
         public static void ShowExitoso(string msg = null)
@@ -49,7 +49,9 @@ namespace AppDeposito
         }
         public static bool ShowDecision(string msg)
         {
-            return (MessageBox.Show(msg, "Confirmar", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK);
+            return MessageBox.Show(msg,"", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK;
         }
     }
+
+
 }

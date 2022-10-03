@@ -18,7 +18,7 @@ namespace BEL
                 _leyendas.AddRange(value);
             }
         }
-
+        public bool Habilitado { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public LeyendaBEL ObtenerLeyenda(LeyendaBEL valor)

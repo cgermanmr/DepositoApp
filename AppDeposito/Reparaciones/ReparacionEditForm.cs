@@ -44,7 +44,7 @@ namespace AppDeposito
             catch (Exception ex)
             {
                 Logger.WriteLogExeption(ex, 5544);
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
             }
         }
 

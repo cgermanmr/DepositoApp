@@ -5000,3 +5000,1104 @@ StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException excep
    en BLL.Negocio.Listar() en C:\UAI\DepositoApp\BLL\Negocio.cs:línea 57
 Date/Time: 21/9/2022 00:38:33
 ===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 28/9/2022 23:42:35
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Could not find stored procedure 'SP_DEPOSITO'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\UAI\TD\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.Listar() en C:\UAI\TD\DepositoApp\DAL\Repositorio.cs:línea 84
+   en BLL.Negocio.Listar() en C:\UAI\TD\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 28/9/2022 23:42:47
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 28/9/2022 23:57:31
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Could not find stored procedure 'SP_DONACION'.
+StackTrace:    en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en DAL.Datos.Leer(String consulta, Hashtable hdatos) en C:\UAI\TD\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 37
+   en DAL.Repositorio.Listar() en C:\UAI\TD\DepositoApp\DAL\Repositorio.cs:línea 84
+   en BLL.Negocio.Listar() en C:\UAI\TD\DepositoApp\BLL\Negocio.cs:línea 57
+Date/Time: 28/9/2022 23:58:44
+===========================================================================================
+Title: Error
+Id: 7890
+Message: @@Letra is not a parameter for procedure SP_FACTURA.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\TD\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 76
+   en DAL.Repositorio.Agregar(Entidad valor) en C:\UAI\TD\DepositoApp\DAL\Repositorio.cs:línea 51
+   en BLL.Negocio.Agregar(Entidad valor) en C:\UAI\TD\DepositoApp\BLL\Negocio.cs:línea 28
+Date/Time: 30/9/2022 00:59:44
+===========================================================================================
+Title: Error
+Id: 7890
+Message: Desbordamiento de SqlDateTime. Debe estar entre 1/1/1753 12:00:00 AM y 12/31/9999 11:59:59 PM.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\TD\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 76
+   en DAL.Repositorio.Agregar(Entidad valor) en C:\UAI\TD\DepositoApp\DAL\Repositorio.cs:línea 51
+   en BLL.Negocio.Agregar(Entidad valor) en C:\UAI\TD\DepositoApp\BLL\Negocio.cs:línea 28
+Date/Time: 30/9/2022 01:02:38
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT 234234 ya esta facturada
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(Int64 valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturaPresenter.cs:línea 31
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturasForm.cs:línea 107
+Date/Time: 1/10/2022 03:10:38
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT No se encuentra asociada a ningun presupuesto
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(Int64 valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturaPresenter.cs:línea 30
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturasForm.cs:línea 107
+Date/Time: 1/10/2022 03:24:18
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 11:57:00
+===========================================================================================
+Title: Error
+Id: 0
+Message: Existe otro presupuesto aprobado
+StackTrace:    en BLL.Presupuesto.EsValido(Entidad valor) en C:\UAI\TD\DepositoApp\BLL\Presupuesto.cs:línea 15
+   en BLL.Negocio.Agregar(Entidad valor) en C:\UAI\TD\DepositoApp\BLL\Negocio.cs:línea 26
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 50
+Date/Time: 2/10/2022 12:02:55
+===========================================================================================
+Title: Error
+Id: 0
+Message: Existe otro presupuesto aprobado
+StackTrace:    en BLL.Presupuesto.EsValido(Entidad valor) en C:\UAI\TD\DepositoApp\BLL\Presupuesto.cs:línea 15
+   en BLL.Negocio.Agregar(Entidad valor) en C:\UAI\TD\DepositoApp\BLL\Negocio.cs:línea 26
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 50
+Date/Time: 2/10/2022 12:03:03
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:08:09
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:13:41
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:13:56
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:14:24
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:20:49
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:21:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:23:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:23:52
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:24:35
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:25:20
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:25:51
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:38:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:38:56
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:39:03
+===========================================================================================
+Title: Information
+Id: 0
+Message: Falla de integridad de la base de datos en registro codigo: german de tabla: USUARIO
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:40:05
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:40:14
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:41:02
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:43:06
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 12:56:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 14:24:38
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 14:28:32
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 14:37:14
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 14:37:56
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 15:18:11
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 15:22:43
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 15:25:38
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 15:25:54
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 15:29:45
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 15:41:47
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 15:48:37
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 15:57:07
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 16:04:43
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 16:08:22
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 16:13:24
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 16:17:26
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 76
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 96
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 44
+Date/Time: 2/10/2022 16:20:46
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 16:23:19
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 16:33:16
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 16:34:48
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 16:39:19
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 16:40:34
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 16:41:55
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT No se encuentra asociada a ningun presupuesto
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor)
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e)
+Date/Time: 2/10/2022 16:44:30
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT ab1234 no esta finalizada
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor)
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e)
+Date/Time: 2/10/2022 16:46:06
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT ab1234 no esta finalizada
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor)
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e)
+Date/Time: 2/10/2022 16:47:06
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede implementar el método o la operación.
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarImporte(Double v)
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e)
+Date/Time: 2/10/2022 16:54:08
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 17:03:38
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 17:05:35
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 17:23:21
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 17:25:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 17:28:22
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 17:33:43
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 17:34:40
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 19:12:34
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 19:13:29
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 19:15:40
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 19:20:31
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 19:34:23
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 19:36:04
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 19:37:09
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 19:40:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 19:45:16
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 19:49:49
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 20:01:01
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 20:10:34
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 20:12:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 20:14:28
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 20:17:10
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 20:23:47
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 20:28:06
+===========================================================================================
+Title: Error
+Id: 0
+Message: Idioma NO habilidato
+StackTrace:    en AppDeposito.Administracion.Idioma.MultiIdiomaForm.btnAplicar_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Administracion\Idioma\MultiIdiomaForm.cs:línea 71
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 2/10/2022 20:29:16
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 20:32:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 20:33:37
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 20:35:08
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 20:39:32
+===========================================================================================
+Title: Information
+Id: 0
+Message: Falla de integridad de la base de datos en registro codigo: german de tabla: USUARIO
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 22:51:58
+===========================================================================================
+Title: Information
+Id: 0
+Message: Falla de integridad de la base de datos en registro codigo: german de tabla: USUARIO
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 22:52:17
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 22:52:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 22:52:42
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede escribir en un TextWriter cerrado.
+StackTrace:    en System.IO.__Error.WriterClosed()
+   en System.IO.StringWriter.Write(Char[] buffer, Int32 index, Int32 count)
+   en System.IO.TextWriter.WriteLine(String value)
+   en System.IO.TextWriter.SyncTextWriter.WriteLine(String value)
+   en System.Console.WriteLine(String value)
+   en Servicios.IntegridadDatos.ValidarEntidad(DataTable dt, String dvv) en C:\UAI\TD\DepositoApp\Servicios\IntegridadDatos.cs:línea 47
+   en Servicios.IntegridadDatos.Verificar() en C:\UAI\TD\DepositoApp\Servicios\IntegridadDatos.cs:línea 101
+   en Servicios.Sesion.get_Integridad() en C:\UAI\TD\DepositoApp\Servicios\Seguridad\Sesion.cs:línea 106
+   en AppDeposito.PrincipalForm.IniciarSesionToolStripMenuItem_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\PrincipalForm.cs:línea 102
+   en System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   en System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   en System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   en System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   en System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   en System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   en System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   en System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   en System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 2/10/2022 22:53:11
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 22:53:19
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 22:53:53
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 22:55:19
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 22:57:32
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede enlazar la propiedad o la columna Valor en DataSource.
+Nombre del parámetro: dataMember
+StackTrace:    en System.Windows.Forms.BindToObject.CheckBinding()
+   en System.Windows.Forms.BindToObject.SetBindingManagerBase(BindingManagerBase lManager)
+   en System.Windows.Forms.Binding.SetListManager(BindingManagerBase bindingManagerBase)
+   en System.Windows.Forms.ListManagerBindingsCollection.AddCore(Binding dataBinding)
+   en System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   en System.Windows.Forms.BindingContext.UpdateBinding(BindingContext newBindingContext, Binding binding)
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.set_BindingContextInternal(BindingContext value)
+   en System.Windows.Forms.ContainerControl.set_BindingContext(BindingContext value)
+   en System.Windows.Forms.ContainerControl.get_BindingContext()
+   en System.Windows.Forms.Control.get_BindingContextInternal()
+   en System.Windows.Forms.Control.get_BindingContext()
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.ContainerControl.OnCreateControl()
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 2/10/2022 22:57:41
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede enlazar la propiedad o la columna Valor en DataSource.
+Nombre del parámetro: dataMember
+StackTrace:    en System.Windows.Forms.BindToObject.CheckBinding()
+   en System.Windows.Forms.BindToObject.SetBindingManagerBase(BindingManagerBase lManager)
+   en System.Windows.Forms.Binding.SetListManager(BindingManagerBase bindingManagerBase)
+   en System.Windows.Forms.ListManagerBindingsCollection.AddCore(Binding dataBinding)
+   en System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   en System.Windows.Forms.BindingContext.UpdateBinding(BindingContext newBindingContext, Binding binding)
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.set_BindingContextInternal(BindingContext value)
+   en System.Windows.Forms.ContainerControl.set_BindingContext(BindingContext value)
+   en System.Windows.Forms.ContainerControl.get_BindingContext()
+   en System.Windows.Forms.Control.get_BindingContextInternal()
+   en System.Windows.Forms.Control.get_BindingContext()
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.ContainerControl.OnCreateControl()
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 2/10/2022 22:57:47
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 22:58:10
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede enlazar la propiedad o la columna Valor en DataSource.
+Nombre del parámetro: dataMember
+StackTrace:    en System.Windows.Forms.BindToObject.CheckBinding()
+   en System.Windows.Forms.BindToObject.SetBindingManagerBase(BindingManagerBase lManager)
+   en System.Windows.Forms.Binding.SetListManager(BindingManagerBase bindingManagerBase)
+   en System.Windows.Forms.ListManagerBindingsCollection.AddCore(Binding dataBinding)
+   en System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   en System.Windows.Forms.BindingContext.UpdateBinding(BindingContext newBindingContext, Binding binding)
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.set_BindingContextInternal(BindingContext value)
+   en System.Windows.Forms.ContainerControl.set_BindingContext(BindingContext value)
+   en System.Windows.Forms.ContainerControl.get_BindingContext()
+   en System.Windows.Forms.Control.get_BindingContextInternal()
+   en System.Windows.Forms.Control.get_BindingContext()
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.ContainerControl.OnCreateControl()
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 2/10/2022 22:58:24
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:00:08
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:00:18
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede enlazar la propiedad o la columna Valor en DataSource.
+Nombre del parámetro: dataMember
+StackTrace:    en System.Windows.Forms.BindToObject.CheckBinding()
+   en System.Windows.Forms.BindToObject.SetBindingManagerBase(BindingManagerBase lManager)
+   en System.Windows.Forms.Binding.SetListManager(BindingManagerBase bindingManagerBase)
+   en System.Windows.Forms.ListManagerBindingsCollection.AddCore(Binding dataBinding)
+   en System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   en System.Windows.Forms.BindingContext.UpdateBinding(BindingContext newBindingContext, Binding binding)
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.set_BindingContextInternal(BindingContext value)
+   en System.Windows.Forms.ContainerControl.set_BindingContext(BindingContext value)
+   en System.Windows.Forms.ContainerControl.get_BindingContext()
+   en System.Windows.Forms.Control.get_BindingContextInternal()
+   en System.Windows.Forms.Control.get_BindingContext()
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.ContainerControl.OnCreateControl()
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 2/10/2022 23:00:24
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede enlazar la propiedad o la columna Valor en DataSource.
+Nombre del parámetro: dataMember
+StackTrace:    en System.Windows.Forms.BindToObject.CheckBinding()
+   en System.Windows.Forms.BindToObject.SetBindingManagerBase(BindingManagerBase lManager)
+   en System.Windows.Forms.Binding.SetListManager(BindingManagerBase bindingManagerBase)
+   en System.Windows.Forms.ListManagerBindingsCollection.AddCore(Binding dataBinding)
+   en System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   en System.Windows.Forms.BindingContext.UpdateBinding(BindingContext newBindingContext, Binding binding)
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.set_BindingContextInternal(BindingContext value)
+   en System.Windows.Forms.ContainerControl.set_BindingContext(BindingContext value)
+   en System.Windows.Forms.ContainerControl.get_BindingContext()
+   en System.Windows.Forms.Control.get_BindingContextInternal()
+   en System.Windows.Forms.Control.get_BindingContext()
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.ContainerControl.OnCreateControl()
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 2/10/2022 23:00:43
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:03:59
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:04:53
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:05:01
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:19:01
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:46:41
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:48:37
+===========================================================================================
+Title: Error
+Id: 0
+Message: No es posible eliminar el Idioma predeterminado
+StackTrace:    en AppDeposito.Administracion.Idioma.MultiIdiomaForm.btnBorrar_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Administracion\Idioma\MultiIdiomaForm.cs:línea 88
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 2/10/2022 23:49:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: Falla de integridad de la base de datos en DVV de la tabla: USUARIO
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:50:40
+===========================================================================================
+Title: Information
+Id: 0
+Message: Falla de integridad de la base de datos en DVV de la tabla: USUARIO
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:53:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: Falla de integridad de la base de datos en DVV de la tabla: USUARIO
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:53:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: Falla de integridad de la base de datos en DVV de la tabla: USUARIO
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:53:46
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:53:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:53:58
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 2/10/2022 23:56:37
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 00:01:27
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 00:01:38
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 00:02:05
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 00:08:07
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 00:12:29
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 00:14:09
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 00:15:07
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 00:16:24
+===========================================================================================
+Title: Error
+Id: 0
+Message: Idioma NO habilidato
+StackTrace:    en AppDeposito.Administracion.Idioma.MultiIdiomaForm.btnAplicar_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Administracion\Idioma\MultiIdiomaForm.cs:línea 76
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 3/10/2022 00:17:37
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 00:20:08
+===========================================================================================
+Title: Information
+Id: 0
+Message: Falla de integridad de la base de datos en DVV de la tabla: USUARIO
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 01:31:22
+===========================================================================================
+Title: Information
+Id: 0
+Message: No existe el usuario: admin
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 01:31:43
+===========================================================================================
+Title: Information
+Id: 0
+Message: Falla de integridad de la base de datos en DVV de la tabla: USUARIO
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 01:31:49
+===========================================================================================
+Title: Information
+Id: 0
+Message: Falla de integridad de la base de datos en DVV de la tabla: USUARIO
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 01:33:51
+===========================================================================================
+Title: Information
+Id: 0
+Message: Falla de integridad de la base de datos en DVV de la tabla: USUARIO
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 01:34:08
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 01:34:18
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 01:35:23
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 01:40:02
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 01:44:56
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 01:45:11
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 01:56:59
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 01:57:13
+===========================================================================================
+Title: Information
+Id: 0
+Message: Integridad de datos verificada OK
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 01:58:49
+===========================================================================================

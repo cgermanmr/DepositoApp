@@ -91,7 +91,7 @@ namespace DAL
             var hdatos = new Hashtable();
             DonacionBEL _valor=(DonacionBEL)valor;
             if (_valor == null) _valor = new DonacionBEL();
-            hdatos.Add("@codigo", _valor.Id);
+            hdatos.Add("@id", _valor.Id);
             hdatos.Add("@autorizador", _valor.Autorizador.Id);
             hdatos.Add("@auditor", _valor.Auditor.Id);
             hdatos.Add("@fecha", _valor.Fecha);

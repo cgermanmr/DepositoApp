@@ -31,25 +31,49 @@ namespace DAL
 
             hdatos.Add("@codIdioma", valor.Nombre);
             hdatos.Add("@descripcion", valor.Descripcion);
+            hdatos.Add("@habilitado", valor.Habilitado);
+
             using (TransactionScope scope = new TransactionScope())
             {
                 resultado = datos.Escribir("SP_IDIOMA_AGREGAR", hdatos);
 
-                foreach (var item in valor.Leyendas)
-                {
-                    hdatos.Clear();
-                    hdatos.Add("@codLeyenda", item.Codigo);
-                    hdatos.Add("@codIdioma", valor.Nombre);
-                    hdatos.Add("@valor", item.Valor);
-
-                    resultado = resultado && datos.Escribir("SP_LEYENDA_AGREGAR", hdatos);
-                }
-
+                AgregarLeyendas(valor);
+              
                 scope.Complete();
             }
             return resultado;
         }
-    
+
+        private bool EliminarLeyendas(string codIdioma)
+        {
+            var datos = new Datos();
+            var hdatos = new Hashtable();
+
+            hdatos.Add("@codIdioma", codIdioma);
+            hdatos.Add("@operacion", 7);
+
+            return datos.Escribir("SP_IDIOMA", hdatos);
+
+        }
+        private bool AgregarLeyendas(IdiomaBEL idioma)
+        {
+            var datos = new Datos();
+            var hdatos = new Hashtable();
+            bool resultado = EliminarLeyendas(idioma.Nombre);
+
+            foreach (var item in idioma.Leyendas)
+            {
+                hdatos.Clear();
+                hdatos.Add("@codIdioma", idioma.Nombre);
+                hdatos.Add("@codLeyenda", item.Codigo);
+                hdatos.Add("@valorLeyenda", item.Valor);
+                hdatos.Add("@operacion", 8);
+                resultado &= datos.Escribir("SP_IDIOMA", hdatos);
+            }
+
+            return resultado;
+        }
+        
 
         public bool Eliminar(IdiomaBEL valor)
         {
@@ -62,14 +86,28 @@ namespace DAL
             return resultado;
         }
 
-        public bool Modificar(IdiomaBEL valor)
+        public bool Modificar(IdiomaBEL idioma)
         {
+            var datos = new Datos();
+            var hdatos = new Hashtable();
             bool resultado;
+
+            hdatos.Clear();
+            hdatos.Add("@codIdioma", idioma.Nombre);
+            hdatos.Add("@descripcion", idioma.Descripcion);
+            hdatos.Add("@habilitado", idioma.Habilitado);
+            hdatos.Add("@operacion", 3);
+
             using (TransactionScope scope = new TransactionScope())
             {
-                resultado = Eliminar(valor) && Agregar(valor);    
-                scope.Complete();                    
+                resultado = datos.Escribir("[SP_IDIOMA]", hdatos);
+
+                resultado &= AgregarLeyendas(idioma);
+
+                scope.Complete();
             }
+
+
             return resultado;
         }
 
@@ -113,20 +151,20 @@ namespace DAL
                     {
                         Nombre = dr["COD_IDIOMA"].ToString(),
                         Descripcion = dr["DESCRIPCION"].ToString(),
+                        Habilitado = (bool)dr["HABILITADO"],
                         Leyendas = ObtenerLeyendasdeIdioma(dr["COD_IDIOMA"].ToString())
-                        }
-                    );
+                    });
             }
 
             return idiomas;
         }
 
-        public List<IdiomaBEL> Listar(IdiomaBEL filtro)
+        public List<IdiomaBEL> Listar(string filtro)
         {
             throw new NotImplementedException();
         }
 
-        public List<IdiomaBEL> Listar(string filtro)
+        public List<IdiomaBEL> Listar(IdiomaBEL filtro)
         {
             throw new NotImplementedException();
         }

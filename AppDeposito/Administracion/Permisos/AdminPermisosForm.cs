@@ -12,7 +12,7 @@ using BEL;
 
 namespace AppDeposito.Administracion.Permisos
 {
-    public partial class AdminPermisosForm : Form
+    public partial class AdminPermisosForm : Form,IObserverTraducible
     {
         private BindingSource bsPermisos = new BindingSource();
         public AdminPermisosForm()
@@ -34,6 +34,8 @@ namespace AppDeposito.Administracion.Permisos
 
         private void AdminPermisosForm_Load(object sender, EventArgs e)
         {
+            Sesion.SesionActual().Suscribir(this);
+
             bsPermisos.CurrentItemChanged += BsPermisos_CurrentItemChanged;
             ObtenerDatos();
             EnlazarControles();
@@ -104,6 +106,11 @@ namespace AppDeposito.Administracion.Permisos
                 p.Eliminar((PermisoCompuesto)bsPermisos.Current);
             
             ObtenerDatos();
+        }
+
+        public void Traducir()
+        {
+            Traductor.Traducir(this);
         }
     }
 }

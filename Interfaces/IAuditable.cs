@@ -11,7 +11,7 @@ namespace Interfaces
         string UsuarioModificador { get; set; }
         DateTime FechaModificacion { get; set; }
         TipoOperacion TipoModificacion { get; set; }
-        TipoEvento TipoEvento { get; set; }
+        string GetDVH();
 
     }
 }

@@ -27,7 +27,7 @@ namespace Servicios
             // Se recorre cada registro y se compara el hash generado con el guardado en la tabla
             foreach (DataRow registro in dt.Rows)
             {                     
-                if (!Criptografia.ObtenerInstancia.CompareHashMD5(RegistroToString(registro), registro["DVH"].ToString()))
+                if (!Criptografia.Get.CompareHashMD5(RegistroToString(registro), registro["DVH"].ToString()))
                 {
                     salida.Append(string.Format("Falla de integridad de la base de datos en registro codigo: {0} de tabla: {1}", registro[0], dt.TableName));
                     resultado=false;
@@ -44,7 +44,6 @@ namespace Servicios
                 salida.Append("Integridad de datos verificada OK");
            
             Logger.WriteLog(salida.ToString());
-            Console.WriteLine(salida.ToString());            
             
             return resultado;
         }
@@ -52,7 +51,7 @@ namespace Servicios
         {
             // Un procedimiento auxiliar para generar los digitos verificador de horizontal
             foreach (DataRow registro in dt.Rows)
-                registro["DVH"] = Criptografia.ObtenerInstancia.GetHashMD5(RegistroToString(registro));
+                registro["DVH"] = Criptografia.Get.GetHashMD5(RegistroToString(registro));
         }
         //private static string ObtenerDVH(DataRow registro)
         //{
@@ -73,7 +72,7 @@ namespace Servicios
             // concateno todos los campos de la columna DVH en un solo string
             foreach (DataRow registro in entidad.Rows)
                 sb.Append(registro["DVH"].ToString());
-            return Criptografia.ObtenerInstancia.GetHashMD5(sb.ToString());
+            return Criptografia.Get.GetHashMD5(sb.ToString());
         }
         public static bool RegenerarDV()
         {

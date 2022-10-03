@@ -22,44 +22,7 @@ namespace BEL
                 return System.Convert.ToInt32(_porcentaje);
             }
         }
-        public int PorcentajeDisponible { get { return 100 - PorcentajeUtilizado; } }
-
-        public int ActivosDisponibles {
-            get
-            {
-                return Activos.FindAll(_ => _.EstadoActivo.Id == (int)Estados.Disponible).Count;
-            }
-        }
-
-        public int ActivosEnReparacion
-        {
-            get
-            {
-                return Activos.FindAll(_ => _.EstadoActivo.Id == (int)Estados.EnReparacion).Count;
-            }
-        }
-
-        public int ActivosEnUso
-        {
-            get
-            {
-                return Activos.FindAll(_ => _.EstadoActivo.Id == (int)Estados.EnUso).Count;
-            }
-        }
-        public int ActivosParaDonar
-        {
-            get
-            {
-                return Activos.FindAll(_ => _.EstadoActivo.Id == (int)Estados.ParaDonar).Count;
-            }
-        }
-        public int ActivosParaDescartar
-        {
-            get
-            {
-                return Activos.FindAll(_ => _.EstadoActivo.Id == (int)Estados.ParaDescartar).Count;
-            }
-        }
+                     
 
         public UbicacionBEL Ubicacion { get; set; } = new UbicacionBEL();
         public List<ActivoBEL> Activos { get; set; } = new List<ActivoBEL>();

@@ -1,6 +1,10 @@
-﻿using System;
+﻿using AppDeposito.Pagos;
+using Servicios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,9 +20,13 @@ namespace AppDeposito
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new PrincipalForm());
-            
-            
+
+            Application.ThreadException += Application_ThreadException;
+            Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
+
+            Application.Run(new PrincipalForm());
+
+
             //Application.Run(new DonacionesForm());
 
             //Application.Run(new Administracion.Permisos.AdminPermisosForm());
@@ -29,7 +37,7 @@ namespace AppDeposito
             //Application.Run(new Administracion.Logs.UsuarioControlCambiosForm());
             //Application.Run(new Administracion.Integridad.IntegridadForm());
             //Application.Run(new ActivoAdminForm());
-            Application.Run(new ReparacionAdminForm());
+            //Application.Run(new ReparacionAdminForm());
             //Application.Run(new ClienteAdminForm());
             //Application.Run(new DepositoAdminForm());
 
@@ -38,8 +46,28 @@ namespace AppDeposito
             //Application.Run(new UbicacionAdminForm());
             //Application.Run(new MarcaAdminForm());
             //Application.Run(new EstadoAdminForm());
+            //Application.Run(new IngresoFacturasForm());
 
 
         }
+        private static void Application_ThreadException(object sender, ThreadExceptionEventArgs e)
+        {
+            var ex = e.Exception;
+
+            Logger.WriteLogExeption(ex);
+
+            switch (ex)
+            {
+                case InvalidOperationException invalidOperationException:
+                    MessageBox.Show(invalidOperationException.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                
+                default:
+                    MessageBox.Show($"Se ha producido un error: \n\n {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+            }
+        }
+
+
     }
 }

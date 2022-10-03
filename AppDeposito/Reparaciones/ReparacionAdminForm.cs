@@ -38,7 +38,7 @@ namespace AppDeposito
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
             }
         }
 
@@ -68,20 +68,11 @@ namespace AppDeposito
             catch (Exception ex)
             {               
 
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
             }
         }
 
-        private void estadoCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-            if (bsReparaciones.Current == null)
-            {
-                estadoCheckBox.Checked = false;
-                return;
-            }
-
-            estadoCheckBox.Checked = ReparacionSeleccionada.Estado;
-        }
+        
 
         private void enGarantiaCheckBox_CheckedChanged(object sender, EventArgs e)
         {

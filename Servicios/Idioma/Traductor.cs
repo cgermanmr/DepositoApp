@@ -10,8 +10,9 @@ namespace Servicios
         private static Idioma idioma = new Idioma();
         public static void RegistrarLeyendas(object ctrl)
         {
-            //Idioma idioma = new Idioma();
             if (ctrl is TextBox) return;
+            if (ctrl is ComboBox) return;
+            if (ctrl is DateTimePicker) return;
             //Registra items del menu
             if (ctrl is ToolStripDropDownItem)
             {
@@ -25,23 +26,25 @@ namespace Servicios
             }
 
             //Registrar controles
-            if (ctrl is Control)
+            if (ctrl is Control c)
             {
-                if (!string.IsNullOrEmpty(((Control)ctrl).Text))
+                if (!string.IsNullOrEmpty(c.Text))
                 {
-                    ((Control)ctrl).Tag = ((Control)ctrl).Text;
-                    idioma.RegistrarLeyenda(new LeyendaBEL() { Codigo = ((Control)ctrl).Text });
+                    c.Tag = c.Text;
+                    idioma.RegistrarLeyenda(new LeyendaBEL() { Codigo = c.Text });
                 }
-                foreach (Control item in ((Control)ctrl).Controls)
+
+                foreach (Control item in c.Controls)
                 {
-                    if (item is MenuStrip)
+                    if (item is MenuStrip menuStrip)
                     {
-                        foreach (var menu in ((MenuStrip)item).Items)
+                        foreach (var menu in menuStrip.Items)
                             RegistrarLeyendas(menu);
                     }
-                    else if (item is DataGridView)
+                    
+                    if (item is DataGridView gridView)
                     {
-                        foreach (DataGridViewColumn column in ((DataGridView)item).Columns)
+                        foreach (DataGridViewColumn column in gridView.Columns)
                         {
                             if (!string.IsNullOrEmpty(column.HeaderText))
                             {
@@ -50,22 +53,27 @@ namespace Servicios
                             }                                                                                                        
                         }           
                     }
-                    else
+
+                    if (!string.IsNullOrEmpty(item.Text))
+                        RegistrarLeyendas(item);
+
+                    if (item is Panel panel)
                     {
-                        if (!string.IsNullOrEmpty(item.Text))
-                        {
-                            item.Tag = item.Text;
-                            idioma.RegistrarLeyenda(new LeyendaBEL() { Codigo = item.Text });
-                        }
+                        foreach (Control f in panel.Controls)
+                            RegistrarLeyendas(f);
                     }
-                    
+
                 }
+
             }
+        
         }
 
         public static void Traducir(object ctrl)
         {
             if (ctrl is TextBox) return;
+            if (ctrl is ComboBox) return;
+            if (ctrl is DateTimePicker) return;
 
             IdiomaBEL idioma = Sesion.SesionActual().IdiomaActual;
 
@@ -81,39 +89,45 @@ namespace Servicios
             }
 
             //Registrar controles
-            if (ctrl is Control)
+            if (ctrl is Control c)
             {
-                if (!string.IsNullOrEmpty(((Control)ctrl).Text))
+                if (!string.IsNullOrEmpty(c.Text))
                 {
-                    ((Control)ctrl).Text = idioma.Leyendas.Find(x => x.Codigo == ((Control)ctrl).Tag.ToString()).Valor;
+                    c.Text = idioma.Leyendas.Find(x => x.Codigo == c.Tag.ToString()).Valor;
                 }
-                foreach (Control item in ((Control)ctrl).Controls)
+
+                foreach (Control item in c.Controls)
                 {
-                    if (item is MenuStrip)
+                    if (item is MenuStrip menuStrip)
                     {
-                        foreach (var menu in ((MenuStrip)item).Items)
+                        foreach (var menu in menuStrip.Items)
                             Traducir(menu);
                     }
-                    else if (item is DataGridView)
+
+                    if (item is DataGridView dataGrid)
                     {
-                        foreach (DataGridViewColumn column in ((DataGridView)item).Columns)
+                        foreach (DataGridViewColumn column in dataGrid.Columns)
                         {
                             if (!string.IsNullOrEmpty(column.HeaderText))
-                            {
                                 column.HeaderText = idioma.Leyendas.Find(x => x.Codigo == column.Tag.ToString()).Valor;
-                            }
                         }
                     }
-                    else
+
+                    if (!string.IsNullOrEmpty(item.Text) && item.Tag != null)
+                        Traducir(item);
+
+                    if (item is Panel panel)
                     {
-                        if (!string.IsNullOrEmpty(item.Text) && item.Tag != null)
-                        {
-                            item.Text = idioma.Leyendas.Find(x => x.Codigo == item.Tag.ToString()).Valor;
-                        }
+                        foreach (Control f in panel.Controls)
+                            Traducir(f);
                     }
+
                 }
             }
 
+    
         }
+
+
     }
 }

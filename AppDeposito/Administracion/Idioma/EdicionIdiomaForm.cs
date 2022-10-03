@@ -14,31 +14,26 @@ namespace AppDeposito.Administracion.Idioma
 {
     public partial class EdicionIdiomaForm : Form,IObserverTraducible
     {
-        public IdiomaBEL Editado { get; set; }                                                                                
-
-        public EdicionIdiomaForm()
+        public IdiomaBEL IdiomaEditado { 
+            get => bsIdiomas.DataSource as IdiomaBEL;
+            set { 
+                bsIdiomas.DataSource = value;
+                bsLeyendas.DataSource = value.Leyendas.OrderBy(x => x.Valor);
+            } 
+        }
+        public EdicionIdiomaForm(IdiomaBEL idioma)
         {
             InitializeComponent();
-        }
 
-        private BindingSource bsLeyendasEditado=new BindingSource();
-       
-
-        private void EnlazarControles()
-        {
-            bsLeyendasEditado.DataSource = Editado.Leyendas;
-            txtNombre.DataBindings.Add("Text", Editado, "Nombre");
-            txtDescripcion.DataBindings.Add("Text", Editado, "Descripcion");
-            GrillaLeyendas.AutoGenerateColumns = false;
-            GrillaLeyendas.DataSource = bsLeyendasEditado;
-            txtPredeterminada.DataBindings.Add("Text", bsLeyendasEditado, "Valor");
-            txtEditada.DataBindings.Add("Text", bsLeyendasEditado, "Valor");
+            IdiomaEditado = idioma;
+            
         }
+      
                
         private void EdicionIdiomaForm_Load(object sender, EventArgs e)
         {
             Sesion.SesionActual().Suscribir(this);
-            EnlazarControles();                       
+
         }
 
         private void MensajeResultado(bool resultado)
@@ -50,31 +45,28 @@ namespace AppDeposito.Administracion.Idioma
         }
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            try
+           
+            foreach (Control c in Controls)
             {
-                foreach (Control c in this.Controls)
+                if (errorProvider.GetError(c).Length > 0)
                 {
-                    if (errorProvider.GetError(c).Length > 0)
-                    {
-                        throw new Exception(errorProvider.GetError(c));
-                    }
+                    throw new Exception(errorProvider.GetError(c));
                 }
-
-                bool resultado;
-                if (new Servicios.Idioma().Listar().Find(x => x.Nombre == Editado.Nombre) == null)
-                    resultado = new Servicios.Idioma().Agregar(Editado);
-                else
-                    resultado = new Servicios.Idioma().Modificar(Editado);
-
-                MensajeResultado(resultado);
-                Close();
-                                
             }
-            catch (Exception ex)
-            {
-                Logger.WriteLogExeption(ex);
-                MessageBox.Show("La operación falló. Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            } 
+
+            bool resultado;
+            if (new Servicios.Idioma().Listar().Find(x => x.Nombre == IdiomaEditado.Nombre) == null)
+                resultado = new Servicios.Idioma().Agregar(IdiomaEditado);
+            else
+                resultado = new Servicios.Idioma().Modificar(IdiomaEditado);
+
+            if (Sesion.SesionActual().IdiomaActual.Equals(IdiomaEditado))
+                Sesion.SesionActual().IdiomaActual = IdiomaEditado;
+
+            MensajeResultado(resultado);
+
+            Close();                                
+             
         }
 
         private void btnTraducirDesdeInternet_Click(object sender, EventArgs e)
@@ -108,7 +100,7 @@ namespace AppDeposito.Administracion.Idioma
 
         public void Traducir()
         {
-            Servicios.Traductor.Traducir(this);
+            Traductor.Traducir(this);
         }
     }
 }

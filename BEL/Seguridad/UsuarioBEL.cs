@@ -15,17 +15,13 @@ namespace BEL
         public int IntentosIncorrectos { get; set; }
         public bool Bloqueado { get; set; }
 
-
-        private readonly List<PermisoBase> perfil = new List<PermisoBase>();
-        public List<PermisoBase> Perfil { get; set; }
+        public List<PermisoBase> Perfil { get; set; } = new List<PermisoBase>();
 
         public IdiomaBEL Idioma { get; set; }
         public string UsuarioModificador { get; set; }
         public DateTime FechaModificacion { get; set; }
         public TipoOperacion TipoModificacion { get; set; }
     
-        TipoEvento IAuditable.TipoEvento { get; set; }
-
         public string GetDVH()
         {
             StringBuilder sb = new StringBuilder();
@@ -38,7 +34,7 @@ namespace BEL
             sb.Append(Idioma.Nombre);
             sb.Append(Estado);
 
-            return Criptografia.ObtenerInstancia.GetHashMD5(sb.ToString());
+            return Criptografia.Get.GetHashMD5(sb.ToString());
         }
         public override bool Equals(object obj)
         {

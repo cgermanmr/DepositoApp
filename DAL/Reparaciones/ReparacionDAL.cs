@@ -47,9 +47,7 @@ namespace DAL
                 x.FechaFinalizacion = dr[5].SafeToDateTime();
                 x.TicketSoporte = dr[6].ZeroIfDbNull();
                 x.Solicitante = new ClienteDAL().GetById(dr[7]) as ClienteBEL;
-                x.Presupuestos= new PresupuestoDAL().Listar()
-                    .Where( p => (p as PresupuestoBEL).ReparacionId == x.Id)
-                    .Select( q => q as PresupuestoBEL).ToList();
+                x.Presupuestos= new PresupuestoDAL().GetByReparacion(x.Id).ToList();
 
                 x.Presupuestos.ForEach(_ => _.Reparacion = x);
 

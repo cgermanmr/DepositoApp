@@ -21,3 +21,9 @@ C:\UAI\DepositoApp\Comun\obj\Debug\Comun.csproj.AssemblyReference.cache
 C:\UAI\DepositoApp\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
 C:\UAI\DepositoApp\Comun\obj\Debug\Comun.dll
 C:\UAI\DepositoApp\Comun\obj\Debug\Comun.pdb
+C:\UAI\TD\DepositoApp\Comun\bin\Debug\Comun.dll
+C:\UAI\TD\DepositoApp\Comun\bin\Debug\Comun.pdb
+C:\UAI\TD\DepositoApp\Comun\obj\Debug\Comun.csproj.AssemblyReference.cache
+C:\UAI\TD\DepositoApp\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+C:\UAI\TD\DepositoApp\Comun\obj\Debug\Comun.dll
+C:\UAI\TD\DepositoApp\Comun\obj\Debug\Comun.pdb

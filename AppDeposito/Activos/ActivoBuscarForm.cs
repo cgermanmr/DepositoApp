@@ -48,7 +48,7 @@ namespace AppDeposito
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex, this);                
+                Mensajes.ShowError(ex, this);                
             }
         }
 

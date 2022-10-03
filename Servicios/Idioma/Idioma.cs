@@ -12,87 +12,38 @@ namespace Servicios
 
         public bool RegistrarLeyenda(LeyendaBEL valor)
         {
-            try
-            {
-                return new IdiomaDAL().RegistrarLeyenda(valor);              
-            }
-            catch (Exception ex)
-            {
-                Logger.WriteLogExeption(ex);
-                throw ex;
-            }
+            Sesion.SesionActual().IdiomaActual.Leyendas.Add(valor);
+            return new IdiomaDAL().RegistrarLeyenda(valor);              
+           
         }
 
         public bool Agregar(IdiomaBEL valor)
         {
-            try
-            {
-                return _mapeadorIdioma.Agregar(valor);
-            }
-            catch (Exception ex)
-            {
-                // REGISTRAR EN BITACORA
-                // Lanzar Exception  personalizada
-                throw new Exception("Error al agregar Idioma");
-            }
+            return _mapeadorIdioma.Agregar(valor);
+           
         }
                 
         public bool Eliminar(IdiomaBEL valor)
-        {
-            try
-            {
-                return _mapeadorIdioma.Eliminar(valor);
-            }
-            catch (Exception ex)
-            {
-                // REGISTRAR EN BITACORA
-                // Lanzar Exception personalizada
-                throw new Exception("Error al eliminar Idioma");
-            }
+        {            
+            return _mapeadorIdioma.Eliminar(valor);
         }
 
-
-
         public List<IdiomaBEL> Listar()
-        {
-            try
-            {
-                return _mapeadorIdioma.Listar();
-            }
-            catch (Exception ex)
-            {
-                // REGISTRAR EN BITACORA
-                // Lanzar Exception  personalizada
-                throw new Exception("Error al listar Idioma");
-            }
+        {           
+            return _mapeadorIdioma.Listar();            
         }
 
         public IdiomaBEL ObtenerUno(IdiomaBEL filtro)
         {
-            try
-            {
-                return _mapeadorIdioma.ObtenerUno(filtro);
-            }
-            catch (Exception ex)
-            {
-                // REGISTRAR EN BITACORA
-                // Lanzar Exception  personalizada
-                throw new Exception("Error al obtener un Idioma");
-            }
+            return _mapeadorIdioma.ObtenerUno(filtro);
+           
         }
 
         public bool Modificar(IdiomaBEL valor)
         {
-            try
-            {
-                return _mapeadorIdioma.Modificar(valor);
-            }
-            catch (Exception ex)
-            {
-                // REGISTRAR EN BITACORA
-                // Lanzar Exception  personalizada
-                throw new Exception("Error al modificar Idioma");
-            }
+            
+            return _mapeadorIdioma.Modificar(valor);
+           
         }
 
         public List<IdiomaBEL> Listar(IdiomaBEL filtro)

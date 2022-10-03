@@ -9,19 +9,22 @@ namespace AppDeposito
 {
     public partial class PresupuestoAdminForm : Form, IObserverTraducible
     {
-        private readonly ReparacionBEL Reparacion;
+        private ReparacionBEL _reparacion;
+        private readonly ReparacionBLL _reparacionBLL;
         public PresupuestoAdminForm(ReparacionBEL reparacion)
         {
             InitializeComponent();
-            Reparacion = reparacion;
+            _reparacion = reparacion;
+
+
 
         }
 
         private void ObtenerDatos()
         {
-            bsPresupuestos.DataSource = null;
+            _reparacion = new ReparacionBLL().GetById(_reparacion.Id) as ReparacionBEL;
             
-            bsPresupuestos.DataSource = Reparacion.Presupuestos;
+            bsPresupuestos.DataSource = _reparacion.Presupuestos;
             grilla.DataSource = bsPresupuestos;
         }
         private void PresupuestoAdminForm_Load(object sender, EventArgs e)
@@ -29,7 +32,7 @@ namespace AppDeposito
             try
             {
                 FormConfig.Config(this);
-                Text = $"Presupuestos de reparación {Reparacion.Activo}";
+                Text = $"Presupuestos de reparación {_reparacion.Activo}";
                 grilla.AutoGenerateColumns = false;              
 
                 ObtenerDatos();
@@ -37,7 +40,7 @@ namespace AppDeposito
             }
             catch (Exception ex)
             {                
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
             }
 
         }
@@ -46,14 +49,14 @@ namespace AppDeposito
         {
             try
             {
-                new PresupuestoEditForm(new PresupuestoBEL() { Reparacion = Reparacion }) 
+                new PresupuestoEditForm(new PresupuestoBEL() { Reparacion = _reparacion }) 
                 .ShowDialog();
 
                 ObtenerDatos();
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
             }
         }
 
@@ -62,13 +65,13 @@ namespace AppDeposito
             try
             {
                 if (MessageBox.Show($"Desea eliminar el presupuesto de {bsPresupuestos.Current}", "Confirmar", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-                    Mensajes.MensajeResultado(new Presupuesto().Eliminar((PresupuestoBEL)bsPresupuestos.Current), this);
+                    Mensajes.MensajeResultado(new PresupuestoBLL().Eliminar((PresupuestoBEL)bsPresupuestos.Current), this);
                 
                 ObtenerDatos();
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
             }
              
         }
@@ -79,11 +82,12 @@ namespace AppDeposito
             {
                 new PresupuestoEditForm(bsPresupuestos.Current as PresupuestoBEL)
                 .ShowDialog();
+
                 ObtenerDatos();
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
             }
         }
 

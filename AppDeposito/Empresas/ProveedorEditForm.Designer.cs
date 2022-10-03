@@ -1,6 +1,6 @@
 ﻿namespace AppDeposito
 {
-    partial class EmpresaEditForm
+    partial class ProveedorEditForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label ciudadLabel;
-            System.Windows.Forms.Label codigoPostalLabel;
-            System.Windows.Forms.Label contactoLabel;
             System.Windows.Forms.Label cUITLabel;
             System.Windows.Forms.Label direccionLabel;
             System.Windows.Forms.Label emailLabel;
             System.Windows.Forms.Label razonSocialLabel;
             System.Windows.Forms.Label telefonoLabel;
             System.Windows.Forms.Label observacionesLabel;
-            this.ciudadTextBox = new System.Windows.Forms.TextBox();
             this.bsOrganizacion = new System.Windows.Forms.BindingSource(this.components);
-            this.codigoPostalTextBox = new System.Windows.Forms.TextBox();
-            this.contactoTextBox = new System.Windows.Forms.TextBox();
             this.cUITTextBox = new System.Windows.Forms.TextBox();
             this.direccionTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
@@ -51,9 +45,6 @@
             this.AceptarButton = new System.Windows.Forms.Button();
             this.observacionesTextBox = new System.Windows.Forms.TextBox();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            ciudadLabel = new System.Windows.Forms.Label();
-            codigoPostalLabel = new System.Windows.Forms.Label();
-            contactoLabel = new System.Windows.Forms.Label();
             cUITLabel = new System.Windows.Forms.Label();
             direccionLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
@@ -64,40 +55,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
-            // ciudadLabel
-            // 
-            ciudadLabel.AutoSize = true;
-            ciudadLabel.Location = new System.Drawing.Point(381, 160);
-            ciudadLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            ciudadLabel.Name = "ciudadLabel";
-            ciudadLabel.Size = new System.Drawing.Size(63, 20);
-            ciudadLabel.TabIndex = 1;
-            ciudadLabel.Text = "Ciudad:";
-            // 
-            // codigoPostalLabel
-            // 
-            codigoPostalLabel.AutoSize = true;
-            codigoPostalLabel.Location = new System.Drawing.Point(333, 120);
-            codigoPostalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            codigoPostalLabel.Name = "codigoPostalLabel";
-            codigoPostalLabel.Size = new System.Drawing.Size(111, 20);
-            codigoPostalLabel.TabIndex = 3;
-            codigoPostalLabel.Text = "Codigo Postal:";
-            // 
-            // contactoLabel
-            // 
-            contactoLabel.AutoSize = true;
-            contactoLabel.Location = new System.Drawing.Point(74, 80);
-            contactoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            contactoLabel.Name = "contactoLabel";
-            contactoLabel.Size = new System.Drawing.Size(78, 20);
-            contactoLabel.TabIndex = 5;
-            contactoLabel.Text = "Contacto:";
-            // 
             // cUITLabel
             // 
             cUITLabel.AutoSize = true;
-            cUITLabel.Location = new System.Drawing.Point(393, 40);
+            cUITLabel.Location = new System.Drawing.Point(368, 80);
             cUITLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             cUITLabel.Name = "cUITLabel";
             cUITLabel.Size = new System.Drawing.Size(50, 20);
@@ -107,7 +68,7 @@
             // direccionLabel
             // 
             direccionLabel.AutoSize = true;
-            direccionLabel.Location = new System.Drawing.Point(70, 160);
+            direccionLabel.Location = new System.Drawing.Point(75, 71);
             direccionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             direccionLabel.Name = "direccionLabel";
             direccionLabel.Size = new System.Drawing.Size(79, 20);
@@ -127,7 +88,7 @@
             // razonSocialLabel
             // 
             razonSocialLabel.AutoSize = true;
-            razonSocialLabel.Location = new System.Drawing.Point(44, 40);
+            razonSocialLabel.Location = new System.Drawing.Point(45, 35);
             razonSocialLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             razonSocialLabel.Name = "razonSocialLabel";
             razonSocialLabel.Size = new System.Drawing.Size(107, 20);
@@ -137,7 +98,7 @@
             // telefonoLabel
             // 
             telefonoLabel.AutoSize = true;
-            telefonoLabel.Location = new System.Drawing.Point(368, 80);
+            telefonoLabel.Location = new System.Drawing.Point(362, 117);
             telefonoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             telefonoLabel.Name = "telefonoLabel";
             telefonoLabel.Size = new System.Drawing.Size(75, 20);
@@ -147,7 +108,7 @@
             // observacionesLabel
             // 
             observacionesLabel.AutoSize = true;
-            observacionesLabel.Location = new System.Drawing.Point(32, 200);
+            observacionesLabel.Location = new System.Drawing.Point(36, 161);
             observacionesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             observacionesLabel.Name = "observacionesLabel";
             observacionesLabel.Size = new System.Drawing.Size(118, 20);
@@ -155,44 +116,14 @@
             observacionesLabel.Text = "Observaciones:";
             observacionesLabel.Click += new System.EventHandler(this.observacionesLabel_Click);
             // 
-            // ciudadTextBox
-            // 
-            this.ciudadTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsOrganizacion, "Ciudad", true));
-            this.ciudadTextBox.Location = new System.Drawing.Point(454, 155);
-            this.ciudadTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ciudadTextBox.MaxLength = 50;
-            this.ciudadTextBox.Name = "ciudadTextBox";
-            this.ciudadTextBox.Size = new System.Drawing.Size(148, 26);
-            this.ciudadTextBox.TabIndex = 7;
-            // 
             // bsOrganizacion
             // 
             this.bsOrganizacion.DataSource = typeof(BEL.EmpresaBEL);
             // 
-            // codigoPostalTextBox
-            // 
-            this.codigoPostalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsOrganizacion, "CodigoPostal", true));
-            this.codigoPostalTextBox.Location = new System.Drawing.Point(454, 115);
-            this.codigoPostalTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.codigoPostalTextBox.MaxLength = 10;
-            this.codigoPostalTextBox.Name = "codigoPostalTextBox";
-            this.codigoPostalTextBox.Size = new System.Drawing.Size(148, 26);
-            this.codigoPostalTextBox.TabIndex = 5;
-            // 
-            // contactoTextBox
-            // 
-            this.contactoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsOrganizacion, "Contacto", true));
-            this.contactoTextBox.Location = new System.Drawing.Point(162, 75);
-            this.contactoTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.contactoTextBox.MaxLength = 50;
-            this.contactoTextBox.Name = "contactoTextBox";
-            this.contactoTextBox.Size = new System.Drawing.Size(148, 26);
-            this.contactoTextBox.TabIndex = 2;
-            // 
             // cUITTextBox
             // 
             this.cUITTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsOrganizacion, "CUIT", true));
-            this.cUITTextBox.Location = new System.Drawing.Point(454, 35);
+            this.cUITTextBox.Location = new System.Drawing.Point(445, 80);
             this.cUITTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cUITTextBox.MaxLength = 11;
             this.cUITTextBox.Name = "cUITTextBox";
@@ -202,7 +133,7 @@
             // direccionTextBox
             // 
             this.direccionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsOrganizacion, "Direccion", true));
-            this.direccionTextBox.Location = new System.Drawing.Point(162, 155);
+            this.direccionTextBox.Location = new System.Drawing.Point(162, 74);
             this.direccionTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.direccionTextBox.MaxLength = 50;
             this.direccionTextBox.Name = "direccionTextBox";
@@ -226,13 +157,13 @@
             this.razonSocialTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.razonSocialTextBox.MaxLength = 50;
             this.razonSocialTextBox.Name = "razonSocialTextBox";
-            this.razonSocialTextBox.Size = new System.Drawing.Size(148, 26);
+            this.razonSocialTextBox.Size = new System.Drawing.Size(431, 26);
             this.razonSocialTextBox.TabIndex = 0;
             // 
             // telefonoTextBox
             // 
             this.telefonoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsOrganizacion, "Telefono", true));
-            this.telefonoTextBox.Location = new System.Drawing.Point(454, 75);
+            this.telefonoTextBox.Location = new System.Drawing.Point(445, 114);
             this.telefonoTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.telefonoTextBox.MaxLength = 50;
             this.telefonoTextBox.Name = "telefonoTextBox";
@@ -241,7 +172,7 @@
             // 
             // CancelarButton
             // 
-            this.CancelarButton.Location = new System.Drawing.Point(492, 269);
+            this.CancelarButton.Location = new System.Drawing.Point(492, 245);
             this.CancelarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CancelarButton.Name = "CancelarButton";
             this.CancelarButton.Size = new System.Drawing.Size(112, 35);
@@ -252,7 +183,7 @@
             // 
             // AceptarButton
             // 
-            this.AceptarButton.Location = new System.Drawing.Point(370, 269);
+            this.AceptarButton.Location = new System.Drawing.Point(372, 245);
             this.AceptarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AceptarButton.Name = "AceptarButton";
             this.AceptarButton.Size = new System.Drawing.Size(112, 35);
@@ -264,7 +195,7 @@
             // observacionesTextBox
             // 
             this.observacionesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsOrganizacion, "Observaciones", true));
-            this.observacionesTextBox.Location = new System.Drawing.Point(162, 195);
+            this.observacionesTextBox.Location = new System.Drawing.Point(162, 158);
             this.observacionesTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.observacionesTextBox.Multiline = true;
             this.observacionesTextBox.Name = "observacionesTextBox";
@@ -275,11 +206,11 @@
             // 
             this.errorProvider.ContainerControl = this;
             // 
-            // EmpresaEditForm
+            // ProveedorEditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 325);
+            this.ClientSize = new System.Drawing.Size(650, 296);
             this.Controls.Add(observacionesLabel);
             this.Controls.Add(this.observacionesTextBox);
             this.Controls.Add(this.CancelarButton);
@@ -294,14 +225,8 @@
             this.Controls.Add(this.direccionTextBox);
             this.Controls.Add(cUITLabel);
             this.Controls.Add(this.cUITTextBox);
-            this.Controls.Add(contactoLabel);
-            this.Controls.Add(this.contactoTextBox);
-            this.Controls.Add(codigoPostalLabel);
-            this.Controls.Add(this.codigoPostalTextBox);
-            this.Controls.Add(ciudadLabel);
-            this.Controls.Add(this.ciudadTextBox);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "EmpresaEditForm";
+            this.Name = "ProveedorEditForm";
             this.Text = "Edición Organización";
             this.Load += new System.EventHandler(this.EdicionOrganizacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bsOrganizacion)).EndInit();
@@ -314,9 +239,6 @@
         #endregion
 
         private System.Windows.Forms.BindingSource bsOrganizacion;
-        private System.Windows.Forms.TextBox ciudadTextBox;
-        private System.Windows.Forms.TextBox codigoPostalTextBox;
-        private System.Windows.Forms.TextBox contactoTextBox;
         private System.Windows.Forms.TextBox cUITTextBox;
         private System.Windows.Forms.TextBox direccionTextBox;
         private System.Windows.Forms.TextBox emailTextBox;

@@ -40,3 +40,9 @@ C:\UAI\DepositoApp\Interfaces\obj\Debug\Interfaces.csproj.AssemblyReference.cach
 C:\UAI\DepositoApp\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
 C:\UAI\DepositoApp\Interfaces\obj\Debug\Interfaces.dll
 C:\UAI\DepositoApp\Interfaces\obj\Debug\Interfaces.pdb
+C:\UAI\TD\DepositoApp\Interfaces\bin\Debug\Interfaces.dll
+C:\UAI\TD\DepositoApp\Interfaces\bin\Debug\Interfaces.pdb
+C:\UAI\TD\DepositoApp\Interfaces\obj\Debug\Interfaces.csproj.AssemblyReference.cache
+C:\UAI\TD\DepositoApp\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+C:\UAI\TD\DepositoApp\Interfaces\obj\Debug\Interfaces.dll
+C:\UAI\TD\DepositoApp\Interfaces\obj\Debug\Interfaces.pdb

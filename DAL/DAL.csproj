@@ -87,6 +87,8 @@
     <Compile Include="ActivoDAL.cs" />
     <Compile Include="DepositoDAL.cs" />
     <Compile Include="DonacionDAL.cs" />
+    <Compile Include="ProveedorDAL.cs" />
+    <Compile Include="FacturaReparacionDAL.cs" />
     <Compile Include="Repositorio.cs" />
     <Compile Include="Infraestructura\BackupRestoreDAL.cs" />
     <Compile Include="Infraestructura\BitacoraDAL.cs" />

@@ -12,7 +12,7 @@ using BEL;
 
 namespace AppDeposito.Administracion.Permisos
 {
-    public partial class EdicionPermisosUsuarioForm : Form
+    public partial class EdicionPermisosUsuarioForm : Form, IObserverTraducible
     {
         public EdicionPermisosUsuarioForm()
         {
@@ -23,6 +23,8 @@ namespace AppDeposito.Administracion.Permisos
         BindingSource bsPermisosLista;
         private void EdicionPermisosUsuarioForm_Load(object sender, EventArgs e)
         {
+            Sesion.SesionActual().Suscribir(this);
+
             bsPermisosLista = new BindingSource();
             PermisoCompuesto perfil = new PermisoCompuesto();
             perfil.ObtenerHijos().AddRange(Editado.Perfil);           
@@ -30,6 +32,7 @@ namespace AppDeposito.Administracion.Permisos
             ListaPermisos.DataSource = bsPermisosLista;
 
             ActualizarArbol();
+
         }
 
         private void ActualizarArbol()
@@ -94,6 +97,11 @@ namespace AppDeposito.Administracion.Permisos
                 Logger.WriteLogExeption(ex);
                 MessageBox.Show("Se ha producido un error: " + ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        public void Traducir()
+        {
+            Traductor.Traducir(this);
         }
     }
 }

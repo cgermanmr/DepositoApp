@@ -22,120 +22,54 @@ namespace BLL
         public virtual bool EsValido(Entidad valor) => true;
         public virtual bool Agregar(Entidad valor)
         {
-            try
-            {
-                EsValido(valor);
-                return Repositorio().Agregar(valor);
-            }
-            catch (Exception ex)
-            {
-               Logger.WriteLogExeption(ex, 7890);
-
-                throw ex;
-            }
+            
+            EsValido(valor);
+            return Repositorio().Agregar(valor);
+           
         }
 
         public virtual bool Eliminar(Entidad valor)
         {
-            try
-            {
-                EsValido(valor);
-                return Repositorio().Eliminar(valor);
-            }
-            catch (Exception ex)
-            {
-                Logger.WriteLogExeption(ex, 7890);
-
-                throw ex;
-            }
+            
+            EsValido(valor);
+            return Repositorio().Eliminar(valor);
+           
         }
 
         public virtual List<Entidad> Listar()
         {
-            try
-            {
-                return Repositorio().Listar();
-            }
-            catch (Exception ex)
-            {
-                Logger.WriteLogExeption(ex, 7890);
-
-                throw ex;
-            }
+            return Repositorio().Listar();
         }
 
         public virtual List<Entidad> Listar(string filtro)
         {
-            try
-            {
-                return Repositorio().Listar(filtro);
-            }
-            catch (Exception ex)
-            {
-                Logger.WriteLogExeption(ex, 7890);
-
-                throw ex;
-            }
+            return Repositorio().Listar(filtro);
         }
 
         public virtual bool Modificar(Entidad valor)
         {
-            try
-            {
-                EsValido(valor);
-                return Repositorio().Modificar(valor);
-            }
-            catch (Exception ex)
-            {
-                Servicios.Logger.WriteLogExeption(ex, 7890);
-
-                throw ex;
-            }
+            EsValido(valor);
+            return Repositorio().Modificar(valor);
         }
 
         public virtual Entidad ObtenerUno(Entidad filtro)
         {
-            try
-            {
-                return Repositorio().ObtenerUno(filtro);
-            }
-            catch (Exception ex)
-            {
-                Servicios.Logger.WriteLogExeption(ex, 7890);
-
-                throw ex;
-            };
+            return Repositorio().ObtenerUno(filtro);
         }
 
-        public virtual Entidad GetById(int id)
+        public virtual Entidad GetById(long id)
         {
-            try
-            {
-                var valor = Repositorio().GetNew;
-                valor.Id = id;
+            var valor = Repositorio().GetNew;
+            valor.Id = id;
 
-                return ObtenerUno(valor);
-
-            }
-            catch (Exception ex)
-            {
-                Servicios.Logger.WriteLogExeption(ex, 7890);
-                throw ex;
-            }
+            return ObtenerUno(valor);
         }
 
         public List<Entidad> Listar(Entidad filtro)
         {
-            try
-            {
-                return Repositorio().Listar(filtro);
-            }
-            catch (Exception ex)
-            {
-                Servicios.Logger.WriteLogExeption(ex, 7890);
-
-                throw ex;
-            }
+            
+            return Repositorio().Listar(filtro);
+           
         }
     }
 }

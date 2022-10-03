@@ -67,10 +67,13 @@
   <ItemGroup>
     <Compile Include="ActivoBEL.cs" />
     <Compile Include="DonacionBEL.cs" />
+    <Compile Include="ProveedorBEL.cs" />
     <Compile Include="enum\EnumEstados.cs" />
     <Compile Include="enum\EnumPermisos.cs" />
     <Compile Include="DepositoBEL.cs" />
-    <Compile Include="EntidadBase.cs" />
+    <Compile Include="Entidad.cs" />
+    <Compile Include="FacturaReparacionBEL.cs" />
+    <Compile Include="FacturaReparacionDetalle.cs" />
     <Compile Include="MonedaBEL.cs" />
     <Compile Include="MarcaBEL.cs" />
     <Compile Include="MonedaEnum.cs" />
@@ -102,6 +105,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

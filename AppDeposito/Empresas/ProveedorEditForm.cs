@@ -13,13 +13,13 @@ using Servicios;
 
 namespace AppDeposito
 {
-    public partial class EmpresaEditForm : Form, IObserverTraducible
+    public partial class ProveedorEditForm : Form, IObserverTraducible
     {
-        public EmpresaEditForm()
+        public ProveedorEditForm()
         {
             InitializeComponent();
         }
-        public EmpresaBEL Editado { get; set; }
+        public ProveedorBEL Editado { get; set; }
 
         private void EdicionOrganizacion_Load(object sender, EventArgs e)
         {
@@ -31,7 +31,7 @@ namespace AppDeposito
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
             }           
         }
 
@@ -49,7 +49,7 @@ namespace AppDeposito
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
             }
         }
 
@@ -65,7 +65,7 @@ namespace AppDeposito
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
 
             }
         }

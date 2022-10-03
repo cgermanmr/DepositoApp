@@ -12,7 +12,7 @@ using Servicios;
 
 namespace AppDeposito.Administracion.Permisos
 {
-    public partial class EdicionPermisoForm : Form
+    public partial class EdicionPermisoForm : Form, IObserverTraducible
     {
         public PermisoCompuesto Editado { get; set; }
 
@@ -98,7 +98,10 @@ namespace AppDeposito.Administracion.Permisos
             ListaPermisos.DataSource = bsPermisosLista;
             ActualizarControles();
 
-        }    
+            Sesion.SesionActual().Suscribir(this);
+
+
+        }
         private void ActualizarControles()
         {
             //Actualiza Arbol
@@ -139,6 +142,11 @@ namespace AppDeposito.Administracion.Permisos
             Editado.QuitarHijo((PermisoBase)PermisosTreeView.SelectedNode.Tag);
             bsPermisosLista.Add((PermisoBase)PermisosTreeView.SelectedNode.Tag);
             ActualizarControles();
+        }
+
+        public void Traducir()
+        {
+            Traductor.Traducir(this);
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Servicios
         {
             try
             {
-                usuario.Clave = Criptografia.ObtenerInstancia.GetHashMD5(usuario.Clave);
+                usuario.Clave = Criptografia.Get.GetHashMD5(usuario.Clave);
                 usuario.UsuarioModificador = Sesion.SesionActual().ObtenerUsuarioActual.Nombre;
                 var resultado = new UsuarioDAL().Agregar(usuario);
                 IntegridadDatos.RegenerarDV();
@@ -32,89 +32,47 @@ namespace Servicios
                     throw new Exception($"Error en Agregar Usuario {MethodBase.GetCurrentMethod().Name} {MethodBase.GetCurrentMethod().MemberType.ToString()}");
                 }                      
             }
-            catch (Exception ex)
-            {
-                // REGISTRAR EN BITACORA
-                // Lanzar Exception personalizada
-                Logger.WriteLogExeption(ex);
-                throw new Exception($"Error en Agregar Usuario {MethodBase.GetCurrentMethod().Name} {MethodBase.GetCurrentMethod().MemberType.ToString()}");
+            catch (Exception)
+            {               
+                throw;
             }
         }
 
         public bool ModificarClave(UsuarioBEL usuario)
         {
-            try
-            {
-                usuario.Clave = Criptografia.ObtenerInstancia.GetHashMD5(usuario.Clave);
-                usuario.UsuarioModificador = Sesion.SesionActual().ObtenerUsuarioActual.Nombre;
-                var resultado = new UsuarioDAL().ModificarClave(usuario);
-                IntegridadDatos.RegenerarDV();
-                return resultado;
-            }
-            catch (Exception ex)
-            {
-                // REGISTRAR EN BITACORA
-                throw new Exception("Error en Modificar Clave Usuario");
-            }
+            
+            usuario.Clave = Criptografia.Get.GetHashMD5(usuario.Clave);
+            usuario.UsuarioModificador = Sesion.SesionActual().ObtenerUsuarioActual.Nombre;
+            var resultado = new UsuarioDAL().ModificarClave(usuario);
+            IntegridadDatos.RegenerarDV();
+            return resultado;
+          
         }
         public bool Modificar(UsuarioBEL usuario)
         {
-            try
-            {
-                usuario.UsuarioModificador = (Sesion.SesionActual().ObtenerUsuarioActual!=null)? Sesion.SesionActual().ObtenerUsuarioActual.Nombre:"No registrado";
-                var resultado = new UsuarioDAL().Modificar(usuario);
-                IntegridadDatos.RegenerarDV();
-                return resultado;
-            }
-            catch (Exception ex)
-            {
-                // REGISTRAR EN BITACORA
-                throw new Exception("Error en Modificar Usuario");
-            }
+           
+            usuario.UsuarioModificador = (Sesion.SesionActual().ObtenerUsuarioActual!=null)? Sesion.SesionActual().ObtenerUsuarioActual.Nombre:"No registrado";
+            var resultado = new UsuarioDAL().Modificar(usuario);
+            IntegridadDatos.RegenerarDV();
+            return resultado;
+           
         }
         public bool Eliminar(UsuarioBEL usuario)
         {
-            try
-            {
-                usuario.UsuarioModificador = Sesion.SesionActual().ObtenerUsuarioActual.Nombre;
-                var resultado= new UsuarioDAL().Eliminar(usuario);
-                IntegridadDatos.RegenerarDV();
-                return resultado;
-            }
-            catch (Exception ex)
-            {
-                // REGISTRAR EN BITACORA
-                // Lanzar Exception personalizada
-                throw new Exception("Error en Eliminar Usuario");
-            }
+            usuario.UsuarioModificador = Sesion.SesionActual().ObtenerUsuarioActual.Nombre;
+            var resultado= new UsuarioDAL().Eliminar(usuario);
+            IntegridadDatos.RegenerarDV();
+            return resultado;
         }
 
         public List<UsuarioBEL> Listar()
         {
-            try
-            {
-                return new UsuarioDAL().Listar();
-            }
-            catch (Exception ex)
-            {
-                // REGISTRAR EN BITACORA
-                // Lanzar Exception personalizada
-                throw new Exception("Error en Listar Usuario");
-            }
+           return new UsuarioDAL().Listar();
         }
 
         public List<UsuarioBEL> ListarHistorico()
         {
-            try
-            {
-                return new UsuarioDAL().ListarHistorico();
-            }
-            catch (Exception ex)
-            {
-                // REGISTRAR EN BITACORA
-                // Lanzar Exception personalizada
-                throw new Exception("Error en Listar Usuario");
-            }
+           return new UsuarioDAL().ListarHistorico();
         }
 
 

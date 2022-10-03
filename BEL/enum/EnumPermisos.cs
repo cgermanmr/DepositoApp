@@ -58,6 +58,7 @@ namespace BEL
         Gestionar_Reparacion,
         Gestionar_Proveedores,
         Gestionar_Recurrentes,
-        Gestionar_Ubicaciones
+        Gestionar_Ubicaciones,
+        Reparacion_Ingreso_Facturas
     }
 }

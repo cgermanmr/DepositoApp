@@ -12,7 +12,7 @@ using Servicios;
 
 namespace AppDeposito.Administracion.Permisos
 {
-    public partial class CambioClaveForm : Form
+    public partial class CambioClaveForm : Form,IObserverTraducible
     {
         public UsuarioBEL Editado { get; set; }
         public CambioClaveForm()
@@ -71,6 +71,17 @@ namespace AppDeposito.Administracion.Permisos
         private void CancelarButton_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void CambioClaveForm_Load(object sender, EventArgs e)
+        {
+            Sesion.SesionActual().Suscribir(this);
+
+        }
+
+        public void Traducir()
+        {
+            Traductor.Traducir(this);
         }
     }
 }

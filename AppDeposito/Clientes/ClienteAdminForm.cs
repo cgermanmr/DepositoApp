@@ -40,7 +40,7 @@ namespace AppDeposito
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
             }
            
         }
@@ -77,7 +77,7 @@ namespace AppDeposito
             catch (Exception ex)
             {
                 Logger.WriteLogExeption(ex, 4455);
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
                 
             }
             
@@ -99,7 +99,7 @@ namespace AppDeposito
             catch (Exception ex)
             {
                 Logger.WriteLogExeption(ex, 3344);
-                Mensajes.MensajeExcepcion(ex, this);
+                Mensajes.ShowError(ex, this);
             }
         }
 
@@ -120,7 +120,7 @@ namespace AppDeposito
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex, this);               
+                Mensajes.ShowError(ex, this);               
             }
             
         }
@@ -142,7 +142,7 @@ namespace AppDeposito
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex,this);
+                Mensajes.ShowError(ex,this);
                
             }
         }

@@ -8,7 +8,7 @@ namespace Comun
     public class Criptografia
     {
         private static readonly Criptografia instancia = new Criptografia();
-        public static Criptografia ObtenerInstancia => instancia;
+        public static Criptografia Get => instancia;
         private Criptografia()
         {
         }

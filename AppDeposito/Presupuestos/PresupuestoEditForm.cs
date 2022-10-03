@@ -19,7 +19,7 @@ namespace AppDeposito
         {
             _isLoading = true;
             FormConfig.Config(this);
-            bsProveedores.DataSource = new BLL.EmpresaBLL().Listar();
+            bsProveedores.DataSource = new BLL.ProveedorBLL().Listar();
             cmbMoneda.BindEnumToComboBox(TipoMoneda.Pesos);
             cotizacionTextBox.SoloNumerosConDecimales();
             tiempoEstimadoTextBox.SoloNumeros();
@@ -30,8 +30,8 @@ namespace AppDeposito
             }
             else
             {
-                proveedorComboBox.SelectedIndex = proveedorComboBox.FindStringExact(Presupuesto.Proveedor.RazonSocial);
-                cmbMoneda.SelectedValue = (TipoMoneda)Presupuesto.Moneda;
+                proveedorComboBox.SelectedIndex = proveedorComboBox.FindStringExact(Presupuesto.Proveedor.ToString());
+                cmbMoneda.SelectedValue = Presupuesto.Moneda;
             }
 
             _isLoading = false;
@@ -43,13 +43,11 @@ namespace AppDeposito
             {
                 FormConfig.ValidarCamposCompletos(this, errorProvider);
 
-                //Presupuesto.Moneda = cmbMoneda.SelectedValue.ToString().ToEnum<TipoMoneda>();
-
                 bool result;
                 if (Presupuesto.Id == 0)
-                   result = new BLL.Presupuesto().Agregar(Presupuesto);
+                   result = new BLL.PresupuestoBLL().Agregar(Presupuesto);
                 else
-                    result = new BLL.Presupuesto().Modificar(Presupuesto);
+                    result = new BLL.PresupuestoBLL().Modificar(Presupuesto);
                                 
                 Mensajes.MensajeResultado(result, this);
 
@@ -58,7 +56,7 @@ namespace AppDeposito
             }
             catch (Exception ex)
             {
-                Mensajes.MensajeExcepcion(ex, this);                
+                Mensajes.ShowError(ex, this);                
             }
         }
 
@@ -74,7 +72,7 @@ namespace AppDeposito
 
         private void razonSocialComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Presupuesto.Proveedor = proveedorComboBox.SelectedValue as EmpresaBEL;
+            Presupuesto.Proveedor = proveedorComboBox.SelectedValue as ProveedorBEL;
         }
 
         private void cmbMoneda_SelectedIndexChanged(object sender, EventArgs e)
