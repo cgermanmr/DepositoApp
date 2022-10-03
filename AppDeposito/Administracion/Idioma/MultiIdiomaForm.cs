@@ -39,6 +39,7 @@ namespace AppDeposito.Administracion.Idioma
         {
             cmbIdioma.DataSource = bsIdiomas;
             txtDescripcion.DataBindings.Add("Text", bsIdiomas, "Descripcion");
+            cmbIdioma.SelectedIndex = cmbIdioma.FindStringExact(Sesion.SesionActual().IdiomaActual.Nombre);
         }
 
         private void MultiIdiomaForm_Load(object sender, EventArgs e)

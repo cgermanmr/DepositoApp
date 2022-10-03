@@ -13,8 +13,11 @@ namespace BLL
         {
             var v = valor as PresupuestoBEL;
             if (v.Autorizado)
-                if (Listar(v).Any(_ => _.Id != v.Id && ((PresupuestoBEL)_).Autorizado))
+            {
+                var reparacion = new ReparacionBLL().GetById(v.ReparacionId) as ReparacionBEL;
+                if (reparacion.Presupuestos.Any(_ => _.Id != v.Id && _.Autorizado))
                     throw new InvalidOperationException("Existe otro presupuesto aprobado");
+            }
 
             return true;
         }

@@ -72,9 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bitacora.cs" />
-    <Compile Include="Excepciones\BaseException.cs" />
-    <Compile Include="Excepciones\NegocioException.cs" />
-    <Compile Include="Excepciones\UsuarioBloqueadoExcepcion.cs" />
     <Compile Include="Backup\BackupRestore.cs" />
     <Compile Include="Idioma\Idioma.cs" />
     <Compile Include="Idioma\IObservableIdioma.cs" />

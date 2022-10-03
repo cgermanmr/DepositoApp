@@ -4,8 +4,8 @@ namespace BEL
 {
     public class ActivoBEL : Entidad
     {
-        public string FechaAlta { get; set; } = "";
-        public string FechaCompra { get; set; } = "";
+        public DateTime FechaAlta { get; set; }
+        public DateTime FechaCompra { get; set; } = DateTime.MinValue;
         public string Inventario { get; set; } = string.Empty;
         public string Serie { get; set; }= string.Empty;
         public SectorBEL Sector { get; set; } = new SectorBEL();
@@ -14,7 +14,7 @@ namespace BEL
         public TipoActivoBEL TipoActivo { get; set; } = new TipoActivoBEL();
         public EmpresaBEL Organizacion { get; set; } = new EmpresaBEL();
         public MarcaBEL Marca { get; set; } = new MarcaBEL();
-        public MonedaBEL Moneda { get; set; } = new MonedaBEL() { Id=1};
+        public MonedaBEL Moneda { get; set; } = new MonedaBEL() { Id = 1 };
         public double ValorCompra { get; set; }
         public double ValorSoporte { get; set; }
         public int MesesGarantia { get; set; }
@@ -24,8 +24,10 @@ namespace BEL
         {
             get
             {
-                if(MesesGarantia==0) return false;
-                if (FechaCompra == "") return false;
+                if (MesesGarantia == 0) return false;
+
+                if (FechaCompra == DateTime.MinValue) return false;
+
                 return Convert.ToDateTime(FechaCompra).AddMonths(MesesGarantia) > DateTime.Now;
             }
         }

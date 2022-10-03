@@ -330,3 +330,6 @@ C:\UAI\TD\DepositoApp\AppDeposito\obj\Debug\AppDeposito.pdb
 C:\UAI\TD\DepositoApp\AppDeposito\obj\Debug\AppDeposito.Pagos.IngresoFacturasForm.resources
 C:\UAI\TD\DepositoApp\AppDeposito\obj\Debug\AppDeposito.ProveedorEditForm.resources
 C:\UAI\TD\DepositoApp\AppDeposito\obj\Debug\AppDeposito.ProveedorAdminForm.resources
+C:\UAI\TD\DepositoApp\AppDeposito\obj\Debug\AppDeposito.Pagos.OrdenPagoAdminForm.resources
+C:\UAI\TD\DepositoApp\AppDeposito\obj\Debug\AppDeposito.Pagos.OrdenPagoEditForm.resources
+C:\UAI\TD\DepositoApp\AppDeposito\obj\Debug\AppDeposito.Administracion.Logs.FacturasControlCambiosForm.resources

@@ -151,6 +151,7 @@
             this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsReparacion, "Descripcion", true));
             this.descripcionTextBox.Location = new System.Drawing.Point(178, 362);
             this.descripcionTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.descripcionTextBox.MaxLength = 200;
             this.descripcionTextBox.Multiline = true;
             this.descripcionTextBox.Name = "descripcionTextBox";
             this.descripcionTextBox.Size = new System.Drawing.Size(514, 72);
@@ -165,6 +166,7 @@
             this.ticketSoporteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsReparacion, "TicketSoporte", true));
             this.ticketSoporteTextBox.Location = new System.Drawing.Point(178, 465);
             this.ticketSoporteTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ticketSoporteTextBox.MaxLength = 9;
             this.ticketSoporteTextBox.Name = "ticketSoporteTextBox";
             this.ticketSoporteTextBox.Size = new System.Drawing.Size(148, 26);
             this.ticketSoporteTextBox.TabIndex = 15;
@@ -292,7 +294,7 @@
             this.realizadaCheckBox.Location = new System.Drawing.Point(512, 465);
             this.realizadaCheckBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.realizadaCheckBox.Name = "realizadaCheckBox";
-            this.realizadaCheckBox.Size = new System.Drawing.Size(106, 24);
+            this.realizadaCheckBox.Size = new System.Drawing.Size(99, 24);
             this.realizadaCheckBox.TabIndex = 30;
             this.realizadaCheckBox.Text = "Realizada";
             this.realizadaCheckBox.UseVisualStyleBackColor = true;
@@ -317,7 +319,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(732, 648);
+            this.ClientSize = new System.Drawing.Size(732, 620);
             this.Controls.Add(descripcionLabel2);
             this.Controls.Add(this.descripcionTextBox2);
             this.Controls.Add(this.realizadaCheckBox);

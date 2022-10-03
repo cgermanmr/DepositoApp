@@ -39,7 +39,7 @@ namespace AppDeposito.Administracion.Logs
                 _usuarios = _usuarios.FindAll(x => x.UsuarioModificador.Contains(usuarioModificadorTextBox.Text));
 
             if (cmbEvento.SelectedIndex!=-1)
-                _usuarios = _usuarios.FindAll(x => x.TipoModificacion==(TipoOperacion)cmbEvento.SelectedIndex+1);
+                _usuarios = _usuarios.FindAll(x => x.TipoModificacion == (TipoOperacion)cmbEvento.SelectedIndex+1);
                                              
             bsUsuarios.DataSource = _usuarios;       
         }

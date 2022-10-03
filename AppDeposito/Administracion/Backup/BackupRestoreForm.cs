@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BEL;
+using Interfaces;
 using Servicios;
 
 namespace AppDeposito.Administracion.Backup
@@ -20,8 +21,6 @@ namespace AppDeposito.Administracion.Backup
         }   
         private void BtnRealizarBackup_Click(object sender, EventArgs e)
         {
-            try
-            {
                 //Configure save file dialog box
                 var dlg = new SaveFileDialog
                 {
@@ -40,51 +39,42 @@ namespace AppDeposito.Administracion.Backup
                 Cursor = Cursors.WaitCursor;
 
                 new BackupRestore().RealizarBackup(dlg.FileName);
-                MessageBox.Show("Se ha realizado el backup correctamente", "Backup Realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Falló el backup", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
+                var msj = $"Se ha realizado el backup correctamente, archivo: {dlg.FileName}";
+                Bitacora.RegistrarEnBitacora(msj,TipoEvento.Auditoria);
+
+                Mensajes.ShowExitoso(msj);
                 Cursor = Cursors.Default;
-            }
         }    
         private void BtnRealizarRestore_Click(object sender, EventArgs e)
         {
-            try
+            //Configure save file dialog box
+            var dlg = new OpenFileDialog
             {
-                //Configure save file dialog box
-                var dlg = new OpenFileDialog
-                {
-                    DefaultExt = ".bak", //Default file extension
-                    CheckPathExists = true,
-                    InitialDirectory = "c:\\", //txRutaBackup.Text
-                    Filter = "Archivos Backup (.bak)|*.bak" //Filter files by extension
-                };
-                //Show save file dialog box
-                var result = dlg.ShowDialog();
-                //Process save file dialog box results
-                if (result == DialogResult.Cancel)
-                    return;
+                DefaultExt = ".bak", //Default file extension
+                CheckPathExists = true,
+                InitialDirectory = "c:\\", //txRutaBackup.Text
+                Filter = "Archivos Backup (.bak)|*.bak" //Filter files by extension
+            };
+            //Show save file dialog box
+            var result = dlg.ShowDialog();
+            //Process save file dialog box results
+            if (result == DialogResult.Cancel)
+                return;
 
-                Cursor = Cursors.WaitCursor;
+            Cursor = Cursors.WaitCursor;
 
-                new BackupRestore().RealizarBackup(dlg.FileName);
-                MessageBox.Show("Se ha realizado la restauración", "Realizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Sesion.SesionActual().Cerrar();
-                Close();
-            }
-            catch (Exception ex)
-            {
-                Logger.WriteLogExeption(ex);
-                MessageBox.Show("Falló la restauración", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            finally
-            {
-                Cursor = Cursors.Default;
-            }
+            new BackupRestore().RealizarBackup(dlg.FileName);
+            var msj = $"Se ha realizado la restauración correctamente con el archivo {dlg.FileName}";
+
+            Bitacora.RegistrarEnBitacora(msj, TipoEvento.Auditoria);
+            Mensajes.ShowExitoso(msj);
+            
+            Sesion.SesionActual().Cerrar();
+            
+            Cursor = Cursors.Default;
+            
+            Close();
+            
         }    
         private void BackupRestoreForm_Load(object sender, EventArgs e)
         {

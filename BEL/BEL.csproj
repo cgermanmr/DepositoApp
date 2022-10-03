@@ -68,8 +68,7 @@
     <Compile Include="ActivoBEL.cs" />
     <Compile Include="DonacionBEL.cs" />
     <Compile Include="ProveedorBEL.cs" />
-    <Compile Include="enum\EnumEstados.cs" />
-    <Compile Include="enum\EnumPermisos.cs" />
+    <Compile Include="Enumeraciones\Permisos.cs" />
     <Compile Include="DepositoBEL.cs" />
     <Compile Include="Entidad.cs" />
     <Compile Include="FacturaReparacionBEL.cs" />

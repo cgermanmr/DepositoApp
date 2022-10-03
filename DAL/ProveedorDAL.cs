@@ -25,7 +25,7 @@ namespace DAL
                 x.RazonSocial = Convert.IsDBNull(dr[1]) ? string.Empty : dr[1].ToString();
                 x.CUIT = Convert.IsDBNull(dr[2]) ? 0 : Convert.ToInt64(dr[2]);
                 x.Direccion = Convert.IsDBNull(dr[3]) ? string.Empty : dr[3].ToString();
-                x.Telefono = Convert.IsDBNull(dr[4]) ? string.Empty : dr[6].ToString();
+                x.Telefono = Convert.IsDBNull(dr[4]) ? string.Empty : dr[4].ToString();
                 x.Observaciones = dr[5].ToString();
                 x.Estado = (bool)dr[6];
                 x.Email = Convert.IsDBNull(dr[7]) ? string.Empty : dr[7].ToString();

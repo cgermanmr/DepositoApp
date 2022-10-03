@@ -21,6 +21,8 @@ namespace Servicios
                 {
                     usuario.Perfil.Add(new PermisoSimple() { Nombre = "Integridad_Consultar"});
                     usuario.Perfil.Add(new PermisoSimple() { Nombre = "Backup_Consultar"});
+                    usuario.Perfil.Add(new PermisoSimple() { Nombre = "Usuario_Consultar" });
+                    
                     EstablecerUsuarioActual(usuario);
                     return ResultadoAutenticacion.UsuarioValido;
                 }                                                        

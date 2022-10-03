@@ -11,7 +11,7 @@ using Microsoft.SqlServer.Management.Sdk.Sfc;
 
 namespace DAL
 {
-    public class FacturaReparacionDAL:Repositorio
+    public class FacturaReparacionDAL : Repositorio
     {
         protected override string ProcedimientoAlmacenado => "SP_FACTURA";
 
@@ -54,8 +54,7 @@ namespace DAL
                 scope.Complete();
 
                 return result;
-            }
-            
+            }            
         }
 
 

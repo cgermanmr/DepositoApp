@@ -91,17 +91,15 @@ namespace DAL
         public virtual Entidad ObtenerUno(Entidad valor)
         {
             Hashtable parametros = new Hashtable();
-            parametros.Add("@operacion", (int)TipoOperacion.Consulta);
+            parametros.Add("@operacion", TipoOperacion.Consulta);
             parametros.Add("@id", valor.Id);
 
             DataSet ds = _datos.Leer(ProcedimientoAlmacenado, parametros);
 
             var _lista = ObtenerLista(ds);
 
-            if (_lista.Count > 0) 
-                return _lista.FirstOrDefault();
+            return _lista.FirstOrDefault();
             
-            return null;
         }
 
         public Entidad GetById(object id)

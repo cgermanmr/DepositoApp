@@ -34,6 +34,8 @@ namespace BEL
             sb.Append(FechaVto);
             sb.Append(FechaEmision);
             sb.Append(Importe);
+            sb.Append(Id);
+            sb.Append(Estado);
 
             return Criptografia.Get.GetHashMD5(sb.ToString());
 

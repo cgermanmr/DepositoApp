@@ -29,11 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Label usuarioModificadorLabel;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.Label usuarioModificadorLabel;
             this.DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GrillaUsuarios = new System.Windows.Forms.DataGridView();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Modificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Modificador = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Bloqueado = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.IntentosIncorrectos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Idioma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.dateTimeDesde = new System.Windows.Forms.DateTimePicker();
@@ -48,19 +57,20 @@
             this.label4 = new System.Windows.Forms.Label();
             this.usuarioBELBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usuarioModificadorTextBox = new System.Windows.Forms.TextBox();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Modificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Modificador = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Bloqueado = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.IntentosIncorrectos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Idioma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             usuarioModificadorLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBELBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // usuarioModificadorLabel
+            // 
+            usuarioModificadorLabel.AutoSize = true;
+            usuarioModificadorLabel.Location = new System.Drawing.Point(14, 126);
+            usuarioModificadorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            usuarioModificadorLabel.Name = "usuarioModificadorLabel";
+            usuarioModificadorLabel.Size = new System.Drawing.Size(154, 20);
+            usuarioModificadorLabel.TabIndex = 50;
+            usuarioModificadorLabel.Text = "Usuario Modificador:";
             // 
             // DataGridViewTextBoxColumn1
             // 
@@ -105,146 +115,15 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.GrillaUsuarios.DefaultCellStyle = dataGridViewCellStyle2;
-            this.GrillaUsuarios.Location = new System.Drawing.Point(17, 162);
+            this.GrillaUsuarios.Location = new System.Drawing.Point(26, 249);
+            this.GrillaUsuarios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GrillaUsuarios.MultiSelect = false;
             this.GrillaUsuarios.Name = "GrillaUsuarios";
             this.GrillaUsuarios.ReadOnly = true;
             this.GrillaUsuarios.RowHeadersVisible = false;
             this.GrillaUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GrillaUsuarios.Size = new System.Drawing.Size(733, 377);
+            this.GrillaUsuarios.Size = new System.Drawing.Size(1100, 580);
             this.GrillaUsuarios.TabIndex = 30;
-            // 
-            // DataGridViewTextBoxColumn2
-            // 
-            this.DataGridViewTextBoxColumn2.DataPropertyName = "Idioma";
-            this.DataGridViewTextBoxColumn2.HeaderText = "Idioma";
-            this.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2";
-            this.DataGridViewTextBoxColumn2.ReadOnly = true;
-            this.DataGridViewTextBoxColumn2.Width = 63;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(281, 119);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(73, 23);
-            this.btnCancelar.TabIndex = 28;
-            this.btnCancelar.Tag = "9";
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // dateTimeDesde
-            // 
-            this.dateTimeDesde.Location = new System.Drawing.Point(119, 12);
-            this.dateTimeDesde.Name = "dateTimeDesde";
-            this.dateTimeDesde.Size = new System.Drawing.Size(200, 20);
-            this.dateTimeDesde.TabIndex = 39;
-            this.dateTimeDesde.Value = new System.DateTime(2019, 7, 7, 0, 0, 0, 0);
-            this.dateTimeDesde.ValueChanged += new System.EventHandler(this.dateTimeDesde_ValueChanged);
-            // 
-            // dateTimeHasta
-            // 
-            this.dateTimeHasta.Location = new System.Drawing.Point(433, 9);
-            this.dateTimeHasta.Name = "dateTimeHasta";
-            this.dateTimeHasta.Size = new System.Drawing.Size(200, 20);
-            this.dateTimeHasta.TabIndex = 40;
-            this.dateTimeHasta.Value = new System.DateTime(2019, 7, 7, 0, 0, 0, 0);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(72, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 41;
-            this.label1.Text = "Desde:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(389, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 42;
-            this.label2.Text = "Hasta:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 13);
-            this.label3.TabIndex = 43;
-            this.label3.Text = "Usuario Modificado:";
-            // 
-            // txtFiltroUsuario
-            // 
-            this.txtFiltroUsuario.Location = new System.Drawing.Point(119, 47);
-            this.txtFiltroUsuario.Name = "txtFiltroUsuario";
-            this.txtFiltroUsuario.Size = new System.Drawing.Size(200, 20);
-            this.txtFiltroUsuario.TabIndex = 45;
-            // 
-            // btnFiltrar
-            // 
-            this.btnFiltrar.Location = new System.Drawing.Point(119, 119);
-            this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(75, 23);
-            this.btnFiltrar.TabIndex = 46;
-            this.btnFiltrar.Text = "Filtrar";
-            this.btnFiltrar.UseVisualStyleBackColor = true;
-            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
-            // 
-            // btnQuitarFiltro
-            // 
-            this.btnQuitarFiltro.Location = new System.Drawing.Point(200, 119);
-            this.btnQuitarFiltro.Name = "btnQuitarFiltro";
-            this.btnQuitarFiltro.Size = new System.Drawing.Size(75, 23);
-            this.btnQuitarFiltro.TabIndex = 47;
-            this.btnQuitarFiltro.Text = "Quitar Filtro";
-            this.btnQuitarFiltro.UseVisualStyleBackColor = true;
-            this.btnQuitarFiltro.Click += new System.EventHandler(this.btnQuitarFiltro_Click);
-            // 
-            // cmbEvento
-            // 
-            this.cmbEvento.FormattingEnabled = true;
-            this.cmbEvento.Items.AddRange(new object[] {
-            "Alta",
-            "Baja",
-            "Modificación"});
-            this.cmbEvento.Location = new System.Drawing.Point(433, 46);
-            this.cmbEvento.Name = "cmbEvento";
-            this.cmbEvento.Size = new System.Drawing.Size(200, 21);
-            this.cmbEvento.TabIndex = 48;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(357, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 13);
-            this.label4.TabIndex = 49;
-            this.label4.Text = "Modificación:";
-            // 
-            // usuarioBELBindingSource
-            // 
-            this.usuarioBELBindingSource.DataSource = typeof(BEL.UsuarioBEL);
-            // 
-            // usuarioModificadorLabel
-            // 
-            usuarioModificadorLabel.AutoSize = true;
-            usuarioModificadorLabel.Location = new System.Drawing.Point(9, 82);
-            usuarioModificadorLabel.Name = "usuarioModificadorLabel";
-            usuarioModificadorLabel.Size = new System.Drawing.Size(104, 13);
-            usuarioModificadorLabel.TabIndex = 50;
-            usuarioModificadorLabel.Text = "Usuario Modificador:";
-            // 
-            // usuarioModificadorTextBox
-            // 
-            this.usuarioModificadorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBELBindingSource, "UsuarioModificador", true));
-            this.usuarioModificadorTextBox.Location = new System.Drawing.Point(119, 79);
-            this.usuarioModificadorTextBox.Name = "usuarioModificadorTextBox";
-            this.usuarioModificadorTextBox.Size = new System.Drawing.Size(200, 20);
-            this.usuarioModificadorTextBox.TabIndex = 51;
             // 
             // Fecha
             // 
@@ -319,11 +198,147 @@
             this.Idioma.ReadOnly = true;
             this.Idioma.Width = 63;
             // 
+            // DataGridViewTextBoxColumn2
+            // 
+            this.DataGridViewTextBoxColumn2.DataPropertyName = "Idioma";
+            this.DataGridViewTextBoxColumn2.HeaderText = "Idioma";
+            this.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2";
+            this.DataGridViewTextBoxColumn2.ReadOnly = true;
+            this.DataGridViewTextBoxColumn2.Width = 63;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(422, 183);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(110, 35);
+            this.btnCancelar.TabIndex = 28;
+            this.btnCancelar.Tag = "9";
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // dateTimeDesde
+            // 
+            this.dateTimeDesde.Location = new System.Drawing.Point(178, 18);
+            this.dateTimeDesde.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dateTimeDesde.Name = "dateTimeDesde";
+            this.dateTimeDesde.Size = new System.Drawing.Size(298, 26);
+            this.dateTimeDesde.TabIndex = 39;
+            this.dateTimeDesde.Value = new System.DateTime(2019, 7, 7, 0, 0, 0, 0);
+            this.dateTimeDesde.ValueChanged += new System.EventHandler(this.dateTimeDesde_ValueChanged);
+            // 
+            // dateTimeHasta
+            // 
+            this.dateTimeHasta.Location = new System.Drawing.Point(650, 14);
+            this.dateTimeHasta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dateTimeHasta.Name = "dateTimeHasta";
+            this.dateTimeHasta.Size = new System.Drawing.Size(298, 26);
+            this.dateTimeHasta.TabIndex = 40;
+            this.dateTimeHasta.Value = new System.DateTime(2019, 7, 7, 0, 0, 0, 0);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(108, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 20);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "Desde:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(584, 14);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 20);
+            this.label2.TabIndex = 42;
+            this.label2.Text = "Hasta:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(21, 77);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(149, 20);
+            this.label3.TabIndex = 43;
+            this.label3.Text = "Usuario Modificado:";
+            // 
+            // txtFiltroUsuario
+            // 
+            this.txtFiltroUsuario.Location = new System.Drawing.Point(178, 72);
+            this.txtFiltroUsuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtFiltroUsuario.Name = "txtFiltroUsuario";
+            this.txtFiltroUsuario.Size = new System.Drawing.Size(298, 26);
+            this.txtFiltroUsuario.TabIndex = 45;
+            // 
+            // btnFiltrar
+            // 
+            this.btnFiltrar.Location = new System.Drawing.Point(178, 183);
+            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnFiltrar.Name = "btnFiltrar";
+            this.btnFiltrar.Size = new System.Drawing.Size(112, 35);
+            this.btnFiltrar.TabIndex = 46;
+            this.btnFiltrar.Text = "Filtrar";
+            this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
+            // 
+            // btnQuitarFiltro
+            // 
+            this.btnQuitarFiltro.Location = new System.Drawing.Point(300, 183);
+            this.btnQuitarFiltro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnQuitarFiltro.Name = "btnQuitarFiltro";
+            this.btnQuitarFiltro.Size = new System.Drawing.Size(112, 35);
+            this.btnQuitarFiltro.TabIndex = 47;
+            this.btnQuitarFiltro.Text = "Quitar Filtro";
+            this.btnQuitarFiltro.UseVisualStyleBackColor = true;
+            this.btnQuitarFiltro.Click += new System.EventHandler(this.btnQuitarFiltro_Click);
+            // 
+            // cmbEvento
+            // 
+            this.cmbEvento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEvento.FormattingEnabled = true;
+            this.cmbEvento.Items.AddRange(new object[] {
+            "Alta",
+            "Baja",
+            "Modificación"});
+            this.cmbEvento.Location = new System.Drawing.Point(650, 71);
+            this.cmbEvento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbEvento.Name = "cmbEvento";
+            this.cmbEvento.Size = new System.Drawing.Size(298, 28);
+            this.cmbEvento.TabIndex = 48;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(536, 77);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(101, 20);
+            this.label4.TabIndex = 49;
+            this.label4.Text = "Modificación:";
+            // 
+            // usuarioBELBindingSource
+            // 
+            this.usuarioBELBindingSource.DataSource = typeof(BEL.UsuarioBEL);
+            // 
+            // usuarioModificadorTextBox
+            // 
+            this.usuarioModificadorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBELBindingSource, "UsuarioModificador", true));
+            this.usuarioModificadorTextBox.Location = new System.Drawing.Point(178, 122);
+            this.usuarioModificadorTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.usuarioModificadorTextBox.Name = "usuarioModificadorTextBox";
+            this.usuarioModificadorTextBox.Size = new System.Drawing.Size(298, 26);
+            this.usuarioModificadorTextBox.TabIndex = 51;
+            // 
             // UsuarioControlCambiosForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 551);
+            this.ClientSize = new System.Drawing.Size(1154, 848);
             this.Controls.Add(usuarioModificadorLabel);
             this.Controls.Add(this.usuarioModificadorTextBox);
             this.Controls.Add(this.label4);
@@ -338,6 +353,7 @@
             this.Controls.Add(this.dateTimeDesde);
             this.Controls.Add(this.GrillaUsuarios);
             this.Controls.Add(this.btnCancelar);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UsuarioControlCambiosForm";
             this.Text = "Usuarios Control de Cambios";
             this.Load += new System.EventHandler(this.AdminUsuariosForm_Load);

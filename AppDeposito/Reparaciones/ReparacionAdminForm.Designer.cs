@@ -42,6 +42,7 @@
             this.ModificarButton = new System.Windows.Forms.Button();
             this.AgregarButton = new System.Windows.Forms.Button();
             this.fechaFinalizacionTextBox = new System.Windows.Forms.TextBox();
+            this.bsReparaciones = new System.Windows.Forms.BindingSource(this.components);
             this.fechaSolicitudTextBox = new System.Windows.Forms.TextBox();
             this.numeroInventarioTextBox = new System.Windows.Forms.TextBox();
             this.txtDescripcionActivo = new System.Windows.Forms.TextBox();
@@ -53,11 +54,10 @@
             this.observacionesTextBox = new System.Windows.Forms.TextBox();
             this.descripcionTextBox = new System.Windows.Forms.TextBox();
             this.GrillaReparaciones = new System.Windows.Forms.DataGridView();
-            this.bsPresupuestos = new System.Windows.Forms.BindingSource(this.components);
-            this.bsReparaciones = new System.Windows.Forms.BindingSource(this.components);
             this.solicitanteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.activoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsPresupuestos = new System.Windows.Forms.BindingSource(this.components);
             descripcionLabel = new System.Windows.Forms.Label();
             fechaFinalizacionLabel = new System.Windows.Forms.Label();
             fechaSolicitudLabel = new System.Windows.Forms.Label();
@@ -67,9 +67,9 @@
             numeroInventarioLabel = new System.Windows.Forms.Label();
             ticketSoporteLabel = new System.Windows.Forms.Label();
             descripcionLabel1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.bsReparaciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaReparaciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsPresupuestos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsReparaciones)).BeginInit();
             this.SuspendLayout();
             // 
             // descripcionLabel
@@ -85,7 +85,7 @@
             // fechaFinalizacionLabel
             // 
             fechaFinalizacionLabel.AutoSize = true;
-            fechaFinalizacionLabel.Location = new System.Drawing.Point(562, 182);
+            fechaFinalizacionLabel.Location = new System.Drawing.Point(649, 182);
             fechaFinalizacionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             fechaFinalizacionLabel.Name = "fechaFinalizacionLabel";
             fechaFinalizacionLabel.Size = new System.Drawing.Size(96, 20);
@@ -198,13 +198,17 @@
             // fechaFinalizacionTextBox
             // 
             this.fechaFinalizacionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsReparaciones, "FechaFinalizacion", true));
-            this.fechaFinalizacionTextBox.Location = new System.Drawing.Point(669, 179);
+            this.fechaFinalizacionTextBox.Location = new System.Drawing.Point(756, 179);
             this.fechaFinalizacionTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.fechaFinalizacionTextBox.MaxLength = 10;
             this.fechaFinalizacionTextBox.Name = "fechaFinalizacionTextBox";
             this.fechaFinalizacionTextBox.ReadOnly = true;
-            this.fechaFinalizacionTextBox.Size = new System.Drawing.Size(103, 26);
+            this.fechaFinalizacionTextBox.Size = new System.Drawing.Size(154, 26);
             this.fechaFinalizacionTextBox.TabIndex = 36;
+            // 
+            // bsReparaciones
+            // 
+            this.bsReparaciones.DataSource = typeof(BEL.ReparacionBEL);
             // 
             // fechaSolicitudTextBox
             // 
@@ -214,7 +218,7 @@
             this.fechaSolicitudTextBox.MaxLength = 10;
             this.fechaSolicitudTextBox.Name = "fechaSolicitudTextBox";
             this.fechaSolicitudTextBox.ReadOnly = true;
-            this.fechaSolicitudTextBox.Size = new System.Drawing.Size(103, 26);
+            this.fechaSolicitudTextBox.Size = new System.Drawing.Size(154, 26);
             this.fechaSolicitudTextBox.TabIndex = 35;
             // 
             // numeroInventarioTextBox
@@ -265,7 +269,7 @@
             this.enGarantiaCheckBox.Location = new System.Drawing.Point(883, 29);
             this.enGarantiaCheckBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.enGarantiaCheckBox.Name = "enGarantiaCheckBox";
-            this.enGarantiaCheckBox.Size = new System.Drawing.Size(121, 24);
+            this.enGarantiaCheckBox.Size = new System.Drawing.Size(114, 24);
             this.enGarantiaCheckBox.TabIndex = 28;
             this.enGarantiaCheckBox.Text = "En Garantía";
             this.enGarantiaCheckBox.UseVisualStyleBackColor = true;
@@ -334,15 +338,6 @@
             this.GrillaReparaciones.Size = new System.Drawing.Size(983, 442);
             this.GrillaReparaciones.TabIndex = 0;
             // 
-            // bsPresupuestos
-            // 
-            this.bsPresupuestos.DataMember = "Presupuestos";
-            this.bsPresupuestos.DataSource = this.bsReparaciones;
-            // 
-            // bsReparaciones
-            // 
-            this.bsReparaciones.DataSource = typeof(BEL.ReparacionBEL);
-            // 
             // solicitanteDataGridViewTextBoxColumn
             // 
             this.solicitanteDataGridViewTextBoxColumn.DataPropertyName = "Solicitante";
@@ -360,7 +355,7 @@
             this.activoDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.activoDataGridViewTextBoxColumn.Name = "activoDataGridViewTextBoxColumn";
             this.activoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.activoDataGridViewTextBoxColumn.Width = 88;
+            this.activoDataGridViewTextBoxColumn.Width = 77;
             // 
             // descripcionDataGridViewTextBoxColumn
             // 
@@ -370,6 +365,11 @@
             this.descripcionDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
             this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bsPresupuestos
+            // 
+            this.bsPresupuestos.DataMember = "Presupuestos";
+            this.bsPresupuestos.DataSource = this.bsReparaciones;
             // 
             // ReparacionAdminForm
             // 
@@ -404,9 +404,9 @@
             this.Name = "ReparacionAdminForm";
             this.Text = "Reparaciones";
             this.Load += new System.EventHandler(this.ReparacionesForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bsReparaciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaReparaciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsPresupuestos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsReparaciones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

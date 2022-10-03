@@ -30,16 +30,20 @@ namespace AppDeposito.Pagos
         {
             var fr = new FacturaReparacionBLL();
 
-            if (!fr.ExiteOTPresupuestada(valor,_view.Factura.CuitProveedor))
-                throw new InvalidOperationException($"La OT No se encuentra asociada a ningun presupuesto del Proveedor");
+            var sb = new StringBuilder();
 
+            if (!fr.ExiteOTPresupuestada(valor,_view.Factura.CuitProveedor))
+                sb.AppendLine($"La OT No se encuentra asociada a ningun presupuesto del Proveedor");
 
             var otFacturada = fr.GetDetalleById(valor,_view.Factura.CuitProveedor);
             if (otFacturada != null)
-                throw new InvalidOperationException($"La OT {valor} ya esta facturada. Corresponde a la factura {otFacturada.NroFactura}");
+                sb.AppendLine($"La OT {valor} ya esta facturada. Corresponde a la factura {otFacturada.NroFactura}");
 
             if(!fr.OtEstaFinalizada(valor, _view.Factura.CuitProveedor))
-                throw new InvalidOperationException($"La OT {valor} no esta finalizada");
+                sb.AppendLine($"La OT {valor} no esta finalizada");
+
+            if (sb.Length > 0)
+                throw new InvalidOperationException(sb.ToString());
 
         }
     }

@@ -80,6 +80,12 @@ namespace AppDeposito
         private void LoginForm_Load(object sender, EventArgs e)
         {
             FormConfig.Config(this);
+
+            //TODO: Para pruebas
+            //txtNombre.Text = "german";
+            //txtClave.Text = "1234";
+            //Login();
+            
         }
     }
 }

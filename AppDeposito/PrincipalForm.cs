@@ -53,6 +53,7 @@ namespace AppDeposito
             GestionarReparacionesToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Gestionar_Reparacion);
             GestionarProveedoresToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Gestionar_Proveedores);
             ingresoFacturasToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Reparacion_Ingreso_Facturas);
+            ordenesDePagoToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Reparacion_Ordenes_Pago);
 
             foreach (ToolStripMenuItem item in ReparacionesToolStripMenuItem.DropDownItems)
             {
@@ -79,21 +80,17 @@ namespace AppDeposito
                 CerrarSesionToolStripMenuItem.Enabled = true;
                 IniciarSesionToolStripMenuItem.Enabled = false;
                 Visible = true;
+                Sesion.SesionActual().Suscribir(this);
             }
             else
                 Close();
-
-            Sesion.SesionActual().Suscribir(this);
 
         }
         private void IniciarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
            
             if (!Sesion.SesionActual().Integridad)
-            {
-                MessageBox.Show("Se ha producido un error al verificar la integridad de los datos, informar al administrador", "Falla Integridad de datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+                Mensajes.ShowError("Se ha producido un error al verificar la integridad de los datos, informar al administrador");
 
             LoginForm login = new LoginForm();
 
@@ -106,7 +103,6 @@ namespace AppDeposito
                 IniciarSesionToolStripMenuItem.Enabled = false;
             }
 
-            Sesion.SesionActual().Suscribir(this);
         }
 
         private void PrincipalForm_Load(object sender, EventArgs e)
@@ -244,12 +240,14 @@ namespace AppDeposito
 
         private void eventosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var adminLogs = new Administracion.Logs.BitacoraForm
+            var bitacoraForm = new BitacoraForm()
             {
                 MdiParent = this,
             };
 
-            adminLogs.Show();
+            Sesion.SesionActual().Suscribir(bitacoraForm);
+
+            bitacoraForm.Show();
         }
 
         private void controlDeCambiosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -379,17 +377,16 @@ namespace AppDeposito
             ingresoFacturas.Show();
         }
 
-        private void BitacoraToolStripMenuItem_Click(object sender, EventArgs e)
+        
+
+        private void ordenesDePagoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var bitacoraForm = new BitacoraForm()
-            {
-                MdiParent = this,
-            };
+            throw new InvalidOperationException("Funcionalidad en desarrollo");
+        }
 
-            Sesion.SesionActual().Suscribir(bitacoraForm);
-
-            bitacoraForm.Show();
-
+        private void controlDeCambiosFacturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            throw new InvalidOperationException("Funcionalidad en desarrollo");
         }
     }
 }

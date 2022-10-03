@@ -25,8 +25,8 @@ namespace AppDeposito
             PeriodoGarantiaTextBox.DataBindings.Add("Text", Editado, "MesesGarantia");
             VolumenTextBox.DataBindings.Add("Text", Editado, "Volumen");
             ObservacionesTextBox.DataBindings.Add("Text", Editado, "Observaciones");
-            fechaAltaDateTimePicker.Value = DateTime.TryParse(Editado.FechaAlta,out DateTime _fechaalta)? _fechaalta : DateTime.Now;
-            fechaCompraDateTimePicker.Value = DateTime.TryParse(Editado.FechaCompra, out DateTime _fechacompra) ? _fechacompra : DateTime.Now; ;
+            fechaAltaDateTimePicker.Value = Editado.FechaAlta;
+            fechaCompraDateTimePicker.Value = Editado.FechaCompra ;
 
             monedaComboBox.SelectedIndex = monedaComboBox.FindString(Editado.Moneda.Descripcion);
 
@@ -55,7 +55,7 @@ namespace AppDeposito
         {
             EstadoComboBox.DataSource = new EstadoBLL().Listar();
             MarcaComboBox.DataSource = new MarcaBLL().Listar();
-            OrganizacionComboBox.DataSource = new EmpresaBLL();
+            OrganizacionComboBox.DataSource = new EmpresaBLL().Listar();
             SectorComboBox.DataSource = new SectorBLL().Listar();
             TipoComboBox.DataSource = new TipoActivoBLL().Listar();
             UbicacionComboBox.DataSource = new UbicacionBLL().Listar();
@@ -77,8 +77,8 @@ namespace AppDeposito
             try
             {
 
-                Editado.FechaAlta = fechaAltaDateTimePicker.Value.ToShortDateString();
-                Editado.FechaCompra = fechaCompraDateTimePicker.Value.ToShortDateString();
+                Editado.FechaAlta = fechaAltaDateTimePicker.Value;
+                Editado.FechaCompra = fechaCompraDateTimePicker.Value;
 
                 if (Editado.Id == 0)
                     Mensajes.MensajeResultado(new ActivoBLL().Agregar(Editado), this);

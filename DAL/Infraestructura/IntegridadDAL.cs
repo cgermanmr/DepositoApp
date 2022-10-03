@@ -11,6 +11,14 @@ namespace DAL
             dt.TableName = "USUARIO";
             ds.Tables.Add(dt);
 
+            dt = Datos.ObtenerDataTable("SELECT * FROM FacturaDetalle");
+            dt.TableName = "FacturaDetalle";
+            ds.Tables.Add(dt);
+
+            dt = Datos.ObtenerDataTable("SELECT * FROM FacturaReparacion");
+            dt.TableName = "FacturaReparacion";
+            ds.Tables.Add(dt);
+
             dt = Datos.ObtenerDataTable("SELECT * FROM DVV");
             dt.TableName = "DVV";
             ds.Tables.Add(dt);

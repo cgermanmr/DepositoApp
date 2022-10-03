@@ -26,7 +26,7 @@ namespace DAL
             {
                 x = new ActivoBEL();
                 x.Id = (int)dr[0];
-                x.FechaAlta = ((DateTime)dr[1]).ToString("dd/MM/yyyy");
+                x.FechaAlta = (DateTime)dr[1];
                 x.Inventario = Convert.IsDBNull(dr[2]) ? string.Empty : dr[2].ToString();
                 x.Serie = Convert.IsDBNull(dr[3]) ? string.Empty : dr[3].ToString();
                 x.Descripcion = Convert.IsDBNull(dr[4]) ? string.Empty : dr[4].ToString();
@@ -39,7 +39,7 @@ namespace DAL
                 x.Moneda = (MonedaBEL)new MonedaDAL().GetById(dr[11]);
                 x.ValorCompra = Convert.IsDBNull(dr[12]) ? 0.0 : (double)dr[12];
                 x.ValorSoporte = Convert.IsDBNull(dr[13]) ? 0.0 : (double)dr[13];
-                x.FechaCompra = Convert.IsDBNull(dr[14]) ? "" : ((DateTime)dr[14]).ToString("dd/MM/yyyy");
+                x.FechaCompra = (DateTime)dr[14];
                 x.MesesGarantia = Convert.IsDBNull(dr[15]) ? 0 : Convert.ToInt32(dr[15]);
                 x.Volumen = Convert.IsDBNull(dr[16]) ? 0 : (int)dr[16];
                 x.Observaciones = Convert.IsDBNull(dr[17]) ? string.Empty : (string)dr[17];

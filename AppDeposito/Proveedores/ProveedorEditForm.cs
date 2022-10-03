@@ -25,6 +25,8 @@ namespace AppDeposito
         {
             try
             {
+                Sesion.SesionActual().Suscribir(this);
+
                 FormConfig.Config(this);
                 bsOrganizacion.DataSource = Editado;
                 
@@ -39,12 +41,10 @@ namespace AppDeposito
         {
             try
             {
-                FormConfig.ValidarCamposCompletos(this, errorProvider);
-
-                if(Editado.Id==0)
-                    Mensajes.MensajeResultado(new EmpresaBLL().Agregar(Editado), this);
+                if(Editado.Id == 0)
+                    Mensajes.MensajeResultado(new ProveedorBLL().Agregar(Editado), this);
                 else
-                    Mensajes.MensajeResultado(new EmpresaBLL().Modificar(Editado), this);
+                    Mensajes.MensajeResultado(new ProveedorBLL().Modificar(Editado), this);
                 Close();
             }
             catch (Exception ex)
@@ -70,19 +70,14 @@ namespace AppDeposito
             }
         }
 
-        private void observacionesLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void CancelarButton_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         public void Traducir()
         {
-            throw new NotImplementedException();
+            Traductor.Traducir(this);
         }
     }
 }

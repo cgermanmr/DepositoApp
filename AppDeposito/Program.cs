@@ -1,4 +1,6 @@
-﻿using AppDeposito.Pagos;
+﻿using AppDeposito.Administracion.Logs;
+using AppDeposito.Pagos;
+using Interfaces;
 using Servicios;
 using System;
 using System.Collections.Generic;
@@ -25,7 +27,9 @@ namespace AppDeposito
             Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
 
             Application.Run(new PrincipalForm());
-
+            
+            
+            //Application.Run(new BitacoraForm());
 
             //Application.Run(new DonacionesForm());
 
@@ -55,11 +59,12 @@ namespace AppDeposito
             var ex = e.Exception;
 
             Logger.WriteLogExeption(ex);
+            Bitacora.RegistrarEnBitacora($"{ex.Message}", TipoEvento.Error);
 
             switch (ex)
             {
                 case InvalidOperationException invalidOperationException:
-                    MessageBox.Show(invalidOperationException.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(invalidOperationException.Message, "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
                 
                 default:

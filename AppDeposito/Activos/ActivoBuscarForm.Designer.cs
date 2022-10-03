@@ -30,11 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.Grilla = new System.Windows.Forms.DataGridView();
-            this.bsActivos = new System.Windows.Forms.BindingSource(this.components);
-            this.txtFiltro = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.AceptarButton = new System.Windows.Forms.Button();
-            this.CancelarButton = new System.Windows.Forms.Button();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EstadoActivo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoActivoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +38,11 @@
             this.marcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.enGarantiaDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Ubicacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsActivos = new System.Windows.Forms.BindingSource(this.components);
+            this.txtFiltro = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.AceptarButton = new System.Windows.Forms.Button();
+            this.CancelarButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsActivos)).BeginInit();
             this.SuspendLayout();
@@ -67,54 +67,14 @@
             this.enGarantiaDataGridViewCheckBoxColumn,
             this.Ubicacion});
             this.Grilla.DataSource = this.bsActivos;
-            this.Grilla.Location = new System.Drawing.Point(12, 38);
+            this.Grilla.Location = new System.Drawing.Point(18, 58);
+            this.Grilla.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Grilla.Name = "Grilla";
             this.Grilla.ReadOnly = true;
             this.Grilla.RowHeadersVisible = false;
             this.Grilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Grilla.Size = new System.Drawing.Size(603, 278);
+            this.Grilla.Size = new System.Drawing.Size(904, 428);
             this.Grilla.TabIndex = 0;
-            // 
-            // bsActivos
-            // 
-            this.bsActivos.DataSource = typeof(BEL.ActivoBEL);
-            // 
-            // txtFiltro
-            // 
-            this.txtFiltro.Location = new System.Drawing.Point(50, 12);
-            this.txtFiltro.Name = "txtFiltro";
-            this.txtFiltro.Size = new System.Drawing.Size(251, 20);
-            this.txtFiltro.TabIndex = 1;
-            this.txtFiltro.TextChanged += new System.EventHandler(this.txtFiltro_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Filtro:";
-            // 
-            // AceptarButton
-            // 
-            this.AceptarButton.Location = new System.Drawing.Point(459, 322);
-            this.AceptarButton.Name = "AceptarButton";
-            this.AceptarButton.Size = new System.Drawing.Size(75, 23);
-            this.AceptarButton.TabIndex = 3;
-            this.AceptarButton.Text = "Aceptar";
-            this.AceptarButton.UseVisualStyleBackColor = true;
-            this.AceptarButton.Click += new System.EventHandler(this.AceptarButton_Click);
-            // 
-            // CancelarButton
-            // 
-            this.CancelarButton.Location = new System.Drawing.Point(540, 322);
-            this.CancelarButton.Name = "CancelarButton";
-            this.CancelarButton.Size = new System.Drawing.Size(75, 23);
-            this.CancelarButton.TabIndex = 4;
-            this.CancelarButton.Text = "Cancelar";
-            this.CancelarButton.UseVisualStyleBackColor = true;
-            this.CancelarButton.Click += new System.EventHandler(this.CancelarButton_Click);
             // 
             // descripcionDataGridViewTextBoxColumn
             // 
@@ -173,16 +133,64 @@
             this.Ubicacion.Name = "Ubicacion";
             this.Ubicacion.ReadOnly = true;
             // 
+            // bsActivos
+            // 
+            this.bsActivos.DataSource = typeof(BEL.ActivoBEL);
+            // 
+            // txtFiltro
+            // 
+            this.txtFiltro.Location = new System.Drawing.Point(75, 18);
+            this.txtFiltro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtFiltro.Name = "txtFiltro";
+            this.txtFiltro.Size = new System.Drawing.Size(374, 26);
+            this.txtFiltro.TabIndex = 1;
+            this.txtFiltro.TextChanged += new System.EventHandler(this.txtFiltro_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Filtro:";
+            // 
+            // AceptarButton
+            // 
+            this.AceptarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.AceptarButton.Location = new System.Drawing.Point(688, 495);
+            this.AceptarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AceptarButton.Name = "AceptarButton";
+            this.AceptarButton.Size = new System.Drawing.Size(112, 35);
+            this.AceptarButton.TabIndex = 3;
+            this.AceptarButton.Text = "Aceptar";
+            this.AceptarButton.UseVisualStyleBackColor = true;
+            this.AceptarButton.Click += new System.EventHandler(this.AceptarButton_Click);
+            // 
+            // CancelarButton
+            // 
+            this.CancelarButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.CancelarButton.Location = new System.Drawing.Point(810, 495);
+            this.CancelarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CancelarButton.Name = "CancelarButton";
+            this.CancelarButton.Size = new System.Drawing.Size(112, 35);
+            this.CancelarButton.TabIndex = 4;
+            this.CancelarButton.Text = "Cancelar";
+            this.CancelarButton.UseVisualStyleBackColor = true;
+            this.CancelarButton.Click += new System.EventHandler(this.CancelarButton_Click);
+            // 
             // BuscarActivoForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 357);
+            this.ClientSize = new System.Drawing.Size(942, 549);
             this.Controls.Add(this.CancelarButton);
             this.Controls.Add(this.AceptarButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtFiltro);
             this.Controls.Add(this.Grilla);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BuscarActivoForm";
             this.Text = "Buscar";
             this.Load += new System.EventHandler(this.BusquedaForm_Load);

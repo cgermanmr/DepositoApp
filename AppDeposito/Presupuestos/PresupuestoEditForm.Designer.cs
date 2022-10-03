@@ -116,7 +116,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(50, 240);
+            label2.Location = new System.Drawing.Point(50, 206);
             label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(96, 20);
@@ -126,19 +126,19 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(86, 203);
+            label3.Location = new System.Drawing.Point(315, 203);
             label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(87, 20);
+            label3.Size = new System.Drawing.Size(114, 20);
             label3.TabIndex = 30;
-            label3.Text = "Cotización:";
+            label3.Text = "Orden Trabajo:";
             // 
             // cotizacionTextBox
             // 
             this.cotizacionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsPresupuesto, "Cotizacion", true));
             this.cotizacionTextBox.Location = new System.Drawing.Point(182, 117);
             this.cotizacionTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cotizacionTextBox.MaxLength = 15;
+            this.cotizacionTextBox.MaxLength = 12;
             this.cotizacionTextBox.Name = "cotizacionTextBox";
             this.cotizacionTextBox.Size = new System.Drawing.Size(126, 26);
             this.cotizacionTextBox.TabIndex = 1;
@@ -190,7 +190,7 @@
             // 
             // AceptarButton
             // 
-            this.AceptarButton.Location = new System.Drawing.Point(336, 384);
+            this.AceptarButton.Location = new System.Drawing.Point(337, 344);
             this.AceptarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AceptarButton.Name = "AceptarButton";
             this.AceptarButton.Size = new System.Drawing.Size(112, 35);
@@ -201,7 +201,7 @@
             // 
             // CancelarButton
             // 
-            this.CancelarButton.Location = new System.Drawing.Point(456, 384);
+            this.CancelarButton.Location = new System.Drawing.Point(456, 344);
             this.CancelarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CancelarButton.Name = "CancelarButton";
             this.CancelarButton.Size = new System.Drawing.Size(112, 35);
@@ -254,7 +254,7 @@
             // textBox1
             // 
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsPresupuesto, "Descripcion", true));
-            this.textBox1.Location = new System.Drawing.Point(54, 274);
+            this.textBox1.Location = new System.Drawing.Point(54, 234);
             this.textBox1.MaxLength = 200;
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -263,12 +263,13 @@
             // 
             // txtOtProveedor
             // 
+            this.txtOtProveedor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtOtProveedor.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsPresupuesto, "OtProveedor", true));
-            this.txtOtProveedor.Location = new System.Drawing.Point(182, 203);
+            this.txtOtProveedor.Location = new System.Drawing.Point(442, 200);
             this.txtOtProveedor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtOtProveedor.MaxLength = 20;
             this.txtOtProveedor.Name = "txtOtProveedor";
-            this.txtOtProveedor.Size = new System.Drawing.Size(247, 26);
+            this.txtOtProveedor.Size = new System.Drawing.Size(126, 26);
             this.txtOtProveedor.TabIndex = 29;
             // 
             // PresupuestoEditForm
@@ -276,7 +277,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(622, 457);
+            this.ClientSize = new System.Drawing.Size(622, 398);
             this.Controls.Add(label3);
             this.Controls.Add(this.txtOtProveedor);
             this.Controls.Add(label2);
@@ -298,7 +299,7 @@
             this.Controls.Add(this.tiempoEstimadoTextBox);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "PresupuestoEditForm";
-            this.Text = "Edición presupuesto";
+            this.Text = "Edición Presupuesto";
             this.Load += new System.EventHandler(this.EdicionPresupuestoForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bsPresupuesto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsProveedores)).EndInit();

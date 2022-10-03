@@ -114,7 +114,6 @@
             observacionesLabel.Size = new System.Drawing.Size(118, 20);
             observacionesLabel.TabIndex = 18;
             observacionesLabel.Text = "Observaciones:";
-            observacionesLabel.Click += new System.EventHandler(this.observacionesLabel_Click);
             // 
             // bsOrganizacion
             // 

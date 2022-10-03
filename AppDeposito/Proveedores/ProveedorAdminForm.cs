@@ -52,7 +52,6 @@ namespace AppDeposito
 
         private void AgregarButton_Click(object sender, EventArgs e)
         {
-
             try
             {
                 new ProveedorEditForm() { Editado = new ProveedorBEL() }.ShowDialog();

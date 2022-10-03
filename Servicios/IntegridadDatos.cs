@@ -3,25 +3,16 @@ using System;
 using System.Text;
 using Comun;
 using DAL;
-
+using Interfaces;
 
 namespace Servicios
 {
     public class IntegridadDatos
     {
-        //private static readonly IntegridadDatos _instancia = new IntegridadDatos();
-        //public static IntegridadDatos Instancia()
-        //{
-        //    return _instancia;
-        //}
-        //private IntegridadDatos()
-        //{
-
-        //}
 
         private static bool ValidarEntidad(DataTable dt, string dvv)
         {
-            bool resultado=true;
+            bool resultado = true;
             StringBuilder salida = new StringBuilder();
       
             // Se recorre cada registro y se compara el hash generado con el guardado en la tabla
@@ -29,21 +20,25 @@ namespace Servicios
             {                     
                 if (!Criptografia.Get.CompareHashMD5(RegistroToString(registro), registro["DVH"].ToString()))
                 {
-                    salida.Append(string.Format("Falla de integridad de la base de datos en registro codigo: {0} de tabla: {1}", registro[0], dt.TableName));
-                    resultado=false;
+                    salida.AppendLine($"Registro corrupto en tabla {dt.TableName} código del registro: {registro[0]}");
+                    resultado = false;
                 }
             }
 
             if (!dvv.Equals(GenerarDVV(dt)))
             {
-                salida.Append(string.Format("Falla de integridad de la base de datos en DVV de la tabla: {0}", dt.TableName));
+                salida.AppendLine($"Registro DVV corrupto para la tabla: {dt.TableName} ");
                 resultado = false;
             }      
 
             if (resultado)
-                salida.Append("Integridad de datos verificada OK");
+                salida.AppendLine($"DVH y DVV verificados correctamente en tabla {dt.TableName}");
            
             Logger.WriteLog(salida.ToString());
+
+            Bitacora.RegistrarEnBitacora($"{salida}", TipoEvento.Seguridad);
+
+            Console.WriteLine(salida);
             
             return resultado;
         }
@@ -53,10 +48,7 @@ namespace Servicios
             foreach (DataRow registro in dt.Rows)
                 registro["DVH"] = Criptografia.Get.GetHashMD5(RegistroToString(registro));
         }
-        //private static string ObtenerDVH(DataRow registro)
-        //{
-        //    return Criptografia.ObtenerInstancia().GetHashMD5(RegistroToString(registro));
-        //}
+       
         private static string RegistroToString(DataRow registro)
         {
             StringBuilder sb = new StringBuilder();
@@ -76,7 +68,6 @@ namespace Servicios
         }
         public static bool RegenerarDV()
         {
-            bool Regenerado = false;
             DataSet ds = IntegridadDAL.ObtenerTablasAVerificar();
             foreach (DataTable dt in ds.Tables)
             {
@@ -86,22 +77,26 @@ namespace Servicios
                     ds.Tables["DVV"].Select(string.Format("NOMBRE_TABLA ='{0}' ", dt.ToString()))[0]["DVV"] = GenerarDVV(dt);
                 }
             }
+            
+            Bitacora.RegistrarEnBitacora($"Se regeneran digitos verificadores", TipoEvento.Seguridad);
+            
             return IntegridadDAL.ModificarTablasDV(ds);
         }
         public static bool Verificar()
         {
             DataSet ds = IntegridadDAL.ObtenerTablasAVerificar();
             DataTable dvv = ds.Tables["DVV"];
+            bool result = true;
             foreach (DataTable dt in ds.Tables)
             {
                 if (!dt.TableName.Equals("DVV"))
                 {
                     string verificador = dvv.Select(string.Format("NOMBRE_TABLA='{0}'",dt.TableName))[0]["DVV"].ToString();
-                    if (!ValidarEntidad(dt,verificador))
-                        return false;
+                    result &=ValidarEntidad(dt, verificador);
                 }
             }
-            return true;
+
+            return result;
         }
 
     }

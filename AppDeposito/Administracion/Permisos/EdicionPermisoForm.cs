@@ -132,6 +132,8 @@ namespace AppDeposito.Administracion.Permisos
         }         
         private void AsignarButton_Click(object sender, EventArgs e)
         {
+            if((PermisoBase)bsPermisosLista.Current == null) return;
+
             Editado.AgregarHijo((PermisoBase)bsPermisosLista.Current);
             bsPermisosLista.Remove(bsPermisosLista.Current);
             ActualizarControles();

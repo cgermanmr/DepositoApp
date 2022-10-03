@@ -56,6 +56,12 @@
     <Compile Include="Activos\ActivoDatosCompraForm.Designer.cs">
       <DependentUpon>ActivoDatosCompraForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administracion\Logs\FacturasControlCambiosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Logs\FacturasControlCambiosForm.Designer.cs">
+      <DependentUpon>FacturasControlCambiosForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clientes\BuscarClienteForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,16 +98,16 @@
     <Compile Include="Activos\ActivoMovimientosForm.Designer.cs">
       <DependentUpon>ActivoMovimientosForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empresas\ProveedorEditForm.cs">
+    <Compile Include="Proveedores\ProveedorEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empresas\ProveedorEditForm.Designer.cs">
+    <Compile Include="Proveedores\ProveedorEditForm.Designer.cs">
       <DependentUpon>ProveedorEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empresas\ProveedorAdminForm.cs">
+    <Compile Include="Proveedores\ProveedorAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empresas\ProveedorAdminForm.Designer.cs">
+    <Compile Include="Proveedores\ProveedorAdminForm.Designer.cs">
       <DependentUpon>ProveedorAdminForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Marcas\MarcaAdminForm.cs">
@@ -116,23 +122,23 @@
     <Compile Include="Marcas\MarcaEditForm.Designer.cs">
       <DependentUpon>MarcaEditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pagos\IngresoFacturaPresenter.cs" />
-    <Compile Include="Pagos\IngresoFacturasForm.cs">
+    <Compile Include="Pagos\IngresoFacturas\IngresoFacturaPresenter.cs" />
+    <Compile Include="Pagos\IngresoFacturas\IngresoFacturasForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pagos\IngresoFacturasForm.Designer.cs">
+    <Compile Include="Pagos\IngresoFacturas\IngresoFacturasForm.Designer.cs">
       <DependentUpon>IngresoFacturasForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pagos\OrdenPagoAdminForm.cs">
+    <Compile Include="Pagos\OrdenPago\OrdenPagoAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pagos\OrdenPagoAdminForm.Designer.cs">
+    <Compile Include="Pagos\OrdenPago\OrdenPagoAdminForm.Designer.cs">
       <DependentUpon>OrdenPagoAdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pagos\OrdenPagoEditForm.cs">
+    <Compile Include="Pagos\OrdenPago\OrdenPagoEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pagos\OrdenPagoEditForm.Designer.cs">
+    <Compile Include="Pagos\OrdenPago\OrdenPagoEditForm.Designer.cs">
       <DependentUpon>OrdenPagoEditForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Presupuestos\PresupuestoAdminForm.cs">
@@ -322,6 +328,9 @@
     <EmbeddedResource Include="Activos\ActivoDatosCompraForm.resx">
       <DependentUpon>ActivoDatosCompraForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Logs\FacturasControlCambiosForm.resx">
+      <DependentUpon>FacturasControlCambiosForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes\BuscarClienteForm.resx">
       <DependentUpon>BuscarClienteForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -346,10 +355,10 @@
     <EmbeddedResource Include="Activos\ActivoMovimientosForm.resx">
       <DependentUpon>ActivoMovimientosForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empresas\ProveedorEditForm.resx">
+    <EmbeddedResource Include="Proveedores\ProveedorEditForm.resx">
       <DependentUpon>ProveedorEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empresas\ProveedorAdminForm.resx">
+    <EmbeddedResource Include="Proveedores\ProveedorAdminForm.resx">
       <DependentUpon>ProveedorAdminForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administracion\Backup\BackupRestoreForm.resx">
@@ -402,8 +411,14 @@
     <EmbeddedResource Include="Marcas\MarcaEditForm.resx">
       <DependentUpon>MarcaEditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pagos\IngresoFacturasForm.resx">
+    <EmbeddedResource Include="Pagos\IngresoFacturas\IngresoFacturasForm.resx">
       <DependentUpon>IngresoFacturasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\OrdenPago\OrdenPagoAdminForm.resx">
+      <DependentUpon>OrdenPagoAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\OrdenPago\OrdenPagoEditForm.resx">
+      <DependentUpon>OrdenPagoEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presupuestos\PresupuestoAdminForm.resx">
       <DependentUpon>PresupuestoAdminForm.cs</DependentUpon>

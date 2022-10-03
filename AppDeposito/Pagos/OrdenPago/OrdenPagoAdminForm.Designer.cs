@@ -1,6 +1,6 @@
 ﻿namespace AppDeposito.Pagos
 {
-    partial class OrdenPagoEditForm
+    partial class OrdenPagoAdminForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // OrdenPagoAdminForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "OrdenPagoEditForm";
+            this.ClientSize = new System.Drawing.Size(763, 559);
+            this.Name = "OrdenPagoAdminForm";
+            this.Text = "OrdenPagoAdminForm";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
