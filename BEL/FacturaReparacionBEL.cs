@@ -19,9 +19,9 @@ namespace BEL
         public double Importe { get; set; }      
 
         public List<FacturaReparacionDetalle> Conceptos { get; set; } = new List<FacturaReparacionDetalle>();
-        public string UsuarioModificador { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DateTime FechaModificacion { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public TipoOperacion TipoModificacion { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string UsuarioModificador { get ; set; }
+        public DateTime FechaModificacion { get; set; }
+        public TipoOperacion TipoModificacion { get; set; }
 
         public string GetDVH()
         {

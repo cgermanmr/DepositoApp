@@ -14,7 +14,8 @@ namespace BLL
             var v = valor as PresupuestoBEL;
             if (v.Autorizado)
             {
-                var reparacion = new ReparacionBLL().GetById(v.ReparacionId) as ReparacionBEL;
+                var reparacion = new ReparacionBLL().GetById(v.Reparacion.Id) as ReparacionBEL;
+
                 if (reparacion.Presupuestos.Any(_ => _.Id != v.Id && _.Autorizado))
                     throw new InvalidOperationException("Existe otro presupuesto aprobado");
             }

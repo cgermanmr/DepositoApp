@@ -56,6 +56,64 @@ namespace DAL
 
             return _lista;
         }
-        
+
+        public void AgregarReemplazo(ReemplazoTemporalBEL reemplazo)
+        {
+            Hashtable parametros = new Hashtable();
+            parametros.Add("@operacion", 10);
+            parametros.Add("@activo", reemplazo.Activo);
+            parametros.Add("@id", reemplazo.Reparacion);
+            parametros.Add("@fecha_solicitud", reemplazo.Inicio);
+            parametros.Add("@fecha_finalizacion", reemplazo.Fin);
+            parametros.Add("@estado", reemplazo.Definitivo);
+            parametros.Add("@descripcion", reemplazo.Descripcion);
+
+            _datos.Escribir("[SP_REPARACION]", parametros);
+
+        }
+
+        public void EliminarReemplazo(ReemplazoTemporalBEL reemplazo)
+        {
+            Hashtable parametros = new Hashtable();
+            parametros.Add("@operacion", 11);
+            parametros.Add("@activo", reemplazo.Activo);
+            parametros.Add("@id", reemplazo.Reparacion);
+
+            _datos.Escribir("[SP_REPARACION]", parametros);
+        }
+
+        public List<ReemplazoTemporalBEL> ListarReemplazos(long reparacion)
+        {
+            Hashtable parametros = new Hashtable();
+            parametros.Add("@operacion", 13);
+            parametros.Add("@id", reparacion);
+
+            var ds = _datos.Leer("[SP_REPARACION]", parametros);
+
+            return ObtenerListaReemplazos(ds);
+        }
+
+        protected List<ReemplazoTemporalBEL> ObtenerListaReemplazos(DataSet ds)
+        {
+            var _lista = new List<ReemplazoTemporalBEL>();
+
+            foreach (DataRow dr in ds.Tables[0].Rows)
+            {
+                var x = new ReemplazoTemporalBEL();
+                x.Activo = dr[0].SafeToLong();
+                x.Reparacion= dr[1].SafeToLong();
+                x.Inicio = dr[2].SafeToDateTime();
+                x.Fin = dr[3].SafeToDateTime();
+                x.Descripcion = dr[4].ToString();
+                x.Definitivo = (bool)dr[5];
+
+                _lista.Add(x);
+            }
+
+            return _lista;
+        }
+
+       
+
     }
 }

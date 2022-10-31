@@ -62,6 +62,7 @@
     <Compile Include="Administracion\Logs\FacturasControlCambiosForm.Designer.cs">
       <DependentUpon>FacturasControlCambiosForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administracion\Logs\Model\FacturaFiltro.cs" />
     <Compile Include="Clientes\BuscarClienteForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +98,22 @@
     </Compile>
     <Compile Include="Activos\ActivoMovimientosForm.Designer.cs">
       <DependentUpon>ActivoMovimientosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos\IngresoFacturas\BuscarProveedorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos\IngresoFacturas\BuscarProveedorForm.Designer.cs">
+      <DependentUpon>BuscarProveedorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos\OrdenPago\Model\FacturaModelView.cs" />
+    <Compile Include="Pagos\OrdenPago\Model\OrdenPagoViewModel.cs" />
+    <Compile Include="Pagos\OrdenPago\OrdenPagoAdminPresenter.cs" />
+    <Compile Include="Pagos\OrdenPago\OrdenPagoEditPresenter.cs" />
+    <Compile Include="Pagos\OrdenPago\SelectorFacturasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos\OrdenPago\SelectorFacturasForm.Designer.cs">
+      <DependentUpon>SelectorFacturasForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Proveedores\ProveedorEditForm.cs">
       <SubType>Form</SubType>
@@ -158,6 +175,18 @@
     </Compile>
     <Compile Include="Activos\TipoActivo\TipoActivoEditForm.Designer.cs">
       <DependentUpon>TipoActivoEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reparaciones\AsignarEquipoReemplazoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reparaciones\AsignarEquipoReemplazoForm.Designer.cs">
+      <DependentUpon>AsignarEquipoReemplazoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reparaciones\ConsultarHistorialReparacionesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reparaciones\ConsultarHistorialReparacionesForm.Designer.cs">
+      <DependentUpon>ConsultarHistorialReparacionesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Ubicaciones\UbicacionEditForm.cs">
       <SubType>Form</SubType>
@@ -355,6 +384,12 @@
     <EmbeddedResource Include="Activos\ActivoMovimientosForm.resx">
       <DependentUpon>ActivoMovimientosForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\IngresoFacturas\BuscarProveedorForm.resx">
+      <DependentUpon>BuscarProveedorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\OrdenPago\SelectorFacturasForm.resx">
+      <DependentUpon>SelectorFacturasForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Proveedores\ProveedorEditForm.resx">
       <DependentUpon>ProveedorEditForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -429,6 +464,12 @@
     <EmbeddedResource Include="Activos\TipoActivo\TipoActivoEditForm.resx">
       <DependentUpon>TipoActivoEditForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reparaciones\AsignarEquipoReemplazoForm.resx">
+      <DependentUpon>AsignarEquipoReemplazoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reparaciones\ConsultarHistorialReparacionesForm.resx">
+      <DependentUpon>ConsultarHistorialReparacionesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ubicaciones\UbicacionEditForm.resx">
       <DependentUpon>UbicacionEditForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -473,6 +514,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\AppDeposito.Administracion.Logs.Model.FacturaFiltro.datasource" />
+    <None Include="Properties\DataSources\AppDeposito.Pagos.OrdenPago.Model.FacturaModelView.datasource" />
+    <None Include="Properties\DataSources\AppDeposito.Reparaciones.Model.ReemplazoTemporalModel.datasource" />
     <None Include="Properties\DataSources\BEL.ActivoBEL.datasource" />
     <None Include="Properties\DataSources\BEL.BitacoraBEL.datasource" />
     <None Include="Properties\DataSources\BEL.DepositoBEL.datasource" />
@@ -485,6 +529,8 @@
     <None Include="Properties\DataSources\BEL.LeyendaBEL.datasource" />
     <None Include="Properties\DataSources\BEL.MarcaBEL.datasource" />
     <None Include="Properties\DataSources\BEL.MonedaBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.OrdenPagoBEL.datasource" />
+    <None Include="Properties\DataSources\BEL.OrdenPagoDetalleBEL.datasource" />
     <None Include="Properties\DataSources\BEL.PermisoBase.datasource" />
     <None Include="Properties\DataSources\BEL.PermisoCompuesto.datasource" />
     <None Include="Properties\DataSources\BEL.PermisoSimple.datasource" />
@@ -522,10 +568,6 @@
     <ProjectReference Include="..\Comun\Comun.csproj">
       <Project>{07E9B656-91AA-4343-A1C5-6F403717F8A0}</Project>
       <Name>Comun</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
-      <Project>{55c97a8e-1e33-4ba6-bf3c-dd9aaf0e11ac}</Project>
-      <Name>Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\Servicios\Servicios.csproj">
       <Project>{8690aa23-a582-0217-1151-5c942821f4d6}</Project>

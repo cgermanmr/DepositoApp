@@ -99,10 +99,6 @@
       <Project>{FF2C616E-638D-02AB-02F0-C445F994FB01}</Project>
       <Name>DAL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
-      <Project>{55c97a8e-1e33-4ba6-bf3c-dd9aaf0e11ac}</Project>
-      <Name>Interfaces</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

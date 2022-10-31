@@ -40,10 +40,12 @@ namespace AppDeposito.Pagos
                 sb.AppendLine($"La OT {valor} ya esta facturada. Corresponde a la factura {otFacturada.NroFactura}");
 
             if(!fr.OtEstaFinalizada(valor, _view.Factura.CuitProveedor))
-                sb.AppendLine($"La OT {valor} no esta finalizada");
+                sb.AppendLine($"La OT {valor} no esta finalizada o el presupuesto no esta autorizado");
 
             if (sb.Length > 0)
                 throw new InvalidOperationException(sb.ToString());
+
+            _view.ConceptoActual.Descripcion = $"Servicio de reparación";
 
         }
     }

@@ -41,6 +41,14 @@ namespace Comun
             return v;
         }
 
+        public static decimal SafeToDecimal(this object value)
+        {
+
+            decimal.TryParse(value?.ToString(), out decimal v);
+            //
+            return v;
+        }
+
         public static double SafeToDouble(this object value)
         {
             if(value == null)

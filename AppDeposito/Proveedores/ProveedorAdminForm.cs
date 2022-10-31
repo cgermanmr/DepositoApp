@@ -100,7 +100,7 @@ namespace AppDeposito
 
         public void Traducir()
         {
-            throw new NotImplementedException();
+            Traductor.Traducir(this);
         }
     }
 }

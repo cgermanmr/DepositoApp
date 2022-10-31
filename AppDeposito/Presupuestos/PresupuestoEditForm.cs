@@ -67,7 +67,7 @@ namespace AppDeposito
 
         public void Traducir()
         {
-            throw new NotImplementedException();
+            Traductor.Traducir(this);
         }
 
         private void razonSocialComboBox_SelectedIndexChanged(object sender, EventArgs e)

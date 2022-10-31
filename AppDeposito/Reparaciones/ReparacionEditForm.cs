@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AppDeposito.Reparaciones;
 using BEL;
 using BLL;
 using Comun;
@@ -55,6 +56,7 @@ namespace AppDeposito
 
         private void FinalizarReparacion(bool realizada)
         {
+            
             if (realizada)
             {
                 Reparacion.FechaFinalizacion = DateTime.Now;
@@ -100,7 +102,12 @@ namespace AppDeposito
 
         public void Traducir()
         {
-            throw new NotImplementedException();
+            Traductor.Traducir(this);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new AsignarEquipoReemplazoForm(Reparacion).ShowDialog();
         }
     }
 }

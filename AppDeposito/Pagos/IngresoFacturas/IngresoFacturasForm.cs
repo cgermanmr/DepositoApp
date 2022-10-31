@@ -1,4 +1,5 @@
-﻿using BEL;
+﻿using AppDeposito.Pagos.IngresoFacturas;
+using BEL;
 using BLL;
 using Comun;
 using Servicios;
@@ -23,6 +24,7 @@ namespace AppDeposito.Pagos
             Presenter = new IngresoFacturaPresenter(this);
         }
 
+        
         public FacturaReparacionDetalle ConceptoActual { get => bsConceptos.Current as FacturaReparacionDetalle; }
 
         public FacturaReparacionBEL Factura { get => bsFacturas.DataSource as FacturaReparacionBEL; set => bsFacturas.DataSource = value; }
@@ -31,23 +33,23 @@ namespace AppDeposito.Pagos
 
         private void cuitProveedorTextBox_Validating(object sender, CancelEventArgs e)
         {
-            if (cuitProveedorTextBox.Text.Length != 11)
-            {
-                errorProvider1.SetError(sender as Control, "Cuit es de 11 digitos");
-                return;
-            }
+            //if (cuitProveedorTextBox.Text.Trim().Length != 11)
+            //{
+            //    errorProvider1.SetError(sender as Control, "Cuit es de 11 digitos");
+            //    return;
+            //}
 
-            var prov = new ProveedorBLL().GetByCuit(cuitProveedorTextBox.Text.SafeToLong());
+            //var prov = new ProveedorBLL().GetByCuit(cuitProveedorTextBox.Text.SafeToLong());
 
-            if (prov == null)
-            { 
-                errorProvider1.SetError(sender as Control, "No se encuentra el CUIT");
-                return ;
-            }
-            else
-                txtRazonSocial.Text = prov.ToString();
+            //if (prov == null)
+            //{ 
+            //    errorProvider1.SetError(sender as Control, "No se encuentra el CUIT");
+            //    return ;
+            //}
+            //else
+            //    txtRazonSocial.Text = prov.ToString();
 
-            errorProvider1.SetError(sender as Control, "");
+            //errorProvider1.SetError(sender as Control, "");
             
         }
 
@@ -55,6 +57,8 @@ namespace AppDeposito.Pagos
         {
             Factura = new FacturaReparacionBEL();
             Conceptos = Factura.Conceptos;
+
+            FormConfig.Config(this);
 
             cuitProveedorTextBox.SoloNumeros();
             importeTextBox.SoloNumerosConDecimales();
@@ -141,6 +145,24 @@ namespace AppDeposito.Pagos
         public void Traducir()
         {
             Traductor.Traducir(this);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var buscarProv = new BuscarProveedorForm();
+            if (buscarProv.ShowDialog() != DialogResult.OK)
+                return;
+
+            txtRazonSocial.Text = buscarProv.Seleccionado.RazonSocial;
+            cuitProveedorTextBox.Text = buscarProv.Seleccionado.CUIT.ToString();
+
+            buscarProv.Close();
+
+        }
+
+        private void cuitProveedorTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

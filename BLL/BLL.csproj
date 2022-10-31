@@ -70,6 +70,7 @@
     <Compile Include="ActivoBLL.cs" />
     <Compile Include="DepositoBLL.cs" />
     <Compile Include="DonacionBLL.cs" />
+    <Compile Include="OrdenPagoBLL.cs" />
     <Compile Include="ProveedorBLL.cs" />
     <Compile Include="FacturaReparacionBLL.cs" />
     <Compile Include="EstadoBLL.cs" />
@@ -92,10 +93,6 @@
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{FF2C616E-638D-02AB-02F0-C445F994FB01}</Project>
       <Name>DAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
-      <Project>{55c97a8e-1e33-4ba6-bf3c-dd9aaf0e11ac}</Project>
-      <Name>Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\Servicios\Servicios.csproj">
       <Project>{8690AA23-A582-0217-1151-5C942821F4D6}</Project>

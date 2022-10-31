@@ -57,39 +57,35 @@
             // DescripcionLabel
             // 
             DescripcionLabel.AutoSize = true;
-            DescripcionLabel.Location = new System.Drawing.Point(485, 115);
-            DescripcionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            DescripcionLabel.Location = new System.Drawing.Point(212, 51);
             DescripcionLabel.Name = "DescripcionLabel";
-            DescripcionLabel.Size = new System.Drawing.Size(96, 20);
+            DescripcionLabel.Size = new System.Drawing.Size(66, 13);
             DescripcionLabel.TabIndex = 4;
             DescripcionLabel.Text = "Descripcion:";
             // 
             // UsuarioLabel
             // 
             UsuarioLabel.AutoSize = true;
-            UsuarioLabel.Location = new System.Drawing.Point(83, 72);
-            UsuarioLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            UsuarioLabel.Location = new System.Drawing.Point(55, 51);
             UsuarioLabel.Name = "UsuarioLabel";
-            UsuarioLabel.Size = new System.Drawing.Size(68, 20);
+            UsuarioLabel.Size = new System.Drawing.Size(46, 13);
             UsuarioLabel.TabIndex = 2;
             UsuarioLabel.Text = "Usuario:";
             // 
             // FechaLabel
             // 
             FechaLabel.AutoSize = true;
-            FechaLabel.Location = new System.Drawing.Point(49, 25);
-            FechaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            FechaLabel.Location = new System.Drawing.Point(29, 16);
             FechaLabel.Name = "FechaLabel";
-            FechaLabel.Size = new System.Drawing.Size(106, 20);
+            FechaLabel.Size = new System.Drawing.Size(72, 13);
             FechaLabel.TabIndex = 0;
             FechaLabel.Text = "Fecha desde:";
             // 
             // QuitarFiltroButton
             // 
-            this.QuitarFiltroButton.Location = new System.Drawing.Point(133, 147);
-            this.QuitarFiltroButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.QuitarFiltroButton.Location = new System.Drawing.Point(89, 86);
             this.QuitarFiltroButton.Name = "QuitarFiltroButton";
-            this.QuitarFiltroButton.Size = new System.Drawing.Size(112, 35);
+            this.QuitarFiltroButton.Size = new System.Drawing.Size(75, 23);
             this.QuitarFiltroButton.TabIndex = 10;
             this.QuitarFiltroButton.Text = "Quitar Filtro";
             this.QuitarFiltroButton.UseVisualStyleBackColor = true;
@@ -97,10 +93,9 @@
             // 
             // FiltrarButton
             // 
-            this.FiltrarButton.Location = new System.Drawing.Point(13, 147);
-            this.FiltrarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FiltrarButton.Location = new System.Drawing.Point(9, 86);
             this.FiltrarButton.Name = "FiltrarButton";
-            this.FiltrarButton.Size = new System.Drawing.Size(112, 35);
+            this.FiltrarButton.Size = new System.Drawing.Size(75, 23);
             this.FiltrarButton.TabIndex = 2;
             this.FiltrarButton.Text = "Filtrar";
             this.FiltrarButton.UseVisualStyleBackColor = true;
@@ -110,48 +105,44 @@
             // 
             this.cmbEvento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEvento.FormattingEnabled = true;
-            this.cmbEvento.Location = new System.Drawing.Point(593, 68);
-            this.cmbEvento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbEvento.Location = new System.Drawing.Point(398, 12);
             this.cmbEvento.Name = "cmbEvento";
-            this.cmbEvento.Size = new System.Drawing.Size(298, 28);
+            this.cmbEvento.Size = new System.Drawing.Size(120, 21);
             this.cmbEvento.TabIndex = 9;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(519, 76);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(348, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 20);
+            this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Evento:";
             // 
             // FechaHasta
             // 
-            this.FechaHasta.Location = new System.Drawing.Point(593, 25);
-            this.FechaHasta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FechaHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.FechaHasta.Location = new System.Drawing.Point(265, 12);
             this.FechaHasta.Name = "FechaHasta";
-            this.FechaHasta.Size = new System.Drawing.Size(298, 26);
+            this.FechaHasta.Size = new System.Drawing.Size(77, 20);
             this.FechaHasta.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(481, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(190, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 20);
+            this.label1.Size = new System.Drawing.Size(69, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Fecha hasta:";
             // 
             // DescripcionTextBox
             // 
             this.DescripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.BitacoraBELBindingSource, "Descripcion", true));
-            this.DescripcionTextBox.Location = new System.Drawing.Point(593, 110);
-            this.DescripcionTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DescripcionTextBox.Location = new System.Drawing.Point(284, 47);
             this.DescripcionTextBox.Multiline = true;
             this.DescripcionTextBox.Name = "DescripcionTextBox";
-            this.DescripcionTextBox.Size = new System.Drawing.Size(298, 29);
+            this.DescripcionTextBox.Size = new System.Drawing.Size(224, 20);
             this.DescripcionTextBox.TabIndex = 5;
             // 
             // BitacoraBELBindingSource
@@ -161,19 +152,18 @@
             // UsuarioTextBox
             // 
             this.UsuarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.BitacoraBELBindingSource, "Usuario", true));
-            this.UsuarioTextBox.Location = new System.Drawing.Point(161, 72);
-            this.UsuarioTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.UsuarioTextBox.Location = new System.Drawing.Point(107, 47);
             this.UsuarioTextBox.Name = "UsuarioTextBox";
-            this.UsuarioTextBox.Size = new System.Drawing.Size(298, 26);
+            this.UsuarioTextBox.Size = new System.Drawing.Size(99, 20);
             this.UsuarioTextBox.TabIndex = 3;
             // 
             // FechaDesde
             // 
             this.FechaDesde.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.BitacoraBELBindingSource, "Fecha", true));
-            this.FechaDesde.Location = new System.Drawing.Point(161, 25);
-            this.FechaDesde.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FechaDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.FechaDesde.Location = new System.Drawing.Point(107, 12);
             this.FechaDesde.Name = "FechaDesde";
-            this.FechaDesde.Size = new System.Drawing.Size(298, 26);
+            this.FechaDesde.Size = new System.Drawing.Size(77, 20);
             this.FechaDesde.TabIndex = 1;
             // 
             // GrillaBitacora
@@ -191,14 +181,13 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn4});
             this.GrillaBitacora.DataSource = this.BitacoraBELBindingSource;
-            this.GrillaBitacora.Location = new System.Drawing.Point(13, 192);
-            this.GrillaBitacora.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.GrillaBitacora.Location = new System.Drawing.Point(9, 115);
             this.GrillaBitacora.MultiSelect = false;
             this.GrillaBitacora.Name = "GrillaBitacora";
             this.GrillaBitacora.ReadOnly = true;
             this.GrillaBitacora.RowHeadersVisible = false;
             this.GrillaBitacora.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GrillaBitacora.Size = new System.Drawing.Size(878, 430);
+            this.GrillaBitacora.Size = new System.Drawing.Size(585, 290);
             this.GrillaBitacora.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -232,9 +221,9 @@
             // 
             // BitacoraForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 650);
+            this.ClientSize = new System.Drawing.Size(611, 422);
             this.Controls.Add(this.GrillaBitacora);
             this.Controls.Add(this.QuitarFiltroButton);
             this.Controls.Add(this.FiltrarButton);
@@ -248,7 +237,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DescripcionTextBox);
             this.Controls.Add(DescripcionLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BitacoraForm";
             this.Text = "Eventos ";
             this.Load += new System.EventHandler(this.BitacoraForm_Load);

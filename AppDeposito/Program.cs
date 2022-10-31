@@ -1,5 +1,6 @@
 ﻿using AppDeposito.Administracion.Logs;
 using AppDeposito.Pagos;
+using AppDeposito.Reparaciones;
 using Interfaces;
 using Servicios;
 using System;
@@ -26,9 +27,12 @@ namespace AppDeposito
             Application.ThreadException += Application_ThreadException;
             Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
 
+
             Application.Run(new PrincipalForm());
-            
-            
+            //Application.Run(new ConsultarHistorialReparacionesForm());
+            //Application.Run(new FacturasControlCambiosForm());
+
+
             //Application.Run(new BitacoraForm());
 
             //Application.Run(new DonacionesForm());
@@ -51,6 +55,7 @@ namespace AppDeposito
             //Application.Run(new MarcaAdminForm());
             //Application.Run(new EstadoAdminForm());
             //Application.Run(new IngresoFacturasForm());
+            //Application.Run(new OrdenPagoAdminForm());
 
 
         }

@@ -8048,3 +8048,2147 @@ Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
 StackTrace: Evento Auditado
 Date/Time: 3/10/2022 16:01:47
 ===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 17:17:21
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 17:17:21
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 17:17:21
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 17:50:56
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 17:50:56
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 17:50:56
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 18:11:58
+===========================================================================================
+Title: Information
+Id: 0
+Message: Registro corrupto en tabla FacturaDetalle código del registro: 112255
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 18:11:58
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 18:11:58
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 18:12:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: Registro corrupto en tabla FacturaDetalle código del registro: 112255
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 18:12:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 18:12:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 18:12:59
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 18:12:59
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 18:12:59
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 18:13:33
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 18:14:59
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 18:14:59
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 3/10/2022 18:14:59
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 22/10/2022 09:28:09
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 22/10/2022 09:28:09
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 22/10/2022 09:28:09
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 22/10/2022 15:22:27
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 22/10/2022 15:22:27
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 22/10/2022 15:22:27
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 22/10/2022 15:27:16
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 22/10/2022 15:27:16
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 22/10/2022 15:27:16
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 22/10/2022 15:28:15
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 22/10/2022 15:28:16
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 22/10/2022 15:28:16
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 16:31:14
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 16:31:14
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 16:31:14
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 76
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 96
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 44
+Date/Time: 23/10/2022 16:41:26
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 76
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 96
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 44
+Date/Time: 23/10/2022 16:44:54
+===========================================================================================
+Title: Error
+Id: 0
+Message: Existe otro presupuesto aprobado
+StackTrace:    en BLL.PresupuestoBLL.EsValido(Entidad valor) en C:\UAI\TD\DepositoApp\BLL\PresupuestoBLL.cs:línea 19
+   en BLL.Negocio.Modificar(Entidad valor) en C:\UAI\TD\DepositoApp\BLL\Negocio.cs:línea 51
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 50
+Date/Time: 23/10/2022 16:45:08
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 16:47:09
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 16:47:09
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 16:47:09
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT No se encuentra asociada a ningun presupuesto del Proveedor
+La OT yutt6 no esta finalizada
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 119
+Date/Time: 23/10/2022 16:49:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 16:50:21
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 16:50:21
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 16:50:21
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 17:09:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 17:09:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 17:09:42
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT yutt6 no esta finalizada
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 119
+Date/Time: 23/10/2022 17:10:31
+===========================================================================================
+Title: Error
+Id: 0
+Message: No coincide el valor ingresado 4.600,00 con el presupuesto del proveedor 4.500,00 
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarImporte(Double importe) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 26
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 122
+Date/Time: 23/10/2022 17:11:54
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT ab1234 ya esta facturada. Corresponde a la factura 112233
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 119
+Date/Time: 23/10/2022 17:12:26
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 76
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 96
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 44
+Date/Time: 23/10/2022 17:13:49
+===========================================================================================
+Title: Error
+Id: 0
+Message: No coincide el valor ingresado 3.001,00 con el presupuesto del proveedor 3.000,00 
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarImporte(Double importe) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 26
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 122
+Date/Time: 23/10/2022 17:14:34
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 17:14:47
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 17:14:47
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 17:14:47
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 17:16:35
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 17:16:35
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 17:16:35
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT ewq23 no esta finalizada
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 119
+Date/Time: 23/10/2022 17:18:00
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 17:18:46
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 17:18:46
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 23/10/2022 17:18:46
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT No se encuentra asociada a ningun presupuesto del Proveedor
+La OT 45 no esta finalizada o el presupuesto no esta autorizado
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 119
+Date/Time: 23/10/2022 17:19:13
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT EWQ23 no esta finalizada o el presupuesto no esta autorizado
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 119
+Date/Time: 23/10/2022 17:19:39
+===========================================================================================
+Title: Error
+Id: 0
+Message: No coincide el valor ingresado 4.501,00 con el presupuesto del proveedor 4.500,00 
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarImporte(Double importe) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 26
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 122
+Date/Time: 23/10/2022 17:23:07
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 13:00:05
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 13:00:05
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 13:00:05
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 76
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 96
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 44
+Date/Time: 24/10/2022 13:02:17
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT aabb99 no esta finalizada o el presupuesto no esta autorizado
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 121
+Date/Time: 24/10/2022 13:02:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:18:57
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:18:57
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:18:57
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:23:38
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:23:38
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:23:38
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:53:17
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:53:17
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:53:17
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:53:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:53:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:53:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:54:27
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:54:27
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 16:54:27
+===========================================================================================
+Title: Error
+Id: 0
+Message: Funcionalidad en desarrollo
+StackTrace:    en AppDeposito.PrincipalForm.controlDeCambiosFacturasToolStripMenuItem_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\PrincipalForm.cs:línea 399
+   en System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   en System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   en System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   en System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   en System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   en System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   en System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   en System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   en System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 24/10/2022 17:01:16
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:01:26
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:01:26
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:01:26
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:16:03
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:16:03
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:16:03
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:16:12
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:16:12
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:16:12
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:43:36
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:43:36
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:43:36
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:43:43
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:43:43
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:43:43
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:44:41
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:44:41
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:44:41
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:47:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:47:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 17:47:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 18:56:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 18:56:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 18:56:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 19:05:22
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 19:05:22
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 19:05:22
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 19:07:37
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 19:07:37
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 19:07:37
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 19:18:12
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 19:18:12
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/10/2022 19:18:12
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 00:46:58
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 00:46:58
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 00:46:58
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 00:47:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 00:47:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 00:47:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 00:50:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 00:50:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 00:50:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 10:43:09
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 10:43:09
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 10:43:09
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 10:55:08
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 10:55:08
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 10:55:08
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:14:24
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:14:24
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:14:24
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:37:41
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:37:41
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:37:41
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:40:03
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:40:03
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:40:03
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:41:08
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:41:08
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:41:08
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:53:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:53:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 16:53:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:00:58
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:00:58
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:00:58
+===========================================================================================
+Title: Error
+Id: 0
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.ReparacionDAL.ObtenerListaReemplazos(DataSet ds) en C:\UAI\TD\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 103
+   en DAL.ReparacionDAL.ListarReemplazos(Int64 reparacion) en C:\UAI\TD\DepositoApp\DAL\Reparaciones\ReparacionDAL.cs:línea 93
+   en BLL.ReparacionBLL.ListarReemplazos(Int64 reparacion) en C:\UAI\TD\DepositoApp\BLL\ReparacionBLL.cs:línea 23
+   en AppDeposito.Reparaciones.AsignarEquipoReemplazoForm.AsignarEquipoReemplazoForm_Load(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Reparaciones\AsignarEquipoReemplazoForm.cs:línea 61
+   en System.Windows.Forms.Form.OnLoad(EventArgs e)
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.ContainerControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 29/10/2022 17:06:37
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:10:19
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:10:19
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:10:19
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:16:14
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:16:14
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:16:14
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:17:56
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:17:56
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:17:56
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:43:37
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:43:37
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:43:37
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:48:21
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:48:21
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:48:21
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 76
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 96
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 44
+Date/Time: 29/10/2022 17:50:22
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:54:39
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:54:39
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 17:54:39
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 76
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 96
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 44
+Date/Time: 29/10/2022 17:56:36
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 18:30:04
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 18:30:04
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 29/10/2022 18:30:04
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 01:46:51
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 01:46:51
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 01:46:51
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT OPEL8888 no esta finalizada o el presupuesto no esta autorizado
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 121
+Date/Time: 30/10/2022 01:48:54
+===========================================================================================
+Title: Error
+Id: 0
+Message: No coincide el valor ingresado 4.001,00 con el presupuesto del proveedor 4.000,00 
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarImporte(Double importe) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 26
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 124
+Date/Time: 30/10/2022 01:51:21
+===========================================================================================
+Title: Error
+Id: 0
+Message: Cannot insert the value NULL into column 'USUARIO_MODIFICADOR', table 'Deposito.dbo.FACTURAH'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos) en C:\UAI\TD\DepositoApp\DAL\AccesoDatos\Datos.cs:línea 77
+   en DAL.Repositorio.Agregar(Entidad valor) en C:\UAI\TD\DepositoApp\DAL\Repositorio.cs:línea 51
+   en DAL.FacturaReparacionDAL.Agregar(Entidad valor) en C:\UAI\TD\DepositoApp\DAL\FacturaReparacionDAL.cs:línea 47
+   en BLL.FacturaReparacionBLL.Agregar(FacturaReparacionBEL valor) en C:\UAI\TD\DepositoApp\BLL\FacturaReparacionBLL.cs:línea 23
+   en AppDeposito.Pagos.IngresoFacturasForm.button1_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 94
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 30/10/2022 01:51:37
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 01:56:36
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 01:56:36
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 01:56:36
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 01:59:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 01:59:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 01:59:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 02:00:02
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 02:00:02
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 02:00:02
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 11:11:34
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 11:11:34
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 11:11:34
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 11:55:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 11:55:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 11:55:50
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 76
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 96
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 44
+Date/Time: 30/10/2022 12:07:29
+===========================================================================================
+Title: Error
+Id: 0
+Message: Completar el campo
+StackTrace:    en AppDeposito.FormConfig.Validar(ErrorProvider ep, Control ctrl) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 76
+   en AppDeposito.FormConfig.ValidarCamposCompletos(Control ctx, ErrorProvider ep) en C:\UAI\TD\DepositoApp\AppDeposito\Utils\FormConfig.cs:línea 96
+   en AppDeposito.PresupuestoEditForm.AceptarButton_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Presupuestos\PresupuestoEditForm.cs:línea 44
+Date/Time: 30/10/2022 12:07:52
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT No se encuentra asociada a ningun presupuesto del Proveedor
+La OT qwert11 no esta finalizada o el presupuesto no esta autorizado
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 121
+Date/Time: 30/10/2022 12:11:49
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT No se encuentra asociada a ningun presupuesto del Proveedor
+La OT qwert12 no esta finalizada o el presupuesto no esta autorizado
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 121
+Date/Time: 30/10/2022 12:13:15
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:22:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:22:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:22:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:25:43
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:25:43
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:25:43
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:26:27
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:26:27
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:26:27
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:28:28
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:28:28
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:28:28
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:29:48
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:29:48
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 18:29:48
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:12:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:12:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:12:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:20:24
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:20:24
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:20:24
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:30:23
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:30:23
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:30:23
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:36:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:36:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:36:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:42:02
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:42:02
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:42:02
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:49:22
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:49:22
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:49:22
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT QWERTY22 no esta finalizada o el presupuesto no esta autorizado
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 121
+Date/Time: 30/10/2022 23:51:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:57:21
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:57:21
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 30/10/2022 23:57:21
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:06:05
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:06:05
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:06:05
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:08:11
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:08:11
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:08:11
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:12:33
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:12:33
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:12:33
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT qwerty22 ya esta facturada. Corresponde a la factura 33443322
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 121
+Date/Time: 31/10/2022 00:13:15
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:16:04
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:16:04
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:16:04
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT qwerty22 ya esta facturada. Corresponde a la factura 33443322
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 121
+Date/Time: 31/10/2022 00:16:39
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT qwerty22 ya esta facturada. Corresponde a la factura 33443322
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 121
+Date/Time: 31/10/2022 00:16:56
+===========================================================================================
+Title: Error
+Id: 0
+Message: La OT qwerty22 ya esta facturada. Corresponde a la factura 33443322
+
+StackTrace:    en AppDeposito.Pagos.IngresoFacturaPresenter.ValidarOt(String valor) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturaPresenter.cs:línea 46
+   en AppDeposito.Pagos.IngresoFacturasForm.conceptosDataGridView_CellValidating(Object sender, DataGridViewCellValidatingEventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Pagos\IngresoFacturas\IngresoFacturasForm.cs:línea 121
+Date/Time: 31/10/2022 00:17:37
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:24:44
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:24:45
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:24:45
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:30:32
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:30:32
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:30:32
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:32:03
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:32:03
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:32:03
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:34:55
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:34:55
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:34:55
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:35:06
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:35:06
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:35:06
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:36:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:36:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: Registro corrupto en tabla FacturaReparacion código del registro: 33443322
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:36:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:38:12
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:38:12
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:38:12
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:39:32
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:39:32
+===========================================================================================
+Title: Information
+Id: 0
+Message: Registro corrupto en tabla FacturaReparacion código del registro: 837465
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:39:32
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:42:00
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:42:00
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:42:00
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:44:49
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:44:49
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:44:49
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:45:16
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:45:16
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:45:16
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:47:01
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:47:01
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:47:01
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:47:55
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:47:55
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:47:55
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:48:35
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:48:35
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 00:48:35
+===========================================================================================

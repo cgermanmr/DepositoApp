@@ -21,9 +21,9 @@ namespace BLL
         /// </summary>
         public virtual bool EsValido(Entidad valor) => true;
         public virtual bool Agregar(Entidad valor)
-        {
-            
+        {            
             EsValido(valor);
+            Bitacora.RegistrarEnBitacora($"({valor.GetType().Name.Replace("BEL","")}) Alta { valor }");
             return Repositorio().Agregar(valor);
            
         }
@@ -32,6 +32,7 @@ namespace BLL
         {
             
             EsValido(valor);
+            Bitacora.RegistrarEnBitacora($"({valor.GetType().Name.Replace("BEL", "")}) Baja {valor}");
             return Repositorio().Eliminar(valor);
            
         }
@@ -49,6 +50,7 @@ namespace BLL
         public virtual bool Modificar(Entidad valor)
         {
             EsValido(valor);
+            Bitacora.RegistrarEnBitacora($"({valor.GetType().Name.Replace("BEL", "")}) Modificación {valor}");
             return Repositorio().Modificar(valor);
         }
 
@@ -66,10 +68,8 @@ namespace BLL
         }
 
         public List<Entidad> Listar(Entidad filtro)
-        {
-            
+        {            
             return Repositorio().Listar(filtro);
-           
         }
     }
 }

@@ -9,7 +9,7 @@ namespace Servicios
 {
     public class Bitacora
     {
-        public static void RegistrarEnBitacora(string pDescripcion, TipoEvento tipo)
+        public static void RegistrarEnBitacora(string pDescripcion, TipoEvento tipo = TipoEvento.Auditoria)
         {
             BitacoraBEL b = new BitacoraBEL
             {

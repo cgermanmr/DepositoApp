@@ -67,6 +67,12 @@
   <ItemGroup>
     <Compile Include="ActivoBEL.cs" />
     <Compile Include="DonacionBEL.cs" />
+    <Compile Include="Interfaces\IAuditable.cs" />
+    <Compile Include="Interfaces\ICRUD.cs" />
+    <Compile Include="Interfaces\TipoEvento.cs" />
+    <Compile Include="Interfaces\TipoOperacion.cs" />
+    <Compile Include="OrdenPagoBEL.cs" />
+    <Compile Include="OrdenPagoDetalleBEL.cs" />
     <Compile Include="ProveedorBEL.cs" />
     <Compile Include="Enumeraciones\Permisos.cs" />
     <Compile Include="DepositoBEL.cs" />
@@ -77,6 +83,7 @@
     <Compile Include="MarcaBEL.cs" />
     <Compile Include="MonedaEnum.cs" />
     <Compile Include="PresupuestoBEL.cs" />
+    <Compile Include="ReemplazoTemporalBEL.cs" />
     <Compile Include="Seguridad\BitacoraBEL.cs" />
     <Compile Include="Idioma\IdiomaBEL.cs" />
     <Compile Include="Idioma\LeyendaBEL.cs" />
@@ -96,10 +103,6 @@
     <ProjectReference Include="..\Comun\Comun.csproj">
       <Project>{07e9b656-91aa-4343-a1c5-6f403717f8a0}</Project>
       <Name>Comun</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
-      <Project>{55c97a8e-1e33-4ba6-bf3c-dd9aaf0e11ac}</Project>
-      <Name>Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

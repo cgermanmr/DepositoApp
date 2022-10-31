@@ -21,7 +21,7 @@ namespace BEL
         public string Descripcion { get; set; }
         public override string ToString()
         {
-            return $"Cotizacón de {Proveedor.RazonSocial} por {Cotizacion:N2}";
+            return $"Cotizacón de {Proveedor?.RazonSocial} por {Cotizacion:N2}";
         }
 
 

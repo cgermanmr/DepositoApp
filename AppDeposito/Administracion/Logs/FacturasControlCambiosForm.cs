@@ -9,93 +9,79 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Servicios;
 using BEL;
-using Interfaces;
+using BLL;
+using AppDeposito.Administracion.Logs.Model;
 
 namespace AppDeposito.Administracion.Logs
 {
     public partial class FacturasControlCambiosForm : Form,IObserverTraducible
     {
-        private BindingSource bsUsuarios = new BindingSource();
+        List<FacturaReparacionBEL> _facturas;
         public FacturasControlCambiosForm()
         {
             InitializeComponent();
         }
 
+        public FacturaReparacionBEL Seleccionado { get => bsFacturas.Current as FacturaReparacionBEL; }
+
+        public List<FacturaReparacionBEL> Grilla { 
+            get => bsFacturas.DataSource as List<FacturaReparacionBEL>; 
+            set => bsFacturas.DataSource = value; }
+
+        public FacturaFiltro Filtro { 
+            get => bsFiltro.DataSource as FacturaFiltro; 
+            set => bsFiltro.DataSource = value; }
+
         public void ObtenerDatos()
         {
-            bsUsuarios.DataSource = new Usuario().ListarHistorico(); 
+            _facturas = new FacturaReparacionBLL().ListarHistorico();
+            bsFacturas.DataSource = _facturas; 
         }
 
         public void ObtenerDatosFiltro()
         {
-            List<UsuarioBEL> _usuarios = new Usuario().ListarHistorico();
 
-            _usuarios = _usuarios.FindAll(x => x.FechaModificacion.Date >= dateTimeDesde.Value.Date & x.FechaModificacion.Date <= dateTimeHasta.Value.Date);
+            var listaFiltrada = _facturas.Where(x => 
+                x.FechaVto.Date >= Filtro.FechaVtoDesde.Date && 
+                x.FechaVto.Date <= Filtro.FechaVtoHasta.Date);
 
-            if (!string.IsNullOrEmpty(txtFiltroUsuario.Text))
-                _usuarios = _usuarios.FindAll(x=> x.Nombre.Contains(txtFiltroUsuario.Text));
+            listaFiltrada = listaFiltrada.Where(x =>
+            x.FechaEmision.Date >= Filtro.FechaEmisionDesde.Date &&
+            x.FechaEmision.Date <= Filtro.FechaEmisionHasta.Date);
 
-            if(!string.IsNullOrEmpty(usuarioModificadorTextBox.Text))
-                _usuarios = _usuarios.FindAll(x => x.UsuarioModificador.Contains(usuarioModificadorTextBox.Text));
+            listaFiltrada = listaFiltrada.Where(x =>
+            x.FechaModificacion.Date >= Filtro.FechaModificacionDesde.Date &&
+            x.FechaModificacion.Date <= Filtro.FechaModificacionHasta.Date);
 
-            if (cmbEvento.SelectedIndex!=-1)
-                _usuarios = _usuarios.FindAll(x => x.TipoModificacion == (TipoOperacion)cmbEvento.SelectedIndex+1);
-                                             
-            bsUsuarios.DataSource = _usuarios;       
+            if(cmbEvento.SelectedIndex != -1)
+                listaFiltrada = listaFiltrada.Where( x => x.TipoModificacion == Filtro.TipoModificacion);
+
+            if (Filtro.UsuarioModificador.Trim().Length > 0)
+                listaFiltrada = listaFiltrada.Where(x => 
+                x.UsuarioModificador.ToUpper().Contains(Filtro.UsuarioModificador.ToUpper()));
+
+            Grilla = listaFiltrada.ToList();
+
         }
-        private void MensajeResultado(bool resultado)
-        {
-            if (resultado)
-                MessageBox.Show("La operación a concluído exitosamente.", "Operación realizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else
-                MessageBox.Show("No se ha podido realizar la operación", "Operación no realizada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        }
-          
-        private void EnlazarControles()
-        {
-            GrillaUsuarios.AutoGenerateColumns = false;
-            GrillaUsuarios.DataSource = bsUsuarios;
-        }
+     
 
         private void AdminUsuariosForm_Load(object sender, EventArgs e)
         {
 
             Sesion.SesionActual().Suscribir(this);
+
+            Filtro = new FacturaFiltro();
             
-            ObtenerDatos();
-            EnlazarControles();
-                             
+            ObtenerDatos();                             
         }
 
-        public void CargarArbol(TreeNode raiz)
-        {
-            if (((PermisoBase)raiz.Tag).ObtenerHijos()==null) return;
-            foreach (var hijo in ((PermisoBase)raiz.Tag).ObtenerHijos())
-            {
-                var nodoHijo = new TreeNode()
-                {
-                    Text = hijo.Nombre,
-                    Tag = hijo
-                };
-                CargarArbol(nodoHijo);
-                raiz.Nodes.Add(nodoHijo);
-            }
-        }
-       
-      
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        
         public void Traducir()
         {
             Traductor.Traducir(this);
         }
 
-        private void dateTimeDesde_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
@@ -105,6 +91,34 @@ namespace AppDeposito.Administracion.Logs
         private void btnQuitarFiltro_Click(object sender, EventArgs e)
         {
             ObtenerDatos();
+        }
+
+        private void cmbEvento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cmbEvento.SelectedIndex < 0) return;
+
+            Filtro.TipoModificacion = (Interfaces.TipoOperacion)cmbEvento.SelectedIndex + 1;
+        }
+
+        private void bsFacturas_CurrentChanged(object sender, EventArgs e)
+        {
+            if (Seleccionado == null) return;
+
+            lblFecha.Text = Seleccionado.FechaModificacion.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new FacturaReparacionBLL().RestaurarAFecha(
+                Seleccionado.FechaModificacion,
+                Sesion.SesionActual().ObtenerUsuarioActual?.Nombre ?? "Usuariox");
+
+            ObtenerDatos();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

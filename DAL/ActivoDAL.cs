@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using BEL;
 using System.Collections;
 using Interfaces;
+using Comun;
 
 namespace DAL
 {
@@ -39,7 +40,7 @@ namespace DAL
                 x.Moneda = (MonedaBEL)new MonedaDAL().GetById(dr[11]);
                 x.ValorCompra = Convert.IsDBNull(dr[12]) ? 0.0 : (double)dr[12];
                 x.ValorSoporte = Convert.IsDBNull(dr[13]) ? 0.0 : (double)dr[13];
-                x.FechaCompra = (DateTime)dr[14];
+                x.FechaCompra = dr[14].SafeToDateTime();
                 x.MesesGarantia = Convert.IsDBNull(dr[15]) ? 0 : Convert.ToInt32(dr[15]);
                 x.Volumen = Convert.IsDBNull(dr[16]) ? 0 : (int)dr[16];
                 x.Observaciones = Convert.IsDBNull(dr[17]) ? string.Empty : (string)dr[17];

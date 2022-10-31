@@ -29,25 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Label fechaEmisionDesdeLabel;
+            System.Windows.Forms.Label fechaEmisionHastaLabel;
+            System.Windows.Forms.Label fechaVtoDesdeLabel;
+            System.Windows.Forms.Label fechaVtoHastaLabel;
             System.Windows.Forms.Label usuarioModificadorLabel;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GrillaUsuarios = new System.Windows.Forms.DataGridView();
-            this.DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.dateTimeDesde = new System.Windows.Forms.DateTimePicker();
-            this.dateTimeHasta = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtFiltroUsuario = new System.Windows.Forms.TextBox();
-            this.btnFiltrar = new System.Windows.Forms.Button();
-            this.btnQuitarFiltro = new System.Windows.Forms.Button();
-            this.cmbEvento = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.bsFacturas = new System.Windows.Forms.BindingSource(this.components);
-            this.usuarioModificadorTextBox = new System.Windows.Forms.TextBox();
+            this.tipoModificacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estadoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nroFacturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,22 +50,74 @@
             this.importeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuarioModificadorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaModificacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoModificacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estadoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.bsFacturas = new System.Windows.Forms.BindingSource(this.components);
+            this.DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnFiltrar = new System.Windows.Forms.Button();
+            this.btnQuitarFiltro = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cmbEvento = new System.Windows.Forms.ComboBox();
+            this.fechaEmisionDesdeDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.bsFiltro = new System.Windows.Forms.BindingSource(this.components);
+            this.fechaEmisionHastaDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.fechaVtoDesdeDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.fechaVtoHastaDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.usuarioModificadorTextBox = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblFecha = new System.Windows.Forms.Label();
+            fechaEmisionDesdeLabel = new System.Windows.Forms.Label();
+            fechaEmisionHastaLabel = new System.Windows.Forms.Label();
+            fechaVtoDesdeLabel = new System.Windows.Forms.Label();
+            fechaVtoHastaLabel = new System.Windows.Forms.Label();
             usuarioModificadorLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsFacturas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsFiltro)).BeginInit();
             this.SuspendLayout();
+            // 
+            // fechaEmisionDesdeLabel
+            // 
+            fechaEmisionDesdeLabel.AutoSize = true;
+            fechaEmisionDesdeLabel.Location = new System.Drawing.Point(42, 21);
+            fechaEmisionDesdeLabel.Name = "fechaEmisionDesdeLabel";
+            fechaEmisionDesdeLabel.Size = new System.Drawing.Size(113, 13);
+            fechaEmisionDesdeLabel.TabIndex = 51;
+            fechaEmisionDesdeLabel.Text = "Fecha Emision Desde:";
+            // 
+            // fechaEmisionHastaLabel
+            // 
+            fechaEmisionHastaLabel.AutoSize = true;
+            fechaEmisionHastaLabel.Location = new System.Drawing.Point(281, 17);
+            fechaEmisionHastaLabel.Name = "fechaEmisionHastaLabel";
+            fechaEmisionHastaLabel.Size = new System.Drawing.Size(110, 13);
+            fechaEmisionHastaLabel.TabIndex = 52;
+            fechaEmisionHastaLabel.Text = "Fecha Emision Hasta:";
+            // 
+            // fechaVtoDesdeLabel
+            // 
+            fechaVtoDesdeLabel.AutoSize = true;
+            fechaVtoDesdeLabel.Location = new System.Drawing.Point(62, 51);
+            fechaVtoDesdeLabel.Name = "fechaVtoDesdeLabel";
+            fechaVtoDesdeLabel.Size = new System.Drawing.Size(93, 13);
+            fechaVtoDesdeLabel.TabIndex = 53;
+            fechaVtoDesdeLabel.Text = "Fecha Vto Desde:";
+            // 
+            // fechaVtoHastaLabel
+            // 
+            fechaVtoHastaLabel.AutoSize = true;
+            fechaVtoHastaLabel.Location = new System.Drawing.Point(301, 50);
+            fechaVtoHastaLabel.Name = "fechaVtoHastaLabel";
+            fechaVtoHastaLabel.Size = new System.Drawing.Size(90, 13);
+            fechaVtoHastaLabel.TabIndex = 54;
+            fechaVtoHastaLabel.Text = "Fecha Vto Hasta:";
             // 
             // usuarioModificadorLabel
             // 
             usuarioModificadorLabel.AutoSize = true;
-            usuarioModificadorLabel.Location = new System.Drawing.Point(14, 126);
-            usuarioModificadorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            usuarioModificadorLabel.Location = new System.Drawing.Point(51, 83);
             usuarioModificadorLabel.Name = "usuarioModificadorLabel";
-            usuarioModificadorLabel.Size = new System.Drawing.Size(154, 20);
-            usuarioModificadorLabel.TabIndex = 50;
+            usuarioModificadorLabel.Size = new System.Drawing.Size(104, 13);
+            usuarioModificadorLabel.TabIndex = 55;
             usuarioModificadorLabel.Text = "Usuario Modificador:";
             // 
             // DataGridViewTextBoxColumn1
@@ -93,16 +137,18 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GrillaUsuarios.AutoGenerateColumns = false;
             this.GrillaUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GrillaUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GrillaUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.GrillaUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GrillaUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tipoModificacionDataGridViewTextBoxColumn,
+            this.estadoDataGridViewCheckBoxColumn,
             this.idDataGridViewTextBoxColumn,
             this.nroFacturaDataGridViewTextBoxColumn,
             this.codigoDataGridViewTextBoxColumn,
@@ -113,163 +159,40 @@
             this.importeDataGridViewTextBoxColumn,
             this.usuarioModificadorDataGridViewTextBoxColumn,
             this.fechaModificacionDataGridViewTextBoxColumn,
-            this.tipoModificacionDataGridViewTextBoxColumn,
-            this.descripcionDataGridViewTextBoxColumn,
-            this.estadoDataGridViewCheckBoxColumn});
+            this.descripcionDataGridViewTextBoxColumn});
             this.GrillaUsuarios.DataSource = this.bsFacturas;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GrillaUsuarios.DefaultCellStyle = dataGridViewCellStyle2;
-            this.GrillaUsuarios.Location = new System.Drawing.Point(26, 249);
-            this.GrillaUsuarios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GrillaUsuarios.DefaultCellStyle = dataGridViewCellStyle4;
+            this.GrillaUsuarios.Location = new System.Drawing.Point(12, 160);
             this.GrillaUsuarios.MultiSelect = false;
             this.GrillaUsuarios.Name = "GrillaUsuarios";
             this.GrillaUsuarios.ReadOnly = true;
             this.GrillaUsuarios.RowHeadersVisible = false;
             this.GrillaUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GrillaUsuarios.Size = new System.Drawing.Size(1100, 580);
+            this.GrillaUsuarios.Size = new System.Drawing.Size(845, 257);
             this.GrillaUsuarios.TabIndex = 30;
             // 
-            // DataGridViewTextBoxColumn2
+            // tipoModificacionDataGridViewTextBoxColumn
             // 
-            this.DataGridViewTextBoxColumn2.DataPropertyName = "Idioma";
-            this.DataGridViewTextBoxColumn2.HeaderText = "Idioma";
-            this.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2";
-            this.DataGridViewTextBoxColumn2.ReadOnly = true;
-            this.DataGridViewTextBoxColumn2.Width = 63;
+            this.tipoModificacionDataGridViewTextBoxColumn.DataPropertyName = "TipoModificacion";
+            this.tipoModificacionDataGridViewTextBoxColumn.HeaderText = "Tipo";
+            this.tipoModificacionDataGridViewTextBoxColumn.Name = "tipoModificacionDataGridViewTextBoxColumn";
+            this.tipoModificacionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tipoModificacionDataGridViewTextBoxColumn.Width = 53;
             // 
-            // btnCancelar
+            // estadoDataGridViewCheckBoxColumn
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(422, 183);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(110, 35);
-            this.btnCancelar.TabIndex = 28;
-            this.btnCancelar.Tag = "9";
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // dateTimeDesde
-            // 
-            this.dateTimeDesde.Location = new System.Drawing.Point(178, 18);
-            this.dateTimeDesde.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dateTimeDesde.Name = "dateTimeDesde";
-            this.dateTimeDesde.Size = new System.Drawing.Size(298, 26);
-            this.dateTimeDesde.TabIndex = 39;
-            this.dateTimeDesde.Value = new System.DateTime(2019, 7, 7, 0, 0, 0, 0);
-            this.dateTimeDesde.ValueChanged += new System.EventHandler(this.dateTimeDesde_ValueChanged);
-            // 
-            // dateTimeHasta
-            // 
-            this.dateTimeHasta.Location = new System.Drawing.Point(650, 14);
-            this.dateTimeHasta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dateTimeHasta.Name = "dateTimeHasta";
-            this.dateTimeHasta.Size = new System.Drawing.Size(298, 26);
-            this.dateTimeHasta.TabIndex = 40;
-            this.dateTimeHasta.Value = new System.DateTime(2019, 7, 7, 0, 0, 0, 0);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(108, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 20);
-            this.label1.TabIndex = 41;
-            this.label1.Text = "Desde:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(584, 14);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 20);
-            this.label2.TabIndex = 42;
-            this.label2.Text = "Hasta:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 77);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 20);
-            this.label3.TabIndex = 43;
-            this.label3.Text = "Usuario Modificado:";
-            // 
-            // txtFiltroUsuario
-            // 
-            this.txtFiltroUsuario.Location = new System.Drawing.Point(178, 72);
-            this.txtFiltroUsuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtFiltroUsuario.Name = "txtFiltroUsuario";
-            this.txtFiltroUsuario.Size = new System.Drawing.Size(298, 26);
-            this.txtFiltroUsuario.TabIndex = 45;
-            // 
-            // btnFiltrar
-            // 
-            this.btnFiltrar.Location = new System.Drawing.Point(178, 183);
-            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(112, 35);
-            this.btnFiltrar.TabIndex = 46;
-            this.btnFiltrar.Text = "Filtrar";
-            this.btnFiltrar.UseVisualStyleBackColor = true;
-            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
-            // 
-            // btnQuitarFiltro
-            // 
-            this.btnQuitarFiltro.Location = new System.Drawing.Point(300, 183);
-            this.btnQuitarFiltro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnQuitarFiltro.Name = "btnQuitarFiltro";
-            this.btnQuitarFiltro.Size = new System.Drawing.Size(112, 35);
-            this.btnQuitarFiltro.TabIndex = 47;
-            this.btnQuitarFiltro.Text = "Quitar Filtro";
-            this.btnQuitarFiltro.UseVisualStyleBackColor = true;
-            this.btnQuitarFiltro.Click += new System.EventHandler(this.btnQuitarFiltro_Click);
-            // 
-            // cmbEvento
-            // 
-            this.cmbEvento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbEvento.FormattingEnabled = true;
-            this.cmbEvento.Items.AddRange(new object[] {
-            "Alta",
-            "Baja",
-            "Modificación"});
-            this.cmbEvento.Location = new System.Drawing.Point(650, 71);
-            this.cmbEvento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cmbEvento.Name = "cmbEvento";
-            this.cmbEvento.Size = new System.Drawing.Size(298, 28);
-            this.cmbEvento.TabIndex = 48;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(536, 77);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 20);
-            this.label4.TabIndex = 49;
-            this.label4.Text = "Modificación:";
-            // 
-            // bsFacturas
-            // 
-            this.bsFacturas.DataSource = typeof(BEL.FacturaReparacionBEL);
-            // 
-            // usuarioModificadorTextBox
-            // 
-            this.usuarioModificadorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsFacturas, "UsuarioModificador", true));
-            this.usuarioModificadorTextBox.Location = new System.Drawing.Point(178, 122);
-            this.usuarioModificadorTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.usuarioModificadorTextBox.Name = "usuarioModificadorTextBox";
-            this.usuarioModificadorTextBox.Size = new System.Drawing.Size(298, 26);
-            this.usuarioModificadorTextBox.TabIndex = 51;
+            this.estadoDataGridViewCheckBoxColumn.DataPropertyName = "Estado";
+            this.estadoDataGridViewCheckBoxColumn.HeaderText = "Estado";
+            this.estadoDataGridViewCheckBoxColumn.Name = "estadoDataGridViewCheckBoxColumn";
+            this.estadoDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.estadoDataGridViewCheckBoxColumn.Width = 46;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -282,10 +205,10 @@
             // nroFacturaDataGridViewTextBoxColumn
             // 
             this.nroFacturaDataGridViewTextBoxColumn.DataPropertyName = "NroFactura";
-            this.nroFacturaDataGridViewTextBoxColumn.HeaderText = "NroFactura";
+            this.nroFacturaDataGridViewTextBoxColumn.HeaderText = "Nro Factura";
             this.nroFacturaDataGridViewTextBoxColumn.Name = "nroFacturaDataGridViewTextBoxColumn";
             this.nroFacturaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nroFacturaDataGridViewTextBoxColumn.Width = 85;
+            this.nroFacturaDataGridViewTextBoxColumn.Width = 88;
             // 
             // codigoDataGridViewTextBoxColumn
             // 
@@ -306,26 +229,26 @@
             // cuitProveedorDataGridViewTextBoxColumn
             // 
             this.cuitProveedorDataGridViewTextBoxColumn.DataPropertyName = "CuitProveedor";
-            this.cuitProveedorDataGridViewTextBoxColumn.HeaderText = "CuitProveedor";
+            this.cuitProveedorDataGridViewTextBoxColumn.HeaderText = "CUIT";
             this.cuitProveedorDataGridViewTextBoxColumn.Name = "cuitProveedorDataGridViewTextBoxColumn";
             this.cuitProveedorDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cuitProveedorDataGridViewTextBoxColumn.Width = 99;
+            this.cuitProveedorDataGridViewTextBoxColumn.Width = 57;
             // 
             // fechaVtoDataGridViewTextBoxColumn
             // 
             this.fechaVtoDataGridViewTextBoxColumn.DataPropertyName = "FechaVto";
-            this.fechaVtoDataGridViewTextBoxColumn.HeaderText = "FechaVto";
+            this.fechaVtoDataGridViewTextBoxColumn.HeaderText = "Vto";
             this.fechaVtoDataGridViewTextBoxColumn.Name = "fechaVtoDataGridViewTextBoxColumn";
             this.fechaVtoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fechaVtoDataGridViewTextBoxColumn.Width = 78;
+            this.fechaVtoDataGridViewTextBoxColumn.Width = 48;
             // 
             // fechaEmisionDataGridViewTextBoxColumn
             // 
             this.fechaEmisionDataGridViewTextBoxColumn.DataPropertyName = "FechaEmision";
-            this.fechaEmisionDataGridViewTextBoxColumn.HeaderText = "FechaEmision";
+            this.fechaEmisionDataGridViewTextBoxColumn.HeaderText = "Emision";
             this.fechaEmisionDataGridViewTextBoxColumn.Name = "fechaEmisionDataGridViewTextBoxColumn";
             this.fechaEmisionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fechaEmisionDataGridViewTextBoxColumn.Width = 98;
+            this.fechaEmisionDataGridViewTextBoxColumn.Width = 68;
             // 
             // importeDataGridViewTextBoxColumn
             // 
@@ -338,26 +261,18 @@
             // usuarioModificadorDataGridViewTextBoxColumn
             // 
             this.usuarioModificadorDataGridViewTextBoxColumn.DataPropertyName = "UsuarioModificador";
-            this.usuarioModificadorDataGridViewTextBoxColumn.HeaderText = "UsuarioModificador";
+            this.usuarioModificadorDataGridViewTextBoxColumn.HeaderText = "Usuario";
             this.usuarioModificadorDataGridViewTextBoxColumn.Name = "usuarioModificadorDataGridViewTextBoxColumn";
             this.usuarioModificadorDataGridViewTextBoxColumn.ReadOnly = true;
-            this.usuarioModificadorDataGridViewTextBoxColumn.Width = 123;
+            this.usuarioModificadorDataGridViewTextBoxColumn.Width = 68;
             // 
             // fechaModificacionDataGridViewTextBoxColumn
             // 
             this.fechaModificacionDataGridViewTextBoxColumn.DataPropertyName = "FechaModificacion";
-            this.fechaModificacionDataGridViewTextBoxColumn.HeaderText = "FechaModificacion";
+            this.fechaModificacionDataGridViewTextBoxColumn.HeaderText = "Modificacion";
             this.fechaModificacionDataGridViewTextBoxColumn.Name = "fechaModificacionDataGridViewTextBoxColumn";
             this.fechaModificacionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fechaModificacionDataGridViewTextBoxColumn.Width = 122;
-            // 
-            // tipoModificacionDataGridViewTextBoxColumn
-            // 
-            this.tipoModificacionDataGridViewTextBoxColumn.DataPropertyName = "TipoModificacion";
-            this.tipoModificacionDataGridViewTextBoxColumn.HeaderText = "TipoModificacion";
-            this.tipoModificacionDataGridViewTextBoxColumn.Name = "tipoModificacionDataGridViewTextBoxColumn";
-            this.tipoModificacionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tipoModificacionDataGridViewTextBoxColumn.Width = 113;
+            this.fechaModificacionDataGridViewTextBoxColumn.Width = 92;
             // 
             // descripcionDataGridViewTextBoxColumn
             // 
@@ -367,39 +282,158 @@
             this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
             this.descripcionDataGridViewTextBoxColumn.Width = 88;
             // 
-            // estadoDataGridViewCheckBoxColumn
+            // bsFacturas
             // 
-            this.estadoDataGridViewCheckBoxColumn.DataPropertyName = "Estado";
-            this.estadoDataGridViewCheckBoxColumn.HeaderText = "Estado";
-            this.estadoDataGridViewCheckBoxColumn.Name = "estadoDataGridViewCheckBoxColumn";
-            this.estadoDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.estadoDataGridViewCheckBoxColumn.Width = 46;
+            this.bsFacturas.DataSource = typeof(BEL.FacturaReparacionBEL);
+            this.bsFacturas.CurrentChanged += new System.EventHandler(this.bsFacturas_CurrentChanged);
+            // 
+            // DataGridViewTextBoxColumn2
+            // 
+            this.DataGridViewTextBoxColumn2.DataPropertyName = "Idioma";
+            this.DataGridViewTextBoxColumn2.HeaderText = "Idioma";
+            this.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2";
+            this.DataGridViewTextBoxColumn2.ReadOnly = true;
+            this.DataGridViewTextBoxColumn2.Width = 63;
+            // 
+            // btnFiltrar
+            // 
+            this.btnFiltrar.Location = new System.Drawing.Point(17, 119);
+            this.btnFiltrar.Name = "btnFiltrar";
+            this.btnFiltrar.Size = new System.Drawing.Size(75, 23);
+            this.btnFiltrar.TabIndex = 46;
+            this.btnFiltrar.Text = "Filtrar";
+            this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
+            // 
+            // btnQuitarFiltro
+            // 
+            this.btnQuitarFiltro.Location = new System.Drawing.Point(98, 119);
+            this.btnQuitarFiltro.Name = "btnQuitarFiltro";
+            this.btnQuitarFiltro.Size = new System.Drawing.Size(75, 23);
+            this.btnQuitarFiltro.TabIndex = 47;
+            this.btnQuitarFiltro.Text = "Quitar Filtro";
+            this.btnQuitarFiltro.UseVisualStyleBackColor = true;
+            this.btnQuitarFiltro.Click += new System.EventHandler(this.btnQuitarFiltro_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(297, 82);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(94, 13);
+            this.label4.TabIndex = 49;
+            this.label4.Text = "Tipo Modificación:";
+            // 
+            // cmbEvento
+            // 
+            this.cmbEvento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEvento.FormattingEnabled = true;
+            this.cmbEvento.Items.AddRange(new object[] {
+            "Alta",
+            "Baja",
+            "Modificación"});
+            this.cmbEvento.Location = new System.Drawing.Point(397, 78);
+            this.cmbEvento.Name = "cmbEvento";
+            this.cmbEvento.Size = new System.Drawing.Size(109, 21);
+            this.cmbEvento.TabIndex = 48;
+            this.cmbEvento.SelectedIndexChanged += new System.EventHandler(this.cmbEvento_SelectedIndexChanged);
+            // 
+            // fechaEmisionDesdeDateTimePicker
+            // 
+            this.fechaEmisionDesdeDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsFiltro, "FechaEmisionDesde", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, null, "d"));
+            this.fechaEmisionDesdeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fechaEmisionDesdeDateTimePicker.Location = new System.Drawing.Point(161, 17);
+            this.fechaEmisionDesdeDateTimePicker.Name = "fechaEmisionDesdeDateTimePicker";
+            this.fechaEmisionDesdeDateTimePicker.Size = new System.Drawing.Size(82, 20);
+            this.fechaEmisionDesdeDateTimePicker.TabIndex = 52;
+            // 
+            // bsFiltro
+            // 
+            this.bsFiltro.DataSource = typeof(AppDeposito.Administracion.Logs.Model.FacturaFiltro);
+            // 
+            // fechaEmisionHastaDateTimePicker
+            // 
+            this.fechaEmisionHastaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsFiltro, "FechaEmisionHasta", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, null, "d"));
+            this.fechaEmisionHastaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fechaEmisionHastaDateTimePicker.Location = new System.Drawing.Point(397, 13);
+            this.fechaEmisionHastaDateTimePicker.Name = "fechaEmisionHastaDateTimePicker";
+            this.fechaEmisionHastaDateTimePicker.Size = new System.Drawing.Size(82, 20);
+            this.fechaEmisionHastaDateTimePicker.TabIndex = 53;
+            // 
+            // fechaVtoDesdeDateTimePicker
+            // 
+            this.fechaVtoDesdeDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsFiltro, "FechaVtoDesde", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, null, "d"));
+            this.fechaVtoDesdeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fechaVtoDesdeDateTimePicker.Location = new System.Drawing.Point(161, 47);
+            this.fechaVtoDesdeDateTimePicker.Name = "fechaVtoDesdeDateTimePicker";
+            this.fechaVtoDesdeDateTimePicker.Size = new System.Drawing.Size(82, 20);
+            this.fechaVtoDesdeDateTimePicker.TabIndex = 54;
+            // 
+            // fechaVtoHastaDateTimePicker
+            // 
+            this.fechaVtoHastaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsFiltro, "FechaVtoHasta", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, null, "d"));
+            this.fechaVtoHastaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fechaVtoHastaDateTimePicker.Location = new System.Drawing.Point(397, 46);
+            this.fechaVtoHastaDateTimePicker.Name = "fechaVtoHastaDateTimePicker";
+            this.fechaVtoHastaDateTimePicker.Size = new System.Drawing.Size(82, 20);
+            this.fechaVtoHastaDateTimePicker.TabIndex = 55;
+            // 
+            // usuarioModificadorTextBox
+            // 
+            this.usuarioModificadorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsFiltro, "UsuarioModificador", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.usuarioModificadorTextBox.Location = new System.Drawing.Point(161, 80);
+            this.usuarioModificadorTextBox.Name = "usuarioModificadorTextBox";
+            this.usuarioModificadorTextBox.Size = new System.Drawing.Size(100, 20);
+            this.usuarioModificadorTextBox.TabIndex = 56;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(499, 119);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(227, 23);
+            this.button1.TabIndex = 57;
+            this.button1.Text = "Restaurar Todo a la Fecha Seleccionada";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Location = new System.Drawing.Point(732, 124);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(55, 13);
+            this.lblFecha.TabIndex = 58;
+            this.lblFecha.Text = "                ";
             // 
             // FacturasControlCambiosForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1154, 848);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(881, 443);
+            this.Controls.Add(this.lblFecha);
+            this.Controls.Add(this.button1);
             this.Controls.Add(usuarioModificadorLabel);
             this.Controls.Add(this.usuarioModificadorTextBox);
+            this.Controls.Add(fechaVtoHastaLabel);
+            this.Controls.Add(this.fechaVtoHastaDateTimePicker);
+            this.Controls.Add(fechaVtoDesdeLabel);
+            this.Controls.Add(this.fechaVtoDesdeDateTimePicker);
+            this.Controls.Add(fechaEmisionHastaLabel);
+            this.Controls.Add(this.fechaEmisionHastaDateTimePicker);
+            this.Controls.Add(fechaEmisionDesdeLabel);
+            this.Controls.Add(this.fechaEmisionDesdeDateTimePicker);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cmbEvento);
             this.Controls.Add(this.btnQuitarFiltro);
             this.Controls.Add(this.btnFiltrar);
-            this.Controls.Add(this.txtFiltroUsuario);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimeHasta);
-            this.Controls.Add(this.dateTimeDesde);
             this.Controls.Add(this.GrillaUsuarios);
-            this.Controls.Add(this.btnCancelar);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FacturasControlCambiosForm";
             this.Text = "Facturas Control de Cambios";
             this.Load += new System.EventHandler(this.AdminUsuariosForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrillaUsuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsFacturas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsFiltro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -409,19 +443,21 @@
         internal System.Windows.Forms.DataGridViewTextBoxColumn DataGridViewTextBoxColumn1;
         internal System.Windows.Forms.DataGridView GrillaUsuarios;
         internal System.Windows.Forms.DataGridViewTextBoxColumn DataGridViewTextBoxColumn2;
-        internal System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.DateTimePicker dateTimeDesde;
-        private System.Windows.Forms.DateTimePicker dateTimeHasta;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtFiltroUsuario;
         private System.Windows.Forms.Button btnFiltrar;
         private System.Windows.Forms.Button btnQuitarFiltro;
-        private System.Windows.Forms.ComboBox cmbEvento;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.BindingSource bsFacturas;
+        private System.Windows.Forms.ComboBox cmbEvento;
+        private System.Windows.Forms.BindingSource bsFiltro;
+        private System.Windows.Forms.DateTimePicker fechaEmisionDesdeDateTimePicker;
+        private System.Windows.Forms.DateTimePicker fechaEmisionHastaDateTimePicker;
+        private System.Windows.Forms.DateTimePicker fechaVtoDesdeDateTimePicker;
+        private System.Windows.Forms.DateTimePicker fechaVtoHastaDateTimePicker;
         private System.Windows.Forms.TextBox usuarioModificadorTextBox;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipoModificacionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn estadoDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nroFacturaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigoDataGridViewTextBoxColumn;
@@ -432,8 +468,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn importeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn usuarioModificadorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaModificacionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipoModificacionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn estadoDataGridViewCheckBoxColumn;
     }
 }

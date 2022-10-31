@@ -90,6 +90,7 @@ namespace DAL
             hdatos.Add("@Importe", x.Importe);
             hdatos.Add("@estado", x.Estado);
             hdatos.Add("@dvh", x.GetDVH());
+            hdatos.Add("@usuario", x.UsuarioModificador);
 
             return hdatos;
         }
@@ -108,6 +109,7 @@ namespace DAL
             return ObtenerListaDetalle(ds).FirstOrDefault();
         }
 
+       
         public bool ExisteOTPresupuestada(string ot, long cuit)
         {
             var hdatos = new Hashtable();
@@ -151,6 +153,73 @@ namespace DAL
             var ds = _datos.Leer("[SP_FACTURA_DETALLE_VALIDACION]", hdatos);
 
             return ds.Tables[0].Rows.Count > 0;
+        }
+
+        public List<FacturaReparacionBEL> GetFacturasPendientes(long cUIT)
+        {
+            var hdatos = new Hashtable();
+            bool resultado;
+
+            hdatos.Add("@CuitProveedor", cUIT);
+            hdatos.Add("@operacion", 10);
+
+            var ds = _datos.Leer("[SP_FACTURA]", hdatos);
+
+            return ObtenerLista(ds).Select( x => x as FacturaReparacionBEL).ToList();
+        }
+
+        public List<FacturaReparacionBEL> ListarHistorico()
+        {
+
+            var hdatos = new Hashtable();
+            bool resultado;
+
+            hdatos.Add("@operacion", 20);
+
+            var ds = _datos.Leer("[SP_FACTURA]", hdatos);
+
+            return ObtenerListaH(ds);
+
+
+        }
+
+        private List<FacturaReparacionBEL> ObtenerListaH(DataSet ds)
+        {
+            List<FacturaReparacionBEL> _lista = new List<FacturaReparacionBEL>();
+            FacturaReparacionBEL x;
+            foreach (DataRow dr in ds.Tables[0].Rows)
+            {
+                x = new FacturaReparacionBEL();
+                x.Id = dr[1].SafeToLong();
+                x.NroFactura = dr[2].SafeToLong();
+                x.Codigo = dr[3].SafeToLong();
+                x.Letra = dr[4].ToString().ToUpper();
+                x.CuitProveedor = dr[5].SafeToLong();
+                x.FechaVto = dr[6].SafeToDateTime();
+                x.FechaEmision = dr[7].SafeToDateTime();
+                x.Importe = dr[8].SafeToDouble();
+                x.Estado = Convert.ToBoolean(dr[9]);
+                x.UsuarioModificador = dr[11].ToString();
+                x.FechaModificacion = dr[12].SafeToDateTime();
+                x.TipoModificacion = (TipoOperacion)dr[13].SafeToInt();
+
+                _lista.Add(x);
+            }
+
+            return _lista;
+        }
+
+        public void RestaurarAFecha(DateTime fechaModificacion, string usuario)
+        {
+            var hdatos = new Hashtable();
+            bool resultado;
+
+            hdatos.Add("@fechaRestauracion", fechaModificacion);
+            hdatos.Add("@usuario", usuario);
+            hdatos.Add("@operacion", 30);
+
+            resultado = _datos.Escribir("SP_FACTURA", hdatos);
+
         }
     }
 }

@@ -7,6 +7,7 @@ using AppDeposito.Pagos;
 using AppDeposito.Administracion.Backup;
 using AppDeposito.Administracion.Permisos;
 using AppDeposito.Administracion.Logs;
+using AppDeposito.Reparaciones;
 
 namespace AppDeposito
 {
@@ -54,6 +55,8 @@ namespace AppDeposito
             GestionarProveedoresToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Gestionar_Proveedores);
             ingresoFacturasToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Reparacion_Ingreso_Facturas);
             ordenesDePagoToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Reparacion_Ordenes_Pago);
+            nuevaReparaciónToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Gestionar_Reparacion);
+            consultarHistorialReparacionesToolStripMenuItem.Available = _sesion.TienePermiso(Permisos.Gestionar_Reparacion);
 
             foreach (ToolStripMenuItem item in ReparacionesToolStripMenuItem.DropDownItems)
             {
@@ -84,8 +87,8 @@ namespace AppDeposito
             }
             else
                 Close();
-
         }
+
         private void IniciarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
            
@@ -124,7 +127,6 @@ namespace AppDeposito
             Dispose();
             Close();
         }
-
         
         private void UsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {                      
@@ -173,7 +175,6 @@ namespace AppDeposito
 
             adminPermisos.Show();
         }
-
         
         private void BackupToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -184,7 +185,6 @@ namespace AppDeposito
             };
 
             Sesion.SesionActual().Suscribir(adminBackup);
-
 
             adminBackup.Show();            
         }
@@ -197,7 +197,6 @@ namespace AppDeposito
             };
 
             Sesion.SesionActual().Suscribir(adminIdioma);
-
 
             adminIdioma.Show();
         }
@@ -219,8 +218,7 @@ namespace AppDeposito
         {
 
         }
-
-      
+             
 
         private void ActivosToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -233,6 +231,9 @@ namespace AppDeposito
             {
                 MdiParent = this               
             };
+
+            Sesion.SesionActual().Suscribir(adminActivos);
+
 
             adminActivos.Show();
 
@@ -252,10 +253,12 @@ namespace AppDeposito
 
         private void controlDeCambiosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var controlCambios = new Administracion.Logs.UsuarioControlCambiosForm()
+            var controlCambios = new UsuarioControlCambiosForm()
             {
                 MdiParent = this,
             };
+
+            Sesion.SesionActual().Suscribir(controlCambios);
 
             controlCambios.Show();
         }
@@ -270,9 +273,7 @@ namespace AppDeposito
             Sesion.SesionActual().Suscribir(gestionarClientes);
 
             gestionarClientes.Show();
-        }
-
-      
+        }      
 
         private void GestionarUbicacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -327,17 +328,7 @@ namespace AppDeposito
             Sesion.SesionActual().Suscribir(sectoresAdmin);
             sectoresAdmin.Show();
         }
-
-        private void OrganizacionesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var empresaAdmin = new ProveedorAdminForm
-            {
-                MdiParent = this,
-            };
-
-            empresaAdmin.Show();
-        }
-                
+                           
 
         private void GestionarReparacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -362,8 +353,7 @@ namespace AppDeposito
 
             proveedorAdm.Show();
         }
-
-       
+              
 
         private void ingresoFacturasToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -376,17 +366,56 @@ namespace AppDeposito
 
             ingresoFacturas.Show();
         }
-
-        
+               
 
         private void ordenesDePagoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            throw new InvalidOperationException("Funcionalidad en desarrollo");
+            var ordenesPago = new OrdenPagoAdminForm()
+            {
+                MdiParent = this,
+            };
+
+            Sesion.SesionActual().Suscribir(ordenesPago);
+
+            ordenesPago.Show();
         }
 
         private void controlDeCambiosFacturasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            throw new InvalidOperationException("Funcionalidad en desarrollo");
+            var controlFacturas = new FacturasControlCambiosForm()
+            {
+                MdiParent = this,
+            };
+
+            Sesion.SesionActual().Suscribir(controlFacturas);
+
+            controlFacturas.Show();
+        }
+             
+
+        private void nuevaReparaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var nuevaReparacion = new ReparacionEditForm()
+            {
+                MdiParent = this,
+            };
+
+            Sesion.SesionActual().Suscribir(nuevaReparacion);
+
+            nuevaReparacion.Show();
+        }
+
+        private void consultarHistorialReparacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new ConsultarHistorialReparacionesForm()
+            {
+                MdiParent = this,
+            };
+
+            Sesion.SesionActual().Suscribir(form);
+
+            form.Show();
+
         }
     }
 }

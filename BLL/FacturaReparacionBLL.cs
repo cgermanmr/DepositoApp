@@ -20,7 +20,9 @@ namespace BLL
 
         public bool Agregar(FacturaReparacionBEL valor)
         {
+            valor.UsuarioModificador = Servicios.Sesion.SesionActual().ObtenerUsuarioActual.Nombre;
             var result = _repo.Agregar(valor);
+
             IntegridadDatos.RegenerarDV();
             return result;
         }
@@ -58,6 +60,22 @@ namespace BLL
         public FacturaReparacionBEL ObtenerUno(FacturaReparacionBEL filtro)
         {
             return _repo.ObtenerUno(filtro) as FacturaReparacionBEL;
+        }
+
+        public List<FacturaReparacionBEL> GetFacturasPendientes(long cUIT)
+        {
+            return _repo.GetFacturasPendientes(cUIT);
+        }
+
+        public List<FacturaReparacionBEL> ListarHistorico()
+        {
+            return _repo.ListarHistorico();
+        }
+
+        public void RestaurarAFecha(DateTime fechaModificacion,string usuario)
+        {
+            _repo.RestaurarAFecha(fechaModificacion,usuario);
+            IntegridadDatos.RegenerarDV();
         }
     }
 }
