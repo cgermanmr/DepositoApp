@@ -14,5 +14,13 @@ namespace Interfaces
         Seguridad = 4
 
     }
-    
+
+    public enum Criticidad : int
+    {
+        Baja = 1,
+        Media = 2,
+        Alta = 3,
+
+    }
+
 }

@@ -10192,3 +10192,906 @@ Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
 StackTrace: Evento Auditado
 Date/Time: 31/10/2022 00:48:35
 ===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 01:16:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 01:16:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 01:16:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 16:06:36
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 16:06:36
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 16:06:36
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 16:09:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 16:09:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 16:09:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 16:48:17
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 16:48:17
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 16:48:17
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:13:29
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:13:29
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:13:29
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:16:18
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:16:18
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:16:18
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:17:14
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:17:14
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:17:14
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:29:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:29:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:29:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:30:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:30:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:30:42
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:31:35
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:31:35
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 19:31:35
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 20:00:29
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 20:00:29
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 20:00:29
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 20:06:22
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 20:06:22
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 20:06:22
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 20:18:11
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 20:18:11
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 31/10/2022 20:18:11
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 18/11/2022 09:06:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 18/11/2022 09:06:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 18/11/2022 09:06:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 00:48:14
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 00:48:14
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 00:48:15
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 00:49:00
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 00:49:00
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 00:49:00
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 00:55:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 00:55:30
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 00:55:30
+===========================================================================================
+Title: Error
+Id: 0
+Message: Cannot insert the value NULL into column 'USUARIO_MODIFICADOR', table 'Deposito.dbo.ACTIVOH'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos)
+   en DAL.Repositorio.Eliminar(Entidad valor)
+   en BLL.Negocio.Eliminar(Entidad valor)
+   en AppDeposito.ActivoAdminForm.EliminarButton_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Activos\ActivoAdminForm.cs:línea 116
+Date/Time: 20/11/2022 00:58:08
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 01:00:20
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 01:00:20
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 01:00:20
+===========================================================================================
+Title: Error
+Id: 0
+Message: The DELETE statement conflicted with the REFERENCE constraint "FK_ASIGNACION_ACTIVO_ACTIVO". The conflict occurred in database "Deposito", table "dbo.ASIGNACION_USUARIO_INTERNO", column 'COD_ACTIVO'.
+The statement has been terminated.
+StackTrace:    en DAL.Datos.Escribir(String consulta, Hashtable hdatos)
+   en DAL.Repositorio.Eliminar(Entidad valor)
+   en BLL.Negocio.Eliminar(Entidad valor) en C:\UAI\TD\DepositoApp\BLL\Negocio.cs:línea 44
+   en AppDeposito.ActivoAdminForm.EliminarButton_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Activos\ActivoAdminForm.cs:línea 116
+Date/Time: 20/11/2022 01:03:29
+===========================================================================================
+Title: Error
+Id: 0
+Message: El valor de '1/1/0001 00:00:00' no es válido para 'Value'. 'Value' debería estar entre 'MinDate' y 'MaxDate'.
+Nombre del parámetro: Value
+StackTrace:    en System.Windows.Forms.DateTimePicker.set_Value(DateTime value)
+   en AppDeposito.ActivoEditForm.EnlazarControles() en C:\UAI\TD\DepositoApp\AppDeposito\Activos\ActivoEditForm.cs:línea 28
+   en AppDeposito.ActivoEditForm.ActivoABMForm_Load(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Activos\ActivoEditForm.cs:línea 69
+   en System.Windows.Forms.Form.OnLoad(EventArgs e)
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 20/11/2022 01:05:45
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 01:06:17
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 01:06:17
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 01:06:17
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 01:06:43
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 01:06:43
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 01:06:43
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 07:30:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 07:30:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 07:30:50
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 16:44:32
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 16:44:32
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 16:44:32
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 16:53:57
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 16:53:57
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 16:53:57
+===========================================================================================
+Title: Information
+Id: 0
+Message: No existe el usuario: GERMAN
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 16:54:06
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 16:54:10
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 16:54:10
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 16:54:10
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 16:55:46
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 16:55:46
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 20/11/2022 16:55:46
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 00:12:41
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 00:12:41
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 00:12:41
+===========================================================================================
+Title: Error
+Id: 0
+Message: La conversión especificada no es válida.
+StackTrace:    en DAL.ActivoDAL.ObtenerListaH(DataSet ds) en C:\UAI\TD\DepositoApp\DAL\ActivoDAL.cs:línea 120
+   en DAL.ActivoDAL.ListarHistorico() en C:\UAI\TD\DepositoApp\DAL\ActivoDAL.cs:línea 97
+   en BLL.ActivoBLL.ListarHistorico() en C:\UAI\TD\DepositoApp\BLL\ActivoBLL.cs:línea 26
+   en AppDeposito.Administracion.Logs.ActivoControlCambiosForm.ObtenerDatosFiltro() en C:\UAI\TD\DepositoApp\AppDeposito\Administracion\Logs\ActivoControlCambiosForm.cs:línea 26
+   en AppDeposito.Administracion.Logs.ActivoControlCambiosForm.btnFiltrar_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Administracion\Logs\ActivoControlCambiosForm.cs:línea 67
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 24/11/2022 00:22:00
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede enlazar la propiedad o la columna FechaModificacionHasta en DataSource.
+Nombre del parámetro: dataMember
+StackTrace:    en System.Windows.Forms.BindToObject.CheckBinding()
+   en System.Windows.Forms.BindToObject.SetBindingManagerBase(BindingManagerBase lManager)
+   en System.Windows.Forms.Binding.SetListManager(BindingManagerBase bindingManagerBase)
+   en System.Windows.Forms.ListManagerBindingsCollection.AddCore(Binding dataBinding)
+   en System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   en System.Windows.Forms.BindingContext.UpdateBinding(BindingContext newBindingContext, Binding binding)
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.set_BindingContextInternal(BindingContext value)
+   en System.Windows.Forms.ContainerControl.set_BindingContext(BindingContext value)
+   en System.Windows.Forms.ContainerControl.get_BindingContext()
+   en System.Windows.Forms.Control.get_BindingContextInternal()
+   en System.Windows.Forms.Control.get_BindingContext()
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.ContainerControl.OnCreateControl()
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 24/11/2022 01:09:20
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede enlazar la propiedad o la columna FechaModificacionHasta en DataSource.
+Nombre del parámetro: dataMember
+StackTrace:    en System.Windows.Forms.BindToObject.CheckBinding()
+   en System.Windows.Forms.BindToObject.SetBindingManagerBase(BindingManagerBase lManager)
+   en System.Windows.Forms.Binding.SetListManager(BindingManagerBase bindingManagerBase)
+   en System.Windows.Forms.ListManagerBindingsCollection.AddCore(Binding dataBinding)
+   en System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   en System.Windows.Forms.BindingContext.UpdateBinding(BindingContext newBindingContext, Binding binding)
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.set_BindingContextInternal(BindingContext value)
+   en System.Windows.Forms.ContainerControl.set_BindingContext(BindingContext value)
+   en System.Windows.Forms.ContainerControl.get_BindingContext()
+   en System.Windows.Forms.Control.get_BindingContextInternal()
+   en System.Windows.Forms.Control.get_BindingContext()
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.ContainerControl.OnCreateControl()
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 24/11/2022 01:09:33
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede enlazar la propiedad o la columna FechaModificacionHasta en DataSource.
+Nombre del parámetro: dataMember
+StackTrace:    en System.Windows.Forms.BindToObject.CheckBinding()
+   en System.Windows.Forms.BindToObject.SetBindingManagerBase(BindingManagerBase lManager)
+   en System.Windows.Forms.Binding.SetListManager(BindingManagerBase bindingManagerBase)
+   en System.Windows.Forms.ListManagerBindingsCollection.AddCore(Binding dataBinding)
+   en System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   en System.Windows.Forms.BindingContext.UpdateBinding(BindingContext newBindingContext, Binding binding)
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.set_BindingContextInternal(BindingContext value)
+   en System.Windows.Forms.ContainerControl.set_BindingContext(BindingContext value)
+   en System.Windows.Forms.ContainerControl.get_BindingContext()
+   en System.Windows.Forms.Control.get_BindingContextInternal()
+   en System.Windows.Forms.Control.get_BindingContext()
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.ContainerControl.OnCreateControl()
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 24/11/2022 01:10:15
+===========================================================================================
+Title: Error
+Id: 0
+Message: No se puede enlazar la propiedad o la columna FechaModificacionDesde en DataSource.
+Nombre del parámetro: dataMember
+StackTrace:    en System.Windows.Forms.BindToObject.CheckBinding()
+   en System.Windows.Forms.BindToObject.SetBindingManagerBase(BindingManagerBase lManager)
+   en System.Windows.Forms.Binding.SetListManager(BindingManagerBase bindingManagerBase)
+   en System.Windows.Forms.ListManagerBindingsCollection.AddCore(Binding dataBinding)
+   en System.Windows.Forms.BindingsCollection.Add(Binding binding)
+   en System.Windows.Forms.BindingContext.UpdateBinding(BindingContext newBindingContext, Binding binding)
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.set_BindingContextInternal(BindingContext value)
+   en System.Windows.Forms.ContainerControl.set_BindingContext(BindingContext value)
+   en System.Windows.Forms.ContainerControl.get_BindingContext()
+   en System.Windows.Forms.Control.get_BindingContextInternal()
+   en System.Windows.Forms.Control.get_BindingContext()
+   en System.Windows.Forms.Control.UpdateBindings()
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnParentBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.Control.OnBindingContextChanged(EventArgs e)
+   en System.Windows.Forms.ContainerControl.OnCreateControl()
+   en System.Windows.Forms.Form.OnCreateControl()
+   en System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   en System.Windows.Forms.Control.CreateControl()
+   en System.Windows.Forms.Control.WmShowWindow(Message& m)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   en System.Windows.Forms.Form.WmShowWindow(Message& m)
+   en System.Windows.Forms.Form.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 24/11/2022 01:10:57
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 01:52:00
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 01:52:00
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 01:52:00
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 01:53:13
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 01:53:13
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 01:53:13
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 01:53:26
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 01:53:26
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 01:53:26
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 01:56:13
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 01:56:13
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 24/11/2022 01:56:13
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 26/11/2022 01:22:32
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 26/11/2022 01:22:32
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 26/11/2022 01:22:32
+===========================================================================================
+Title: Error
+Id: 0
+Message: The file ID 3 on device 'C:\UAI\TD\BKP_BASE\Backup_Full_2022-11-26_112707.bak' is incorrectly formed and can not be read.
+RESTORE DATABASE is terminating abnormally.
+Changed database context to 'master'.
+StackTrace:    en Servicios.BackupRestore.RealizarRestore(String ubicacion) en C:\UAI\TD\DepositoApp\Servicios\Backup\BackupRestore.cs:línea 39
+   en AppDeposito.Administracion.Backup.BackupRestoreForm.BtnRealizarRestore_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Administracion\Backup\BackupRestoreForm.cs:línea 82
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 26/11/2022 11:38:33
+===========================================================================================
+Title: Error
+Id: 0
+Message: Se produjo una excepción en el inicializador de tipo de 'Servicios.Sesion'.
+StackTrace:    en Servicios.Sesion.SesionActual()
+   en Servicios.Bitacora.RegistrarEnBitacora(String pDescripcion, TipoEvento tipo, Criticidad criticidad) en C:\UAI\TD\DepositoApp\Servicios\Bitacora.cs:línea 22
+   en AppDeposito.Administracion.Backup.BackupRestoreForm.BtnRealizarRestore_Click(Object sender, EventArgs e) en C:\UAI\TD\DepositoApp\AppDeposito\Administracion\Backup\BackupRestoreForm.cs:línea 85
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+Date/Time: 26/11/2022 12:02:07
+===========================================================================================

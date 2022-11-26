@@ -91,7 +91,7 @@
             // IniciarSesionToolStripMenuItem
             // 
             this.IniciarSesionToolStripMenuItem.Name = "IniciarSesionToolStripMenuItem";
-            this.IniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.IniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.IniciarSesionToolStripMenuItem.Text = "Iniciar Sesión";
             this.IniciarSesionToolStripMenuItem.Click += new System.EventHandler(this.IniciarSesionToolStripMenuItem_Click);
             // 
@@ -99,14 +99,14 @@
             // 
             this.CerrarSesionToolStripMenuItem.Enabled = false;
             this.CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem";
-            this.CerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.CerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.CerrarSesionToolStripMenuItem.Text = "Cerrar Sesión";
             this.CerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.CerrarSesionToolStripMenuItem_Click);
             // 
             // SalirToolStripMenuItem
             // 
             this.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem";
-            this.SalirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.SalirToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.SalirToolStripMenuItem.Text = "Salir";
             this.SalirToolStripMenuItem.Click += new System.EventHandler(this.SalirToolStripMenuItem_Click);
             // 
@@ -335,6 +335,7 @@
             this.Name = "PrincipalForm";
             this.Text = "Sistema Depósito";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PrincipalForm_FormClosing);
             this.Load += new System.EventHandler(this.PrincipalForm_Load);
             this.MenuPrincipal.ResumeLayout(false);
             this.MenuPrincipal.PerformLayout();

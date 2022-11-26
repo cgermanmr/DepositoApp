@@ -142,7 +142,8 @@ namespace DAL
         {
             var datos = new Datos();
             var hdatos = new Hashtable();
-            DataSet ds = datos.Leer("SP_IDIOMA_LISTAR", null);
+            hdatos.Add("@operacion", 4);
+            DataSet ds = datos.Leer("[dbo].[SP_IDIOMA]", hdatos);
             List<IdiomaBEL> idiomas = new List<IdiomaBEL>();
             foreach (DataRow dr in ds.Tables[0].Rows)
             {

@@ -2,16 +2,24 @@
 using System;
 using BEL;
 using DAL;
+using Interfaces;
 
 namespace Servicios
 {
     public class BackupRestore
-    {           
+    {
+        public List<BackupBEL> Listar()
+        {
+            return new BackupRestoreDAL().Listar();
+        }
+
         public bool RealizarBackup(string ubicacion)
         {
             try
             {
-                return new BackupRestoreDAL().RealizarBackup(ubicacion);
+                new BackupRestoreDAL().RealizarBackup(ubicacion);
+                return new BackupRestoreDAL().Agregar(new BackupBEL() { Ubicacion= ubicacion,Usuario = Sesion.SesionActual().ObtenerUsuarioActual.Nombre});
+
             }
             catch (Exception ex)
             {
@@ -24,7 +32,9 @@ namespace Servicios
         {
             try
             {
+
                 return new BackupRestoreDAL().RealizarRestore(ubicacion);
+
             }
             catch (Exception ex)
             {

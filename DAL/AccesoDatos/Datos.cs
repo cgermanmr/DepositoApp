@@ -8,10 +8,14 @@ namespace DAL
 {
     public class Datos
     {
-        private static SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DepositoDB"].ConnectionString);
+        public static SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DepositoDB"].ConnectionString);
         private SqlTransaction trx;
         private SqlCommand cmd;
 
+        public Datos()
+        {
+
+        }
         public DataSet Leer(string consulta, Hashtable hdatos)
         {
             var DS = new DataSet();

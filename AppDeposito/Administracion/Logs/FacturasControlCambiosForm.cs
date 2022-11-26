@@ -109,9 +109,14 @@ namespace AppDeposito.Administracion.Logs
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if(!Mensajes.ShowDecision("¿Desea restaurar a la fecha seleccionada?"))
+                return;
+
             new FacturaReparacionBLL().RestaurarAFecha(
                 Seleccionado.FechaModificacion,
                 Sesion.SesionActual().ObtenerUsuarioActual?.Nombre ?? "Usuariox");
+
+            Mensajes.ShowExitoso();
 
             ObtenerDatos();
         }

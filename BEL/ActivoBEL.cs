@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Interfaces;
+using System;
 
 namespace BEL
 {
-    public class ActivoBEL : Entidad
+    public class ActivoBEL : Entidad, Interfaces.IAuditable
     {
         public DateTime FechaAlta { get; set; }
         public DateTime FechaCompra { get; set; } = DateTime.MinValue;
@@ -31,6 +32,10 @@ namespace BEL
                 return Convert.ToDateTime(FechaCompra).AddMonths(MesesGarantia) > DateTime.Now;
             }
         }
+
+        public string UsuarioModificador { get; set; }
+        public DateTime FechaModificacion { get; set; }
+        public TipoOperacion TipoModificacion { get; set; }
         public override string ToString()
         {
             return $"Inv: {Inventario} / Tipo: {TipoActivo.Descripcion} / Desc: {Descripcion}";
@@ -44,6 +49,11 @@ namespace BEL
             }
             else return false;
 
+        }
+
+        public string GetDVH()
+        {
+            return ToString();
         }
     }
 }

@@ -33,8 +33,13 @@ namespace AppDeposito.Administracion.Logs
 
         private void FiltrarButton_Click(object sender, EventArgs e)
         {
-            bsBitacora.DataSource = Bitacora.Listar().FindAll(x => x.Fecha.Date>=FechaDesde.Value.Date & x.Fecha.Date <=FechaHasta.Value.Date & 
-            x.Evento == (TipoEvento)cmbEvento.SelectedItem & x.Usuario.Contains(UsuarioTextBox.Text) & x.Descripcion.Contains(DescripcionTextBox.Text));
+            bsBitacora.DataSource = Bitacora.Listar()
+                .FindAll(x => 
+                x.Fecha.Date>=FechaDesde.Value.Date & 
+                x.Fecha.Date <=FechaHasta.Value.Date & 
+                x.Evento == (TipoEvento)cmbEvento.SelectedItem & 
+                x.Usuario.Contains(UsuarioTextBox.Text) & 
+                x.Descripcion.ToUpper().Contains(DescripcionTextBox.Text.ToUpper()));
         }
 
         private void QuitarFiltroButton_Click(object sender, EventArgs e)

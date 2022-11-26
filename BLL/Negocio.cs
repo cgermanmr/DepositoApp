@@ -23,6 +23,10 @@ namespace BLL
         public virtual bool Agregar(Entidad valor)
         {            
             EsValido(valor);
+
+            if (valor is IAuditable auditable)
+                auditable.UsuarioModificador = Sesion.SesionActual().ObtenerUsuarioActual?.Nombre ?? "german";
+            
             Bitacora.RegistrarEnBitacora($"({valor.GetType().Name.Replace("BEL","")}) Alta { valor }");
             return Repositorio().Agregar(valor);
            
@@ -32,6 +36,10 @@ namespace BLL
         {
             
             EsValido(valor);
+
+            if (valor is IAuditable auditable)
+                auditable.UsuarioModificador = Sesion.SesionActual().ObtenerUsuarioActual.Nombre;
+
             Bitacora.RegistrarEnBitacora($"({valor.GetType().Name.Replace("BEL", "")}) Baja {valor}");
             return Repositorio().Eliminar(valor);
            
@@ -50,12 +58,16 @@ namespace BLL
         public virtual bool Modificar(Entidad valor)
         {
             EsValido(valor);
+            if (valor is IAuditable auditable)
+                auditable.UsuarioModificador = Sesion.SesionActual().ObtenerUsuarioActual.Nombre;
+
             Bitacora.RegistrarEnBitacora($"({valor.GetType().Name.Replace("BEL", "")}) Modificación {valor}");
             return Repositorio().Modificar(valor);
         }
 
         public virtual Entidad ObtenerUno(Entidad filtro)
         {
+
             return Repositorio().ObtenerUno(filtro);
         }
 

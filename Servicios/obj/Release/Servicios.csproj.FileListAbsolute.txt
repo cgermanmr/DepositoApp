@@ -1,0 +1,2 @@
+C:\UAI\TD\DepositoApp\Servicios\obj\Release\Servicios.csproj.AssemblyReference.cache
+C:\UAI\TD\DepositoApp\Servicios\obj\Release\Servicios.csproj.CoreCompileInputs.cache

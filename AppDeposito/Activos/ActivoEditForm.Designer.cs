@@ -380,13 +380,15 @@
             // 
             // monedaComboBox
             // 
-            this.monedaComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsEditado, "FechaAlta", true));
+            this.monedaComboBox.CausesValidation = false;
+            this.monedaComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsEditado, "FechaAlta", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.monedaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.monedaComboBox.FormattingEnabled = true;
             this.monedaComboBox.Location = new System.Drawing.Point(119, 89);
             this.monedaComboBox.Name = "monedaComboBox";
             this.monedaComboBox.Size = new System.Drawing.Size(96, 21);
             this.monedaComboBox.TabIndex = 121;
+            this.monedaComboBox.SelectedIndexChanged += new System.EventHandler(this.monedaComboBox_SelectedIndexChanged);
             // 
             // errorProvider
             // 

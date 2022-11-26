@@ -1,0 +1,2 @@
+C:\UAI\TD\DepositoApp\BLL\obj\Release\BLL.csproj.AssemblyReference.cache
+C:\UAI\TD\DepositoApp\BLL\obj\Release\BLL.csproj.CoreCompileInputs.cache

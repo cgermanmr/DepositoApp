@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using Comun;
 using System.Transactions;
-using Microsoft.SqlServer.Management.Sdk.Sfc;
+//using Microsoft.SqlServer.Management.Sdk.Sfc;
 
 namespace DAL
 {

@@ -9,7 +9,7 @@ namespace Servicios
 {
     public class Sesion : IObservableIdioma
     {
-        public event EventHandler CierreSesionEvent; 
+        public static event EventHandler CierreSesionEvent; 
        
         public ResultadoAutenticacion Iniciar(UsuarioBEL usuario)
         {
@@ -74,9 +74,9 @@ namespace Servicios
             }
             return valido;
         }
-        public void Cerrar()
+        public static void Cerrar()
         {
-            if(_usuario!=null)
+            if(_usuario != null)
                 Bitacora.RegistrarEnBitacora("Cierre sesión del usuario: " + _usuario.Nombre, TipoEvento.Auditoria);
             EstablecerUsuarioActual(null);
             CierreSesionEvent("Cierre Sesión", null);
@@ -112,8 +112,8 @@ namespace Servicios
         /// Se establece el usuario de la sesión
         /// </summary>
         /// <param name="usuario"></param>
-        protected void EstablecerUsuarioActual(UsuarioBEL usuario) => _usuario = usuario;
-       
+        protected static void EstablecerUsuarioActual(UsuarioBEL usuario) => _usuario = usuario;
+
         public UsuarioBEL ObtenerUsuarioActual => _usuario;
 
         #region Patron Observer Idioma

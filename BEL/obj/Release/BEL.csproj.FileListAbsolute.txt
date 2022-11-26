@@ -1,0 +1,10 @@
+C:\UAI\TD\DepositoApp\BEL\bin\Release\BEL.dll
+C:\UAI\TD\DepositoApp\BEL\bin\Release\BEL.pdb
+C:\UAI\TD\DepositoApp\BEL\bin\Release\BEL.xml
+C:\UAI\TD\DepositoApp\BEL\bin\Release\Comun.dll
+C:\UAI\TD\DepositoApp\BEL\bin\Release\Comun.pdb
+C:\UAI\TD\DepositoApp\BEL\obj\Release\BEL.csproj.AssemblyReference.cache
+C:\UAI\TD\DepositoApp\BEL\obj\Release\BEL.csproj.CoreCompileInputs.cache
+C:\UAI\TD\DepositoApp\BEL\obj\Release\BEL.csproj.CopyComplete
+C:\UAI\TD\DepositoApp\BEL\obj\Release\BEL.dll
+C:\UAI\TD\DepositoApp\BEL\obj\Release\BEL.pdb

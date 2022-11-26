@@ -17,6 +17,7 @@ namespace AppDeposito
         {
             InitializeComponent();
         }
+        public LoginForm LoginForm { get; set; }
 
         public void Traducir()
         {
@@ -65,28 +66,26 @@ namespace AppDeposito
             }
         }
 
-        private void ShowLogin()
+        private void Init()
         {
-            Visible = false;
+            //LoginForm login = new LoginForm();
 
-            LoginForm login = new LoginForm();
+            //if (!Sesion.SesionActual().Integridad)
+            //{
+            //    MessageBox.Show("Se ha producido un error al verificar la integridad de los datos, informar al administrador", "Falla Integridad de datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    Login.ModoRecuperacion = true;
+            //}
 
-            if (!Sesion.SesionActual().Integridad)
-            {
-                MessageBox.Show("Se ha producido un error al verificar la integridad de los datos, informar al administrador", "Falla Integridad de datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                login.ModoRecuperacion = true;
-            }
-
-            if (login.ShowDialog(this) == DialogResult.OK)
-            {
+            //if (Login.ShowDialog(this) == DialogResult.OK)
+            //{
                 ArmarMenu();
                 CerrarSesionToolStripMenuItem.Enabled = true;
                 IniciarSesionToolStripMenuItem.Enabled = false;
-                Visible = true;
+                //Visible = true;
                 Sesion.SesionActual().Suscribir(this);
-            }
-            else
-                Close();
+            //}
+            //else
+            //    Close();
         }
 
         private void IniciarSesionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -112,9 +111,9 @@ namespace AppDeposito
         {
             FormConfig.Config(this);
             Sesion.SesionActual().Suscribir(this);
-            Sesion.SesionActual().CierreSesionEvent += PrincipalForm_CierreSesionEvent;
+            Sesion.CierreSesionEvent += PrincipalForm_CierreSesionEvent;
 
-            ShowLogin();
+            Init();
         }
 
         private void PrincipalForm_CierreSesionEvent(object sender, EventArgs e)
@@ -147,7 +146,7 @@ namespace AppDeposito
         private void CerrarSesion()
         {
             if(Sesion.SesionActual().ObtenerUsuarioActual!=null)
-                Sesion.SesionActual().Cerrar();
+                Sesion.Cerrar();
 
             IniciarSesionToolStripMenuItem.Enabled = true;
             CerrarSesionToolStripMenuItem.Enabled = false;
@@ -186,7 +185,10 @@ namespace AppDeposito
 
             Sesion.SesionActual().Suscribir(adminBackup);
 
-            adminBackup.Show();            
+            adminBackup.Show();     
+            
+            if(adminBackup.FueRestaurado)
+                Close();
         }
 
         private void IdiomaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -416,6 +418,11 @@ namespace AppDeposito
 
             form.Show();
 
+        }
+
+        private void PrincipalForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            LoginForm.Close();
         }
     }
 }

@@ -41,7 +41,9 @@ namespace AppDeposito
                 MessageBox.Show("Solo es posible ingresar con usuario de recuperación. Se detecto falla de Integridad de Datos", "Falla de Integridad de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             Login();
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -63,7 +65,8 @@ namespace AppDeposito
             switch (resultado)
             {
                 case ResultadoAutenticacion.UsuarioValido:
-                    DialogResult = DialogResult.OK;
+                    Visible = false;
+                    new PrincipalForm() { LoginForm = this }.Show();                    
                     break;
                 case ResultadoAutenticacion.UsuarioInvalido:
                     DialogResult = DialogResult.No;
@@ -81,11 +84,23 @@ namespace AppDeposito
         {
             FormConfig.Config(this);
 
+            Init();
+
             //TODO: Para pruebas
             //txtNombre.Text = "german";
             //txtClave.Text = "1234";
             //Login();
             
+        }
+
+        private void Init()
+        {
+
+            if (!Sesion.SesionActual().Integridad)
+            {
+                MessageBox.Show("Se ha producido un error al verificar la integridad de los datos, informar al administrador", "Falla Integridad de datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ModoRecuperacion = true;
+            }
         }
     }
 }

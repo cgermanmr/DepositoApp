@@ -84,6 +84,7 @@
     <Compile Include="MonedaEnum.cs" />
     <Compile Include="PresupuestoBEL.cs" />
     <Compile Include="ReemplazoTemporalBEL.cs" />
+    <Compile Include="Seguridad\BackupBEL.cs" />
     <Compile Include="Seguridad\BitacoraBEL.cs" />
     <Compile Include="Idioma\IdiomaBEL.cs" />
     <Compile Include="Idioma\LeyendaBEL.cs" />

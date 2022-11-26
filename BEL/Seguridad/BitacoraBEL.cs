@@ -7,6 +7,7 @@ namespace BEL
     {
         public DateTime Fecha { get; set; }
         public TipoEvento Evento { get; set; } = TipoEvento.Informacion;
+        public Criticidad Criticidad { get; set; } = Criticidad.Baja;
         public string Descripcion { get; set; }
         public string Usuario { get; set; }   
     }

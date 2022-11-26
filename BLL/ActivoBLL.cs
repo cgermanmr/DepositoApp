@@ -20,5 +20,10 @@ namespace BLL
 
             return base.Agregar(valor);
         }
+
+        public List<ActivoBEL> ListarHistorico()
+        {
+            return new ActivoDAL().ListarHistorico();
+        }
     }
 }

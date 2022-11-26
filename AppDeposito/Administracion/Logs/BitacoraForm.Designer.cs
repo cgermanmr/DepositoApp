@@ -44,6 +44,7 @@
             this.FechaDesde = new System.Windows.Forms.DateTimePicker();
             this.GrillaBitacora = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Criticidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -177,6 +178,7 @@
             this.GrillaBitacora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GrillaBitacora.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
+            this.Criticidad,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn4});
@@ -196,6 +198,13 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "Fecha";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // Criticidad
+            // 
+            this.Criticidad.DataPropertyName = "Criticidad";
+            this.Criticidad.HeaderText = "Criticidad";
+            this.Criticidad.Name = "Criticidad";
+            this.Criticidad.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -257,11 +266,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbEvento;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button QuitarFiltroButton;
+        private System.Windows.Forms.Button FiltrarButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Criticidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.Button QuitarFiltroButton;
-        private System.Windows.Forms.Button FiltrarButton;
     }
 }

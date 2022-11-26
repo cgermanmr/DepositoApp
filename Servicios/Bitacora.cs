@@ -9,15 +9,20 @@ namespace Servicios
 {
     public class Bitacora
     {
-        public static void RegistrarEnBitacora(string pDescripcion, TipoEvento tipo = TipoEvento.Auditoria)
+        public static void RegistrarEnBitacora(string pDescripcion, 
+            TipoEvento tipo = TipoEvento.Auditoria, 
+            Criticidad criticidad = Criticidad.Baja,
+            bool sistema = false)
         {
             BitacoraBEL b = new BitacoraBEL
             {
                 Fecha = DateTime.Now,
                 Descripcion = pDescripcion,
-                Evento=tipo
+                Evento=tipo,
+                Criticidad = criticidad
             };
-            b.Usuario = (Sesion.SesionActual().ObtenerUsuarioActual!= null) ? Sesion.SesionActual().ObtenerUsuarioActual.Nombre : "No registrado";
+            
+            b.Usuario = sistema? "SISTEMA" : Sesion.SesionActual().ObtenerUsuarioActual.Nombre;
 
             new BitacoraDAL().Agregar(b);
         }

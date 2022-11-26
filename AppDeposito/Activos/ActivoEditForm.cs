@@ -25,8 +25,8 @@ namespace AppDeposito
             PeriodoGarantiaTextBox.DataBindings.Add("Text", Editado, "MesesGarantia");
             VolumenTextBox.DataBindings.Add("Text", Editado, "Volumen");
             ObservacionesTextBox.DataBindings.Add("Text", Editado, "Observaciones");
-            fechaAltaDateTimePicker.Value = Editado.FechaAlta;
-            fechaCompraDateTimePicker.Value = Editado.FechaCompra ;
+            fechaAltaDateTimePicker.Value = Editado.FechaAlta == DateTime.MinValue ? DateTime.Now : Editado.FechaAlta;
+            fechaCompraDateTimePicker.Value = Editado.FechaCompra == DateTime.MinValue ? DateTime.Now : Editado.FechaCompra; ;
 
             monedaComboBox.SelectedIndex = monedaComboBox.FindString(Editado.Moneda.Descripcion);
 
@@ -103,6 +103,11 @@ namespace AppDeposito
         public void Traducir()
         {
             Traductor.Traducir(this);
+        }
+
+        private void monedaComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
