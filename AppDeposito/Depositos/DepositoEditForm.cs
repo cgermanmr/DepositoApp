@@ -23,6 +23,7 @@ namespace AppDeposito
         {
             try
             {
+                FormConfig.Config(this);
                 _deposito = (BEL.DepositoBEL)Tag;
                 bsDeposito.DataSource = _deposito;
                 ubicacionComboBox.DataSource = new BLL.UbicacionBLL().Listar();

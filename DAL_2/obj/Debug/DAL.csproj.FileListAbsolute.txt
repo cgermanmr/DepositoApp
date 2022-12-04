@@ -1,2 +1,0 @@
-C:\UAI\TD\DepositoApp\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-C:\UAI\TD\DepositoApp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache

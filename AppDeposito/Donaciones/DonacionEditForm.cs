@@ -46,7 +46,7 @@ namespace AppDeposito
         {
             try
             {
-
+                FormConfig.Config(this);
                 bsDonacion.DataSource = (DonacionBEL)Tag;
                 _donacion = (DonacionBEL)Tag;
                 auditorComboBox.DataSource = new ClienteBLL().Listar();

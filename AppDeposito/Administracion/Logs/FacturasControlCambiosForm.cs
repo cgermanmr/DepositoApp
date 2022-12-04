@@ -68,7 +68,7 @@ namespace AppDeposito.Administracion.Logs
         private void AdminUsuariosForm_Load(object sender, EventArgs e)
         {
 
-            Sesion.SesionActual().Suscribir(this);
+            FormConfig.Config(this);
 
             Filtro = new FacturaFiltro();
             

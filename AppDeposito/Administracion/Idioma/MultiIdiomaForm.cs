@@ -43,8 +43,8 @@ namespace AppDeposito.Administracion.Idioma
         }
 
         private void MultiIdiomaForm_Load(object sender, EventArgs e)
-        {   
-            Sesion.SesionActual().Suscribir(this);
+        {
+            FormConfig.Config(this);
             ObtenerDatos();
             EnlazarControles();   
         }
@@ -98,6 +98,8 @@ namespace AppDeposito.Administracion.Idioma
 
             ObtenerDatos();
         }
+
+
 
         public void Traducir()
         {

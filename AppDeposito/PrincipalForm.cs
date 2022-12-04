@@ -89,12 +89,13 @@ namespace AppDeposito
         }
 
         private void IniciarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+  
         {
            
             if (!Sesion.SesionActual().Integridad)
                 Mensajes.ShowError("Se ha producido un error al verificar la integridad de los datos, informar al administrador");
 
-            LoginForm login = new LoginForm();
+            LoginForm login = new LoginForm() { IsChild = true };          
 
             Sesion.SesionActual().Suscribir(login);
 
@@ -103,6 +104,7 @@ namespace AppDeposito
                 ArmarMenu(); 
                 CerrarSesionToolStripMenuItem.Enabled = true;
                 IniciarSesionToolStripMenuItem.Enabled = false;
+                login.Visible = false;
             }
 
         }
@@ -110,7 +112,6 @@ namespace AppDeposito
         private void PrincipalForm_Load(object sender, EventArgs e)
         {
             FormConfig.Config(this);
-            Sesion.SesionActual().Suscribir(this);
             Sesion.CierreSesionEvent += PrincipalForm_CierreSesionEvent;
 
             Init();
@@ -124,6 +125,7 @@ namespace AppDeposito
         private void SalirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Dispose();
+            this.LoginForm?.Close();
             Close();
         }
         
@@ -216,17 +218,10 @@ namespace AppDeposito
             adminIntegridad.Show();
         }
 
-        private void MenuPrincipal_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
+       
              
 
-        private void ActivosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void GestionarActivosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var adminActivos = new ActivoAdminForm()

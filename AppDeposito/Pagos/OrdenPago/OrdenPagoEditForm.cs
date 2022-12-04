@@ -3,6 +3,7 @@ using AppDeposito.Pagos.OrdenPago;
 using AppDeposito.Pagos.OrdenPago.Model;
 using BEL;
 using BLL;
+using Comun;
 using Servicios;
 using System;
 using System.Collections.Generic;
@@ -100,7 +101,7 @@ namespace AppDeposito.Pagos
 
         private void OrdenPagoEditForm_Load(object sender, EventArgs e)
         {
-
+            FormConfig.Config(this);
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -169,6 +170,29 @@ namespace AppDeposito.Pagos
         public void Traducir()
         {
             Traductor.Traducir(this);
+        }
+
+        private void CuitTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            if (CuitTextBox.Text.Trim().Length != 11)
+            {
+                errorProvider1.SetError(sender as Control, "Cuit es de 11 digitos");
+                return;
+            }
+
+            Proveedor = new ProveedorBLL().GetByCuit(CuitTextBox.Text.SafeToLong());
+
+            if (Proveedor == null)
+            {
+                errorProvider1.SetError(sender as Control, "No se encuentra el CUIT");
+                return;
+            }
+            else
+            {
+                RazonSocialTextBox.Text = Proveedor.ToString();
+            }
+
+            errorProvider1.SetError(sender as Control, "");
         }
     }
 }

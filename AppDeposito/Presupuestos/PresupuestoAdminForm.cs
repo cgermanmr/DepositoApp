@@ -31,6 +31,7 @@ namespace AppDeposito
         {
             try
             {
+                
                 FormConfig.Config(this);
                 Text = $"Presupuestos de reparación {_reparacion.Activo}";
                 grilla.AutoGenerateColumns = false;              

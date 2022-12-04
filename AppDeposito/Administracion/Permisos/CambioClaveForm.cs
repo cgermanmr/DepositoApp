@@ -75,7 +75,7 @@ namespace AppDeposito.Administracion.Permisos
 
         private void CambioClaveForm_Load(object sender, EventArgs e)
         {
-            Sesion.SesionActual().Suscribir(this);
+            FormConfig.Config(this);
 
         }
 

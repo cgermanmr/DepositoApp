@@ -71,12 +71,11 @@ namespace DAL
                 Int32 respuesta = cmd.ExecuteNonQuery();
                 trx.Commit();
 
-                return respuesta>=0;
+                return respuesta >= 0;
             }
             catch (Exception ex)
             {
                 trx.Rollback();
-                //return false;
                 
                 throw ex;
             }

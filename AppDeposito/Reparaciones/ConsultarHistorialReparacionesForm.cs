@@ -64,7 +64,7 @@ namespace AppDeposito.Reparaciones
 
         private void ConsultarHistorialReparacionesForm_Load(object sender, EventArgs e)
         {
-
+            FormConfig.Config(this);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

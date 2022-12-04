@@ -22,7 +22,9 @@ namespace Servicios
                 Criticidad = criticidad
             };
             
-            b.Usuario = sistema? "SISTEMA" : Sesion.SesionActual().ObtenerUsuarioActual.Nombre;
+            b.Usuario = sistema || Sesion.SesionActual().ObtenerUsuarioActual == null
+                ? "SISTEMA" 
+                : Sesion.SesionActual().ObtenerUsuarioActual.Nombre;
 
             new BitacoraDAL().Agregar(b);
         }

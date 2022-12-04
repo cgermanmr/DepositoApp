@@ -1,0 +1,9 @@
+C:\UAI\TD\DepositoApp\BEL\bin\x64\Debug\BEL.dll
+C:\UAI\TD\DepositoApp\BEL\bin\x64\Debug\BEL.pdb
+C:\UAI\TD\DepositoApp\BEL\bin\x64\Debug\Comun.dll
+C:\UAI\TD\DepositoApp\BEL\bin\x64\Debug\Comun.pdb
+C:\UAI\TD\DepositoApp\BEL\obj\x64\Debug\BEL.csproj.AssemblyReference.cache
+C:\UAI\TD\DepositoApp\BEL\obj\x64\Debug\BEL.csproj.CoreCompileInputs.cache
+C:\UAI\TD\DepositoApp\BEL\obj\x64\Debug\BEL.csproj.CopyComplete
+C:\UAI\TD\DepositoApp\BEL\obj\x64\Debug\BEL.dll
+C:\UAI\TD\DepositoApp\BEL\obj\x64\Debug\BEL.pdb

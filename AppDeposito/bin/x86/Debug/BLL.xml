@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BLL</name>
+    </assembly>
+    <members>
+        <member name="M:BLL.Negocio.Repositorio">
+            <summary>
+            Indicar el mapeador de la clase
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BLL.Negocio.EsValido(BEL.Entidad)">
+            <summary>
+            validar reglas de negocio
+            </summary>
+        </member>
+    </members>
+</doc>

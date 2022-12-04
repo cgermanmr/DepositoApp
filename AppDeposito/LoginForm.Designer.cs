@@ -38,12 +38,11 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(117, 166);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAceptar.Location = new System.Drawing.Point(78, 108);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(112, 35);
+            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 2;
-            this.btnAceptar.Tag = "36";
+            this.btnAceptar.Tag = "";
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -51,12 +50,11 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(238, 166);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancelar.Location = new System.Drawing.Point(159, 108);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(112, 35);
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 3;
-            this.btnCancelar.Tag = "9";
+            this.btnCancelar.Tag = "";
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -64,51 +62,47 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(62, 49);
-            this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsuario.Location = new System.Drawing.Point(36, 32);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(68, 20);
+            this.lblUsuario.Size = new System.Drawing.Size(46, 13);
             this.lblUsuario.TabIndex = 4;
-            this.lblUsuario.Tag = "53";
+            this.lblUsuario.Tag = "";
             this.lblUsuario.Text = "Usuario:";
             // 
             // lblClave
             // 
             this.lblClave.AutoSize = true;
-            this.lblClave.Location = new System.Drawing.Point(27, 103);
-            this.lblClave.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblClave.Location = new System.Drawing.Point(18, 67);
             this.lblClave.Name = "lblClave";
-            this.lblClave.Size = new System.Drawing.Size(96, 20);
+            this.lblClave.Size = new System.Drawing.Size(64, 13);
             this.lblClave.TabIndex = 5;
-            this.lblClave.Tag = "39";
+            this.lblClave.Tag = "";
             this.lblClave.Text = "Contraseña:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(140, 45);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNombre.Location = new System.Drawing.Point(93, 29);
             this.txtNombre.MaxLength = 20;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(210, 26);
+            this.txtNombre.Size = new System.Drawing.Size(141, 20);
             this.txtNombre.TabIndex = 0;
             // 
             // txtClave
             // 
-            this.txtClave.Location = new System.Drawing.Point(140, 98);
-            this.txtClave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtClave.Location = new System.Drawing.Point(93, 64);
             this.txtClave.MaxLength = 30;
             this.txtClave.Name = "txtClave";
             this.txtClave.PasswordChar = '*';
-            this.txtClave.Size = new System.Drawing.Size(210, 26);
+            this.txtClave.Size = new System.Drawing.Size(141, 20);
             this.txtClave.TabIndex = 1;
             // 
             // LoginForm
             // 
             this.AcceptButton = this.btnAceptar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(392, 235);
+            this.ClientSize = new System.Drawing.Size(261, 153);
             this.Controls.Add(this.txtClave);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnAceptar);
@@ -117,7 +111,6 @@
             this.Controls.Add(this.lblUsuario);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginForm";

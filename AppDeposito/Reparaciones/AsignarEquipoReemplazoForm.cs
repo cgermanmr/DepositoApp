@@ -23,8 +23,9 @@ namespace AppDeposito.Reparaciones
         {
             InitializeComponent();
             _reparacion = reparacion;
-            lblNroReparacion.Text = reparacion.ToString();
+            txtReparacion.Text = reparacion.ToString();
             bsReemplazos.DataSource = new List<ReemplazoTemporalBEL>();
+            Refresh();
 
         }
 
@@ -60,6 +61,7 @@ namespace AppDeposito.Reparaciones
 
         private void AsignarEquipoReemplazoForm_Load(object sender, EventArgs e)
         {
+            FormConfig.Config(this);
             Grilla = new ReparacionBLL().ListarReemplazos(_reparacion.Id);
         }
 

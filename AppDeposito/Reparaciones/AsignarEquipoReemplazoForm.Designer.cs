@@ -38,8 +38,8 @@
             this.bsReemplazos = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblNroReparacion = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.txtReparacion = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsReemplazos)).BeginInit();
             this.SuspendLayout();
@@ -120,15 +120,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Reparación:";
             // 
-            // lblNroReparacion
-            // 
-            this.lblNroReparacion.AutoSize = true;
-            this.lblNroReparacion.Location = new System.Drawing.Point(83, 9);
-            this.lblNroReparacion.Name = "lblNroReparacion";
-            this.lblNroReparacion.Size = new System.Drawing.Size(79, 13);
-            this.lblNroReparacion.TabIndex = 5;
-            this.lblNroReparacion.Text = "NroReparacion";
-            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(146, 161);
@@ -139,13 +130,22 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
+            // txtReparacion
+            // 
+            this.txtReparacion.Location = new System.Drawing.Point(83, 9);
+            this.txtReparacion.Multiline = true;
+            this.txtReparacion.Name = "txtReparacion";
+            this.txtReparacion.ReadOnly = true;
+            this.txtReparacion.Size = new System.Drawing.Size(480, 41);
+            this.txtReparacion.TabIndex = 7;
+            // 
             // AsignarEquipoReemplazoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(575, 198);
+            this.Controls.Add(this.txtReparacion);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.lblNroReparacion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
@@ -165,12 +165,12 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.BindingSource bsReemplazos;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblNroReparacion;
         private System.Windows.Forms.DataGridViewCheckBoxColumn definitivoDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn inicioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn finDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn activoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtReparacion;
     }
 }

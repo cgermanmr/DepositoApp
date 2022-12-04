@@ -67,7 +67,7 @@ namespace AppDeposito.Administracion.Permisos
 
         private void AdminUsuariosForm_Load(object sender, EventArgs e)
         {
-            Sesion.SesionActual().Suscribir(this);
+            FormConfig.Config(this);
             bsUsuarios.CurrentItemChanged += BsUsuarios_CurrentItemChanged;
             ObtenerDatos();
             EnlazarControles();                 

@@ -33,46 +33,61 @@ namespace AppDeposito.Pagos
 
         private void cuitProveedorTextBox_Validating(object sender, CancelEventArgs e)
         {
-            //if (cuitProveedorTextBox.Text.Trim().Length != 11)
-            //{
-            //    errorProvider1.SetError(sender as Control, "Cuit es de 11 digitos");
-            //    return;
-            //}
+            if (cuitProveedorTextBox.Text.Trim().Length != 11)
+            {
+                errorProvider1.SetError(sender as Control, "Cuit es de 11 digitos");
+                return;
+            }
 
-            //var prov = new ProveedorBLL().GetByCuit(cuitProveedorTextBox.Text.SafeToLong());
+            var prov = new ProveedorBLL().GetByCuit(cuitProveedorTextBox.Text.SafeToLong());
 
-            //if (prov == null)
-            //{ 
-            //    errorProvider1.SetError(sender as Control, "No se encuentra el CUIT");
-            //    return ;
-            //}
-            //else
-            //    txtRazonSocial.Text = prov.ToString();
+            if (prov == null)
+            {
+                errorProvider1.SetError(sender as Control, "No se encuentra el CUIT");
+                return;
+            }
+            else
+                txtRazonSocial.Text = prov.ToString();
 
-            //errorProvider1.SetError(sender as Control, "");
-            
+            errorProvider1.SetError(sender as Control, "");
+
         }
 
         private void IngresoFacturasForm_Load(object sender, EventArgs e)
         {
-            Factura = new FacturaReparacionBEL();
-            Conceptos = Factura.Conceptos;
 
             FormConfig.Config(this);
 
+            Factura = new FacturaReparacionBEL();
+            Conceptos = Factura.Conceptos;
+
             cuitProveedorTextBox.SoloNumeros();
             importeTextBox.SoloNumerosConDecimales();
+
+            nroFacturaTextBox.SoloNumeros();
+            nroFacturaTextBox.ValidarCampoCompleto(errorProvider1);
+
+            codigoTextBox.SoloNumeros();
+            codigoTextBox.ValidarCampoCompleto(errorProvider1);
+
+            letraTextBox.ValidarCampoCompleto(errorProvider1);
+
         }
               
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var d = new FacturaReparacionDetalle();
+
+            if (Conceptos.Any(x => !x.IsOk))
+                return;
+
+            var d = new FacturaReparacionDetalle() { NroFactura = Factura.NroFactura };
             d.CambioImporteEvent += (valor) =>
             {
                 Factura.Importe = 0;
                 Conceptos.ForEach(x => Factura.Importe += x.Importe);
                 bsFacturas.ResetBindings(false);
+
             };
             Conceptos.Add(d);
             bsConceptos.ResetBindings(true);
@@ -89,6 +104,11 @@ namespace AppDeposito.Pagos
 
         private void button1_Click(object sender, EventArgs e)
         {
+            FormConfig.Validar(errorProvider1, this);
+
+            if (!Factura.IsOk)
+                throw new InvalidOperationException("Varifique los datos ingresados");
+
             var p = new FacturaReparacionBLL();
 
             if (p.Agregar(Factura))
@@ -149,7 +169,7 @@ namespace AppDeposito.Pagos
 
         private void button5_Click(object sender, EventArgs e)
         {
-            var buscarProv = new BuscarProveedorForm();
+            var buscarProv = new BuscarProveedorForm(conOtPendientes: true);
             if (buscarProv.ShowDialog() != DialogResult.OK)
                 return;
 
@@ -157,11 +177,6 @@ namespace AppDeposito.Pagos
             cuitProveedorTextBox.Text = buscarProv.Seleccionado.CUIT.ToString();
 
             buscarProv.Close();
-
-        }
-
-        private void cuitProveedorTextBox_TextChanged(object sender, EventArgs e)
-        {
 
         }
     }

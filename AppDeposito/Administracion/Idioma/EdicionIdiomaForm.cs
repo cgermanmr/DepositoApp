@@ -32,7 +32,8 @@ namespace AppDeposito.Administracion.Idioma
                
         private void EdicionIdiomaForm_Load(object sender, EventArgs e)
         {
-            Sesion.SesionActual().Suscribir(this);
+            FormConfig.Config(this);
+
 
         }
 

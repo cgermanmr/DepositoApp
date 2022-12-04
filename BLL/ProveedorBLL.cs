@@ -8,7 +8,8 @@ namespace BLL
 {
     public class ProveedorBLL : Negocio
     {
-        public object GetByCuit(long cuit) => new ProveedorDAL().GetByCuit(cuit);
+        public List<ProveedorBEL> ListarConOTPendientes() => new ProveedorDAL().ListarConOTPendientes();
+        public ProveedorBEL GetByCuit(long cuit) => new ProveedorDAL().GetByCuit(cuit);
 
         public override Repositorio Repositorio() => new ProveedorDAL();
     }

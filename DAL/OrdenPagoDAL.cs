@@ -155,5 +155,39 @@ namespace DAL
             return _lista;
         }
 
+        public List<OrdenPagoReportBEL> GetDatosOrdenPagoReporte(long nroOrdenPago)
+        {
+            var hdatos = new Hashtable();
+
+            hdatos.Add("@ordpag", nroOrdenPago);
+
+            var ds = _datos.Leer("GetDatosOrdenPagoReporte", hdatos);
+
+            List<OrdenPagoReportBEL> _lista = new List<OrdenPagoReportBEL>();
+            foreach (DataRow dr in ds.Tables[0].Rows)
+            {
+                var x = new OrdenPagoReportBEL();
+                x.CuitProveedor = dr[0].SafeToLong();
+                x.FechaPago = dr[1].SafeToDateTime();
+                x.FechaEmision = dr[2].SafeToDateTime();
+                x.ImporteTotal = dr[3].SafeToDecimal();
+                x.Pagado = (bool)dr[4];
+                x.Anulado = (bool)dr[5];
+                x.NroOrdenPago = dr[6].SafeToLong();
+                x.NroFactura = dr[7].SafeToLong();
+                x.Descripcion = dr[8].ToString();
+                x.Importe = dr[9].SafeToDecimal();
+                x.FechaEmisionFactura = dr[10].SafeToDateTime();
+                x.FechaVtoFactura = dr[11].SafeToDateTime();
+                x.RAZON_SOCIAL = dr[12].ToString();
+                x.DIRECCION = dr[13].ToString();
+                x.TELEFONO = dr[14].ToString();
+                x.EMAIL = dr[15].ToString();                
+
+                _lista.Add(x);
+            }
+
+            return _lista;
+        }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AppDeposito.Administracion.Integridad;
 using BEL;
 using Servicios;
 
@@ -20,6 +21,7 @@ namespace AppDeposito
             InitializeComponent();
         }
 
+        public bool IsChild { get; set; }
         public bool ModoRecuperacion { get; set; }
 
         public void Traducir()
@@ -65,8 +67,20 @@ namespace AppDeposito
             switch (resultado)
             {
                 case ResultadoAutenticacion.UsuarioValido:
+                    DialogResult = DialogResult.OK;
                     Visible = false;
-                    new PrincipalForm() { LoginForm = this }.Show();                    
+
+                    if (!ModoRecuperacion)
+                    {
+                        if(!IsChild)
+                            new PrincipalForm() { LoginForm = this }.Show();
+                    }
+                    else
+                    {
+                        new RestauracionForm().ShowDialog();
+                        Close();
+                    }
+                                      
                     break;
                 case ResultadoAutenticacion.UsuarioInvalido:
                     DialogResult = DialogResult.No;
@@ -82,6 +96,11 @@ namespace AppDeposito
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
+            lblClave.Tag = null;
+            lblUsuario.Tag = null;
+            btnAceptar.Tag = null;
+            btnCancelar.Tag = null;
+
             FormConfig.Config(this);
 
             Init();
@@ -90,11 +109,12 @@ namespace AppDeposito
             //txtNombre.Text = "german";
             //txtClave.Text = "1234";
             //Login();
-            
+
         }
 
         private void Init()
         {
+            //ModoRecuperacion = true;
 
             if (!Sesion.SesionActual().Integridad)
             {

@@ -34,7 +34,7 @@ namespace AppDeposito.Administracion.Permisos
 
         private void AdminPermisosForm_Load(object sender, EventArgs e)
         {
-            Sesion.SesionActual().Suscribir(this);
+            FormConfig.Config(this);
 
             bsPermisos.CurrentItemChanged += BsPermisos_CurrentItemChanged;
             ObtenerDatos();

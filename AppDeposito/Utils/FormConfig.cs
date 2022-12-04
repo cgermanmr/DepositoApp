@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.ComponentModel;
+using AppDeposito.Test;
 using Servicios;
 
 namespace AppDeposito
@@ -61,7 +62,10 @@ namespace AppDeposito
             form.WindowState = FormWindowState.Normal;
             form.KeyDown += (object sender, KeyEventArgs e) => {
                 if (e.KeyCode == Keys.Escape) ((Form)sender).Close();
+                if (e.KeyCode == Keys.F1 & !(sender as Form).IsMdiContainer) new AyudaForm().Show();
             };
+
+
         }
 
         public static void Validar(ErrorProvider ep, Control ctrl)

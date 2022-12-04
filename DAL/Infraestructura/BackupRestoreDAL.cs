@@ -6,6 +6,7 @@ using System.Collections;
 using Comun;
 using System.Diagnostics.Eventing.Reader;
 using System.Configuration;
+using System.IO;
 //using Microsoft.SqlServer.Management.Smo;
 
 namespace DAL
@@ -58,16 +59,22 @@ namespace DAL
         public bool RealizarBackup(string ubicacion)
         {
             var datos = new Datos();
-            return datos.Ejecutar(string.Format("BACKUP DATABASE [Deposito] TO  DISK = N'{0}' WITH NOFORMAT, NOINIT,  NAME = N'Deposito-Completa Base de datos Copia de seguridad', SKIP, NOREWIND, NOUNLOAD,  STATS = 10", ubicacion));
+            var nombreBase = Configuracion.TryGetValueFromAppSettings("NombreBaseDatos");
+            return datos.Ejecutar(string.Format($"BACKUP DATABASE [{nombreBase}] TO  DISK = N'{0}' WITH NOFORMAT, NOINIT,  NAME = N'Deposito-Completa Base de datos Copia de seguridad', SKIP, NOREWIND, NOUNLOAD,  STATS = 10", ubicacion));
         }
         public bool RealizarRestore(string ubicacion)
         {
             var datos = new Datos();
-            return datos.Ejecutar(string.Format("USE [master];" +
-                "RESTORE DATABASE[Deposito] FROM DISK = N'{0}' WITH FILE = 1, NOUNLOAD, REPLACE, STATS = 5;"
-                , ubicacion));
+            var nombreBase = Configuracion.TryGetValueFromAppSettings("NombreBaseDatos");
+            return datos.Ejecutar($@"USE [master]
+                ALTER DATABASE [{nombreBase}] SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+                RESTORE DATABASE [{nombreBase}] FROM  DISK = N'{Path.Combine(ubicacion)}' WITH  FILE = 1,  NOUNLOAD,  REPLACE,  STATS = 5
+                ALTER DATABASE [{nombreBase}] SET MULTI_USER
+                USE [{nombreBase}]");
         }
-    
+
+       
+
 
     }
 }

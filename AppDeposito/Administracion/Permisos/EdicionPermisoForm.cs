@@ -86,6 +86,8 @@ namespace AppDeposito.Administracion.Permisos
         BindingSource bsPermisosLista;
         private void NuevoGrupoPermisoForm_Load(object sender, EventArgs e)
         {
+            FormConfig.Config(this);
+
             bsPermisosLista = new BindingSource();
 
             if (Editado == null)
@@ -98,7 +100,6 @@ namespace AppDeposito.Administracion.Permisos
             ListaPermisos.DataSource = bsPermisosLista;
             ActualizarControles();
 
-            Sesion.SesionActual().Suscribir(this);
 
 
         }

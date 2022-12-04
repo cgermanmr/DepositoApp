@@ -25,8 +25,6 @@ namespace AppDeposito
         {
             try
             {
-                Sesion.SesionActual().Suscribir(this);
-
                 FormConfig.Config(this);
                 bsOrganizacion.DataSource = Editado;
                 

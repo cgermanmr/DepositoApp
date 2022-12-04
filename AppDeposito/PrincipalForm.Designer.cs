@@ -76,7 +76,6 @@
             this.MenuPrincipal.Size = new System.Drawing.Size(686, 24);
             this.MenuPrincipal.TabIndex = 1;
             this.MenuPrincipal.Text = "menuStrip1";
-            this.MenuPrincipal.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuPrincipal_ItemClicked);
             // 
             // ArchivoToolStripMenuItem
             // 
@@ -91,7 +90,7 @@
             // IniciarSesionToolStripMenuItem
             // 
             this.IniciarSesionToolStripMenuItem.Name = "IniciarSesionToolStripMenuItem";
-            this.IniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.IniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.IniciarSesionToolStripMenuItem.Text = "Iniciar Sesión";
             this.IniciarSesionToolStripMenuItem.Click += new System.EventHandler(this.IniciarSesionToolStripMenuItem_Click);
             // 
@@ -99,14 +98,14 @@
             // 
             this.CerrarSesionToolStripMenuItem.Enabled = false;
             this.CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem";
-            this.CerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.CerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.CerrarSesionToolStripMenuItem.Text = "Cerrar Sesión";
             this.CerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.CerrarSesionToolStripMenuItem_Click);
             // 
             // SalirToolStripMenuItem
             // 
             this.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem";
-            this.SalirToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.SalirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.SalirToolStripMenuItem.Text = "Salir";
             this.SalirToolStripMenuItem.Click += new System.EventHandler(this.SalirToolStripMenuItem_Click);
             // 
@@ -207,7 +206,6 @@
             this.ActivosToolStripMenuItem.Size = new System.Drawing.Size(53, 22);
             this.ActivosToolStripMenuItem.Text = "Activo";
             this.ActivosToolStripMenuItem.Visible = false;
-            this.ActivosToolStripMenuItem.Click += new System.EventHandler(this.ActivosToolStripMenuItem_Click);
             // 
             // GestionarActivosToolStripMenuItem
             // 
@@ -334,7 +332,6 @@
             this.IsMdiContainer = true;
             this.Name = "PrincipalForm";
             this.Text = "Sistema Depósito";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PrincipalForm_FormClosing);
             this.Load += new System.EventHandler(this.PrincipalForm_Load);
             this.MenuPrincipal.ResumeLayout(false);

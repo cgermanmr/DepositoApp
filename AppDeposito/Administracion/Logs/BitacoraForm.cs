@@ -24,7 +24,7 @@ namespace AppDeposito.Administracion.Logs
         BindingSource bsBitacora = new BindingSource();
         private void BitacoraForm_Load(object sender, EventArgs e)
         {
-            Sesion.SesionActual().Suscribir(this);
+            FormConfig.Config(this);
             bsBitacora.DataSource = Bitacora.Listar();
             GrillaBitacora.DataSource = bsBitacora;
             cmbEvento.DataSource = new TipoEvento[] { TipoEvento.Auditoria,TipoEvento.Error,TipoEvento.Informacion,TipoEvento.Seguridad};

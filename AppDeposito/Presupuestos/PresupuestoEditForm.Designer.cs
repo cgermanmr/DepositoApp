@@ -66,81 +66,73 @@
             // cotizacionLabel
             // 
             cotizacionLabel.AutoSize = true;
-            cotizacionLabel.Location = new System.Drawing.Point(86, 117);
-            cotizacionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            cotizacionLabel.Location = new System.Drawing.Point(57, 76);
             cotizacionLabel.Name = "cotizacionLabel";
-            cotizacionLabel.Size = new System.Drawing.Size(87, 20);
+            cotizacionLabel.Size = new System.Drawing.Size(59, 13);
             cotizacionLabel.TabIndex = 0;
             cotizacionLabel.Text = "Cotización:";
             // 
             // tiempoEstimadoLabel
             // 
             tiempoEstimadoLabel.AutoSize = true;
-            tiempoEstimadoLabel.Location = new System.Drawing.Point(50, 162);
-            tiempoEstimadoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            tiempoEstimadoLabel.Location = new System.Drawing.Point(33, 105);
             tiempoEstimadoLabel.Name = "tiempoEstimadoLabel";
-            tiempoEstimadoLabel.Size = new System.Drawing.Size(123, 20);
+            tiempoEstimadoLabel.Size = new System.Drawing.Size(83, 13);
             tiempoEstimadoLabel.TabIndex = 14;
             tiempoEstimadoLabel.Text = "Estimado (días):";
             // 
             // fechaLabel
             // 
             fechaLabel.AutoSize = true;
-            fechaLabel.Location = new System.Drawing.Point(112, 35);
-            fechaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            fechaLabel.Location = new System.Drawing.Point(75, 23);
             fechaLabel.Name = "fechaLabel";
-            fechaLabel.Size = new System.Drawing.Size(58, 20);
+            fechaLabel.Size = new System.Drawing.Size(40, 13);
             fechaLabel.TabIndex = 15;
             fechaLabel.Text = "Fecha:";
             // 
             // fechaValidezLabel
             // 
             fechaValidezLabel.AutoSize = true;
-            fechaValidezLabel.Location = new System.Drawing.Point(316, 162);
-            fechaValidezLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            fechaValidezLabel.Location = new System.Drawing.Point(211, 105);
             fechaValidezLabel.Name = "fechaValidezLabel";
-            fechaValidezLabel.Size = new System.Drawing.Size(114, 20);
+            fechaValidezLabel.Size = new System.Drawing.Size(77, 13);
             fechaValidezLabel.TabIndex = 16;
             fechaValidezLabel.Text = "Fecha Validez:";
             // 
             // razonSocialLabel1
             // 
             razonSocialLabel1.AutoSize = true;
-            razonSocialLabel1.Location = new System.Drawing.Point(86, 78);
-            razonSocialLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            razonSocialLabel1.Location = new System.Drawing.Point(57, 51);
             razonSocialLabel1.Name = "razonSocialLabel1";
-            razonSocialLabel1.Size = new System.Drawing.Size(85, 20);
+            razonSocialLabel1.Size = new System.Drawing.Size(59, 13);
             razonSocialLabel1.TabIndex = 23;
             razonSocialLabel1.Text = "Proveedor:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(50, 206);
-            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Location = new System.Drawing.Point(33, 134);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(96, 20);
+            label2.Size = new System.Drawing.Size(66, 13);
             label2.TabIndex = 28;
             label2.Text = "Descripción:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(315, 203);
-            label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label3.Location = new System.Drawing.Point(210, 132);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(114, 20);
+            label3.Size = new System.Drawing.Size(78, 13);
             label3.TabIndex = 30;
             label3.Text = "Orden Trabajo:";
             // 
             // cotizacionTextBox
             // 
             this.cotizacionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsPresupuesto, "Cotizacion", true));
-            this.cotizacionTextBox.Location = new System.Drawing.Point(182, 117);
-            this.cotizacionTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cotizacionTextBox.Location = new System.Drawing.Point(121, 76);
             this.cotizacionTextBox.MaxLength = 12;
             this.cotizacionTextBox.Name = "cotizacionTextBox";
-            this.cotizacionTextBox.Size = new System.Drawing.Size(126, 26);
+            this.cotizacionTextBox.Size = new System.Drawing.Size(85, 20);
             this.cotizacionTextBox.TabIndex = 1;
             // 
             // bsPresupuesto
@@ -150,10 +142,9 @@
             // estadoCheckBox
             // 
             this.estadoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.bsPresupuesto, "Autorizado", true));
-            this.estadoCheckBox.Location = new System.Drawing.Point(321, 29);
-            this.estadoCheckBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.estadoCheckBox.Location = new System.Drawing.Point(214, 19);
             this.estadoCheckBox.Name = "estadoCheckBox";
-            this.estadoCheckBox.Size = new System.Drawing.Size(128, 37);
+            this.estadoCheckBox.Size = new System.Drawing.Size(85, 24);
             this.estadoCheckBox.TabIndex = 5;
             this.estadoCheckBox.Text = "Autorizado";
             this.estadoCheckBox.UseVisualStyleBackColor = true;
@@ -161,39 +152,35 @@
             // tiempoEstimadoTextBox
             // 
             this.tiempoEstimadoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsPresupuesto, "TiempoEstimado", true));
-            this.tiempoEstimadoTextBox.Location = new System.Drawing.Point(182, 157);
-            this.tiempoEstimadoTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tiempoEstimadoTextBox.Location = new System.Drawing.Point(121, 102);
             this.tiempoEstimadoTextBox.MaxLength = 2;
             this.tiempoEstimadoTextBox.Name = "tiempoEstimadoTextBox";
-            this.tiempoEstimadoTextBox.Size = new System.Drawing.Size(126, 26);
+            this.tiempoEstimadoTextBox.Size = new System.Drawing.Size(85, 20);
             this.tiempoEstimadoTextBox.TabIndex = 15;
             // 
             // fechaDateTimePicker
             // 
             this.fechaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsPresupuesto, "Fecha", true));
             this.fechaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.fechaDateTimePicker.Location = new System.Drawing.Point(182, 31);
-            this.fechaDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.fechaDateTimePicker.Location = new System.Drawing.Point(121, 20);
             this.fechaDateTimePicker.Name = "fechaDateTimePicker";
-            this.fechaDateTimePicker.Size = new System.Drawing.Size(126, 26);
+            this.fechaDateTimePicker.Size = new System.Drawing.Size(85, 20);
             this.fechaDateTimePicker.TabIndex = 16;
             // 
             // fechaValidezDateTimePicker
             // 
             this.fechaValidezDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bsPresupuesto, "FechaValidez", true));
             this.fechaValidezDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.fechaValidezDateTimePicker.Location = new System.Drawing.Point(442, 157);
-            this.fechaValidezDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.fechaValidezDateTimePicker.Location = new System.Drawing.Point(295, 102);
             this.fechaValidezDateTimePicker.Name = "fechaValidezDateTimePicker";
-            this.fechaValidezDateTimePicker.Size = new System.Drawing.Size(126, 26);
+            this.fechaValidezDateTimePicker.Size = new System.Drawing.Size(85, 20);
             this.fechaValidezDateTimePicker.TabIndex = 17;
             // 
             // AceptarButton
             // 
-            this.AceptarButton.Location = new System.Drawing.Point(337, 344);
-            this.AceptarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AceptarButton.Location = new System.Drawing.Point(225, 224);
             this.AceptarButton.Name = "AceptarButton";
-            this.AceptarButton.Size = new System.Drawing.Size(112, 35);
+            this.AceptarButton.Size = new System.Drawing.Size(75, 23);
             this.AceptarButton.TabIndex = 20;
             this.AceptarButton.Text = "Aceptar";
             this.AceptarButton.UseVisualStyleBackColor = true;
@@ -201,10 +188,9 @@
             // 
             // CancelarButton
             // 
-            this.CancelarButton.Location = new System.Drawing.Point(456, 344);
-            this.CancelarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CancelarButton.Location = new System.Drawing.Point(304, 224);
             this.CancelarButton.Name = "CancelarButton";
-            this.CancelarButton.Size = new System.Drawing.Size(112, 35);
+            this.CancelarButton.Size = new System.Drawing.Size(75, 23);
             this.CancelarButton.TabIndex = 21;
             this.CancelarButton.Text = "Cancelar";
             this.CancelarButton.UseVisualStyleBackColor = true;
@@ -219,10 +205,9 @@
             this.proveedorComboBox.DataSource = this.bsProveedores;
             this.proveedorComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.proveedorComboBox.FormattingEnabled = true;
-            this.proveedorComboBox.Location = new System.Drawing.Point(182, 75);
-            this.proveedorComboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.proveedorComboBox.Location = new System.Drawing.Point(121, 49);
             this.proveedorComboBox.Name = "proveedorComboBox";
-            this.proveedorComboBox.Size = new System.Drawing.Size(386, 28);
+            this.proveedorComboBox.Size = new System.Drawing.Size(259, 21);
             this.proveedorComboBox.TabIndex = 24;
             this.proveedorComboBox.SelectedIndexChanged += new System.EventHandler(this.razonSocialComboBox_SelectedIndexChanged);
             // 
@@ -230,20 +215,18 @@
             // 
             this.cmbMoneda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMoneda.FormattingEnabled = true;
-            this.cmbMoneda.Location = new System.Drawing.Point(442, 117);
-            this.cmbMoneda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbMoneda.Location = new System.Drawing.Point(295, 76);
             this.cmbMoneda.Name = "cmbMoneda";
-            this.cmbMoneda.Size = new System.Drawing.Size(126, 28);
+            this.cmbMoneda.Size = new System.Drawing.Size(85, 21);
             this.cmbMoneda.TabIndex = 25;
             this.cmbMoneda.SelectedIndexChanged += new System.EventHandler(this.cmbMoneda_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(358, 122);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(239, 79);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 20);
+            this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 26;
             this.label1.Text = "Moneda:";
             // 
@@ -254,30 +237,30 @@
             // textBox1
             // 
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsPresupuesto, "Descripcion", true));
-            this.textBox1.Location = new System.Drawing.Point(54, 234);
+            this.textBox1.Location = new System.Drawing.Point(36, 155);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.MaxLength = 200;
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(514, 102);
+            this.textBox1.Size = new System.Drawing.Size(344, 65);
             this.textBox1.TabIndex = 27;
             // 
             // txtOtProveedor
             // 
             this.txtOtProveedor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtOtProveedor.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsPresupuesto, "OtProveedor", true));
-            this.txtOtProveedor.Location = new System.Drawing.Point(442, 200);
-            this.txtOtProveedor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtOtProveedor.Location = new System.Drawing.Point(295, 130);
             this.txtOtProveedor.MaxLength = 20;
             this.txtOtProveedor.Name = "txtOtProveedor";
-            this.txtOtProveedor.Size = new System.Drawing.Size(126, 26);
+            this.txtOtProveedor.Size = new System.Drawing.Size(85, 20);
             this.txtOtProveedor.TabIndex = 29;
             // 
             // PresupuestoEditForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(622, 398);
+            this.ClientSize = new System.Drawing.Size(415, 259);
             this.Controls.Add(label3);
             this.Controls.Add(this.txtOtProveedor);
             this.Controls.Add(label2);
@@ -297,7 +280,6 @@
             this.Controls.Add(this.estadoCheckBox);
             this.Controls.Add(tiempoEstimadoLabel);
             this.Controls.Add(this.tiempoEstimadoTextBox);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "PresupuestoEditForm";
             this.Text = "Edición Presupuesto";
             this.Load += new System.EventHandler(this.EdicionPresupuestoForm_Load);

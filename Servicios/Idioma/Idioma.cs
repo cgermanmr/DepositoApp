@@ -12,9 +12,13 @@ namespace Servicios
 
         public bool RegistrarLeyenda(LeyendaBEL valor)
         {
+
             Sesion.SesionActual().IdiomaActual.Leyendas.Add(valor);
-            return new IdiomaDAL().RegistrarLeyenda(valor);              
-           
+
+            if (Sesion.SesionActual().IdiomaActual.Nombre.ToLower() != "Predeterminado")
+                return new IdiomaDAL().RegistrarLeyenda(valor);
+            else
+                return true;
         }
 
         public bool Agregar(IdiomaBEL valor)

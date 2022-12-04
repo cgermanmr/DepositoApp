@@ -29,6 +29,8 @@ namespace AppDeposito.Pagos.OrdenPago
         private readonly ProveedorBEL _proveedor;
         private void SelectorFacturasForm_Load(object sender, EventArgs e)
         {
+            FormConfig.Config(this);
+
             textBox1.Text = _proveedor.ToString();
             CargarFacturas();
         }

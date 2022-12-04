@@ -37,8 +37,10 @@
             System.Windows.Forms.Label fechaVtoLabel;
             System.Windows.Forms.Label importeLabel;
             System.Windows.Forms.Label label1;
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.cuitProveedorTextBox = new System.Windows.Forms.TextBox();
+            this.bsFacturas = new System.Windows.Forms.BindingSource(this.components);
             this.letraTextBox = new System.Windows.Forms.TextBox();
             this.nroFacturaTextBox = new System.Windows.Forms.TextBox();
             this.codigoTextBox = new System.Windows.Forms.TextBox();
@@ -47,18 +49,17 @@
             this.importeTextBox = new System.Windows.Forms.TextBox();
             this.txtRazonSocial = new System.Windows.Forms.TextBox();
             this.conceptosDataGridView = new System.Windows.Forms.DataGridView();
+            this.bsConceptos = new System.Windows.Forms.BindingSource(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsConceptos = new System.Windows.Forms.BindingSource(this.components);
-            this.bsFacturas = new System.Windows.Forms.BindingSource(this.components);
-            this.button5 = new System.Windows.Forms.Button();
             cuitProveedorLabel = new System.Windows.Forms.Label();
             nroFacturaLabel = new System.Windows.Forms.Label();
             letraLabel = new System.Windows.Forms.Label();
@@ -68,11 +69,11 @@
             importeLabel = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsFacturas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.conceptosDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsConceptos)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsConceptos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsFacturas)).BeginInit();
             this.SuspendLayout();
             // 
             // cuitProveedorLabel
@@ -195,15 +196,18 @@
             this.cuitProveedorTextBox.Location = new System.Drawing.Point(99, 4);
             this.cuitProveedorTextBox.MaxLength = 11;
             this.cuitProveedorTextBox.Name = "cuitProveedorTextBox";
-            this.cuitProveedorTextBox.ReadOnly = true;
             this.cuitProveedorTextBox.Size = new System.Drawing.Size(100, 20);
             this.cuitProveedorTextBox.TabIndex = 1;
-            this.cuitProveedorTextBox.TextChanged += new System.EventHandler(this.cuitProveedorTextBox_TextChanged);
             this.cuitProveedorTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.cuitProveedorTextBox_Validating);
+            // 
+            // bsFacturas
+            // 
+            this.bsFacturas.DataSource = typeof(BEL.FacturaReparacionBEL);
             // 
             // letraTextBox
             // 
             this.letraTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.letraTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.letraTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsFacturas, "Letra", true));
             this.letraTextBox.Location = new System.Drawing.Point(99, 92);
             this.letraTextBox.MaxLength = 1;
@@ -286,10 +290,15 @@
             this.conceptosDataGridView.RowHeadersVisible = false;
             this.conceptosDataGridView.RowHeadersWidth = 62;
             this.conceptosDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.conceptosDataGridView.Size = new System.Drawing.Size(604, 249);
+            this.conceptosDataGridView.Size = new System.Drawing.Size(604, 207);
             this.conceptosDataGridView.TabIndex = 1;
             this.conceptosDataGridView.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.conceptosDataGridView_CellBeginEdit);
             this.conceptosDataGridView.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.conceptosDataGridView_CellValidating);
+            // 
+            // bsConceptos
+            // 
+            this.bsConceptos.DataMember = "Conceptos";
+            this.bsConceptos.DataSource = this.bsFacturas;
             // 
             // flowLayoutPanel1
             // 
@@ -348,6 +357,16 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(12, 18);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(126, 23);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "Buscar Proveedor";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "OtReparacion";
@@ -369,30 +388,14 @@
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Importe";
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewTextBoxColumn4.HeaderText = "Importe";
             this.dataGridViewTextBoxColumn4.MaxInputLength = 15;
             this.dataGridViewTextBoxColumn4.MinimumWidth = 80;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 150;
-            // 
-            // bsConceptos
-            // 
-            this.bsConceptos.DataMember = "Conceptos";
-            this.bsConceptos.DataSource = this.bsFacturas;
-            // 
-            // bsFacturas
-            // 
-            this.bsFacturas.DataSource = typeof(BEL.FacturaReparacionBEL);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(28, 18);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(126, 23);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Buscar Proveedor";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // IngresoFacturasForm
             // 
@@ -410,11 +413,11 @@
             this.Load += new System.EventHandler(this.IngresoFacturasForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsFacturas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.conceptosDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsConceptos)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsConceptos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsFacturas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -436,12 +439,12 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtRazonSocial;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

@@ -12,11 +12,18 @@ namespace BEL
     {
         public long NroFactura { get; set; }
         public long Codigo { get; set; }
-        public string Letra { get; set; }
+        public string Letra { get; set; } = "";
         public long CuitProveedor { get; set; }
         public DateTime FechaVto { get; set; } = DateTime.Now;
         public DateTime FechaEmision { get; set; } = DateTime.Now;
-        public double Importe { get; set; }      
+        public double Importe { get; set; }
+
+        public bool IsOk => NroFactura > 0 &&
+                            Codigo > 0 &&
+                            Letra.Length > 0 &&
+                            Importe > 0 &&
+                            CuitProveedor > 0 &&
+                            Conceptos.Count > 0;
 
         public List<FacturaReparacionDetalle> Conceptos { get; set; } = new List<FacturaReparacionDetalle>();
         public string UsuarioModificador { get ; set; }

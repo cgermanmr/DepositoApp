@@ -14,8 +14,8 @@ namespace BEL
     {
         public long NroFactura { get; set; }
         public string OtReparacion { get; set; }
-        public string Descripcion { get; set; }
-        //public double Importe { get; set; }
+        public string Descripcion { get; set; } = "";
+        public bool IsOk => NroFactura > 0 && Descripcion.Length > 0 && _Importe > 0;
 
         private double _Importe;
 

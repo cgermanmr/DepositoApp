@@ -17,7 +17,10 @@ namespace AppDeposito
 {
     public partial class ReparacionEditForm : Form, IObserverTraducible
     {
-        public ReparacionBEL Reparacion { get => bsReparacion.DataSource as ReparacionBEL; set => bsReparacion.DataSource = value; }
+        public ReparacionBEL Reparacion { 
+            get => bsReparacion.DataSource as ReparacionBEL; 
+            set => bsReparacion.DataSource = value; 
+        }
         public ReparacionEditForm()
         {
             InitializeComponent();
@@ -26,8 +29,10 @@ namespace AppDeposito
 
         private void EdicionReparacionForm_Load(object sender, EventArgs e)
         {
+  
             FormConfig.Config(this);
             FinalizarReparacion(Reparacion.Realizada);
+            
         }
 
         private void AceptarButton_Click(object sender, EventArgs e)
@@ -107,7 +112,8 @@ namespace AppDeposito
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new AsignarEquipoReemplazoForm(Reparacion).ShowDialog();
+            if(Reparacion.Id !=0)
+                new AsignarEquipoReemplazoForm(Reparacion).ShowDialog();
         }
     }
 }

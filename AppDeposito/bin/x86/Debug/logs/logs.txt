@@ -1,0 +1,21 @@
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla USUARIO
+
+StackTrace: Evento Auditado
+Date/Time: 28/11/2022 16:04:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaDetalle
+
+StackTrace: Evento Auditado
+Date/Time: 28/11/2022 16:04:25
+===========================================================================================
+Title: Information
+Id: 0
+Message: DVH y DVV verificados correctamente en tabla FacturaReparacion
+
+StackTrace: Evento Auditado
+Date/Time: 28/11/2022 16:04:25
+===========================================================================================

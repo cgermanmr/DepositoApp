@@ -1,8 +1,11 @@
 ﻿using AppDeposito.Administracion.Backup;
+using AppDeposito.Administracion.Integridad;
 using AppDeposito.Administracion.Logs;
+using AppDeposito.ConfigurarDB;
 using AppDeposito.Pagos;
 using AppDeposito.Reparaciones;
 using AppDeposito.Test;
+using Comun;
 using Interfaces;
 using Servicios;
 using System;
@@ -29,9 +32,14 @@ namespace AppDeposito
             Application.ThreadException += Application_ThreadException;
             Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
 
+            if(Configuracion.IsDbConfig())
+                Application.Run(new LoginForm());
+            else
+                Application.Run(new ConfigDbForm());
 
             //Application.Run(new LoginForm());
-            
+
+
             //Application.Run(new PrincipalForm());
             //Application.Run(new PruebaAyudaForm());
             //Application.Run(new ConsultarHistorialReparacionesForm());
@@ -41,29 +49,34 @@ namespace AppDeposito
 
             //Application.Run(new BitacoraForm());
 
-            //Application.Run(new DonacionesForm());
+                //Application.Run(new DonacionesForm());
 
-            //Application.Run(new Administracion.Permisos.AdminPermisosForm());
-            //Application.Run(new Administracion.Permisos.AdminUsuariosForm());
-            //Application.Run(new Administracion.Idioma.EdicionIdiomaForm());
-            //Application.Run(new Administracion.Idioma.MultiIdiomaForm());
+                //Application.Run(new Administracion.Permisos.AdminPermisosForm());
+                //Application.Run(new Administracion.Permisos.AdminUsuariosForm());
+                //Application.Run(new Administracion.Idioma.EdicionIdiomaForm());
+                //Application.Run(new Administracion.Idioma.MultiIdiomaForm());
 
-            Application.Run(new BackupRestoreForm());
+                //Application.Run(new BackupRestoreForm());
+                //Application.Run(new RestauracionForm());
 
-            //Application.Run(new Administracion.Logs.UsuarioControlCambiosForm());
-            //Application.Run(new Administracion.Integridad.IntegridadForm());
-            //Application.Run(new ActivoAdminForm());
-            //Application.Run(new ReparacionAdminForm());
-            //Application.Run(new ClienteAdminForm());
-            //Application.Run(new DepositoAdminForm());
+                //Application.Run(new Administracion.Logs.UsuarioControlCambiosForm());
+                //Application.Run(new Administracion.Integridad.IntegridadForm());
+                //Application.Run(new ActivoAdminForm());
 
-            //Application.Run(new EmpresaAdminForm());
-            //Application.Run(new SectorAdminForm());
-            //Application.Run(new UbicacionAdminForm());
-            //Application.Run(new MarcaAdminForm());
-            //Application.Run(new EstadoAdminForm());
-            //Application.Run(new IngresoFacturasForm());
-            //Application.Run(new OrdenPagoAdminForm());
+                //Application.Run(new ReparacionAdminForm());
+                //Application.Run(new ClienteAdminForm());
+                //Application.Run(new DepositoAdminForm());
+
+                //Application.Run(new EmpresaAdminForm());
+                //Application.Run(new SectorAdminForm());
+                //Application.Run(new UbicacionAdminForm());
+                //Application.Run(new MarcaAdminForm());
+                //Application.Run(new EstadoAdminForm());
+                //Application.Run(new IngresoFacturasForm());
+                //Application.Run(new OrdenPagoAdminForm());
+                //Application.Run(new PruebaAyudaForm());
+
+
 
 
         }

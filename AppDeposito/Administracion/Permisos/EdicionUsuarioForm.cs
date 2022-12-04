@@ -24,7 +24,7 @@ namespace AppDeposito.Administracion.Permisos
 
         private void EdicionUsuarioForm_Load(object sender, EventArgs e)
         {
-            Sesion.SesionActual().Suscribir(this);
+            FormConfig.Config(this);
 
             txtNombre.ReadOnly = !(UsuarioEditado == null);
             txtClave.ReadOnly = !(UsuarioEditado == null);

@@ -38,7 +38,8 @@ namespace AppDeposito.Administracion.Integridad
 
         private void IntegridadForm_Load(object sender, EventArgs e)
         {
-            Sesion.SesionActual().Suscribir(this);        
+            FormConfig.Config(this);
+
         }
 
         private void RegenerarButton_Click(object sender, EventArgs e)

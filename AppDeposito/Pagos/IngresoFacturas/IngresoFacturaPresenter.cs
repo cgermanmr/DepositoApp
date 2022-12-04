@@ -11,6 +11,7 @@ namespace AppDeposito.Pagos
     public class IngresoFacturaPresenter
     {
         private readonly IngresoFacturasForm _view;
+
         public IngresoFacturaPresenter(IngresoFacturasForm view)
         {
             _view = view;            
@@ -45,7 +46,10 @@ namespace AppDeposito.Pagos
             if (sb.Length > 0)
                 throw new InvalidOperationException(sb.ToString());
 
-            _view.ConceptoActual.Descripcion = $"Servicio de reparación";
+            var presupuesto = new PresupuestoBLL().GetByOtProveedor(valor, _view.Factura.CuitProveedor);
+
+            _view.ConceptoActual.Descripcion = $"{presupuesto.Descripcion}";
+            _view.ConceptoActual.Importe = presupuesto.Cotizacion;
 
         }
     }

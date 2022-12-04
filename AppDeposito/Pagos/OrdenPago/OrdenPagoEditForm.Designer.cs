@@ -34,6 +34,7 @@
             System.Windows.Forms.Label fechaEmisionLabel;
             this.button1 = new System.Windows.Forms.Button();
             this.CuitTextBox = new System.Windows.Forms.TextBox();
+            this.bsOrdenPago = new System.Windows.Forms.BindingSource(this.components);
             this.RazonSocialTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,13 +52,14 @@
             this.button5 = new System.Windows.Forms.Button();
             this.pagadoCheckBox = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.bsOrdenPago = new System.Windows.Forms.BindingSource(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             fechaPagoLabel = new System.Windows.Forms.Label();
             importeLabel = new System.Windows.Forms.Label();
             fechaEmisionLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.bsOrdenPago)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturaModelViewDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsDetalles)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsOrdenPago)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // fechaPagoLabel
@@ -101,10 +103,15 @@
             // 
             this.CuitTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsOrdenPago, "CuitProveedor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.CuitTextBox.Location = new System.Drawing.Point(57, 52);
+            this.CuitTextBox.MaxLength = 11;
             this.CuitTextBox.Name = "CuitTextBox";
-            this.CuitTextBox.ReadOnly = true;
             this.CuitTextBox.Size = new System.Drawing.Size(100, 20);
             this.CuitTextBox.TabIndex = 1;
+            this.CuitTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.CuitTextBox_Validating);
+            // 
+            // bsOrdenPago
+            // 
+            this.bsOrdenPago.DataSource = typeof(BEL.OrdenPagoBEL);
             // 
             // RazonSocialTextBox
             // 
@@ -147,6 +154,7 @@
             this.facturaModelViewDataGridView.Name = "facturaModelViewDataGridView";
             this.facturaModelViewDataGridView.ReadOnly = true;
             this.facturaModelViewDataGridView.RowHeadersVisible = false;
+            this.facturaModelViewDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.facturaModelViewDataGridView.Size = new System.Drawing.Size(516, 208);
             this.facturaModelViewDataGridView.TabIndex = 5;
             this.facturaModelViewDataGridView.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.facturaModelViewDataGridView_DataError);
@@ -264,9 +272,9 @@
             this.checkBox1.Text = "Anulado";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // bsOrdenPago
+            // errorProvider1
             // 
-            this.bsOrdenPago.DataSource = typeof(BEL.OrdenPagoBEL);
+            this.errorProvider1.ContainerControl = this;
             // 
             // OrdenPagoEditForm
             // 
@@ -295,9 +303,10 @@
             this.Name = "OrdenPagoEditForm";
             this.Text = "Edición Orden Pago ";
             this.Load += new System.EventHandler(this.OrdenPagoEditForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bsOrdenPago)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturaModelViewDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsDetalles)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsOrdenPago)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,5 +334,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn importeDataGridViewTextBoxColumn;
         private System.Windows.Forms.CheckBox pagadoCheckBox;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

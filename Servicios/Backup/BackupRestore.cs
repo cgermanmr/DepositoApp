@@ -15,32 +15,14 @@ namespace Servicios
 
         public bool RealizarBackup(string ubicacion)
         {
-            try
-            {
-                new BackupRestoreDAL().RealizarBackup(ubicacion);
-                return new BackupRestoreDAL().Agregar(new BackupBEL() { Ubicacion= ubicacion,Usuario = Sesion.SesionActual().ObtenerUsuarioActual.Nombre});
+            new BackupRestoreDAL().RealizarBackup(ubicacion);
+            return new BackupRestoreDAL().Agregar(new BackupBEL() { Ubicacion= ubicacion,Usuario = Sesion.SesionActual().ObtenerUsuarioActual.Nombre});
 
-            }
-            catch (Exception ex)
-            {
-                // REGISTRAR EN BITACORA
-                throw ex;
-            }
         }
 
         public bool RealizarRestore(string ubicacion)
         {
-            try
-            {
-
-                return new BackupRestoreDAL().RealizarRestore(ubicacion);
-
-            }
-            catch (Exception ex)
-            {
-                // REGISTRAR EN BITACORA
-                throw ex;
-            }
+            return new BackupRestoreDAL().RealizarRestore(ubicacion);
         }
     }
 }

@@ -48,7 +48,9 @@ namespace AppDeposito.Administracion.Backup
             Bitacora.RegistrarEnBitacora(msj,TipoEvento.Auditoria,Criticidad.Media);
 
             Mensajes.ShowExitoso(msj);
+
             CargarGrilla();
+            
             Cursor = Cursors.Default;
         }    
         private void BtnRealizarRestore_Click(object sender, EventArgs e)
@@ -81,10 +83,12 @@ namespace AppDeposito.Administracion.Backup
                 return;
 
             Cursor = Cursors.WaitCursor;
-            new BackupRestore().RealizarRestore(path);
-            var msj = $"Se ha realizado la restauración correctamente con el archivo {path}";
 
+            new BackupRestore().RealizarRestore(path);
+
+            var msj = $"Se ha realizado la restauración correctamente con el archivo {path}";
             Mensajes.ShowExitoso(msj);
+            Bitacora.RegistrarEnBitacora(msj, TipoEvento.Auditoria, Criticidad.Alta);
                                     
             Cursor = Cursors.Default;
 
@@ -95,6 +99,8 @@ namespace AppDeposito.Administracion.Backup
         }    
         private void BackupRestoreForm_Load(object sender, EventArgs e)
         {
+            FormConfig.Config(this);
+
             CargarGrilla();
         }
 

@@ -38,6 +38,7 @@
             System.Windows.Forms.Label fechaSolicitudLabel;
             System.Windows.Forms.Label descripcionLabel2;
             this.descripcionTextBox = new System.Windows.Forms.TextBox();
+            this.bsReparacion = new System.Windows.Forms.BindingSource(this.components);
             this.ticketSoporteTextBox = new System.Windows.Forms.TextBox();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.numeroInventarioTextBox = new System.Windows.Forms.TextBox();
@@ -53,7 +54,6 @@
             this.realizadaCheckBox = new System.Windows.Forms.CheckBox();
             this.descripcionTextBox2 = new System.Windows.Forms.TextBox();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.bsReparacion = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             descripcionLabel = new System.Windows.Forms.Label();
             ticketSoporteLabel = new System.Windows.Forms.Label();
@@ -63,8 +63,8 @@
             telefonoLabel = new System.Windows.Forms.Label();
             fechaSolicitudLabel = new System.Windows.Forms.Label();
             descripcionLabel2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsReparacion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // descripcionLabel
@@ -149,6 +149,10 @@
             this.descripcionTextBox.Size = new System.Drawing.Size(344, 48);
             this.descripcionTextBox.TabIndex = 1;
             // 
+            // bsReparacion
+            // 
+            this.bsReparacion.DataSource = typeof(BEL.ReparacionBEL);
+            // 
             // ticketSoporteTextBox
             // 
             this.ticketSoporteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsReparacion, "TicketSoporte", true));
@@ -184,7 +188,7 @@
             this.enGarantiaCheckBox.Name = "enGarantiaCheckBox";
             this.enGarantiaCheckBox.Size = new System.Drawing.Size(104, 24);
             this.enGarantiaCheckBox.TabIndex = 18;
-            this.enGarantiaCheckBox.Text = "En garantía";
+            this.enGarantiaCheckBox.Text = "Garantia";
             this.enGarantiaCheckBox.UseVisualStyleBackColor = true;
             // 
             // descripcionTextBox1
@@ -288,10 +292,6 @@
             // 
             this.errorProvider.ContainerControl = this;
             // 
-            // bsReparacion
-            // 
-            this.bsReparacion.DataSource = typeof(BEL.ReparacionBEL);
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(276, 18);
@@ -307,7 +307,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(488, 403);
+            this.ClientSize = new System.Drawing.Size(488, 389);
             this.Controls.Add(this.button1);
             this.Controls.Add(descripcionLabel2);
             this.Controls.Add(this.descripcionTextBox2);
@@ -335,8 +335,8 @@
             this.Name = "ReparacionEditForm";
             this.Text = "Editar Reparación";
             this.Load += new System.EventHandler(this.EdicionReparacionForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsReparacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

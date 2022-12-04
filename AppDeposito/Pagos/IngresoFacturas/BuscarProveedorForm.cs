@@ -15,11 +15,15 @@ namespace AppDeposito.Pagos.IngresoFacturas
 {
     public partial class BuscarProveedorForm : Form, IObserverTraducible
     {
+        private readonly bool conOtPendientes;
 
         public ProveedorBEL Seleccionado { get => bsProveedor.Current as ProveedorBEL; }
-        public BuscarProveedorForm()
+        
+        
+        public BuscarProveedorForm(bool conOtPendientes = false)
         {
             InitializeComponent();
+            this.conOtPendientes = conOtPendientes;
         }
 
         private void BuscarProveedorForm_Load(object sender, EventArgs e)
@@ -32,7 +36,10 @@ namespace AppDeposito.Pagos.IngresoFacturas
 
         private void CargarGrilla()
         {
-            bsProveedor.DataSource = new ProveedorBLL().Listar().Select(x => x as ProveedorBEL);
+            if(conOtPendientes)
+                bsProveedor.DataSource = new ProveedorBLL().ListarConOTPendientes();
+            else
+                bsProveedor.DataSource = new ProveedorBLL().Listar().Select(x => x as ProveedorBEL);
         }
 
         private void button1_Click(object sender, EventArgs e)

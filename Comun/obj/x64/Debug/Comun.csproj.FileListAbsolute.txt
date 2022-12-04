@@ -1,0 +1,6 @@
+C:\UAI\TD\DepositoApp\Comun\bin\x64\Debug\Comun.dll
+C:\UAI\TD\DepositoApp\Comun\bin\x64\Debug\Comun.pdb
+C:\UAI\TD\DepositoApp\Comun\obj\x64\Debug\Comun.csproj.AssemblyReference.cache
+C:\UAI\TD\DepositoApp\Comun\obj\x64\Debug\Comun.csproj.CoreCompileInputs.cache
+C:\UAI\TD\DepositoApp\Comun\obj\x64\Debug\Comun.dll
+C:\UAI\TD\DepositoApp\Comun\obj\x64\Debug\Comun.pdb

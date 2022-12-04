@@ -15,6 +15,9 @@ namespace BEL
         public ActivoBEL Activo { get; set; } = new ActivoBEL();
         public string Descripcion { get; set; } = "";
         public List<PresupuestoBEL> Presupuestos { get; set; } = new List<PresupuestoBEL>();
+
+        public int CantPresupuestosAsignados => Presupuestos.Count;
+
         public DateTime FechaSolicitud { get; set; } = DateTime.Now;
         public DateTime? FechaFinalizacion { get; set; } = null;
         public bool Realizada => FechaFinalizacion > DateTime.MinValue;

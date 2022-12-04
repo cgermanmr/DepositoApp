@@ -23,7 +23,7 @@ namespace AppDeposito.Administracion.Permisos
         BindingSource bsPermisosLista;
         private void EdicionPermisosUsuarioForm_Load(object sender, EventArgs e)
         {
-            Sesion.SesionActual().Suscribir(this);
+            FormConfig.Config(this);
 
             bsPermisosLista = new BindingSource();
             PermisoCompuesto perfil = new PermisoCompuesto();

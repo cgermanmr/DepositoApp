@@ -5,6 +5,7 @@ using Interfaces;
 using System.Collections;
 using System;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace DAL
 {
@@ -64,7 +65,7 @@ namespace DAL
             return ObtenerLista(ds);
         }
 
-        public object GetByCuit(long cuit)
+        public ProveedorBEL GetByCuit(long cuit)
         {
             Hashtable parametros = new Hashtable();
             parametros.Add("@cuit", cuit);
@@ -72,7 +73,20 @@ namespace DAL
 
             DataSet ds = _datos.Leer(ProcedimientoAlmacenado, parametros);
 
-            return ObtenerLista(ds).FirstOrDefault();
+            return ObtenerLista(ds).Select(x => x as ProveedorBEL).
+                FirstOrDefault();
         }
+
+        
+        public List<ProveedorBEL> ListarConOTPendientes()
+        {
+            Hashtable parametros = new Hashtable();
+            parametros.Add("@operacion", 10);
+
+            DataSet ds = _datos.Leer("SP_PROVEEDOR", parametros);
+
+            return ObtenerLista(ds).Select( x => x as ProveedorBEL).ToList();
+        }
+
     }
 }
